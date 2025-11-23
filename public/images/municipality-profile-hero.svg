@@ -1,0 +1,58 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft background gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e0e7ef" />
+    </linearGradient>
+    <!-- Mountain gradient -->
+    <linearGradient id="mountain-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <!-- Hill gradient -->
+    <linearGradient id="hill-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <!-- Terai gradient -->
+    <linearGradient id="terai-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef9c3" />
+      <stop offset="100%" stop-color="#fde68a" />
+    </linearGradient>
+    <!-- Sun -->
+    <radialGradient id="sun-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffde4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fde68a" stop-opacity="0.7"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg-gradient)" />
+
+  <!-- Sun -->
+  <circle cx="1050" cy="80" r="40" fill="url(#sun-gradient)" opacity="0.7"/>
+
+  <!-- Mountains (Himal) -->
+  <path d="M0,250 L150,170 L300,230 L450,160 L600,220 L750,180 L900,240 L1050,170 L1200,250 L1200,400 L0,400 Z"
+        fill="url(#mountain-gradient)" opacity="0.85"/>
+  <!-- Hills (Pahad) -->
+  <path d="M0,320 Q200,270 400,320 T800,320 Q1000,300 1200,340 L1200,400 L0,400 Z"
+        fill="url(#hill-gradient)" opacity="0.85"/>
+  <!-- Terai (Plains) -->
+  <path d="M0,360 Q300,350 600,370 T1200,360 L1200,400 L0,400 Z"
+        fill="url(#terai-gradient)" opacity="0.95"/>
+
+  <!-- Subtle field lines in Terai -->
+  <line x1="100" y1="380" x2="1100" y2="380" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.18" />
+  <line x1="100" y1="390" x2="1100" y2="390" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.13" />
+
+  <!-- Subtle clouds -->
+  <ellipse cx="250" cy="90" rx="60" ry="18" fill="#fff" opacity="0.18"/>
+  <ellipse cx="320" cy="110" rx="40" ry="12" fill="#fff" opacity="0.13"/>
+  <ellipse cx="900" cy="70" rx="50" ry="15" fill="#fff" opacity="0.15"/>
+  <ellipse cx="1050" cy="120" rx="30" ry="10" fill="#fff" opacity="0.10"/>
+
+  <!-- Distant horizon line -->
+  <path d="M0,340 L1200,340" stroke="#64748b" stroke-width="1" stroke-opacity="0.18" stroke-linecap="round" />
+</svg>
