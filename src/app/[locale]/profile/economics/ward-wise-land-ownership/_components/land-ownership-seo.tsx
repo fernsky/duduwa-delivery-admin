@@ -27,7 +27,7 @@ export default function LandOwnershipSEO({
     // Convert land ownership stats to structured data format
     const landOwnershipStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${LAND_OWNERSHIP_TYPES_EN[item.type] || item.type} in Khajura Rural Municipality`,
+      name: `${LAND_OWNERSHIP_TYPES_EN[item.type] || item.type} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -35,7 +35,7 @@ export default function LandOwnershipSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality live on ${LAND_OWNERSHIP_TYPES_EN[item.type] || item.type} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality live on ${LAND_OWNERSHIP_TYPES_EN[item.type] || item.type} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     // Find most common land ownership type
@@ -60,10 +60,10 @@ export default function LandOwnershipSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Land Ownership Types in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Land ownership statistics across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common land ownership type is ${mostCommonTypeEN} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%). Public/Eilani land accounts for ${publicLandPercentage}% of all households. Land security score is ${securityScore}%.`,
+      name: "Land Ownership Types in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Land ownership statistics across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common land ownership type is ${mostCommonTypeEN} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%). Public/Eilani land accounts for ${publicLandPercentage}% of all households. Land security score is ${securityScore}%.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Land ownership",
         "Land ownership types",
@@ -79,16 +79,16 @@ export default function LandOwnershipSEO({
           (name) => `${name} घरपरिवार संख्या`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-land-ownership",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-land-ownership",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

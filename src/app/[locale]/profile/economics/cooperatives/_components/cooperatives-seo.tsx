@@ -51,17 +51,17 @@ export default function CooperativesSEO({
     // Convert cooperative stats to structured data format
     const cooperativeTypeStats = cooperativeSummary.map((item) => ({
       "@type": "Dataset",
-      name: `${COOPERATIVE_TYPES_EN[item.type] || item.type} Cooperatives in Khajura Rural Municipality`,
-      description: `There are ${item.count} ${COOPERATIVE_TYPES_EN[item.type] || item.type} cooperatives operating in Khajura Rural Municipality, representing ${item.percentage.toFixed(2)}% of total cooperatives.`,
+      name: `${COOPERATIVE_TYPES_EN[item.type] || item.type} Cooperatives in duduwa Rural Municipality`,
+      description: `There are ${item.count} ${COOPERATIVE_TYPES_EN[item.type] || item.type} cooperatives operating in duduwa Rural Municipality, representing ${item.percentage.toFixed(2)}% of total cooperatives.`,
       keywords: [
         item.type,
         COOPERATIVE_TYPES_EN[item.type],
         "cooperative",
-        "Khajura",
+        "duduwa",
       ],
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
+        name: "duduwa Rural Municipality",
       },
       variableMeasured: [
         {
@@ -89,7 +89,7 @@ export default function CooperativesSEO({
         .join(", ")}${ward.cooperatives.length > 3 ? " and others" : ""}.`,
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
+        name: "duduwa Rural Municipality",
       },
       variableMeasured: {
         "@type": "PropertyValue",
@@ -108,10 +108,10 @@ export default function CooperativesSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Cooperatives in Khajura Rural Municipality",
-      description: `Comprehensive analysis of ${totalCooperatives} cooperatives in Khajura Rural Municipality. The most common type is ${mostCommonCooperativeTypeEN} (${statistics.mostPopularCooperativeTypePercentage.toFixed(1)}%), and Ward ${statistics.wardWithMostCooperatives} has the highest concentration with ${statistics.maximumCooperativesInAWard} cooperatives. This dataset includes ${statistics.provinceLevelCooperatives} province-level cooperatives and covers all 9 wards of the municipality.`,
+      name: "Cooperatives in duduwa Rural Municipality",
+      description: `Comprehensive analysis of ${totalCooperatives} cooperatives in duduwa Rural Municipality. The most common type is ${mostCommonCooperativeTypeEN} (${statistics.mostPopularCooperativeTypePercentage.toFixed(1)}%), and Ward ${statistics.wardWithMostCooperatives} has the highest concentration with ${statistics.maximumCooperativesInAWard} cooperatives. This dataset includes ${statistics.provinceLevelCooperatives} province-level cooperatives and covers all 9 wards of the municipality.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Cooperatives",
         "सहकारी संस्था",
@@ -128,16 +128,16 @@ export default function CooperativesSEO({
           (item) => COOPERATIVE_TYPES_EN[item.type] || item.type,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/cooperatives",
+      url: "https://digital.duduwamun.gov.np/profile/economics/cooperatives",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -199,8 +199,8 @@ export default function CooperativesSEO({
       ],
       isPartOf: {
         "@type": "Dataset",
-        name: "Khajura Rural Municipality Digital Profile",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality Digital Profile",
+        url: "https://digital.duduwamun.gov.np",
       },
     };
   };

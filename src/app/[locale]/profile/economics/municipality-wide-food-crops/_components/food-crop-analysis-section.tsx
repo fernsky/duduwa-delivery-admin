@@ -52,7 +52,7 @@ export default function FoodCropAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-production": totalProduction.toString(),
     "data-most-common-crop":
       overallSummary.length > 0
@@ -102,7 +102,7 @@ export default function FoodCropAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           खाद्यान्न बालीको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Food Crop Analysis of Khajura
+            Detailed Food Crop Analysis of duduwa
           </span>
         </h3>
 
@@ -122,7 +122,7 @@ export default function FoodCropAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख खाद्यान्न बाली
               <span className="sr-only">
-                Main Food Crop in Khajura Rural Municipality
+                Main Food Crop in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">

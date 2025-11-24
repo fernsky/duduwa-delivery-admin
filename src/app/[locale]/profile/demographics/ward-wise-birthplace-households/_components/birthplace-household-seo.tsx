@@ -25,7 +25,7 @@ export default function BirthplaceHouseholdSEO({
     // Convert birthplace stats to structured data format
     const birthplaceStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${BIRTH_PLACE_NAMES_EN[item.birthPlace] || item.birthPlace} in Khajura Rural Municipality`,
+      name: `${BIRTH_PLACE_NAMES_EN[item.birthPlace] || item.birthPlace} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -33,7 +33,7 @@ export default function BirthplaceHouseholdSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality are from ${BIRTH_PLACE_NAMES_EN[item.birthPlace] || item.birthPlace} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality are from ${BIRTH_PLACE_NAMES_EN[item.birthPlace] || item.birthPlace} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     // Find most common birthplace
@@ -51,10 +51,10 @@ export default function BirthplaceHouseholdSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Household Birthplaces in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Household birthplace data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common origin is ${mostCommonBirthplaceEN} with ${mostCommonBirthplace?.households.toLocaleString()} households (${mostCommonBirthplacePercentage}%).`,
+      name: "Household Birthplaces in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Household birthplace data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common origin is ${mostCommonBirthplaceEN} with ${mostCommonBirthplace?.households.toLocaleString()} households (${mostCommonBirthplacePercentage}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Household birthplaces",
         "Birthplace distribution",
@@ -68,16 +68,16 @@ export default function BirthplaceHouseholdSEO({
           (name) => `${name} घरपरिवार तथ्याङ्क`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-wise-birthplace-households",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-wise-birthplace-households",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

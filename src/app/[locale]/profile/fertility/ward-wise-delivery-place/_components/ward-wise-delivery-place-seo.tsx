@@ -71,7 +71,7 @@ export default function WardWiseDeliveryPlaceSEO({
 
         return {
           "@type": "Observation",
-          name: `Childbirth Location Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Childbirth Location Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -79,7 +79,7 @@ export default function WardWiseDeliveryPlaceSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(institutionalPercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${institutionalDeliveries.toLocaleString()} deliveries (${institutionalPercent}%) occurred in health institutions out of a total of ${totalWardDeliveries.toLocaleString()} deliveries.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${institutionalDeliveries.toLocaleString()} deliveries (${institutionalPercent}%) occurred in health institutions out of a total of ${totalWardDeliveries.toLocaleString()} deliveries.`,
         };
       })
       .filter(Boolean);
@@ -96,10 +96,10 @@ export default function WardWiseDeliveryPlaceSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Childbirth Locations in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of childbirth locations across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalDeliveries.toLocaleString()} deliveries. ${institutionalTotal.toLocaleString()} deliveries (${institutionalPercentage}%) occurred in health institutions. The best institutional delivery rate is in Ward ${bestWard?.wardNumber || ""} with ${bestWard?.percentage.toFixed(2) || ""}%.`,
+      name: "Childbirth Locations in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of childbirth locations across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalDeliveries.toLocaleString()} deliveries. ${institutionalTotal.toLocaleString()} deliveries (${institutionalPercentage}%) occurred in health institutions. The best institutional delivery rate is in Ward ${bestWard?.wardNumber || ""} with ${bestWard?.percentage.toFixed(2) || ""}%.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Institutional delivery",
         "Home delivery",
@@ -111,16 +111,16 @@ export default function WardWiseDeliveryPlaceSEO({
         "Health facility delivery",
         "Rural healthcare",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/fertility/ward-wise-delivery-place",
+      url: "https://digital.duduwamun.gov.np/profile/fertility/ward-wise-delivery-place",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -183,10 +183,10 @@ export default function WardWiseDeliveryPlaceSEO({
         name: "Municipality Health Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

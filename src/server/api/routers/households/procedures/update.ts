@@ -8,22 +8,22 @@ export const updateHouseholdProcedure = protectedProcedure
   .input(updateHouseholdSchema.extend({ id: z.string() }))
   .mutation(async ({ ctx, input }) => {
     let { id: rawId, ...data } = input;
-    
+
     // Ensure proper UUID format with 'uuid:' prefix
     const id = rawId.startsWith('uuid:') ? rawId : `uuid:${rawId}`;
-    
+
     console.log("Using household ID for update:", id);
 
     // First check if the household exists and belongs to the right profile
     const checkQuery = sql`
       SELECT COUNT(*) as count 
-      FROM acme_buddhashanti_households
-      WHERE id = ${id} AND profile_id = ${'buddhashanti'}
+      FROM acme_duduwa_households
+      WHERE id = ${id} AND profile_id = ${'duduwa'}
     `;
-    
+
     const checkResult = await ctx.db.execute(checkQuery);
     const count = parseInt(checkResult[0].count as string, 10);
-    
+
     if (count === 0) {
       throw new TRPCError({
         code: 'NOT_FOUND',
@@ -33,7 +33,7 @@ export const updateHouseholdProcedure = protectedProcedure
 
     // Prepare column updates for the SET clause
     const updates: { column: string; value: any }[] = [];
-    
+
     // Helper function to add a field to the update array
     const addField = (fieldName: string, value: any) => {
       if (value !== undefined) {
@@ -53,14 +53,14 @@ export const updateHouseholdProcedure = protectedProcedure
     if (data.householdLocation !== undefined) addField('household_location', data.householdLocation);
     if (data.locality !== undefined) addField('locality', data.locality);
     if (data.developmentOrganization !== undefined) addField('development_organization', data.developmentOrganization);
-    
+
     // Family information
     if (data.familyHeadName !== undefined) addField('family_head_name', data.familyHeadName);
     if (data.familyHeadPhoneNo !== undefined) addField('family_head_phone_no', data.familyHeadPhoneNo);
     if (data.totalMembers !== undefined) addField('total_members', data.totalMembers);
     if (data.areMembersElsewhere !== undefined) addField('are_members_elsewhere', data.areMembersElsewhere);
     if (data.totalElsewhereMembers !== undefined) addField('total_elsewhere_members', data.totalElsewhereMembers);
-    
+
     // House details
     if (data.houseOwnership !== undefined) addField('house_ownership', data.houseOwnership);
     if (data.houseOwnershipOther !== undefined) addField('house_ownership_other', data.houseOwnershipOther);
@@ -74,13 +74,13 @@ export const updateHouseholdProcedure = protectedProcedure
     if (data.houseRoofOther !== undefined) addField('house_roof_other', data.houseRoofOther);
     if (data.houseFloor !== undefined) addField('house_floor', data.houseFloor);
     if (data.houseFloorOther !== undefined) addField('house_floor_other', data.houseFloorOther);
-    
+
     // Safety information
     if (data.isHousePassed !== undefined) addField('is_house_passed', data.isHousePassed);
     if (data.isMapArchived !== undefined) addField('is_map_archived', data.isMapArchived);
     if (data.naturalDisasters !== undefined) addField('natural_disasters', data.naturalDisasters);
     if (data.isSafe !== undefined) addField('is_safe', data.isSafe);
-    
+
     // Water, sanitation and energy
     if (data.waterSource !== undefined) addField('water_source', data.waterSource);
     if (data.waterPurificationMethods !== undefined) addField('water_purification_methods', data.waterPurificationMethods);
@@ -88,14 +88,14 @@ export const updateHouseholdProcedure = protectedProcedure
     if (data.solidWasteManagement !== undefined) addField('solid_waste_management', data.solidWasteManagement);
     if (data.primaryCookingFuel !== undefined) addField('primary_cooking_fuel', data.primaryCookingFuel);
     if (data.primaryEnergySource !== undefined) addField('primary_energy_source', data.primaryEnergySource);
-    
+
     // Accessibility
     if (data.roadStatus !== undefined) addField('road_status', data.roadStatus);
     if (data.timeToPublicBus !== undefined) addField('time_to_public_bus', data.timeToPublicBus);
     if (data.timeToMarket !== undefined) addField('time_to_market', data.timeToMarket);
     if (data.distanceToActiveRoad !== undefined) addField('distance_to_active_road', data.distanceToActiveRoad);
     if (data.facilities !== undefined) addField('facilities', data.facilities);
-    
+
     // Economic details
     if (data.hasPropertiesElsewhere !== undefined) addField('has_properties_elsewhere', data.hasPropertiesElsewhere);
     if (data.hasFemaleNamedProperties !== undefined) addField('has_female_named_properties', data.hasFemaleNamedProperties);
@@ -106,15 +106,15 @@ export const updateHouseholdProcedure = protectedProcedure
     if (data.incomeSources !== undefined) addField('income_sources', data.incomeSources);
     if (data.haveRemittance !== undefined) addField('have_remittance', data.haveRemittance);
     if (data.remittanceExpenses !== undefined) addField('remittance_expenses', data.remittanceExpenses);
-    
+
     // Health
     if (data.haveHealthInsurance !== undefined) addField('have_health_insurance', data.haveHealthInsurance);
     if (data.consultingHealthOrganization !== undefined) addField('consulting_health_organization', data.consultingHealthOrganization);
     if (data.timeToHealthOrganization !== undefined) addField('time_to_health_organization', data.timeToHealthOrganization);
-    
+
     // Municipal & Suggestions
     if (data.municipalSuggestions !== undefined) addField('municipal_suggestions', data.municipalSuggestions);
-    
+
     // Agriculture & Livestock
     if (data.haveAgriculturalLand !== undefined) addField('have_agricultural_land', data.haveAgriculturalLand);
     if (data.agriculturalLands !== undefined) addField('agricultural_lands', data.agriculturalLands);
@@ -129,7 +129,7 @@ export const updateHouseholdProcedure = protectedProcedure
     if (data.areInvolvedInHusbandry !== undefined) addField('are_involved_in_husbandry', data.areInvolvedInHusbandry);
     if (data.animals !== undefined) addField('animals', data.animals);
     if (data.animalProducts !== undefined) addField('animal_products', data.animalProducts);
-    
+
     // Aquaculture & Apiary
     if (data.haveAquaculture !== undefined) addField('have_aquaculture', data.haveAquaculture);
     if (data.pondNumber !== undefined) addField('pond_number', data.pondNumber);
@@ -140,12 +140,12 @@ export const updateHouseholdProcedure = protectedProcedure
     if (data.honeyProduction !== undefined) addField('honey_production', data.honeyProduction);
     if (data.honeySales !== undefined) addField('honey_sales', data.honeySales);
     if (data.honeyRevenue !== undefined) addField('honey_revenue', data.honeyRevenue);
-    
+
     // Agricultural operations
     if (data.hasAgriculturalInsurance !== undefined) addField('has_agricultural_insurance', data.hasAgriculturalInsurance);
     if (data.monthsInvolvedInAgriculture !== undefined) addField('months_involved_in_agriculture', data.monthsInvolvedInAgriculture);
     if (data.agriculturalMachines !== undefined) addField('agricultural_machines', data.agriculturalMachines);
-    
+
     // Migration details
     if (data.birthPlace !== undefined) addField('birth_place', data.birthPlace);
     if (data.birthProvince !== undefined) addField('birth_province', data.birthProvince);
@@ -156,10 +156,10 @@ export const updateHouseholdProcedure = protectedProcedure
     if (data.priorDistrict !== undefined) addField('prior_district', data.priorDistrict);
     if (data.priorCountry !== undefined) addField('prior_country', data.priorCountry);
     if (data.residenceReason !== undefined) addField('residence_reason', data.residenceReason);
-    
+
     // Business
     if (data.hasBusiness !== undefined) addField('has_business', data.hasBusiness);
-    
+
     // Update timestamp
     addField('updated_at', new Date());
 
@@ -169,26 +169,26 @@ export const updateHouseholdProcedure = protectedProcedure
       const setParts = updates.map(update => {
         return sql.raw(`${update.column} = ${sql.placeholder(update.column)}`);
       });
-      
+
       const setClause = sql.join(setParts, sql`, `);
-      
+
       // Create parameter object dynamically
       const params = updates.reduce((acc, update) => {
         acc[update.column] = update.value;
         return acc;
       }, {} as Record<string, any>);
-      
+
       // Build the complete update query with parameters
       const updateQuery = sql`
-        UPDATE acme_buddhashanti_households
+        UPDATE acme_duduwa_households
         SET ${setClause}
-        WHERE id = ${id} AND profile_id = ${'buddhashanti'}
+        WHERE id = ${id} AND profile_id = ${'duduwa'}
         RETURNING id
       `;
-      
+
       // Execute the query
       const result = await ctx.db.execute(updateQuery);
-      
+
       return { id: result[0]?.id, success: true };
     } else {
       // No fields to update

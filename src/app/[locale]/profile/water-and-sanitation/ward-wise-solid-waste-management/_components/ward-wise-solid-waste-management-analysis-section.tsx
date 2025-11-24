@@ -91,7 +91,7 @@ export default function WardWiseSolidWasteManagementAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / बुद्धशान्ति गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / बुद्धशान्ति गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-home-collection-rate": (
       wasteManagementPercentages["HOME_COLLECTION"] || 0
@@ -155,7 +155,7 @@ export default function WardWiseSolidWasteManagementAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           फोहोरमैला व्यवस्थापनको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Solid Waste Management Analysis of Khajura
+            Detailed Solid Waste Management Analysis of duduwa
           </span>
         </h3>
 
@@ -169,7 +169,7 @@ export default function WardWiseSolidWasteManagementAnalysisSection({
             <h4 className="font-medium mb-2">
               घरमै फोहोर संकलन बढी भएको वडा
               <span className="sr-only">
-                Ward with Highest Home Waste Collection in Khajura Rural
+                Ward with Highest Home Waste Collection in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -237,7 +237,7 @@ export default function WardWiseSolidWasteManagementAnalysisSection({
             <h4 className="font-medium mb-2">
               घरमै फोहोर संकलन कम भएको वडा
               <span className="sr-only">
-                Ward with Low Home Waste Collection in Khajura
+                Ward with Low Home Waste Collection in duduwa
               </span>
             </h4>
             {lowestHomeCollectionWard && (

@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const migratedData =
       await api.profile.demographics.wardWiseMigratedHouseholds.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalHouseholds = migratedData.reduce(
@@ -83,19 +83,19 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality migrated households",
-      "Khajura household migration distribution",
+      "duduwa Rural Municipality migrated households",
+      "duduwa household migration distribution",
       "Ward-wise migration data",
       "Household migration analysis",
-      "Migrated households in Khajura",
+      "Migrated households in duduwa",
       "Inter-district migration",
-      `Khajura total migrated households ${totalHouseholds}`,
+      `duduwa total migrated households ${totalHouseholds}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार आप्रवासित घरपरिवारको वितरण र विश्लेषण। कुल आप्रवासित घरपरिवार संख्या ${localizeNumber(totalHouseholds.toString(), "ne")} मध्ये ${localizeNumber(mostCommonPercentage, "ne")}% (${localizeNumber(mostCommonCount.toString(), "ne")}) ${MIGRATED_FROM_NAMES[mostCommonMigratedFrom] || mostCommonMigratedFrom} बाट आएका देखिन्छ। विभिन्न वडाहरूमा आप्रवासित घरपरिवारको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Ward-wise distribution and analysis of migrated households in Khajura Rural Municipality. Out of a total of ${totalHouseholds} migrated households, ${mostCommonPercentage}% (${mostCommonCount}) are from ${MIGRATED_FROM_NAMES_EN[mostCommonMigratedFrom] || mostCommonMigratedFrom}. Detailed analysis of migrated households across various wards.`;
+    const descriptionEN = `Ward-wise distribution and analysis of migrated households in duduwa Rural Municipality. Out of a total of ${totalHouseholds} migrated households, ${mostCommonPercentage}% (${mostCommonCount}) are from ${MIGRATED_FROM_NAMES_EN[mostCommonMigratedFrom] || mostCommonMigratedFrom}. Detailed analysis of migrated households across various wards.`;
 
     return {
       title: `आप्रवासित घरपरिवार | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -260,7 +260,7 @@ export default async function WardWiseMigratedHouseholdsPage() {
               src="/images/migrated-households.svg"
               width={1200}
               height={400}
-              alt="आप्रवासित घरपरिवार - डुडुवा गाउँपालिका (Migrated Households - Khajura Rural Municipality)"
+              alt="आप्रवासित घरपरिवार - डुडुवा गाउँपालिका (Migrated Households - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

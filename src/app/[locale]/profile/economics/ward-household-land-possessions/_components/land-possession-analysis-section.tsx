@@ -58,7 +58,7 @@ export default function LandPossessionAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-landowner-households",

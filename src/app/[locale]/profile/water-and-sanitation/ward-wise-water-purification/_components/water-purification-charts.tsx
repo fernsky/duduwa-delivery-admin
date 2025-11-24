@@ -73,11 +73,11 @@ export default function WaterPurificationCharts({
       >
         <meta
           itemProp="name"
-          content="Water Purification Methods in Khajura Rural Municipality"
+          content="Water Purification Methods in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Water purification method distribution of Khajura with a total of ${totalHouseholds} households`}
+          content={`Water purification method distribution of duduwa with a total of ${totalHouseholds} households`}
         />
 
         <div className="border-b px-4 py-3">
@@ -199,11 +199,11 @@ export default function WaterPurificationCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Water Purification in Khajura Rural Municipality"
+          content="Ward-wise Water Purification in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Water purification methods distribution across wards in Khajura"
+          content="Water purification methods distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -234,11 +234,11 @@ export default function WaterPurificationCharts({
       >
         <meta
           itemProp="name"
-          content="Water Treatment Rate Comparison Across Wards in Khajura Rural Municipality"
+          content="Water Treatment Rate Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of water treatment rates across wards in Khajura"
+          content="Comparison of water treatment rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -270,11 +270,11 @@ export default function WaterPurificationCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Water Purification Analysis in Khajura Rural Municipality"
+          content="Ward-wise Water Purification Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Most common water purification methods by ward in Khajura"
+          content="Most common water purification methods by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

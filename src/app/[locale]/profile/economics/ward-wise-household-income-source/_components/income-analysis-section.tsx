@@ -55,7 +55,7 @@ export default function IncomeAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-households",
@@ -178,7 +178,7 @@ export default function IncomeAnalysisSection({
         <h3 className="text-xl font-medium mb-4">
           डुडुवा गाउँपालिकाको आय स्रोत विविधता विश्लेषण
           <span className="sr-only">
-            Income Source Diversity Analysis of Khajura Rural Municipality
+            Income Source Diversity Analysis of duduwa Rural Municipality
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -198,7 +198,7 @@ export default function IncomeAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख आय स्रोत
               <span className="sr-only">
-                Main Income Source in Khajura Rural Municipality
+                Main Income Source in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -210,7 +210,7 @@ export default function IncomeAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topIncomeSource
-                  ? `${((topIncomeSource.households / totalHouseholds) * 100).toFixed(2)}% of total households in Khajura Rural Municipality`
+                  ? `${((topIncomeSource.households / totalHouseholds) * 100).toFixed(2)}% of total households in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>
@@ -226,7 +226,7 @@ export default function IncomeAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख-दोस्रो आय स्रोत अनुपात
               <span className="sr-only">
-                Primary to Secondary Income Source Ratio in Khajura
+                Primary to Secondary Income Source Ratio in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -238,7 +238,7 @@ export default function IncomeAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topIncomeSource && secondIncomeSource
-                  ? `For every ${topTwoIncomeSourceRatio} households dependent on ${topIncomeSource.incomeSource.toLowerCase()}, there is 1 household dependent on ${secondIncomeSource.incomeSource.toLowerCase()} in Khajura Rural Municipality`
+                  ? `For every ${topTwoIncomeSourceRatio} households dependent on ${topIncomeSource.incomeSource.toLowerCase()}, there is 1 household dependent on ${secondIncomeSource.incomeSource.toLowerCase()} in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>

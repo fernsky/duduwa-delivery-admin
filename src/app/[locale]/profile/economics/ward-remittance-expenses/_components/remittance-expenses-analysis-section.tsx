@@ -99,7 +99,7 @@ export default function RemittanceExpensesAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-remittance-households",
@@ -202,7 +202,7 @@ export default function RemittanceExpensesAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           विस्तृत रेमिटेन्स खर्च विश्लेषण
           <span className="sr-only">
-            Comprehensive Remittance Expense Analysis of Khajura Rural Municipality
+            Comprehensive Remittance Expense Analysis of duduwa Rural Municipality
           </span>
         </h3>
 
@@ -295,7 +295,7 @@ export default function RemittanceExpensesAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           थप जानकारी
           <span className="sr-only">
-            Additional Information about Remittance Expenses in Khajura
+            Additional Information about Remittance Expenses in duduwa
           </span>
         </h3>
         <p>

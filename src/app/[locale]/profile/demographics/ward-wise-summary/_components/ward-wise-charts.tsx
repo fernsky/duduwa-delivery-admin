@@ -74,11 +74,11 @@ export default function WardWiseCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Population Distribution in Khajura Rural Municipality"
+          content="Ward-wise Population Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Population distribution across wards in Khajura with a total population of ${municipalityStats.totalPopulation}`}
+          content={`Population distribution across wards in duduwa with a total population of ${municipalityStats.totalPopulation}`}
         />
 
         <div className="border-b px-4 py-3">
@@ -145,11 +145,11 @@ export default function WardWiseCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Gender Ratio in Khajura Rural Municipality"
+          content="Ward-wise Gender Ratio in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Gender ratio distribution across wards in Khajura with an average ratio of ${municipalityAverages.sexRatio}`}
+          content={`Gender ratio distribution across wards in duduwa with an average ratio of ${municipalityAverages.sexRatio}`}
         />
 
         <div className="border-b px-4 py-3">
@@ -208,11 +208,11 @@ export default function WardWiseCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Household Information in Khajura Rural Municipality"
+          content="Ward-wise Household Information in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Household count and size distribution across wards in Khajura with an average household size of ${municipalityAverages.averageHouseholdSize}`}
+          content={`Household count and size distribution across wards in duduwa with an average household size of ${municipalityAverages.averageHouseholdSize}`}
         />
 
         <div className="border-b px-4 py-3">

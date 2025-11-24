@@ -55,7 +55,7 @@ export default function SpiceAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-production": totalProduction.toString(),
     "data-most-common-spice":
       overallSummary.length > 0
@@ -104,7 +104,7 @@ export default function SpiceAnalysisSection({
       <div className="bg-muted/50 p-6 rounded-lg mt-8 border">
         <h3 className="text-xl font-medium mb-6">
           मसलाबालीको विस्तृत विश्लेषण
-          <span className="sr-only">Detailed Spice Analysis of Khajura</span>
+          <span className="sr-only">Detailed Spice Analysis of duduwa</span>
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -123,7 +123,7 @@ export default function SpiceAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख मसलाबाली
               <span className="sr-only">
-                Main Spice in Khajura Rural Municipality
+                Main Spice in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">

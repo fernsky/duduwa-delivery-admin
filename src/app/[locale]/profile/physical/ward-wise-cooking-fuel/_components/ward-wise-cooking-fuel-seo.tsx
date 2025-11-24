@@ -70,7 +70,7 @@ export default function WardWiseCookingFuelSEO({
 
         return {
           "@type": "Observation",
-          name: `Cooking Fuel Usage Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Cooking Fuel Usage Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -78,7 +78,7 @@ export default function WardWiseCookingFuelSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(cleanFuelPercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${cleanFuelHouseholds.toLocaleString()} households (${cleanFuelPercent}%) use clean cooking fuels (LP Gas, Electricity, Biogas) out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${cleanFuelHouseholds.toLocaleString()} households (${cleanFuelPercent}%) use clean cooking fuels (LP Gas, Electricity, Biogas) out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
         };
       })
       .filter(Boolean);
@@ -97,10 +97,10 @@ export default function WardWiseCookingFuelSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Cooking Fuel Usage in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of cooking fuel usage across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${cleanFuelTotal.toLocaleString()} households (${cleanFuelPercentageValue}%) use clean cooking fuels. The best adoption of clean fuel is in Ward ${bestWard?.wardNumber || ""} with ${bestWard?.percentage.toFixed(2) || ""}% clean fuel usage rate.`,
+      name: "Cooking Fuel Usage in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of cooking fuel usage across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${cleanFuelTotal.toLocaleString()} households (${cleanFuelPercentageValue}%) use clean cooking fuels. The best adoption of clean fuel is in Ward ${bestWard?.wardNumber || ""} with ${bestWard?.percentage.toFixed(2) || ""}% clean fuel usage rate.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Cooking fuel",
         "Clean energy",
@@ -113,16 +113,16 @@ export default function WardWiseCookingFuelSEO({
         "Energy transition",
         "Indoor air pollution",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/physical/ward-wise-cooking-fuel",
+      url: "https://digital.duduwamun.gov.np/profile/physical/ward-wise-cooking-fuel",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -197,10 +197,10 @@ export default function WardWiseCookingFuelSEO({
         name: "Municipality Household Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

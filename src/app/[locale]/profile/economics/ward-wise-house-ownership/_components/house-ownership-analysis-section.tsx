@@ -47,7 +47,7 @@ export default function HouseOwnershipAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-most-common-ownership":
       overallSummary.length > 0
@@ -130,7 +130,7 @@ export default function HouseOwnershipAnalysisSection({
       <div className="bg-muted/50 p-4 rounded-lg mt-8">
         <h3 className="text-xl font-medium mb-4">
           घर स्वामित्व विश्लेषण
-          <span className="sr-only">House Ownership Analysis of Khajura</span>
+          <span className="sr-only">House Ownership Analysis of duduwa</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div
@@ -148,7 +148,7 @@ export default function HouseOwnershipAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख घर स्वामित्वको प्रकार
               <span className="sr-only">
-                Most Common House Ownership Type in Khajura Rural Municipality
+                Most Common House Ownership Type in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -195,7 +195,7 @@ export default function HouseOwnershipAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च निजी स्वामित्व भएको वडा
               <span className="sr-only">
-                Ward with Highest Private Ownership in Khajura
+                Ward with Highest Private Ownership in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">

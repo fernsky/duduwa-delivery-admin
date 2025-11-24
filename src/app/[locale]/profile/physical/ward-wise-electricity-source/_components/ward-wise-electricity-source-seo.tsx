@@ -70,7 +70,7 @@ export default function WardWiseElectricitySourceSEO({
 
         return {
           "@type": "Observation",
-          name: `Electricity Source Usage Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Electricity Source Usage Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -78,7 +78,7 @@ export default function WardWiseElectricitySourceSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(modernSourcePercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${modernSourceHouseholds.toLocaleString()} households (${modernSourcePercent}%) use modern electricity sources (Grid, Solar) out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${modernSourceHouseholds.toLocaleString()} households (${modernSourcePercent}%) use modern electricity sources (Grid, Solar) out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
         };
       })
       .filter(Boolean);
@@ -97,10 +97,10 @@ export default function WardWiseElectricitySourceSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Electricity Source Usage in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of electricity source usage across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${modernSourceTotal.toLocaleString()} households (${modernSourcePercentageValue}%) use modern electricity sources. The best adoption of modern sources is in Ward ${bestWard?.wardNumber || ""} with ${bestWard?.percentage.toFixed(2) || ""}% modern electricity source usage rate.`,
+      name: "Electricity Source Usage in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of electricity source usage across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${modernSourceTotal.toLocaleString()} households (${modernSourcePercentageValue}%) use modern electricity sources. The best adoption of modern sources is in Ward ${bestWard?.wardNumber || ""} with ${bestWard?.percentage.toFixed(2) || ""}% modern electricity source usage rate.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Electricity source",
         "Grid electricity",
@@ -113,16 +113,16 @@ export default function WardWiseElectricitySourceSEO({
         "Energy transition",
         "Rural electrification",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/physical/ward-wise-electricity-source",
+      url: "https://digital.duduwamun.gov.np/profile/physical/ward-wise-electricity-source",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -192,10 +192,10 @@ export default function WardWiseElectricitySourceSEO({
         name: "Municipality Household Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

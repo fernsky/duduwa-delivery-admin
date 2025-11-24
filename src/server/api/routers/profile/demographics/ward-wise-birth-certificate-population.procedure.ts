@@ -1,4 +1,4 @@
-// filepath: /Users/sarbagya/Desktop/buddhashanti-delivery-admin/src/server/api/routers/profile/demographics/ward-wise-birth-certificate-population.procedure.ts
+// filepath: /Users/sarbagya/Desktop/duduwa-delivery-admin/src/server/api/routers/profile/demographics/ward-wise-birth-certificate-population.procedure.ts
 import {
   createTRPCRouter,
   publicProcedure,
@@ -183,9 +183,9 @@ export const getWardWiseBirthCertificatePopulationByWard = publicProcedure
           WHERE
             ward_number = ${input.wardNumber}
         `;
-        
+
         const acmeResult = await ctx.db.execute(acmeSql);
-        
+
         if (acmeResult && Array.isArray(acmeResult) && acmeResult.length > 0) {
           // Transform ACME data to match expected format
           const transformedData: Array<{
@@ -428,7 +428,7 @@ export const getWardWiseBirthCertificatePopulationSummary = publicProcedure
 
         summaryData = await ctx.db.execute(acmeSummarySql);
       }
-      
+
       // Transform to expected format
       const transformedData = Array.isArray(summaryData) ? summaryData.map(row => ({
         birthCertificateStatus: row.birth_certificate_status,
@@ -437,15 +437,15 @@ export const getWardWiseBirthCertificatePopulationSummary = publicProcedure
         totalFemalePopulation: null, // Not available in new schema
         totalOtherPopulation: null, // Not available in new schema
       })) : [];
-      
+
       // Calculate overall totals
       const withEntry = transformedData.find(item => item.birthCertificateStatus === "With");
       const withoutEntry = transformedData.find(item => item.birthCertificateStatus === "Without");
-      
+
       const totalWithCertificate = withEntry?.totalPopulation || 0;
       const totalWithoutCertificate = withoutEntry?.totalPopulation || 0;
       const totalPopulation = totalWithCertificate + totalWithoutCertificate;
-      
+
       return {
         statusBreakdown: transformedData,
         total: {

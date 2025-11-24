@@ -60,7 +60,7 @@ export default function WardWiseTimeToPublicTransportCharts({
       >
         <meta
           itemProp="name"
-          content="Time to Public Transport Distribution in Khajura Rural Municipality"
+          content="Time to Public Transport Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -176,11 +176,11 @@ export default function WardWiseTimeToPublicTransportCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Time to Public Transport in Khajura Rural Municipality"
+          content="Ward-wise Time to Public Transport in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of time to public transport across wards in Khajura"
+          content="Distribution of time to public transport across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -210,11 +210,11 @@ export default function WardWiseTimeToPublicTransportCharts({
       >
         <meta
           itemProp="name"
-          content="Quick Access to Public Transport Comparison Across Wards in Khajura Rural Municipality"
+          content="Quick Access to Public Transport Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of quick access to public transport across wards in Khajura"
+          content="Comparison of quick access to public transport across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -246,11 +246,11 @@ export default function WardWiseTimeToPublicTransportCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Public Transport Access Analysis in Khajura Rural Municipality"
+          content="Ward-wise Public Transport Access Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of time to public transport by ward in Khajura"
+          content="Detailed analysis of time to public transport by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

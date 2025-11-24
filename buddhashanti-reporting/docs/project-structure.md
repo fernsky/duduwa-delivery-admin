@@ -3,13 +3,13 @@
 ## Directory Structure
 
 ```
-buddhashanti-report/
+duduwa-report/
 ├── docs/                           # Documentation
 │   ├── api/                        # API Documentation
 │   ├── design/                     # Design Specifications
 │   ├── project-overview.md
 │   └── report-structure.md
-├── buddhashanti_report/                 # Django Project Root
+├── duduwa_report/                 # Django Project Root
 │   ├── settings/                   # Environment-specific settings
 │   │   ├── __init__.py
 │   │   ├── base.py                # Common settings

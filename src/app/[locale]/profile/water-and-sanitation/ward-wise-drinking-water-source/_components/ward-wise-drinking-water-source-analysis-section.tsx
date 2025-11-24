@@ -72,7 +72,7 @@ export default function WardWiseDrinkingWaterSourceAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / बुद्धशान्ति गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / बुद्धशान्ति गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-piped-water-rate": waterSourceGroupPercentages.PIPED_WATER.toFixed(2),
     "data-highest-piped-water-ward":
@@ -132,7 +132,7 @@ export default function WardWiseDrinkingWaterSourceAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           खानेपानीका स्रोतहरूको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Drinking Water Sources Analysis of Khajura
+            Detailed Drinking Water Sources Analysis of duduwa
           </span>
         </h3>
 
@@ -146,7 +146,7 @@ export default function WardWiseDrinkingWaterSourceAnalysisSection({
             <h4 className="font-medium mb-2">
               पाइपको पानी बढी प्रयोग गर्ने वडा
               <span className="sr-only">
-                Ward with Highest Piped Water Use in Khajura Rural Municipality
+                Ward with Highest Piped Water Use in duduwa Rural Municipality
               </span>
             </h4>
             {highestPipedWaterWard && (
@@ -213,7 +213,7 @@ export default function WardWiseDrinkingWaterSourceAnalysisSection({
             <h4 className="font-medium mb-2">
               पाइपको पानी कम प्रयोग गर्ने वडा
               <span className="sr-only">
-                Ward with Low Piped Water Use in Khajura
+                Ward with Low Piped Water Use in duduwa
               </span>
             </h4>
             {lowestPipedWaterWard && (

@@ -1,8 +1,8 @@
 """
-Custom User model for buddhashanti Report System
+Custom User model for duduwa Report System
 
 This model extends Django's AbstractUser to add custom fields
-specific to the buddhashantiMunicipality reporting system.
+specific to the duduwaMunicipality reporting system.
 """
 
 import uuid
@@ -13,7 +13,7 @@ from django.utils.translation import gettext_lazy as _
 
 class User(AbstractUser):
     """
-    Custom User model with additional fields for buddhashantiReport System
+    Custom User model with additional fields for duduwaReport System
     """
 
     # Use UUID as primary key for better security

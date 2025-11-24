@@ -71,7 +71,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const employmentData =
       await api.profile.economics.wardWiseForeignEmploymentCountries.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalPopulation = employmentData.reduce(
@@ -114,12 +114,12 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality foreign employment",
-      "Khajura foreign employment destinations",
+      "duduwa Rural Municipality foreign employment",
+      "duduwa foreign employment destinations",
       "Ward-wise foreign employment",
-      "Foreign employment statistics Khajura",
+      "Foreign employment statistics duduwa",
       COUNTRY_NAMES_EN[mostCommonCountry] || mostCommonCountry,
-      `Khajura migrant workers count ${totalPopulation}`,
+      `duduwa migrant workers count ${totalPopulation}`,
       "Main destination countries for workers",
       "Remittance income",
     ];
@@ -127,7 +127,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार वैदेशिक रोजगारीमा गएका जनसंख्याको वितरण र विश्लेषण। कुल ${localizeNumber(totalPopulation.toString(), "ne")} जना वैदेशिक रोजगारीमा रहेका छन्, जसमध्ये ${localizeNumber(mostCommonPercentage, "ne")}% (${localizeNumber(mostCommonCount.toString(), "ne")}) ${COUNTRY_NAMES[mostCommonCountry] || mostCommonCountry} मा रहेका छन्। विभिन्न वडाहरूमा वैदेशिक रोजगारीको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Ward-wise distribution and analysis of foreign employment population in Khajura Rural Municipality. Out of a total of ${totalPopulation} migrant workers, ${mostCommonPercentage}% (${mostCommonCount}) are working in ${COUNTRY_NAMES_EN[mostCommonCountry] || mostCommonCountry}. Detailed analysis of foreign employment patterns across various wards.`;
+    const descriptionEN = `Ward-wise distribution and analysis of foreign employment population in duduwa Rural Municipality. Out of a total of ${totalPopulation} migrant workers, ${mostCommonPercentage}% (${mostCommonCount}) are working in ${COUNTRY_NAMES_EN[mostCommonCountry] || mostCommonCountry}. Detailed analysis of foreign employment patterns across various wards.`;
 
     return {
       title: `वैदेशिक रोजगारीका गन्तव्य देशहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -511,7 +511,7 @@ export default async function WardWiseForeignEmploymentCountriesPage() {
               src="/images/foreign-employment.svg"
               width={1200}
               height={400}
-              alt="वैदेशिक रोजगारीका गन्तव्य देशहरू - डुडुवा गाउँपालिका (Foreign Employment Destinations - Khajura Rural Municipality)"
+              alt="वैदेशिक रोजगारीका गन्तव्य देशहरू - डुडुवा गाउँपालिका (Foreign Employment Destinations - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

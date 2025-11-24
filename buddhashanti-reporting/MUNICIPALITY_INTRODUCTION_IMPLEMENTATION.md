@@ -2,7 +2,7 @@
 
 ## Overview
 
-Successfully implemented the complete "Municipality Introduction" (२. गाउँपालिका/नगरपालिकाको चिनारी) section for the buddhashanti Rural Municipality Digital Profile report system.
+Successfully implemented the complete "Municipality Introduction" (२. गाउँपालिका/नगरपालिकाको चिनारी) section for the duduwa Rural Municipality Digital Profile report system.
 
 ## Implemented Components
 
@@ -105,7 +105,7 @@ Successfully implemented the complete "Municipality Introduction" (२. गा�
   - `0001_initial.py`: PhysicalStatusInfo model
   - `0002_historicalbackgroundinfo.py`: HistoricalBackgroundInfo model
 
-- **Django Settings**: Registered in `buddhashanti_report/settings/base.py`
+- **Django Settings**: Registered in `duduwa_report/settings/base.py`
 
 ### 7. Template Integration ✅
 
@@ -158,9 +158,9 @@ Successfully implemented the complete "Municipality Introduction" (२. गा�
 ### Historical Background (२.२)
 
 - **Historical Narrative**: Ancient history and development
-- **Naming Origin**: Story of how buddhashanti got its name from the river
+- **Naming Origin**: Story of how duduwa got its name from the river
 - **Geographic Features**:
-  - Main river (buddhashanti River) with detailed description
+  - Main river (duduwa River) with detailed description
   - Forest types (8 varieties: साल, सखुवा, चिलाउने, etc.)
   - Wildlife diversity
 - **Cultural Heritage**:

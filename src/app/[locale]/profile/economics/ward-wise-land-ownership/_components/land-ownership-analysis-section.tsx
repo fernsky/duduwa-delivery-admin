@@ -89,7 +89,7 @@ export default function LandOwnershipAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-most-common-ownership":
       overallSummary.length > 0
@@ -155,7 +155,7 @@ export default function LandOwnershipAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           जग्गा स्वामित्वको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Land Ownership Analysis of Khajura
+            Detailed Land Ownership Analysis of duduwa
           </span>
         </h3>
 
@@ -175,7 +175,7 @@ export default function LandOwnershipAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख जग्गा स्वामित्व प्रकार
               <span className="sr-only">
-                Main Land Ownership Type in Khajura Rural Municipality
+                Main Land Ownership Type in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">

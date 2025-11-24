@@ -9,11 +9,11 @@ import django
 
 # Add the project directory to the Python path
 sys.path.append(
-    "/Users/trilochan/Desktop/final-delivery/digital-profile/buddhashanti/buddhashanti-report"
+    "/Users/trilochan/Desktop/final-delivery/digital-profile/duduwa/duduwa-report"
 )
 
 # Set up Django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "buddhashanti_report.settings.base")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "duduwa_report.settings.base")
 django.setup()
 
 from apps.demographics.processors.demographic_summary import DemographicSummaryProcessor

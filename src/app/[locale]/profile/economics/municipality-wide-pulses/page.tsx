@@ -67,7 +67,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const pulseData =
       await api.profile.economics.municipalityWidePulses.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalProduction = pulseData.reduce(
@@ -116,20 +116,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality pulses",
-      "Khajura pulse production",
+      "duduwa Rural Municipality pulses",
+      "duduwa pulse production",
       "Municipality-wide pulse statistics",
-      "Lentil production in Khajura",
+      "Lentil production in duduwa",
       "Chickpea cultivation statistics",
       "Pea production data",
-      `Khajura pulse sales ${totalSales.toFixed(2)} tonnes`,
-      `Khajura pulse revenue ${(totalRevenue / 1000000).toFixed(2)} million rupees`,
+      `duduwa pulse sales ${totalSales.toFixed(2)} tonnes`,
+      `duduwa pulse revenue ${(totalRevenue / 1000000).toFixed(2)} million rupees`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको दालबाली उत्पादन र बिक्री विश्लेषण। कुल ${localizeNumber(totalProduction.toFixed(2), "ne")} मेट्रिक टन दालबाली उत्पादन मध्ये ${localizeNumber(mostProducedPercentage, "ne")}% (${localizeNumber(mostProducedAmount.toFixed(2), "ne")} टन) ${PULSE_TYPES[mostProducedPulse] || mostProducedPulse} रहेको छ। पालिका स्तरीय दालबालीको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Analysis of pulse production and sales in Khajura Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of pulse production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${PULSE_TYPES_EN[mostProducedPulse] || mostProducedPulse}. Detailed analysis of municipality-wide pulse patterns.`;
+    const descriptionEN = `Analysis of pulse production and sales in duduwa Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of pulse production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${PULSE_TYPES_EN[mostProducedPulse] || mostProducedPulse}. Detailed analysis of municipality-wide pulse patterns.`;
 
     return {
       title: `दालबालीको प्रकार अनुसार उत्पादन र बिक्री | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -334,7 +334,7 @@ export default async function MunicipalityWidePulsesPage() {
               src="/images/pulses.svg"
               width={1200}
               height={400}
-              alt="दालबालीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Pulses by Production and Sales - Khajura Rural Municipality)"
+              alt="दालबालीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Pulses by Production and Sales - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

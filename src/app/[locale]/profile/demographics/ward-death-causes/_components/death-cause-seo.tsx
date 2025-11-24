@@ -25,7 +25,7 @@ export default function DeathCauseSEO({
     // Convert death cause stats to structured data format
     const deathCauseStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${DEATH_CAUSE_NAMES_EN[item.deathCause] || item.deathCause} deaths in Khajura Rural Municipality`,
+      name: `${DEATH_CAUSE_NAMES_EN[item.deathCause] || item.deathCause} deaths in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -33,16 +33,16 @@ export default function DeathCauseSEO({
         unitText: "people",
       },
       measuredValue: item.population,
-      description: `${item.population.toLocaleString()} deaths in Khajura Rural Municipality due to ${DEATH_CAUSE_NAMES_EN[item.deathCause] || item.deathCause} (${((item.population / totalDeaths) * 100).toFixed(2)}% of total deaths)`,
+      description: `${item.population.toLocaleString()} deaths in duduwa Rural Municipality due to ${DEATH_CAUSE_NAMES_EN[item.deathCause] || item.deathCause} (${((item.population / totalDeaths) * 100).toFixed(2)}% of total deaths)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Causes of Death in Khajura Rural Municipality (बुद्धशान्ति गाउँपालिका)",
-      description: `Death cause distribution data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalDeaths.toLocaleString()} recorded deaths.`,
+      name: "Causes of Death in duduwa Rural Municipality (बुद्धशान्ति गाउँपालिका)",
+      description: `Death cause distribution data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalDeaths.toLocaleString()} recorded deaths.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "बुद्धशान्ति गाउँपालिका",
         "Death causes",
         "Mortality statistics",
@@ -55,16 +55,16 @@ export default function DeathCauseSEO({
           (name) => `${name} मृत्यु तथ्याङ्क`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-death-causes",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-death-causes",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

@@ -118,7 +118,7 @@ export default function ReligionAnalysisSection({
         <h3 className="text-xl font-medium mb-4">
           डुडुवा गाउँपालिकाको धार्मिक विविधता विश्लेषण
           <span className="sr-only">
-            Religious Diversity Analysis of Khajura
+            Religious Diversity Analysis of duduwa
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -126,7 +126,7 @@ export default function ReligionAnalysisSection({
             <h4 className="font-medium mb-2">
               डुडुवा गाउँपालिकाको प्रमुख धर्म
               <span className="sr-only">
-                Main Religion in Khajura Rural Municipality
+                Main Religion in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -138,7 +138,7 @@ export default function ReligionAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topReligion
-                  ? `${((topReligion.population / totalPopulation) * 100).toFixed(2)}% of total population in Khajura Rural Municipality`
+                  ? `${((topReligion.population / totalPopulation) * 100).toFixed(2)}% of total population in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>
@@ -148,7 +148,7 @@ export default function ReligionAnalysisSection({
             <h4 className="font-medium mb-2">
               डुडुवा गाउँपालिकाको प्रमुख-दोस्रो धर्म अनुपात
               <span className="sr-only">
-                Primary to Secondary Religion Ratio in Khajura
+                Primary to Secondary Religion Ratio in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -160,7 +160,7 @@ export default function ReligionAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topReligion && secondReligion
-                  ? `For every ${topTwoReligionRatio} ${topReligion.religion.toLowerCase()} followers, there is 1 ${secondReligion.religion.toLowerCase()} follower in Khajura Rural Municipality`
+                  ? `For every ${topTwoReligionRatio} ${topReligion.religion.toLowerCase()} followers, there is 1 ${secondReligion.religion.toLowerCase()} follower in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>

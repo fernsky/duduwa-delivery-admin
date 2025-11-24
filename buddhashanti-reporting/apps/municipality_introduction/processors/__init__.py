@@ -1,5 +1,5 @@
 """
-Economics processors package for buddhashanti Rural Municipality.
+Economics processors package for duduwa Rural Municipality.
 """
 
 from .manager import (

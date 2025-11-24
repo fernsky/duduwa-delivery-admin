@@ -22,7 +22,7 @@ export const getBusinessLocationProcedure = protectedProcedure
     try {
       // Format the business ID correctly for the database
       const formattedId = formatDbUuid(input.id);
-      
+
       // Query to get business location
       const query = sql`
         SELECT 
@@ -34,12 +34,12 @@ export const getBusinessLocationProcedure = protectedProcedure
           business_location,
           geom,
           operator_name
-        FROM acme_buddhashanti_business
+        FROM acme_duduwa_business
         WHERE id = ${formattedId}
       `;
-      
+
       const result = await ctx.db.execute(query);
-      
+
       if (!result || result.length === 0) {
         throw new TRPCError({
           code: "NOT_FOUND",
@@ -48,7 +48,7 @@ export const getBusinessLocationProcedure = protectedProcedure
       }
 
       const business = result[0];
-      
+
       // Parse the location data
       const parseLocationArray = (field: any): string[] => {
         if (!field) return [];
@@ -64,7 +64,7 @@ export const getBusinessLocationProcedure = protectedProcedure
       };
 
       const location = parseLocationArray(business.business_location);
-      
+
       // Extract latitude and longitude if available
       let latitude: number | null = null;
       let longitude: number | null = null;
@@ -73,12 +73,12 @@ export const getBusinessLocationProcedure = protectedProcedure
       if (location.length >= 2) {
         const possibleLat = parseFloat(location[0]);
         const possibleLng = parseFloat(location[1]);
-        
+
         if (!isNaN(possibleLat) && !isNaN(possibleLng)) {
           latitude = possibleLat;
           longitude = possibleLng;
         }
-      } 
+      }
       // If not found, try to extract from geom field
       else if (business.geom) {
         try {
@@ -132,7 +132,7 @@ export const getBusinessesLocationsProcedure = protectedProcedure
   .query(async ({ ctx, input }) => {
     try {
       const { limit, offset, wardNo } = input;
-      
+
       // Build the query base
       let query = sql`
         SELECT 
@@ -144,20 +144,20 @@ export const getBusinessesLocationsProcedure = protectedProcedure
           business_province,
           business_district,
           business_locality
-        FROM acme_buddhashanti_business
+        FROM acme_duduwa_business
         WHERE (business_location IS NOT NULL OR geom IS NOT NULL)
       `;
-      
+
       // Add filter by ward if specified
       if (wardNo !== undefined) {
         query = sql`${query} AND ward_no = ${wardNo}`;
       }
-      
+
       // Add pagination
       query = sql`${query} LIMIT ${limit} OFFSET ${offset}`;
-      
+
       const results = await ctx.db.execute(query);
-      
+
       // Transform results
       const businesses = results.map(row => {
         // Parse the location data
@@ -175,7 +175,7 @@ export const getBusinessesLocationsProcedure = protectedProcedure
         };
 
         const location = parseLocationArray(row.business_location);
-        
+
         // Extract latitude and longitude if available
         let latitude: number | null = null;
         let longitude: number | null = null;
@@ -183,7 +183,7 @@ export const getBusinessesLocationsProcedure = protectedProcedure
         if (location.length >= 2) {
           const possibleLat = parseFloat(location[0]);
           const possibleLng = parseFloat(location[1]);
-          
+
           if (!isNaN(possibleLat) && !isNaN(possibleLng)) {
             latitude = possibleLat;
             longitude = possibleLng;
@@ -205,21 +205,21 @@ export const getBusinessesLocationsProcedure = protectedProcedure
           }
         };
       });
-      
+
       // Count query for total businesses with locations
       let countQuery = sql`
         SELECT COUNT(*) as total
-        FROM acme_buddhashanti_business 
+        FROM acme_duduwa_business 
         WHERE (business_location IS NOT NULL OR geom IS NOT NULL)
       `;
-      
+
       if (wardNo !== undefined) {
         countQuery = sql`${countQuery} AND ward_no = ${wardNo}`;
       }
-      
+
       const countResult = await ctx.db.execute(countQuery);
       const total = parseInt(countResult[0]?.total?.toString() || "0", 10);
-      
+
       return {
         businesses,
         meta: {

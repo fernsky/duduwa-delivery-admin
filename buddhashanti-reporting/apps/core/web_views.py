@@ -23,7 +23,7 @@ class DashboardView(LoginRequiredMixin, TemplateView):
         context.update(
             {
                 "municipality_name": "डुडुवा गाउँपालिका",
-                "municipality_english": "buddhashanti Rural Municipality",
+                "municipality_english": "duduwa Rural Municipality",
                 "page_title": "मुख्य ड्यासबोर्ड",  # Main Dashboard
                 "user": self.request.user,
             }
@@ -44,7 +44,7 @@ class LoginView(DjangoLoginView):
         context.update(
             {
                 "municipality_name": "डुडुवा गाउँपालिका",
-                "municipality_english": "buddhashantiRural Municipality",
+                "municipality_english": "duduwaRural Municipality",
                 "page_title": "लगइन",  # Login
             }
         )
@@ -71,7 +71,7 @@ class ProfileView(LoginRequiredMixin, TemplateView):
         context.update(
             {
                 "municipality_name": "डुडुवा गाउँपालिका",
-                "municipality_english": "buddhashantiRural Municipality",
+                "municipality_english": "duduwaRural Municipality",
                 "page_title": "प्रोफाइल",  # Profile
                 "user": self.request.user,
             }

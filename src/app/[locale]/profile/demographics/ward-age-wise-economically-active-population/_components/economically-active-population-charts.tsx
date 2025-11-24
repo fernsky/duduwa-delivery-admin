@@ -61,11 +61,11 @@ export default function EconomicallyActivePopulationCharts({
       >
         <meta
           itemProp="name"
-          content="Age-wise Economically Active Population in Khajura Rural Municipality"
+          content="Age-wise Economically Active Population in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Age-wise population distribution of Khajura with a total population of ${totalPopulation}`}
+          content={`Age-wise population distribution of duduwa with a total population of ${totalPopulation}`}
         />
 
         <div className="border-b px-4 py-3">
@@ -187,11 +187,11 @@ export default function EconomicallyActivePopulationCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Age Group Distribution in Khajura Rural Municipality"
+          content="Ward-wise Age Group Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Age group distribution across wards in Khajura"
+          content="Age group distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -222,11 +222,11 @@ export default function EconomicallyActivePopulationCharts({
       >
         <meta
           itemProp="name"
-          content="Dependency Ratio Analysis by Ward in Khajura Rural Municipality"
+          content="Dependency Ratio Analysis by Ward in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Dependency ratio analysis for each ward in Khajura"
+          content="Dependency ratio analysis for each ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

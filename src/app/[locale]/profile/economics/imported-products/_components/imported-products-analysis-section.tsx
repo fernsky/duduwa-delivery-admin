@@ -45,7 +45,7 @@ export default function ImportedProductsAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-imported-products",
@@ -156,7 +156,7 @@ export default function ImportedProductsAnalysisSection({
       <div className="bg-muted/50 p-4 rounded-lg mt-8">
         <h3 className="text-xl font-medium mb-4">
           आयात विश्लेषण
-          <span className="sr-only">Import Analysis of Khajura</span>
+          <span className="sr-only">Import Analysis of duduwa</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div
@@ -168,7 +168,7 @@ export default function ImportedProductsAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख आयात वर्ग
               <span className="sr-only">
-                Main Import Category in Khajura Rural Municipality
+                Main Import Category in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -180,7 +180,7 @@ export default function ImportedProductsAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topCategory
-                  ? `${topCategory.percentage}% of total imports in Khajura Rural Municipality`
+                  ? `${topCategory.percentage}% of total imports in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>
@@ -194,7 +194,7 @@ export default function ImportedProductsAnalysisSection({
           >
             <h4 className="font-medium mb-2">
               आयात तथ्याङ्क
-              <span className="sr-only">Import Statistics in Khajura</span>
+              <span className="sr-only">Import Statistics in duduwa</span>
             </h4>
             <p className="text-3xl font-bold">
               {totalProducts.toLocaleString()}
@@ -203,7 +203,7 @@ export default function ImportedProductsAnalysisSection({
               कुल आयातित उत्पादन ({categoryDistribution.length} वर्गमा विभाजित)
               <span className="sr-only">
                 Total imported products (divided into{" "}
-                {categoryDistribution.length} categories) in Khajura Rural
+                {categoryDistribution.length} categories) in duduwa Rural
                 Municipality
               </span>
             </p>
@@ -215,7 +215,7 @@ export default function ImportedProductsAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           आयात रणनीति
           <span className="sr-only">
-            Import Strategy for Khajura Rural Municipality
+            Import Strategy for duduwa Rural Municipality
           </span>
         </h3>
         <p>

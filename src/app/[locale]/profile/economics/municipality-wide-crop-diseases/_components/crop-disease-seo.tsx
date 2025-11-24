@@ -33,7 +33,7 @@ export default function CropDiseaseSEO({
     // Convert crop disease stats to structured data format
     const cropDiseaseStats = cropSummary.map((item) => ({
       "@type": "Observation",
-      name: `${CROP_TYPES_EN[item.crop] || item.crop} Diseases and Pests in Khajura Rural Municipality`,
+      name: `${CROP_TYPES_EN[item.crop] || item.crop} Diseases and Pests in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -41,7 +41,7 @@ export default function CropDiseaseSEO({
         unitText: "count",
       },
       measuredValue: item.totalIssues,
-      description: `${item.totalIssues} agricultural issues affecting ${CROP_TYPES_EN[item.crop] || item.crop} in Khajura Rural Municipality: ${item.diseasesCount} diseases (${item.majorDiseases.slice(0, 3).join(", ")}) and ${item.pestsCount} pests (${item.majorPests.slice(0, 3).join(", ")}). This represents ${((item.totalIssues / (totalPests + totalDiseases)) * 100).toFixed(2)}% of all crop issues in the municipality.`,
+      description: `${item.totalIssues} agricultural issues affecting ${CROP_TYPES_EN[item.crop] || item.crop} in duduwa Rural Municipality: ${item.diseasesCount} diseases (${item.majorDiseases.slice(0, 3).join(", ")}) and ${item.pestsCount} pests (${item.majorPests.slice(0, 3).join(", ")}). This represents ${((item.totalIssues / (totalPests + totalDiseases)) * 100).toFixed(2)}% of all crop issues in the municipality.`,
     }));
 
     // Find most problematic crop
@@ -63,10 +63,10 @@ export default function CropDiseaseSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Crop Diseases and Pests in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Comprehensive analysis of crop diseases and pests affecting agriculture in Khajura Rural Municipality. The study covers ${totalCrops} different crop types with a total of ${totalDiseases + totalPests} identified issues: ${totalDiseases} diseases and ${totalPests} pests. The most affected crop is ${mostProblematicCropEN} with ${mostProblematicCrop?.totalIssues || 0} issues (${mostProblematicPercentage}% of all problems). Disease to pest ratio is ${(diseaseRatio * 100).toFixed(1)}% to ${(pestRatio * 100).toFixed(1)}%.`,
+      name: "Crop Diseases and Pests in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Comprehensive analysis of crop diseases and pests affecting agriculture in duduwa Rural Municipality. The study covers ${totalCrops} different crop types with a total of ${totalDiseases + totalPests} identified issues: ${totalDiseases} diseases and ${totalPests} pests. The most affected crop is ${mostProblematicCropEN} with ${mostProblematicCrop?.totalIssues || 0} issues (${mostProblematicPercentage}% of all problems). Disease to pest ratio is ${(diseaseRatio * 100).toFixed(1)}% to ${(pestRatio * 100).toFixed(1)}%.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Crop diseases",
         "Agricultural pests",
@@ -82,16 +82,16 @@ export default function CropDiseaseSEO({
         ...Object.values(CROP_TYPES_EN).map((name) => `${name} diseases pests`),
         ...Object.values(CROP_TYPES).map((name) => `${name} रोग कीट`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/municipality-wide-crop-diseases",
+      url: "https://digital.duduwamun.gov.np/profile/economics/municipality-wide-crop-diseases",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -162,10 +162,10 @@ export default function CropDiseaseSEO({
         name: "Municipality Agricultural Data Collection",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

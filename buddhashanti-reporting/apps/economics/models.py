@@ -1,5 +1,5 @@
 """
-Economics models for buddhashanti Rural Municipality Digital Profile
+Economics models for duduwa Rural Municipality Digital Profile
 
 This module contains models related to agriculture, livestock, employment, income,
 cooperatives, and economic activities as specified in the SQL schema files.

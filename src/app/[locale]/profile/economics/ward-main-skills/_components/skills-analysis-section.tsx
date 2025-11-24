@@ -131,7 +131,7 @@ export default function SkillsAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-skilled-population",
@@ -250,7 +250,7 @@ export default function SkillsAnalysisSection({
         <h3 className="text-xl font-medium mb-4">
           सीप वर्गीकरण विश्लेषण
           <span className="sr-only">
-            Skills Classification Analysis of Khajura
+            Skills Classification Analysis of duduwa
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -267,7 +267,7 @@ export default function SkillsAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख सीप
               <span className="sr-only">
-                Main Skill in Khajura Rural Municipality
+                Main Skill in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -279,7 +279,7 @@ export default function SkillsAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topSkill
-                  ? `${((topSkill.population / totalPopulation) * 100).toFixed(2)}% of total skilled population in Khajura Rural Municipality`
+                  ? `${((topSkill.population / totalPopulation) * 100).toFixed(2)}% of total skilled population in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>
@@ -295,7 +295,7 @@ export default function SkillsAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख-दोस्रो सीप अनुपात
               <span className="sr-only">
-                Primary to Secondary Skill Ratio in Khajura
+                Primary to Secondary Skill Ratio in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -307,7 +307,7 @@ export default function SkillsAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topSkill && secondSkill
-                  ? `For every ${topTwoSkillRatio} people with ${SKILL_NAMES_EN[topSkill.skill]} skills, there is 1 person with ${SKILL_NAMES_EN[secondSkill.skill]} skills in Khajura Rural Municipality`
+                  ? `For every ${topTwoSkillRatio} people with ${SKILL_NAMES_EN[topSkill.skill]} skills, there is 1 person with ${SKILL_NAMES_EN[secondSkill.skill]} skills in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>

@@ -41,7 +41,7 @@ export default function WardWiseHealthInsuredHouseholdsSEO({
     const insuranceStats = wardInsuredPercentages.map((wardData) => {
       return {
         "@type": "Observation",
-        name: `Health Insurance Statistics in Ward ${wardData.wardNumber} of Khajura Rural Municipality`,
+        name: `Health Insurance Statistics in Ward ${wardData.wardNumber} of duduwa Rural Municipality`,
         observationDate: new Date().toISOString().split("T")[0],
         measuredProperty: {
           "@type": "PropertyValue",
@@ -49,17 +49,17 @@ export default function WardWiseHealthInsuredHouseholdsSEO({
           unitText: "percentage",
         },
         measuredValue: parseFloat(wardData.percentage.toFixed(2)),
-        description: `In Ward ${wardData.wardNumber} of Khajura Rural Municipality, ${wardData.percentage.toFixed(2)}% of households have health insurance.`,
+        description: `In Ward ${wardData.wardNumber} of duduwa Rural Municipality, ${wardData.percentage.toFixed(2)}% of households have health insurance.`,
       };
     });
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Health Insurance Coverage in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of health insurance coverage across wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${totalInsuredHouseholds.toLocaleString()} households (${insuredPercentage.toFixed(2)}%) have health insurance coverage. The highest coverage is in Ward ${bestInsuranceWard?.wardNumber || ""} with ${bestInsuranceWard?.percentage.toFixed(2) || ""}% insurance rate.`,
+      name: "Health Insurance Coverage in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of health insurance coverage across wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${totalInsuredHouseholds.toLocaleString()} households (${insuredPercentage.toFixed(2)}%) have health insurance coverage. The highest coverage is in Ward ${bestInsuranceWard?.wardNumber || ""} with ${bestInsuranceWard?.percentage.toFixed(2) || ""}% insurance rate.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Health insurance",
         "स्वास्थ्य बीमा",
@@ -71,16 +71,16 @@ export default function WardWiseHealthInsuredHouseholdsSEO({
         "Health insurance rate",
         "Insurance coverage index",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/health/ward-wise-health-insured-households",
+      url: "https://digital.duduwamun.gov.np/profile/health/ward-wise-health-insured-households",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -131,10 +131,10 @@ export default function WardWiseHealthInsuredHouseholdsSEO({
         name: "Municipality Health Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

@@ -1,5 +1,5 @@
 """
-Demographics models for buddhashanti Rural Municipality Digital Profile
+Demographics models for duduwa Rural Municipality Digital Profile
 
 This module contains models related to population, households, and demographic information
 as specified in the SQL schema files and report structure.

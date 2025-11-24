@@ -1,5 +1,5 @@
 """
-Main URL configuration for buddhashanti Report System.
+Main URL configuration for duduwa Report System.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -62,5 +62,5 @@ if settings.DEBUG:
 
 # Customize admin site
 admin.site.site_header = "डुडुवा गाउँपालिका - डिजिटल प्रोफाइल प्रतिवेदन"
-admin.site.site_title = "buddhashanti Report Admin"
+admin.site.site_title = "duduwa Report Admin"
 admin.site.index_title = "प्रतिवेदन व्यवस्थापन"

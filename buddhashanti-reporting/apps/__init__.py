@@ -1,3 +1,3 @@
 """
-Apps package for buddhashanti Report System
+Apps package for duduwa Report System
 """

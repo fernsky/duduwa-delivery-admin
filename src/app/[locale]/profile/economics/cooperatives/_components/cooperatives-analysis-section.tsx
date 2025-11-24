@@ -99,7 +99,7 @@ export default function CooperativesAnalysisSection({
 
   // SEO attributes to include in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-cooperatives": totalCooperatives.toString(),
     "data-province-level": statistics.provinceLevelCooperatives.toString(),
     "data-most-common-cooperative":
@@ -254,7 +254,7 @@ export default function CooperativesAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           सहकारी संस्थाहरूको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Cooperative Analysis of Khajura
+            Detailed Cooperative Analysis of duduwa
           </span>
         </h3>
 
@@ -263,7 +263,7 @@ export default function CooperativesAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख सहकारी प्रकार
               <span className="sr-only">
-                Main Cooperative Types in Khajura Rural Municipality
+                Main Cooperative Types in duduwa Rural Municipality
               </span>
             </h4>
             {primaryCooperative && (

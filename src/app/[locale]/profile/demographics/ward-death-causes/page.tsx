@@ -73,7 +73,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const deathCauseData =
       await api.profile.demographics.wardWiseDeathCause.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalDeaths = deathCauseData.reduce(
@@ -111,22 +111,22 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality causes of death",
-      "Khajura mortality analysis",
-      `Khajura ${DEATH_CAUSE_NAMES_EN[topDeathCauses[0] as DeathCauseType]} deaths`,
+      "duduwa Rural Municipality causes of death",
+      "duduwa mortality analysis",
+      `duduwa ${DEATH_CAUSE_NAMES_EN[topDeathCauses[0] as DeathCauseType]} deaths`,
       ...topDeathCauses.map(
-        (r) => `${DEATH_CAUSE_NAMES_EN[r as DeathCauseType]} deaths in Khajura`,
+        (r) => `${DEATH_CAUSE_NAMES_EN[r as DeathCauseType]} deaths in duduwa`,
       ),
       "Ward-wise death cause distribution",
-      "Health statistics Khajura",
-      "Mortality survey Khajura",
-      `Khajura total deaths ${totalDeaths}`,
+      "Health statistics duduwa",
+      "Mortality survey duduwa",
+      `duduwa total deaths ${totalDeaths}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार मृत्युका प्रमुख कारण, प्रवृत्ति र विश्लेषण। कुल मृत्यु संख्या ${localizeNumber(totalDeaths.toString(), "ne")} मध्ये ${deathCauseLabels[topDeathCauses[0] as DeathCauseType]} (${localizeNumber(deathCauseCounts[topDeathCauses[0]].toString(), "ne")}) सबैभन्दा ठूलो कारण हो, त्यसपछि ${deathCauseLabels[topDeathCauses[1] as DeathCauseType]} (${localizeNumber(deathCauseCounts[topDeathCauses[1]].toString(), "ne")}) र ${deathCauseLabels[topDeathCauses[2] as DeathCauseType]} (${localizeNumber(deathCauseCounts[topDeathCauses[2]].toString(), "ne")})। विभिन्न मृत्युका कारणहरूको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise main causes of death, trends and analysis for Khajura Rural Municipality. Out of a total deaths of ${totalDeaths}, ${DEATH_CAUSE_NAMES_EN[topDeathCauses[0] as DeathCauseType]} (${deathCauseCounts[topDeathCauses[0]]}) is the leading cause, followed by ${DEATH_CAUSE_NAMES_EN[topDeathCauses[1] as DeathCauseType]} (${deathCauseCounts[topDeathCauses[1]]}) and ${DEATH_CAUSE_NAMES_EN[topDeathCauses[2] as DeathCauseType]} (${deathCauseCounts[topDeathCauses[2]]})। Detailed statistics and visualizations of various causes of mortality.`;
+    const descriptionEN = `Ward-wise main causes of death, trends and analysis for duduwa Rural Municipality. Out of a total deaths of ${totalDeaths}, ${DEATH_CAUSE_NAMES_EN[topDeathCauses[0] as DeathCauseType]} (${deathCauseCounts[topDeathCauses[0]]}) is the leading cause, followed by ${DEATH_CAUSE_NAMES_EN[topDeathCauses[1] as DeathCauseType]} (${deathCauseCounts[topDeathCauses[1]]}) and ${DEATH_CAUSE_NAMES_EN[topDeathCauses[2] as DeathCauseType]} (${deathCauseCounts[topDeathCauses[2]]})। Detailed statistics and visualizations of various causes of mortality.`;
 
     return {
       title: `मृत्युका प्रमुख कारणहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -301,7 +301,7 @@ export default async function WardDeathCausesPage() {
               src="/images/death-causes.svg"
               width={1200}
               height={400}
-              alt="मृत्युका प्रमुख कारणहरू - डुडुवा गाउँपालिका (Main Causes of Death - Khajura Rural Municipality)"
+              alt="मृत्युका प्रमुख कारणहरू - डुडुवा गाउँपालिका (Main Causes of Death - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

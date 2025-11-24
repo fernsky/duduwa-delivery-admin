@@ -28,7 +28,7 @@ class Command(BaseCommand):
             "Creating ward household demographics data based on actual municipality time series data..."
         )
 
-        # Actual ward household time series data for buddhashanti
+        # Actual ward household time series data for duduwa
         # Each dict matches the model fields
         ward_household_data = [
             {

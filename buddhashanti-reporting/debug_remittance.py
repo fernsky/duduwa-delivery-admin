@@ -11,7 +11,7 @@ project_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(project_dir)
 
 # Set up Django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "buddhashanti_report.settings.development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "duduwa_report.settings.development")
 django.setup()
 
 from apps.economics.processors.remittance_expenses import RemittanceExpensesProcessor

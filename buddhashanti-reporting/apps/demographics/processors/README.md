@@ -1,6 +1,6 @@
 # Demographics Processing System
 
-This system provides a unified, extensible pipeline for processing all demographic data categories in the buddhashanti Rural Municipality Digital Profile with enhanced image generation capabilities.
+This system provides a unified, extensible pipeline for processing all demographic data categories in the duduwa Rural Municipality Digital Profile with enhanced image generation capabilities.
 
 ## Architecture
 

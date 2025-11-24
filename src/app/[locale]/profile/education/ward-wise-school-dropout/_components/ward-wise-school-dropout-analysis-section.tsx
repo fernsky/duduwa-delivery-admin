@@ -74,7 +74,7 @@ export default function WardWiseSchoolDropoutAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-dropouts": totalDropouts.toString(),
     "data-economic-dropout-rate": dropoutGroupPercentages.ECONOMIC.toFixed(2),
     "data-highest-economic-dropout-ward":
@@ -134,7 +134,7 @@ export default function WardWiseSchoolDropoutAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           विद्यालय छाड्ने कारणहरूको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed School Dropout Causes Analysis of Khajura
+            Detailed School Dropout Causes Analysis of duduwa
           </span>
         </h3>
 
@@ -148,7 +148,7 @@ export default function WardWiseSchoolDropoutAnalysisSection({
             <h4 className="font-medium mb-2">
               आर्थिक कारणले बढी विद्यालय छाड्ने वडा
               <span className="sr-only">
-                Ward with Highest Economic-related Dropout Rate in Khajura Rural
+                Ward with Highest Economic-related Dropout Rate in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -216,7 +216,7 @@ export default function WardWiseSchoolDropoutAnalysisSection({
             <h4 className="font-medium mb-2">
               आर्थिक कारणले कम विद्यालय छाड्ने वडा
               <span className="sr-only">
-                Ward with Low Economic-related Dropout Rate in Khajura
+                Ward with Low Economic-related Dropout Rate in duduwa
               </span>
             </h4>
             {lowestEconomicDropoutWard && (

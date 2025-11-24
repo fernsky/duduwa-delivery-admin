@@ -95,7 +95,7 @@ export default function ForeignEmploymentAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-migrant-workers": totalPopulation.toString(),
     "data-most-common-destination":
       overallSummary.length > 0
@@ -159,7 +159,7 @@ export default function ForeignEmploymentAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           वैदेशिक रोजगारीको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Foreign Employment Analysis of Khajura
+            Detailed Foreign Employment Analysis of duduwa
           </span>
         </h3>
 
@@ -179,7 +179,7 @@ export default function ForeignEmploymentAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख वैदेशिक रोजगारी गन्तव्य
               <span className="sr-only">
-                Main Foreign Employment Destination from Khajura Rural
+                Main Foreign Employment Destination from duduwa Rural
                 Municipality
               </span>
             </h4>

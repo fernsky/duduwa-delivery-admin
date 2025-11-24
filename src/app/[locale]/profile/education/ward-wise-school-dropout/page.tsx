@@ -52,7 +52,7 @@ export async function generateMetadata(): Promise<Metadata> {
   try {
     const wardWiseSchoolDropoutData =
       await api.profile.education.wardWiseSchoolDropout.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Group by ward number
     const wardGroups = wardWiseSchoolDropoutData.reduce(
@@ -94,7 +94,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality school dropout causes",
+      "duduwa Rural Municipality school dropout causes",
       "School dropout rate",
       "Ward-wise school dropout",
       "Employment related dropouts",
@@ -105,7 +105,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create description
     const descriptionNP = `डुडुवा गाउँपालिकामा विद्यालय छाड्नुका कारणहरूको विश्लेषण। कुल ${localizeNumber(totalDropouts.toLocaleString(), "ne")} जनसंख्या मध्ये ${localizeNumber(economicDropoutPercentage, "ne")}% (${localizeNumber(economicDropouts.toLocaleString(), "ne")}) जनाले आर्थिक कारणले विद्यालय छोडेका छन्।`;
 
-    const descriptionEN = `Analysis of school dropout causes in Khajura Rural Municipality. Out of a total of ${totalDropouts.toLocaleString()} dropouts, ${economicDropoutPercentage}% (${economicDropouts.toLocaleString()}) have left school for economic reasons.`;
+    const descriptionEN = `Analysis of school dropout causes in duduwa Rural Municipality. Out of a total of ${totalDropouts.toLocaleString()} dropouts, ${economicDropoutPercentage}% (${economicDropouts.toLocaleString()}) have left school for economic reasons.`;
 
     return {
       title: `विद्यालय छाड्ने कारणहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -329,7 +329,7 @@ export default async function WardWiseSchoolDropoutPage() {
               src="/images/school-dropout-causes.svg"
               width={1200}
               height={400}
-              alt="विद्यालय छाड्ने कारणहरू - डुडुवा गाउँपालिका (School Dropout Causes - Khajura Rural Municipality)"
+              alt="विद्यालय छाड्ने कारणहरू - डुडुवा गाउँपालिका (School Dropout Causes - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

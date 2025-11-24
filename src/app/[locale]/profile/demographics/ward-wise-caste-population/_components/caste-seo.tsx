@@ -71,7 +71,7 @@ export default function CasteSEO({
     // Convert caste stats to structured data format
     const casteStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${CASTE_NAMES_EN[item.casteType] || item.casteType} population in Khajura Rural Municipality`,
+      name: `${CASTE_NAMES_EN[item.casteType] || item.casteType} population in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -79,7 +79,7 @@ export default function CasteSEO({
         unitText: "people",
       },
       measuredValue: item.population,
-      description: `${item.population} people in Khajura Rural Municipality belong to ${
+      description: `${item.population} people in duduwa Rural Municipality belong to ${
         CASTE_NAMES_EN[item.casteType] || item.casteType
       } caste (${((item.population / totalPopulation) * 100).toFixed(2)}% of total population)`,
     }));
@@ -87,10 +87,10 @@ export default function CasteSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Caste Demographics of Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Caste distribution data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total population of ${totalPopulation.toLocaleString()} people. Main castes include ${topCastesDescription}.`,
+      name: "Caste Demographics of duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Caste distribution data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total population of ${totalPopulation.toLocaleString()} people. Main castes include ${topCastesDescription}.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Caste demographics",
         "Ethnicity statistics",
@@ -99,16 +99,16 @@ export default function CasteSEO({
         ...Object.values(CASTE_NAMES_EN).map((name) => `${name} population`),
         ...Object.values(CASTE_NAMES).map((name) => `${name} जनसंख्या`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-wise-caste-population",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-wise-caste-population",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

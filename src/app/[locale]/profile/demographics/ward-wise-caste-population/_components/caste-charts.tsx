@@ -89,11 +89,11 @@ export default function CasteCharts({
       >
         <meta
           itemProp="name"
-          content="Caste Distribution in Khajura Rural Municipality"
+          content="Caste Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Caste composition of Khajura with a total population of ${totalPopulation}`}
+          content={`Caste composition of duduwa with a total population of ${totalPopulation}`}
         />
 
         <div className="border-b px-4 py-3">
@@ -255,11 +255,11 @@ export default function CasteCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Caste Distribution in Khajura Rural Municipality"
+          content="Ward-wise Caste Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Caste distribution across wards in Khajura"
+          content="Caste distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -290,11 +290,11 @@ export default function CasteCharts({
       >
         <meta
           itemProp="name"
-          content="Detailed Caste Analysis by Ward in Khajura Rural Municipality"
+          content="Detailed Caste Analysis by Ward in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed caste composition of each ward in Khajura"
+          content="Detailed caste composition of each ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

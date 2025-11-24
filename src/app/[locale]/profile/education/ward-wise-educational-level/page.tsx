@@ -72,7 +72,7 @@ export async function generateMetadata(): Promise<Metadata> {
   try {
     const wardWiseEducationalLevelData =
       await api.profile.education.wardWiseEducationalLevel.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Group by ward number
     const wardGroups = wardWiseEducationalLevelData.reduce(
@@ -119,7 +119,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality educational level",
+      "duduwa Rural Municipality educational level",
       "Educational attainment",
       "Ward-wise education status",
       "Education level",
@@ -131,7 +131,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create description
     const descriptionNP = `डुडुवा गाउँपालिकामा शैक्षिक स्तरको विश्लेषण। कुल ${localizeNumber(totalPopulation.toLocaleString(), "ne")} जनसंख्या मध्ये ${localizeNumber(highestEducationPercentage, "ne")}% (${localizeNumber(highestEducationCount.toLocaleString(), "ne")}) जनाले उच्च शिक्षा हासिल गरेका छन्।`;
 
-    const descriptionEN = `Analysis of educational levels in Khajura Rural Municipality. Out of a total of ${totalPopulation.toLocaleString()} people, ${highestEducationPercentage}% (${highestEducationCount.toLocaleString()}) have attained higher education.`;
+    const descriptionEN = `Analysis of educational levels in duduwa Rural Municipality. Out of a total of ${totalPopulation.toLocaleString()} people, ${highestEducationPercentage}% (${highestEducationCount.toLocaleString()}) have attained higher education.`;
 
     return {
       title: `शैक्षिक स्तर | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -365,7 +365,7 @@ export default async function WardWiseEducationalLevelPage() {
               src="/images/educational-level-status.svg"
               width={1200}
               height={400}
-              alt="शैक्षिक स्तरको अवस्था - डुडुवा गाउँपालिका (Educational Level Status - Khajura Rural Municipality)"
+              alt="शैक्षिक स्तरको अवस्था - डुडुवा गाउँपालिका (Educational Level Status - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

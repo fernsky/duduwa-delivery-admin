@@ -25,7 +25,7 @@ export default function EconomicallyActivePopulationSEO({
     // Convert age group stats to structured data format
     const ageGroupStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${AGE_GROUP_NAMES_EN[item.ageGroup] || item.ageGroup} in Khajura Rural Municipality`,
+      name: `${AGE_GROUP_NAMES_EN[item.ageGroup] || item.ageGroup} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -33,7 +33,7 @@ export default function EconomicallyActivePopulationSEO({
         unitText: "people",
       },
       measuredValue: item.population,
-      description: `${item.population.toLocaleString()} people in Khajura Rural Municipality are in the ${AGE_GROUP_NAMES_EN[item.ageGroup] || item.ageGroup} age group (${((item.population / totalPopulation) * 100).toFixed(2)}% of total population)`,
+      description: `${item.population.toLocaleString()} people in duduwa Rural Municipality are in the ${AGE_GROUP_NAMES_EN[item.ageGroup] || item.ageGroup} age group (${((item.population / totalPopulation) * 100).toFixed(2)}% of total population)`,
     }));
 
     // Calculate economically active population (15-59 age group)
@@ -53,10 +53,10 @@ export default function EconomicallyActivePopulationSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Economically Active Population of Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Age-wise economically active population data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total population of ${totalPopulation.toLocaleString()} people. The working age population (15-59 years) is ${economicallyActivePopulation.toLocaleString()} people (${((economicallyActivePopulation / totalPopulation) * 100).toFixed(2)}%).`,
+      name: "Economically Active Population of duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Age-wise economically active population data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total population of ${totalPopulation.toLocaleString()} people. The working age population (15-59 years) is ${economicallyActivePopulation.toLocaleString()} people (${((economicallyActivePopulation / totalPopulation) * 100).toFixed(2)}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Economically active population",
         "Age distribution",
@@ -69,16 +69,16 @@ export default function EconomicallyActivePopulationSEO({
         ),
         ...Object.values(AGE_GROUP_NAMES).map((name) => `${name} तथ्याङ्क`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-age-wise-economically-active-population",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-age-wise-economically-active-population",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

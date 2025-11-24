@@ -33,7 +33,7 @@ export default function IncomeSourcesSEO({
     // Convert income source stats to structured data format
     const incomeSourceStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${INCOME_SOURCE_NAMES_EN[item.incomeSource] || item.incomeSource} households in Khajura Rural Municipality`,
+      name: `${INCOME_SOURCE_NAMES_EN[item.incomeSource] || item.incomeSource} households in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -41,16 +41,16 @@ export default function IncomeSourcesSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality depend on ${INCOME_SOURCE_NAMES_EN[item.incomeSource] || item.incomeSource} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality depend on ${INCOME_SOURCE_NAMES_EN[item.incomeSource] || item.incomeSource} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Household Income Sources of Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Household income sources distribution data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households.`,
+      name: "Household Income Sources of duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Household income sources distribution data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Income sources",
         "Household economics",
@@ -61,16 +61,16 @@ export default function IncomeSourcesSEO({
         ),
         ...Object.values(INCOME_SOURCE_NAMES).map((name) => `${name} आयस्रोत`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/income-sources",
+      url: "https://digital.duduwamun.gov.np/profile/economics/income-sources",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

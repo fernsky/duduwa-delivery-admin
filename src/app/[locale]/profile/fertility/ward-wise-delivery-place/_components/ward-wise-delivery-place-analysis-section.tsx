@@ -63,7 +63,7 @@ export default function WardWiseDeliveryPlaceAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-deliveries": totalDeliveries.toString(),
     "data-institutional-rate": institutionalPercentage,
     "data-best-ward": bestWard?.wardNumber.toString() || "",
@@ -332,7 +332,7 @@ export default function WardWiseDeliveryPlaceAnalysisSection({
             <h4 className="font-medium mb-2">
               उत्तम संस्थागत प्रसूती दर भएको वडा
               <span className="sr-only">
-                Ward with Best Institutional Delivery Rate in Khajura Rural
+                Ward with Best Institutional Delivery Rate in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -393,7 +393,7 @@ export default function WardWiseDeliveryPlaceAnalysisSection({
             <h4 className="font-medium mb-2">
               कम संस्थागत प्रसूती दर भएको वडा
               <span className="sr-only">
-                Ward with Low Institutional Delivery Rate in Khajura
+                Ward with Low Institutional Delivery Rate in duduwa
               </span>
             </h4>
             {worstWard && (

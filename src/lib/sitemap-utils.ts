@@ -8,18 +8,18 @@ import { navItems } from "@/constants/nav-items";
 
 // Base URL from environment or default
 const baseUrl =
-  process.env.NEXT_PUBLIC_BASE_URL || "https://digital.buddhashantimun.gov.np";
+  process.env.NEXT_PUBLIC_BASE_URL || "https://digital.duduwamun.gov.np";
 
 interface SitemapRoute {
   url: string;
   changefreq?:
-    | "always"
-    | "hourly"
-    | "daily"
-    | "weekly"
-    | "monthly"
-    | "yearly"
-    | "never";
+  | "always"
+  | "hourly"
+  | "daily"
+  | "weekly"
+  | "monthly"
+  | "yearly"
+  | "never";
   priority?: number;
   lastmod?: string | Date;
 }

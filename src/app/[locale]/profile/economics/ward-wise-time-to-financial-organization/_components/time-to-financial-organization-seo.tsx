@@ -65,7 +65,7 @@ export default function TimeToFinancialOrganizationSEO({
 
         return {
           "@type": "Observation",
-          name: `Financial Access in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Financial Access in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -73,7 +73,7 @@ export default function TimeToFinancialOrganizationSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(under15MinPercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${under15Min.toLocaleString()} households (${under15MinPercent}%) can reach a financial institution within 15 minutes out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${under15Min.toLocaleString()} households (${under15MinPercent}%) can reach a financial institution within 15 minutes out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
         };
       })
       .filter(Boolean);
@@ -95,10 +95,10 @@ export default function TimeToFinancialOrganizationSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Financial Organization Access Time in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of time taken to reach financial organizations across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${under15MinTotal.toLocaleString()} households (${under15MinPercentage.toFixed(2)}%) can reach a financial institution within 15 minutes, while ${over1HourTotal.toLocaleString()} households (${over1HourPercentage.toFixed(2)}%) need more than 1 hour. The best financial access is in Ward ${bestAccessWard?.wardNumber || ""} with ${bestAccessWard?.under15MinPercent.toFixed(2) || ""}% of households having access within 15 minutes.`,
+      name: "Financial Organization Access Time in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of time taken to reach financial organizations across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${under15MinTotal.toLocaleString()} households (${under15MinPercentage.toFixed(2)}%) can reach a financial institution within 15 minutes, while ${over1HourTotal.toLocaleString()} households (${over1HourPercentage.toFixed(2)}%) need more than 1 hour. The best financial access is in Ward ${bestAccessWard?.wardNumber || ""} with ${bestAccessWard?.under15MinPercent.toFixed(2) || ""}% of households having access within 15 minutes.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Financial access",
         "Time to financial organizations",
@@ -111,16 +111,16 @@ export default function TimeToFinancialOrganizationSEO({
         "Time to banks",
         "Financial service accessibility",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-time-to-financial-organization",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-time-to-financial-organization",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -185,10 +185,10 @@ export default function TimeToFinancialOrganizationSEO({
         name: "Municipality Financial Access Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

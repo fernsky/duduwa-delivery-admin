@@ -73,7 +73,7 @@ export default function WardWiseEducationalLevelAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-population": totalPopulation.toString(),
     "data-higher-education-rate":
       educationGroupPercentages.HIGHER_EDUCATION.toFixed(2),
@@ -134,7 +134,7 @@ export default function WardWiseEducationalLevelAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           शैक्षिक स्तर विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Educational Level Analysis of Khajura
+            Detailed Educational Level Analysis of duduwa
           </span>
         </h3>
 
@@ -148,7 +148,7 @@ export default function WardWiseEducationalLevelAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च शिक्षा प्राप्ति उच्च भएको वडा
               <span className="sr-only">
-                Ward with Highest Higher Education Rate in Khajura Rural
+                Ward with Highest Higher Education Rate in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -217,7 +217,7 @@ export default function WardWiseEducationalLevelAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च शिक्षा प्राप्ति न्यून भएको वडा
               <span className="sr-only">
-                Ward with Low Higher Education Rate in Khajura
+                Ward with Low Higher Education Rate in duduwa
               </span>
             </h4>
             {leastEducatedWard && (

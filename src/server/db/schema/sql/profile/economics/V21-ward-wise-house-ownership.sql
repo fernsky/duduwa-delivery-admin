@@ -53,7 +53,7 @@ END
 $$;
 
 -- Add comments for documentation
-COMMENT ON TABLE acme_ward_wise_house_ownership IS 'Stores ward-wise house ownership data for Khajura Rural Municipality';
+COMMENT ON TABLE acme_ward_wise_house_ownership IS 'Stores ward-wise house ownership data for duduwa Rural Municipality';
 COMMENT ON COLUMN acme_ward_wise_house_ownership.ward_number IS 'Ward number (1-8)';
 COMMENT ON COLUMN acme_ward_wise_house_ownership.ownership_type IS 'Type of house ownership (PRIVATE, RENT, INSTITUTIONAL, OTHER)';
 COMMENT ON COLUMN acme_ward_wise_house_ownership.households IS 'Number of households with this type of ownership in the ward';

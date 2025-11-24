@@ -75,7 +75,7 @@ export default function WardWiseCookingFuelAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-clean-fuel-rate": cleanFuelPercentage.toFixed(2),
     "data-traditional-fuel-rate": traditionalFuelPercentage,
@@ -137,7 +137,7 @@ export default function WardWiseCookingFuelAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           खाना पकाउने इन्धन प्रयोगको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Cooking Fuel Usage Analysis of Khajura
+            Detailed Cooking Fuel Usage Analysis of duduwa
           </span>
         </h3>
 
@@ -151,7 +151,7 @@ export default function WardWiseCookingFuelAnalysisSection({
             <h4 className="font-medium mb-2">
               स्वच्छ इन्धन प्रयोगमा अग्रणी वडा
               <span className="sr-only">
-                Ward with Best Clean Fuel Usage in Khajura Rural Municipality
+                Ward with Best Clean Fuel Usage in duduwa Rural Municipality
               </span>
             </h4>
             {bestWard && (
@@ -207,7 +207,7 @@ export default function WardWiseCookingFuelAnalysisSection({
             <h4 className="font-medium mb-2">
               स्वच्छ इन्धन प्रयोगमा पछाडि परेको वडा
               <span className="sr-only">
-                Ward with Lowest Clean Fuel Usage in Khajura
+                Ward with Lowest Clean Fuel Usage in duduwa
               </span>
             </h4>
             {worstWard && (

@@ -54,7 +54,7 @@ export default function TrainedPopulationAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-trained-population",
@@ -197,7 +197,7 @@ export default function TrainedPopulationAnalysisSection({
             <h4 className="font-medium mb-2">
               वडागत वितरण
               <span className="sr-only">
-                Ward-wise Distribution in Khajura Rural Municipality
+                Ward-wise Distribution in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-sm mb-2">
@@ -236,7 +236,7 @@ export default function TrainedPopulationAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च-न्यून वडा अनुपात
               <span className="sr-only">
-                Highest to Lowest Ward Ratio in Khajura
+                Highest to Lowest Ward Ratio in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">{topBottomRatio}</p>
@@ -246,7 +246,7 @@ export default function TrainedPopulationAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topWard && bottomWard
-                  ? `Ward ${topWard.wardNumber} has ${topBottomRatio} times more trained people than Ward ${bottomWard.wardNumber} in Khajura Rural Municipality`
+                  ? `Ward ${topWard.wardNumber} has ${topBottomRatio} times more trained people than Ward ${bottomWard.wardNumber} in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>
@@ -258,7 +258,7 @@ export default function TrainedPopulationAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           थप जानकारी
           <span className="sr-only">
-            Additional Information about Trained Population in Khajura
+            Additional Information about Trained Population in duduwa
           </span>
         </h3>
         <p>

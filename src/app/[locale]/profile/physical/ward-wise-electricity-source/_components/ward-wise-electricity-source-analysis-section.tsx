@@ -75,7 +75,7 @@ export default function WardWiseElectricitySourceAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-modern-source-rate": modernSourcePercentage.toFixed(2),
     "data-traditional-source-rate": traditionalSourcePercentage,
@@ -137,7 +137,7 @@ export default function WardWiseElectricitySourceAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           विद्युतको स्रोतको प्रयोगको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Electricity Source Usage Analysis of Khajura
+            Detailed Electricity Source Usage Analysis of duduwa
           </span>
         </h3>
 
@@ -151,7 +151,7 @@ export default function WardWiseElectricitySourceAnalysisSection({
             <h4 className="font-medium mb-2">
               आधुनिक विद्युत स्रोत प्रयोगमा अग्रणी वडा
               <span className="sr-only">
-                Ward with Best Modern Electricity Source Usage in Khajura Rural
+                Ward with Best Modern Electricity Source Usage in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -210,7 +210,7 @@ export default function WardWiseElectricitySourceAnalysisSection({
             <h4 className="font-medium mb-2">
               आधुनिक विद्युत स्रोत प्रयोगमा पछाडि परेको वडा
               <span className="sr-only">
-                Ward with Lowest Modern Electricity Source Usage in Khajura
+                Ward with Lowest Modern Electricity Source Usage in duduwa
               </span>
             </h4>
             {worstWard && (

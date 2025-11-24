@@ -4,7 +4,7 @@ from apps.reports.models import ReportCategory, ReportSection
 
 
 class Command(BaseCommand):
-    help = "Populate the database with Introduction chapter content for buddhashanti Rural Municipality"
+    help = "Populate the database with Introduction chapter content for duduwa Rural Municipality"
 
     def add_arguments(self, parser):
         parser.add_argument(

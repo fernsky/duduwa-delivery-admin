@@ -63,7 +63,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const farmersGroupData =
       await api.profile.economics.municipalityWideAgricultureRelatedFarmersGroup.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalGroups = farmersGroupData.length;
@@ -100,20 +100,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality farmers groups",
-      "Khajura agriculture groups",
+      "duduwa Rural Municipality farmers groups",
+      "duduwa agriculture groups",
       "Municipality-wide agricultural groups",
-      "Farming groups in Khajura",
-      `Agricultural development in Khajura`,
+      "Farming groups in duduwa",
+      `Agricultural development in duduwa`,
       `Ward ${wardWithMostGroups} farming groups`,
-      `Khajura ${totalGroups} agricultural groups`,
+      `duduwa ${totalGroups} agricultural groups`,
       "Agriculture related groups",
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकामा संचालित ${localizeNumber(totalGroups.toString(), "ne")} कृषि सम्बन्धित समूहहरूको विस्तृत विश्लेषण। वडा नं ${localizeNumber(wardWithMostGroups.toString(), "ne")} मा सबैभन्दा बढी ${localizeNumber(wardMaxCount.toString(), "ne")} समूहहरू क्रियाशील छन्। पालिका स्तरीय कृषि समूहहरूको विस्तृत जानकारी।`;
 
-    const descriptionEN = `Detailed analysis of ${totalGroups} agriculture related farmers groups operating in Khajura Rural Municipality. Ward ${wardWithMostGroups} has the highest concentration with ${wardMaxCount} active groups. Comprehensive information on municipality-wide agricultural groups.`;
+    const descriptionEN = `Detailed analysis of ${totalGroups} agriculture related farmers groups operating in duduwa Rural Municipality. Ward ${wardWithMostGroups} has the highest concentration with ${wardMaxCount} active groups. Comprehensive information on municipality-wide agricultural groups.`;
 
     return {
       title: `कृषि सम्बन्धित समूहहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -297,7 +297,7 @@ export default async function AgricultureRelatedFarmersGroupPage() {
   const statistics = {
     totalGroups,
     totalWards: Object.keys(wardDistribution).length,
-    avgGroupsPerWard: totalGroups / 9, // Khajura has 9 wards
+    avgGroupsPerWard: totalGroups / 9, // duduwa has 9 wards
     mostPopularGroupType: groupSummary.length > 0 ? groupSummary[0].type : "",
     mostPopularGroupTypePercentage:
       groupSummary.length > 0 ? groupSummary[0].percentage : 0,
@@ -323,7 +323,7 @@ export default async function AgricultureRelatedFarmersGroupPage() {
               src="/images/agriculture.svg"
               width={1200}
               height={400}
-              alt="कृषि सम्बन्धित समूहहरू - डुडुवा गाउँपालिका (Agriculture Related Farmers Groups - Khajura Rural Municipality)"
+              alt="कृषि सम्बन्धित समूहहरू - डुडुवा गाउँपालिका (Agriculture Related Farmers Groups - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

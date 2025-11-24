@@ -116,7 +116,7 @@ END
 $$;
 
 -- Add comments for documentation
-COMMENT ON TABLE acme_ward_wise_financial_accounts IS 'Stores ward-wise data on financial accounts for Khajura Rural Municipality';
+COMMENT ON TABLE acme_ward_wise_financial_accounts IS 'Stores ward-wise data on financial accounts for duduwa Rural Municipality';
 COMMENT ON COLUMN acme_ward_wise_financial_accounts.ward_number IS 'Ward number (1-8)';
 COMMENT ON COLUMN acme_ward_wise_financial_accounts.financial_account_type IS 'Type of financial account';
 COMMENT ON COLUMN acme_ward_wise_financial_accounts.households IS 'Number of households in this ward with this financial account type';

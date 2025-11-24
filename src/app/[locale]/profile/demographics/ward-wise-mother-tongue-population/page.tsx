@@ -53,7 +53,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const languageData =
       await api.profile.demographics.wardWiseMotherTonguePopulation.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalPopulation = languageData.reduce(
@@ -108,20 +108,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality mother tongue population",
-      "Khajura linguistic diversity",
-      `Khajura ${LANGUAGE_NAMES_EN[topLanguages[0]]} speakers population`,
-      ...topLanguages.map((l) => `${LANGUAGE_NAMES_EN[l]} speakers in Khajura`),
+      "duduwa Rural Municipality mother tongue population",
+      "duduwa linguistic diversity",
+      `duduwa ${LANGUAGE_NAMES_EN[topLanguages[0]]} speakers population`,
+      ...topLanguages.map((l) => `${LANGUAGE_NAMES_EN[l]} speakers in duduwa`),
       "Ward-wise mother tongue demographics",
       "Linguistic diversity statistics",
-      "Language census Khajura",
-      `Khajura total population ${totalPopulation}`,
+      "Language census duduwa",
+      `duduwa total population ${totalPopulation}`,
     ];
 
     // Create detailed description with actual data using localized numbers
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार मातृभाषा जनसंख्या वितरण, प्रवृत्ति र विश्लेषण। कुल जनसंख्या ${localizeNumber(totalPopulation.toString(), "ne")} मध्ये ${LANGUAGE_NAMES[topLanguages[0]]} (${localizeNumber(languageCounts[topLanguages[0]].toString(), "ne")}) सबैभन्दा ठूलो भाषिक समूह हो, त्यसपछि ${LANGUAGE_NAMES[topLanguages[1]]} (${localizeNumber(languageCounts[topLanguages[1]].toString(), "ne")}) र ${LANGUAGE_NAMES[topLanguages[2]]} (${localizeNumber(languageCounts[topLanguages[2]].toString(), "ne")})। विभिन्न भाषाभाषीहरूको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise mother tongue population distribution, trends and analysis for Khajura Rural Municipality. Out of a total population of ${totalPopulation}, ${LANGUAGE_NAMES_EN[topLanguages[0]]} (${languageCounts[topLanguages[0]]}) is the largest language group, followed by ${LANGUAGE_NAMES_EN[topLanguages[1]]} (${languageCounts[topLanguages[1]]}) and ${LANGUAGE_NAMES_EN[topLanguages[2]]} (${languageCounts[topLanguages[2]]})। Detailed statistics and visualizations of various linguistic communities.`;
+    const descriptionEN = `Ward-wise mother tongue population distribution, trends and analysis for duduwa Rural Municipality. Out of a total population of ${totalPopulation}, ${LANGUAGE_NAMES_EN[topLanguages[0]]} (${languageCounts[topLanguages[0]]}) is the largest language group, followed by ${LANGUAGE_NAMES_EN[topLanguages[1]]} (${languageCounts[topLanguages[1]]}) and ${LANGUAGE_NAMES_EN[topLanguages[2]]} (${languageCounts[topLanguages[2]]})। Detailed statistics and visualizations of various linguistic communities.`;
 
     return {
       title:
@@ -281,7 +281,7 @@ export default async function WardWiseMotherTonguePopulationPage() {
               src="/images/language-diversity.svg"
               width={1200}
               height={400}
-              alt="भाषिक विविधता - डुडुवा गाउँपालिका (Linguistic Diversity - Khajura Rural Municipality)"
+              alt="भाषिक विविधता - डुडुवा गाउँपालिका (Linguistic Diversity - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

@@ -139,7 +139,7 @@ export default function WardWiseFacilitiesCharts({
       >
         <meta
           itemProp="name"
-          content="Household Facilities Distribution in Khajura Rural Municipality"
+          content="Household Facilities Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -241,11 +241,11 @@ export default function WardWiseFacilitiesCharts({
       >
         <meta
           itemProp="name"
-          content="Facility Category Comparison in Khajura Rural Municipality"
+          content="Facility Category Comparison in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of different facility categories in households of Khajura"
+          content="Comparison of different facility categories in households of duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -275,11 +275,11 @@ export default function WardWiseFacilitiesCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Facilities Usage in Khajura Rural Municipality"
+          content="Ward-wise Facilities Usage in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of household facilities types across wards in Khajura"
+          content="Distribution of household facilities types across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -310,11 +310,11 @@ export default function WardWiseFacilitiesCharts({
       >
         <meta
           itemProp="name"
-          content="Digital Access Comparison Across Wards in Khajura Rural Municipality"
+          content="Digital Access Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of digital access across wards in Khajura"
+          content="Comparison of digital access across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -347,11 +347,11 @@ export default function WardWiseFacilitiesCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Facilities Analysis in Khajura Rural Municipality"
+          content="Ward-wise Facilities Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of facilities usage by ward in Khajura"
+          content="Detailed analysis of facilities usage by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

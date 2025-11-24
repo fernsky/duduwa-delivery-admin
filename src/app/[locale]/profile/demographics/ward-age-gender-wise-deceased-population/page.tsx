@@ -80,7 +80,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const deceasedData =
       await api.profile.demographics.wardAgeGenderWiseDeceasedPopulation.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalDeceasedPopulation = deceasedData.reduce(
@@ -128,18 +128,18 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality mortality data",
-      "Khajura death statistics",
+      "duduwa Rural Municipality mortality data",
+      "duduwa death statistics",
       "Ward-wise age-gender mortality",
       "Age-gender wise deceased population",
-      "Khajura demographic analysis",
-      `Khajura mortality count ${totalDeceasedPopulation}`,
+      "duduwa demographic analysis",
+      `duduwa mortality count ${totalDeceasedPopulation}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा, उमेर र लिङ्ग अनुसार मृत्यु भएका जनसंख्याको वितरण र विश्लेषण। कुल मृत्यु संख्या ${localizeNumber(totalDeceasedPopulation.toString(), "ne")} मध्ये ${localizeNumber(mostAffectedPercentage, "ne")}% (${localizeNumber(mostAffectedCount.toString(), "ne")}) ${AGE_GROUP_NAMES[mostAffectedAgeGroup] || mostAffectedAgeGroup} उमेर समूहमा रहेका छन्। विभिन्न वडाहरूमा उमेर र लिङ्ग अनुसार मृत्युको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Ward, age and gender-wise distribution and analysis of deceased population in Khajura Rural Municipality. Out of a total deceased population of ${totalDeceasedPopulation}, ${mostAffectedPercentage}% (${mostAffectedCount}) are in the age group of ${AGE_GROUP_NAMES_EN[mostAffectedAgeGroup] || mostAffectedAgeGroup}. Detailed analysis of mortality across wards by age and gender.`;
+    const descriptionEN = `Ward, age and gender-wise distribution and analysis of deceased population in duduwa Rural Municipality. Out of a total deceased population of ${totalDeceasedPopulation}, ${mostAffectedPercentage}% (${mostAffectedCount}) are in the age group of ${AGE_GROUP_NAMES_EN[mostAffectedAgeGroup] || mostAffectedAgeGroup}. Detailed analysis of mortality across wards by age and gender.`;
 
     return {
       title: `उमेर तथा लिङ्ग अनुसार मृत्यु विवरण | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -421,7 +421,7 @@ export default async function WardAgeGenderWiseDeceasedPopulationPage() {
               src="/images/deceased-population.svg"
               width={1200}
               height={400}
-              alt="उमेर तथा लिङ्ग अनुसार मृत्यु विवरण - डुडुवा गाउँपालिका (Age and Gender Wise Deceased Population - Khajura Rural Municipality)"
+              alt="उमेर तथा लिङ्ग अनुसार मृत्यु विवरण - डुडुवा गाउँपालिका (Age and Gender Wise Deceased Population - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

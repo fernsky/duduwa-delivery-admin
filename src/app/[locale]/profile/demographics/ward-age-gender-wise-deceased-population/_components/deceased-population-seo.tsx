@@ -66,7 +66,7 @@ export default function DeceasedPopulationSEO({
     const ageGroupStats = Object.entries(ageGroupData).map(
       ([ageGroup, data]) => ({
         "@type": "Observation",
-        name: `${AGE_GROUP_NAMES_EN[ageGroup] || ageGroup} deceased population in Khajura Rural Municipality`,
+        name: `${AGE_GROUP_NAMES_EN[ageGroup] || ageGroup} deceased population in duduwa Rural Municipality`,
         observationDate: new Date().toISOString().split("T")[0],
         measuredProperty: {
           "@type": "PropertyValue",
@@ -74,7 +74,7 @@ export default function DeceasedPopulationSEO({
           unitText: "people",
         },
         measuredValue: data.total,
-        description: `${data.total.toLocaleString()} deceased people in Khajura Rural Municipality in the age group ${AGE_GROUP_NAMES_EN[ageGroup] || ageGroup} (${((data.total / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
+        description: `${data.total.toLocaleString()} deceased people in duduwa Rural Municipality in the age group ${AGE_GROUP_NAMES_EN[ageGroup] || ageGroup} (${((data.total / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
       }),
     );
 
@@ -82,7 +82,7 @@ export default function DeceasedPopulationSEO({
     const genderStats = [
       {
         "@type": "Observation",
-        name: `${GENDER_NAMES_EN.MALE} deceased population in Khajura Rural Municipality`,
+        name: `${GENDER_NAMES_EN.MALE} deceased population in duduwa Rural Municipality`,
         observationDate: new Date().toISOString().split("T")[0],
         measuredProperty: {
           "@type": "PropertyValue",
@@ -90,11 +90,11 @@ export default function DeceasedPopulationSEO({
           unitText: "people",
         },
         measuredValue: genderTotals.male,
-        description: `${genderTotals.male.toLocaleString()} deceased ${GENDER_NAMES_EN.MALE} in Khajura Rural Municipality (${((genderTotals.male / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
+        description: `${genderTotals.male.toLocaleString()} deceased ${GENDER_NAMES_EN.MALE} in duduwa Rural Municipality (${((genderTotals.male / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
       },
       {
         "@type": "Observation",
-        name: `${GENDER_NAMES_EN.FEMALE} deceased population in Khajura Rural Municipality`,
+        name: `${GENDER_NAMES_EN.FEMALE} deceased population in duduwa Rural Municipality`,
         observationDate: new Date().toISOString().split("T")[0],
         measuredProperty: {
           "@type": "PropertyValue",
@@ -102,11 +102,11 @@ export default function DeceasedPopulationSEO({
           unitText: "people",
         },
         measuredValue: genderTotals.female,
-        description: `${genderTotals.female.toLocaleString()} deceased ${GENDER_NAMES_EN.FEMALE} in Khajura Rural Municipality (${((genderTotals.female / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
+        description: `${genderTotals.female.toLocaleString()} deceased ${GENDER_NAMES_EN.FEMALE} in duduwa Rural Municipality (${((genderTotals.female / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
       },
       {
         "@type": "Observation",
-        name: `${GENDER_NAMES_EN.OTHER} deceased population in Khajura Rural Municipality`,
+        name: `${GENDER_NAMES_EN.OTHER} deceased population in duduwa Rural Municipality`,
         observationDate: new Date().toISOString().split("T")[0],
         measuredProperty: {
           "@type": "PropertyValue",
@@ -114,14 +114,14 @@ export default function DeceasedPopulationSEO({
           unitText: "people",
         },
         measuredValue: genderTotals.other,
-        description: `${genderTotals.other.toLocaleString()} deceased ${GENDER_NAMES_EN.OTHER} in Khajura Rural Municipality (${((genderTotals.other / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
+        description: `${genderTotals.other.toLocaleString()} deceased ${GENDER_NAMES_EN.OTHER} in duduwa Rural Municipality (${((genderTotals.other / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
       },
     ].filter((item) => item.measuredValue > 0); // Only include non-zero values
 
     // Convert ward stats to structured data
     const wardStats = Object.entries(wardData).map(([ward, data]) => ({
       "@type": "Observation",
-      name: `Ward ${ward} deceased population in Khajura Rural Municipality`,
+      name: `Ward ${ward} deceased population in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -129,16 +129,16 @@ export default function DeceasedPopulationSEO({
         unitText: "people",
       },
       measuredValue: data.total,
-      description: `${data.total.toLocaleString()} deceased people in Ward ${ward} of Khajura Rural Municipality (${((data.total / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
+      description: `${data.total.toLocaleString()} deceased people in Ward ${ward} of duduwa Rural Municipality (${((data.total / totalDeceasedPopulation) * 100).toFixed(2)}% of total deceased population)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Age and Gender Wise Deceased Population in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Mortality data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total deceased population of ${totalDeceasedPopulation.toLocaleString()}. The most affected age group is ${AGE_GROUP_NAMES_EN[mostAffectedAgeGroupKey] || mostAffectedAgeGroupKey} with ${mostAffectedAgeGroupTotal.toLocaleString()} deceased (${mostAffectedAgeGroupPercentage}%), and the most affected ward is Ward ${mostAffectedWardNumber} with ${mostAffectedWardTotal.toLocaleString()} deceased (${mostAffectedWardPercentage}%).`,
+      name: "Age and Gender Wise Deceased Population in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Mortality data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total deceased population of ${totalDeceasedPopulation.toLocaleString()}. The most affected age group is ${AGE_GROUP_NAMES_EN[mostAffectedAgeGroupKey] || mostAffectedAgeGroupKey} with ${mostAffectedAgeGroupTotal.toLocaleString()} deceased (${mostAffectedAgeGroupPercentage}%), and the most affected ward is Ward ${mostAffectedWardNumber} with ${mostAffectedWardTotal.toLocaleString()} deceased (${mostAffectedWardPercentage}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Mortality statistics",
         "Age-gender wise mortality",
@@ -152,16 +152,16 @@ export default function DeceasedPopulationSEO({
         ),
         ...Object.values(GENDER_NAMES).map((name) => `${name} मृत्यु तथ्याङ्क`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-age-gender-wise-deceased-population",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-age-gender-wise-deceased-population",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

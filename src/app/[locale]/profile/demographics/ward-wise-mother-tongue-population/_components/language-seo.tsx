@@ -43,7 +43,7 @@ export default function LanguageSEO({
     // Convert language stats to structured data format
     const languageStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${LANGUAGE_NAMES_EN[item.language] || item.language} speakers in Khajura Rural Municipality`,
+      name: `${LANGUAGE_NAMES_EN[item.language] || item.language} speakers in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -51,16 +51,16 @@ export default function LanguageSEO({
         unitText: "people",
       },
       measuredValue: item.population,
-      description: `${item.population.toLocaleString()} people in Khajura Rural Municipality speak ${LANGUAGE_NAMES_EN[item.language] || item.language} as their mother tongue (${((item.population / totalPopulation) * 100).toFixed(2)}% of total population)`,
+      description: `${item.population.toLocaleString()} people in duduwa Rural Municipality speak ${LANGUAGE_NAMES_EN[item.language] || item.language} as their mother tongue (${((item.population / totalPopulation) * 100).toFixed(2)}% of total population)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Linguistic Demographics of Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Mother tongue distribution data across ${wardIds.length} wards of Khajura Rural Municipality with a total population of ${totalPopulation.toLocaleString()} people.`,
+      name: "Linguistic Demographics of duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Mother tongue distribution data across ${wardIds.length} wards of duduwa Rural Municipality with a total population of ${totalPopulation.toLocaleString()} people.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Linguistic demographics",
         "Mother tongue statistics",
@@ -69,16 +69,16 @@ export default function LanguageSEO({
         ...Object.values(LANGUAGE_NAMES_EN).map((name) => `${name} speakers`),
         ...Object.values(LANGUAGE_NAMES).map((name) => `${name} वक्ता`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-wise-mother-tongue-population",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-wise-mother-tongue-population",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

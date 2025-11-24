@@ -54,7 +54,7 @@ export default function WardWiseSolidWasteManagementCharts({
       >
         <meta
           itemProp="name"
-          content="Solid Waste Management Distribution in Khajura Rural Municipality"
+          content="Solid Waste Management Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -170,11 +170,11 @@ export default function WardWiseSolidWasteManagementCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Solid Waste Management in Khajura Rural Municipality"
+          content="Ward-wise Solid Waste Management in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of solid waste management methods across wards in Khajura"
+          content="Distribution of solid waste management methods across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -205,11 +205,11 @@ export default function WardWiseSolidWasteManagementCharts({
       >
         <meta
           itemProp="name"
-          content="Home Waste Collection Comparison Across Wards in Khajura Rural Municipality"
+          content="Home Waste Collection Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of home waste collection rates across wards in Khajura"
+          content="Comparison of home waste collection rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -241,11 +241,11 @@ export default function WardWiseSolidWasteManagementCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Solid Waste Management Analysis in Khajura Rural Municipality"
+          content="Ward-wise Solid Waste Management Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of solid waste management by ward in Khajura"
+          content="Detailed analysis of solid waste management by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

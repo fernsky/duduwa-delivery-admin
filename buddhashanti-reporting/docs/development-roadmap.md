@@ -247,8 +247,8 @@
 
 ```python
 # Project structure after Day 1
-buddhashanti_report/
-├── buddhashanti_report/
+duduwa_report/
+├── duduwa_report/
 │   ├── settings/
 │   │   ├── base.py      # ✅ Common settings
 │   │   ├── development.py # ✅ Dev settings

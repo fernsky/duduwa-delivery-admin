@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const safeMotherhoodSummary =
       await api.profile.fertility.safeMotherhoodIndicators.summary.query();
 
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
     const latestYear = safeMotherhoodSummary.latestYear;
 
     // Find key indicators for description
@@ -57,19 +57,19 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality safe motherhood services",
+      "duduwa Rural Municipality safe motherhood services",
       "Maternal health services",
       "Institutional delivery",
       `Institutional delivery rate ${Number(institutionalDeliveries).toFixed(1)}%`,
       `ANC coverage ${Number(ancCheckups).toFixed(1)}%`,
-      "Safe motherhood in Khajura",
+      "Safe motherhood in duduwa",
       "Maternal health analysis",
     ];
 
     // Create description
     const descriptionNP = `डुडुवा गाउँपालिकामा सुरक्षित मातृत्व सेवाको विश्लेषण। वर्ष ${latestYear} मा संस्थागत प्रसूति दर ${localizeNumber(Number(institutionalDeliveries).toFixed(1), "ne")}%, नियमित गर्भवती जाँच ${localizeNumber(Number(ancCheckups).toFixed(1), "ne")}%, र सुत्केरी पछिको जाँच ${localizeNumber(Number(pncVisits).toFixed(1), "ne")}% रहेको छ।`;
 
-    const descriptionEN = `Analysis of safe motherhood services in Khajura Rural Municipality. In year ${latestYear}, institutional delivery rate was ${Number(institutionalDeliveries).toFixed(1)}%, regular ANC checkups was ${Number(ancCheckups).toFixed(1)}%, and postnatal care was ${Number(pncVisits).toFixed(1)}%.`;
+    const descriptionEN = `Analysis of safe motherhood services in duduwa Rural Municipality. In year ${latestYear}, institutional delivery rate was ${Number(institutionalDeliveries).toFixed(1)}%, regular ANC checkups was ${Number(ancCheckups).toFixed(1)}%, and postnatal care was ${Number(pncVisits).toFixed(1)}%.`;
 
     return {
       title: `सुरक्षित मातृत्व सूचकहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -225,7 +225,7 @@ export default async function SafeMotherhoodIndicatorsPage() {
               src="/images/safe-motherhood-services.svg"
               width={1200}
               height={400}
-              alt="सुरक्षित मातृत्व सेवा - डुडुवा गाउँपालिका (Safe Motherhood Services - Khajura Rural Municipality)"
+              alt="सुरक्षित मातृत्व सेवा - डुडुवा गाउँपालिका (Safe Motherhood Services - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

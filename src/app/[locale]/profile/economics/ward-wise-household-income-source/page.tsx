@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const incomeSourceData =
       await api.profile.economics.wardWiseHouseholdIncomeSource.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalHouseholds = incomeSourceData.reduce(
@@ -67,17 +67,17 @@ export async function generateMetadata(): Promise<Metadata> {
       `डुडुवा कुल घरपरिवार संख्या ${localizeNumber(totalHouseholds.toString(), "ne")}`,
     ];
     const keywordsEN = [
-      "Khajura Rural Municipality household income sources",
-      "Khajura economic activities",
-      `Khajura ${incomeSourceLabels[topIncomeSources[0] as keyof typeof incomeSourceLabels]}`,
+      "duduwa Rural Municipality household income sources",
+      "duduwa economic activities",
+      `duduwa ${incomeSourceLabels[topIncomeSources[0] as keyof typeof incomeSourceLabels]}`,
       ...topIncomeSources.map(
         (r) =>
-          `${incomeSourceLabels[r as keyof typeof incomeSourceLabels]} households in Khajura`,
+          `${incomeSourceLabels[r as keyof typeof incomeSourceLabels]} households in duduwa`,
       ),
       "Ward-wise household income sources",
       "Economic activity statistics",
-      "Income source survey Khajura",
-      `Khajura total households ${totalHouseholds}`,
+      "Income source survey duduwa",
+      `duduwa total households ${totalHouseholds}`,
     ];
 
     // Create detailed description with actual data
@@ -101,7 +101,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "ne",
     )})। विभिन्न आय स्रोतहरूको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise household income source distribution, trends and analysis for Khajura Rural Municipality. Out of a total of ${totalHouseholds} households, ${
+    const descriptionEN = `Ward-wise household income source distribution, trends and analysis for duduwa Rural Municipality. Out of a total of ${totalHouseholds} households, ${
       incomeSourceLabels[topIncomeSources[0] as keyof typeof incomeSourceLabels]
     } (${incomeSourceCounts[topIncomeSources[0]]}) is the largest group, followed by ${
       incomeSourceLabels[topIncomeSources[1] as keyof typeof incomeSourceLabels]
@@ -283,7 +283,7 @@ export default async function WardWiseHouseholdIncomeSourcePage() {
               src="/images/income-sources.svg"
               width={1200}
               height={400}
-              alt="घरपरिवारको आय स्रोत - डुडुवा गाउँपालिका (Household Income Sources - Khajura Rural Municipality)"
+              alt="घरपरिवारको आय स्रोत - डुडुवा गाउँपालिका (Household Income Sources - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

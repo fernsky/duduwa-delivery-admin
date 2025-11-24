@@ -42,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
   try {
     const wardWiseLiteracyStatusData =
       await api.profile.education.wardWiseLiteracyStatus.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Group by ward number
     const wardGroups = wardWiseLiteracyStatusData.reduce(
@@ -133,7 +133,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality literacy rate",
+      "duduwa Rural Municipality literacy rate",
       "Literacy status",
       "Ward-wise literacy",
       "Reading and writing skills",
@@ -145,7 +145,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create description
     const descriptionNP = `डुडुवा गाउँपालिकामा साक्षरताको अवस्थाको विश्लेषण। कुल ${localizeNumber(totalPopulation.toLocaleString(), "ne")} जनसंख्या मध्ये ${localizeNumber(bothReadingWritingPercentage, "ne")}% (${localizeNumber(bothReadingWritingTotal.toLocaleString(), "ne")}) जना पढ्न र लेख्न जान्दछन्। वडा ${localizeNumber(bestLiteracyWard, "ne")} मा सबैभन्दा राम्रो साक्षरता स्थिति छ, जहाँ ${localizeNumber(bestLiteracyPercentage.toFixed(2), "ne")}% नागरिकहरू साक्षर छन्।`;
 
-    const descriptionEN = `Analysis of literacy status in Khajura Rural Municipality. Out of a total of ${totalPopulation.toLocaleString()} people, ${bothReadingWritingPercentage}% (${bothReadingWritingTotal.toLocaleString()}) can both read and write. Ward ${bestLiteracyWard} has the best literacy status, where ${bestLiteracyPercentage.toFixed(2)}% of citizens are literate.`;
+    const descriptionEN = `Analysis of literacy status in duduwa Rural Municipality. Out of a total of ${totalPopulation.toLocaleString()} people, ${bothReadingWritingPercentage}% (${bothReadingWritingTotal.toLocaleString()}) can both read and write. Ward ${bestLiteracyWard} has the best literacy status, where ${bestLiteracyPercentage.toFixed(2)}% of citizens are literate.`;
 
     return {
       title: `साक्षरता स्थिति | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -383,7 +383,7 @@ export default async function WardWiseLiteracyStatusPage() {
               src="/images/literacy-status.svg"
               width={1200}
               height={400}
-              alt="साक्षरताको अवस्था - डुडुवा गाउँपालिका (Literacy Status - Khajura Rural Municipality)"
+              alt="साक्षरताको अवस्था - डुडुवा गाउँपालिका (Literacy Status - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

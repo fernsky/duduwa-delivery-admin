@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 (
                     "municipality_name_english",
                     models.CharField(
-                        default="buddhashanti Rural Municipality", max_length=200
+                        default="duduwa Rural Municipality", max_length=200
                     ),
                 ),
                 (

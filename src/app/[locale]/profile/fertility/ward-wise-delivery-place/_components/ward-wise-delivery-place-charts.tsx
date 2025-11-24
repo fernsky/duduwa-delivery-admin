@@ -63,7 +63,7 @@ export default function WardWiseDeliveryPlaceCharts({
       >
         <meta
           itemProp="name"
-          content="Delivery Place Distribution in Khajura Rural Municipality"
+          content="Delivery Place Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -185,11 +185,11 @@ export default function WardWiseDeliveryPlaceCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Delivery Places in Khajura Rural Municipality"
+          content="Ward-wise Delivery Places in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of childbirth locations across wards in Khajura"
+          content="Distribution of childbirth locations across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -219,11 +219,11 @@ export default function WardWiseDeliveryPlaceCharts({
       >
         <meta
           itemProp="name"
-          content="Institutional Delivery Comparison Across Wards in Khajura Rural Municipality"
+          content="Institutional Delivery Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of institutional delivery rates across wards in Khajura"
+          content="Comparison of institutional delivery rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -255,11 +255,11 @@ export default function WardWiseDeliveryPlaceCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Delivery Place Analysis in Khajura Rural Municipality"
+          content="Ward-wise Delivery Place Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of childbirth locations by ward in Khajura"
+          content="Detailed analysis of childbirth locations by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

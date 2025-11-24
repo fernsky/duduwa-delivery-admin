@@ -82,7 +82,7 @@ export default function DisabilityCauseAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-disability-population",
@@ -217,7 +217,7 @@ export default function DisabilityCauseAnalysisSection({
         <h3 className="text-xl font-medium mb-4">
           डुडुवा गाउँपालिकाको अपाङ्गता कारण विश्लेषण
           <span className="sr-only">
-            Disability Cause Analysis of Khajura Rural Municipality
+            Disability Cause Analysis of duduwa Rural Municipality
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -237,7 +237,7 @@ export default function DisabilityCauseAnalysisSection({
             <h4 className="font-medium mb-2">
               डुडुवा गाउँपालिकाको प्रमुख अपाङ्गता कारण
               <span className="sr-only">
-                Main Disability Cause in Khajura Rural Municipality
+                Main Disability Cause in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -260,7 +260,7 @@ export default function DisabilityCauseAnalysisSection({
                       100
                     ).toFixed(
                       2,
-                    )}% of total disability population in Khajura Rural Municipality`
+                    )}% of total disability population in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>
@@ -276,7 +276,7 @@ export default function DisabilityCauseAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख-दोस्रो कारण अनुपात
               <span className="sr-only">
-                Primary to Secondary Disability Cause Ratio in Khajura
+                Primary to Secondary Disability Cause Ratio in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -290,7 +290,7 @@ export default function DisabilityCauseAnalysisSection({
                 : ""}
               <span className="sr-only">
                 {topCause && secondCause
-                  ? `For every ${topTwoCausesRatio} ${topCause.disabilityCause.toLowerCase()} cases, there is 1 ${secondCause.disabilityCause.toLowerCase()} case in Khajura Rural Municipality`
+                  ? `For every ${topTwoCausesRatio} ${topCause.disabilityCause.toLowerCase()} cases, there is 1 ${secondCause.disabilityCause.toLowerCase()} case in duduwa Rural Municipality`
                   : ""}
               </span>
             </p>

@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const economicallyActiveData =
       await api.profile.economics.wardAgeGenderWiseEconomicallyActivePopulation.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalPopulation = economicallyActiveData.reduce(
@@ -95,20 +95,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality economically active population",
-      "Khajura ward-wise economic demographics",
-      "Demographic classification Khajura",
+      "duduwa Rural Municipality economically active population",
+      "duduwa ward-wise economic demographics",
+      "Demographic classification duduwa",
       "Working age group",
       "Gender-wise economic population",
       "Economic activity analysis",
       "15-59 age group population",
-      `Khajura total economically active population ${totalPopulation}`,
+      `duduwa total economically active population ${totalPopulation}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार आर्थिक रूपमा सक्रिय जनसंख्या वितरण, उमेर र लिङ्ग अनुसार वर्गीकरण तथा विश्लेषण। कुल ${totalPopulation} जनसंख्या मध्ये कार्यसक्षम उमेर समूह (१५-५९ वर्ष) ${workingAgePopulation} जना (${workingAgePercentage}%) छन्। लिङ्ग अनुसार ${GENDER_NAMES_NP["MALE"]} ${genderCounts["MALE"] || 0}, ${GENDER_NAMES_NP["FEMALE"]} ${genderCounts["FEMALE"] || 0}, र ${GENDER_NAMES_NP["OTHER"]} ${genderCounts["OTHER"] || 0} रहेका छन्। विस्तृत तथ्याङ्क र विजुअलाइजेसन सहित।`;
 
-    const descriptionEN = `Ward-wise economically active population distribution, age and gender classification, and analysis for Khajura Rural Municipality. Out of a total ${totalPopulation} population, the working-age group (15-59 years) comprises ${workingAgePopulation} people (${workingAgePercentage}%). Gender distribution shows ${GENDER_NAMES_EN["MALE"]} ${genderCounts["MALE"] || 0}, ${GENDER_NAMES_EN["FEMALE"]} ${genderCounts["FEMALE"] || 0}, and ${GENDER_NAMES_EN["OTHER"]} ${genderCounts["OTHER"] || 0}. Includes detailed statistics and visualizations.`;
+    const descriptionEN = `Ward-wise economically active population distribution, age and gender classification, and analysis for duduwa Rural Municipality. Out of a total ${totalPopulation} population, the working-age group (15-59 years) comprises ${workingAgePopulation} people (${workingAgePercentage}%). Gender distribution shows ${GENDER_NAMES_EN["MALE"]} ${genderCounts["MALE"] || 0}, ${GENDER_NAMES_EN["FEMALE"]} ${genderCounts["FEMALE"] || 0}, and ${GENDER_NAMES_EN["OTHER"]} ${genderCounts["OTHER"] || 0}. Includes detailed statistics and visualizations.`;
 
     return {
       title: `आर्थिक रूपमा सक्रिय जनसंख्या | ${municipalityName} पालिका प्रोफाइल`,
@@ -336,7 +336,7 @@ export default async function WardEconomicallyActivePopulationPage() {
               src="/images/economically-active.svg"
               width={1200}
               height={400}
-              alt="आर्थिक रूपमा सक्रिय जनसंख्या - डुडुवा गाउँपालिका (Economically Active Population - Khajura Rural Municipality)"
+              alt="आर्थिक रूपमा सक्रिय जनसंख्या - डुडुवा गाउँपालिका (Economically Active Population - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

@@ -4,7 +4,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 1,
     "institution_name": "Adarsha Pra V Badahara",
     "school_code": "560110002",
@@ -21,21 +21,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 27, "boys": 25, "others": 0, "total": 52 },
-      "grade_1": { "girls": 17, "boys": 26, "others": 0, "total": 0 },
-      "grade_2": { "girls": 28, "boys": 4, "others": 0, "total": 0 },
-      "grade_3": { "girls": 22, "boys": 11, "others": 0, "total": 0 },
-      "grade_4": { "girls": 17, "boys": 9, "others": 0, "total": 18 },
-      "grade_5": { "girls": 10, "boys": 0, "others": 0, "total": 17 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 22, "boys": 13, "others": 0, "total": 35 },
-      "grade_8": { "girls": 17, "boys": 25, "others": 0, "total": 42 },
-      "grade_9": { "girls": 42, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 39, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 27,
+        "boys": 25,
+        "others": 0,
+        "total": 52
+      },
+      "grade_1": {
+        "girls": 17,
+        "boys": 26,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 28,
+        "boys": 4,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 22,
+        "boys": 11,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 17,
+        "boys": 9,
+        "others": 0,
+        "total": 18
+      },
+      "grade_5": {
+        "girls": 10,
+        "boys": 0,
+        "others": 0,
+        "total": 17
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 22,
+        "boys": 13,
+        "others": 0,
+        "total": 35
+      },
+      "grade_8": {
+        "girls": 17,
+        "boys": 25,
+        "others": 0,
+        "total": 42
+      },
+      "grade_9": {
+        "girls": 42,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 39,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -43,7 +118,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 3,
     "institution_name": "Adarsha Ratri Adharbhut Vidhyalaya Gobardiya",
     "school_code": "560110014",
@@ -60,21 +135,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 9, "boys": 5, "others": 0, "total": 14 },
-      "grade_1": { "girls": 11, "boys": 17, "others": 0, "total": 0 },
-      "grade_2": { "girls": 22, "boys": 11, "others": 0, "total": 21 },
-      "grade_3": { "girls": 28, "boys": 4, "others": 0, "total": 24 },
-      "grade_4": { "girls": 24, "boys": 12, "others": 0, "total": 29 },
-      "grade_5": { "girls": 14, "boys": 0, "others": 0, "total": 17 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 25, "boys": 19, "others": 0, "total": 44 },
-      "grade_8": { "girls": 16, "boys": 23, "others": 0, "total": 0 },
-      "grade_9": { "girls": 39, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 9,
+        "boys": 5,
+        "others": 0,
+        "total": 14
+      },
+      "grade_1": {
+        "girls": 11,
+        "boys": 17,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 22,
+        "boys": 11,
+        "others": 0,
+        "total": 21
+      },
+      "grade_3": {
+        "girls": 28,
+        "boys": 4,
+        "others": 0,
+        "total": 24
+      },
+      "grade_4": {
+        "girls": 24,
+        "boys": 12,
+        "others": 0,
+        "total": 29
+      },
+      "grade_5": {
+        "girls": 14,
+        "boys": 0,
+        "others": 0,
+        "total": 17
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 25,
+        "boys": 19,
+        "others": 0,
+        "total": 44
+      },
+      "grade_8": {
+        "girls": 16,
+        "boys": 23,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 39,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -82,7 +232,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 1,
     "institution_name": "Adarshya Vidhyalaya Banghushree",
     "school_code": "560090010",
@@ -99,21 +249,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 15, "boys": 15, "others": 0, "total": 30 },
-      "grade_1": { "girls": 9, "boys": 13, "others": 0, "total": 0 },
-      "grade_2": { "girls": 9, "boys": 15, "others": 0, "total": 0 },
-      "grade_3": { "girls": 9, "boys": 2, "others": 0, "total": 5 },
-      "grade_4": { "girls": 5, "boys": 3, "others": 0, "total": 6 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 8 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 8, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 15,
+        "boys": 15,
+        "others": 0,
+        "total": 30
+      },
+      "grade_1": {
+        "girls": 9,
+        "boys": 13,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 9,
+        "boys": 15,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 9,
+        "boys": 2,
+        "others": 0,
+        "total": 5
+      },
+      "grade_4": {
+        "girls": 5,
+        "boys": 3,
+        "others": 0,
+        "total": 6
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 8
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 8,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -121,7 +346,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
     "institution_name": "Bal Buddhi Pra V Khabarikhutti",
     "school_code": "560090010",
@@ -138,21 +363,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 4, "boys": 6, "others": 0, "total": 10 },
-      "grade_1": { "girls": 8, "boys": 1, "others": 0, "total": 0 },
-      "grade_2": { "girls": 9, "boys": 3, "others": 0, "total": 5 },
-      "grade_3": { "girls": 5, "boys": 3, "others": 0, "total": 5 },
-      "grade_4": { "girls": 3, "boys": 0, "others": 0, "total": 3 },
-      "grade_5": { "girls": 4, "boys": 0, "others": 0, "total": 10 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 4,
+        "boys": 6,
+        "others": 0,
+        "total": 10
+      },
+      "grade_1": {
+        "girls": 8,
+        "boys": 1,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 9,
+        "boys": 3,
+        "others": 0,
+        "total": 5
+      },
+      "grade_3": {
+        "girls": 5,
+        "boys": 3,
+        "others": 0,
+        "total": 5
+      },
+      "grade_4": {
+        "girls": 3,
+        "boys": 0,
+        "others": 0,
+        "total": 3
+      },
+      "grade_5": {
+        "girls": 4,
+        "boys": 0,
+        "others": 0,
+        "total": 10
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -160,7 +460,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
     "institution_name": "Bal Sansar Academy",
     "school_code": "560090014",
@@ -177,21 +477,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 93, "boys": 136, "others": 0, "total": 229 },
-      "grade_1": { "girls": 31, "boys": 25, "others": 0, "total": 0 },
-      "grade_2": { "girls": 56, "boys": 12, "others": 0, "total": 28 },
-      "grade_3": { "girls": 99, "boys": 24, "others": 0, "total": 63 },
-      "grade_4": { "girls": 15, "boys": 11, "others": 0, "total": 24 },
-      "grade_5": { "girls": 37, "boys": 0, "others": 0, "total": 63 },
-      "grade_6": { "girls": 26, "boys": 34, "others": 0, "total": 60 },
-      "grade_7": { "girls": 25, "boys": 31, "others": 0, "total": 56 },
-      "grade_8": { "girls": 31, "boys": 28, "others": 0, "total": 0 },
-      "grade_9": { "girls": 59, "boys": 21, "others": 0, "total": 26 },
-      "grade_10": { "girls": 47, "boys": 23, "others": 0, "total": 26 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 93,
+        "boys": 136,
+        "others": 0,
+        "total": 229
+      },
+      "grade_1": {
+        "girls": 31,
+        "boys": 25,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 56,
+        "boys": 12,
+        "others": 0,
+        "total": 28
+      },
+      "grade_3": {
+        "girls": 99,
+        "boys": 24,
+        "others": 0,
+        "total": 63
+      },
+      "grade_4": {
+        "girls": 15,
+        "boys": 11,
+        "others": 0,
+        "total": 24
+      },
+      "grade_5": {
+        "girls": 37,
+        "boys": 0,
+        "others": 0,
+        "total": 63
+      },
+      "grade_6": {
+        "girls": 26,
+        "boys": 34,
+        "others": 0,
+        "total": 60
+      },
+      "grade_7": {
+        "girls": 25,
+        "boys": 31,
+        "others": 0,
+        "total": 56
+      },
+      "grade_8": {
+        "girls": 31,
+        "boys": 28,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 59,
+        "boys": 21,
+        "others": 0,
+        "total": 26
+      },
+      "grade_10": {
+        "girls": 47,
+        "boys": 23,
+        "others": 0,
+        "total": 26
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -199,7 +574,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Buddha Jyoti Secondary School",
     "school_code": "560090013",
@@ -216,21 +591,96 @@
       "grades_11_to_12": true
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 3, "boys": 1, "others": 0, "total": 4 },
-      "grade_1": { "girls": 47, "boys": 52, "others": 0, "total": 0 },
-      "grade_2": { "girls": 19, "boys": 10, "others": 0, "total": 26 },
-      "grade_3": { "girls": 9, "boys": 4, "others": 0, "total": 8 },
-      "grade_4": { "girls": 11, "boys": 13, "others": 0, "total": 0 },
-      "grade_5": { "girls": 8, "boys": 0, "others": 0, "total": 16 },
-      "grade_6": { "girls": 0, "boys": 7, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 29 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 3,
+        "boys": 1,
+        "others": 0,
+        "total": 4
+      },
+      "grade_1": {
+        "girls": 47,
+        "boys": 52,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 19,
+        "boys": 10,
+        "others": 0,
+        "total": 26
+      },
+      "grade_3": {
+        "girls": 9,
+        "boys": 4,
+        "others": 0,
+        "total": 8
+      },
+      "grade_4": {
+        "girls": 11,
+        "boys": 13,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 8,
+        "boys": 0,
+        "others": 0,
+        "total": 16
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 7,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 29
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -238,7 +688,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 5,
     "institution_name": "Debel Ebs Pachaha",
     "school_code": "560110019",
@@ -255,21 +705,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 52, "boys": 61, "others": 0, "total": 113 },
-      "grade_1": { "girls": 5, "boys": 14, "others": 0, "total": 0 },
-      "grade_2": { "girls": 4, "boys": 1, "others": 0, "total": 5 },
-      "grade_3": { "girls": 0, "boys": 0, "others": 0, "total": 2 },
-      "grade_4": { "girls": 2, "boys": 5, "others": 0, "total": 7 },
-      "grade_5": { "girls": 4, "boys": 0, "others": 0, "total": 9 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 7 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 52,
+        "boys": 61,
+        "others": 0,
+        "total": 113
+      },
+      "grade_1": {
+        "girls": 5,
+        "boys": 14,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 4,
+        "boys": 1,
+        "others": 0,
+        "total": 5
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 2
+      },
+      "grade_4": {
+        "girls": 2,
+        "boys": 5,
+        "others": 0,
+        "total": 7
+      },
+      "grade_5": {
+        "girls": 4,
+        "boys": 0,
+        "others": 0,
+        "total": 9
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 7
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -277,7 +802,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Deepganga English Boarding School",
     "school_code": "560100012",
@@ -294,21 +819,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 34, "boys": 31, "others": 0, "total": 65 },
-      "grade_1": { "girls": 7, "boys": 2, "others": 0, "total": 0 },
-      "grade_2": { "girls": 89, "boys": 0, "others": 0, "total": 0 },
-      "grade_3": { "girls": 0, "boys": 1, "others": 0, "total": 1 },
-      "grade_4": { "girls": 0, "boys": 1, "others": 0, "total": 1 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 34,
+        "boys": 31,
+        "others": 0,
+        "total": 65
+      },
+      "grade_1": {
+        "girls": 7,
+        "boys": 2,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 89,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 1,
+        "others": 0,
+        "total": 1
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 1,
+        "others": 0,
+        "total": 1
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -316,7 +916,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 7,
     "institution_name": "Dhrubatara English Boarding School",
     "school_code": "560090018",
@@ -333,21 +933,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 0, "boys": 0, "others": 0, "total": 41 },
-      "grade_1": { "girls": 41, "boys": 48, "others": 0, "total": 0 },
-      "grade_2": { "girls": 23, "boys": 21, "others": 0, "total": 32 },
-      "grade_3": { "girls": 24, "boys": 8, "others": 0, "total": 32 },
-      "grade_4": { "girls": 32, "boys": 20, "others": 0, "total": 36 },
-      "grade_5": { "girls": 13, "boys": 28, "others": 0, "total": 33 },
-      "grade_6": { "girls": 28, "boys": 28, "others": 0, "total": 56 },
-      "grade_7": { "girls": 28, "boys": 28, "others": 0, "total": 56 },
-      "grade_8": { "girls": 25, "boys": 29, "others": 0, "total": 0 },
-      "grade_9": { "girls": 54, "boys": 11, "others": 0, "total": 13 },
-      "grade_10": { "girls": 24, "boys": 18, "others": 0, "total": 10 },
-      "grade_11": { "girls": 28, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 41
+      },
+      "grade_1": {
+        "girls": 41,
+        "boys": 48,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 23,
+        "boys": 21,
+        "others": 0,
+        "total": 32
+      },
+      "grade_3": {
+        "girls": 24,
+        "boys": 8,
+        "others": 0,
+        "total": 32
+      },
+      "grade_4": {
+        "girls": 32,
+        "boys": 20,
+        "others": 0,
+        "total": 36
+      },
+      "grade_5": {
+        "girls": 13,
+        "boys": 28,
+        "others": 0,
+        "total": 33
+      },
+      "grade_6": {
+        "girls": 28,
+        "boys": 28,
+        "others": 0,
+        "total": 56
+      },
+      "grade_7": {
+        "girls": 28,
+        "boys": 28,
+        "others": 0,
+        "total": 56
+      },
+      "grade_8": {
+        "girls": 25,
+        "boys": 29,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 54,
+        "boys": 11,
+        "others": 0,
+        "total": 13
+      },
+      "grade_10": {
+        "girls": 24,
+        "boys": 18,
+        "others": 0,
+        "total": 10
+      },
+      "grade_11": {
+        "girls": 28,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -355,7 +1030,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 4,
     "institution_name": "Dipendra Homjun Madhyamik Vidyalaya Parseni",
     "school_code": "560100001",
@@ -372,21 +1047,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 24, "boys": 14, "others": 0, "total": 38 },
-      "grade_1": { "girls": 11, "boys": 12, "others": 0, "total": 0 },
-      "grade_2": { "girls": 24, "boys": 8, "others": 0, "total": 20 },
-      "grade_3": { "girls": 2, "boys": 1, "others": 0, "total": 2 },
-      "grade_4": { "girls": 25, "boys": 10, "others": 0, "total": 26 },
-      "grade_5": { "girls": 12, "boys": 15, "others": 0, "total": 29 },
-      "grade_6": { "girls": 21, "boys": 14, "others": 0, "total": 35 },
-      "grade_7": { "girls": 10, "boys": 11, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 21, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 21, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 24,
+        "boys": 14,
+        "others": 0,
+        "total": 38
+      },
+      "grade_1": {
+        "girls": 11,
+        "boys": 12,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 24,
+        "boys": 8,
+        "others": 0,
+        "total": 20
+      },
+      "grade_3": {
+        "girls": 2,
+        "boys": 1,
+        "others": 0,
+        "total": 2
+      },
+      "grade_4": {
+        "girls": 25,
+        "boys": 10,
+        "others": 0,
+        "total": 26
+      },
+      "grade_5": {
+        "girls": 12,
+        "boys": 15,
+        "others": 0,
+        "total": 29
+      },
+      "grade_6": {
+        "girls": 21,
+        "boys": 14,
+        "others": 0,
+        "total": 35
+      },
+      "grade_7": {
+        "girls": 10,
+        "boys": 11,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 21,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 21,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -394,7 +1144,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 8,
     "institution_name": "Durga Adharbhut Vidhyalaya Manikapur",
     "school_code": "560090008",
@@ -411,21 +1161,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 9, "boys": 6, "others": 0, "total": 15 },
-      "grade_1": { "girls": 19, "boys": 5, "others": 0, "total": 0 },
-      "grade_2": { "girls": 9, "boys": 3, "others": 0, "total": 7 },
-      "grade_3": { "girls": 4, "boys": 0, "others": 0, "total": 5 },
-      "grade_4": { "girls": 2, "boys": 2, "others": 0, "total": 2 },
-      "grade_5": { "girls": 2, "boys": 0, "others": 0, "total": 3 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 9,
+        "boys": 6,
+        "others": 0,
+        "total": 15
+      },
+      "grade_1": {
+        "girls": 19,
+        "boys": 5,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 9,
+        "boys": 3,
+        "others": 0,
+        "total": 7
+      },
+      "grade_3": {
+        "girls": 4,
+        "boys": 0,
+        "others": 0,
+        "total": 5
+      },
+      "grade_4": {
+        "girls": 2,
+        "boys": 2,
+        "others": 0,
+        "total": 2
+      },
+      "grade_5": {
+        "girls": 2,
+        "boys": 0,
+        "others": 0,
+        "total": 3
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -433,7 +1258,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
     "institution_name": "Durga Pra V Khabarinaka",
     "school_code": "560180001",
@@ -450,21 +1275,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 3, "boys": 4, "others": 0, "total": 7 },
-      "grade_1": { "girls": 0, "boys": 2, "others": 0, "total": 0 },
-      "grade_2": { "girls": 2, "boys": 1, "others": 0, "total": 1 },
-      "grade_3": { "girls": 9, "boys": 4, "others": 0, "total": 6 },
-      "grade_4": { "girls": 6, "boys": 5, "others": 0, "total": 5 },
-      "grade_5": { "girls": 7, "boys": 0, "others": 0, "total": 9 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 3,
+        "boys": 4,
+        "others": 0,
+        "total": 7
+      },
+      "grade_1": {
+        "girls": 0,
+        "boys": 2,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 2,
+        "boys": 1,
+        "others": 0,
+        "total": 1
+      },
+      "grade_3": {
+        "girls": 9,
+        "boys": 4,
+        "others": 0,
+        "total": 6
+      },
+      "grade_4": {
+        "girls": 6,
+        "boys": 5,
+        "others": 0,
+        "total": 5
+      },
+      "grade_5": {
+        "girls": 7,
+        "boys": 0,
+        "others": 0,
+        "total": 9
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -472,7 +1372,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Ganesh Pra V Chimchimche",
     "school_code": "560110001",
@@ -489,21 +1389,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 7, "boys": 4, "others": 0, "total": 11 },
-      "grade_1": { "girls": 4, "boys": 5, "others": 0, "total": 0 },
-      "grade_2": { "girls": 62, "boys": 19, "others": 0, "total": 50 },
-      "grade_3": { "girls": 56, "boys": 27, "others": 0, "total": 71 },
-      "grade_4": { "girls": 56, "boys": 27, "others": 0, "total": 71 },
-      "grade_5": { "girls": 45, "boys": 0, "others": 0, "total": 73 },
-      "grade_6": { "girls": 23, "boys": 19, "others": 0, "total": 42 },
-      "grade_7": { "girls": 20, "boys": 15, "others": 0, "total": 0 },
-      "grade_8": { "girls": 42, "boys": 20, "others": 0, "total": 0 },
-      "grade_9": { "girls": 35, "boys": 12, "others": 0, "total": 21 },
-      "grade_10": { "girls": 33, "boys": 14, "others": 0, "total": 16 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 38, "boys": 0, "others": 0, "total": 101 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 7,
+        "boys": 4,
+        "others": 0,
+        "total": 11
+      },
+      "grade_1": {
+        "girls": 4,
+        "boys": 5,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 62,
+        "boys": 19,
+        "others": 0,
+        "total": 50
+      },
+      "grade_3": {
+        "girls": 56,
+        "boys": 27,
+        "others": 0,
+        "total": 71
+      },
+      "grade_4": {
+        "girls": 56,
+        "boys": 27,
+        "others": 0,
+        "total": 71
+      },
+      "grade_5": {
+        "girls": 45,
+        "boys": 0,
+        "others": 0,
+        "total": 73
+      },
+      "grade_6": {
+        "girls": 23,
+        "boys": 19,
+        "others": 0,
+        "total": 42
+      },
+      "grade_7": {
+        "girls": 20,
+        "boys": 15,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 42,
+        "boys": 20,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 35,
+        "boys": 12,
+        "others": 0,
+        "total": 21
+      },
+      "grade_10": {
+        "girls": 33,
+        "boys": 14,
+        "others": 0,
+        "total": 16
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 38,
+        "boys": 0,
+        "others": 0,
+        "total": 101
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -511,7 +1486,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Gyan Jyoti Ebs",
     "school_code": "560110004",
@@ -528,21 +1503,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 151, "boys": 166, "others": 0, "total": 317 },
-      "grade_1": { "girls": 25, "boys": 37, "others": 0, "total": 0 },
-      "grade_2": { "girls": 5, "boys": 6, "others": 0, "total": 12 },
-      "grade_3": { "girls": 6, "boys": 8, "others": 0, "total": 11 },
-      "grade_4": { "girls": 6, "boys": 8, "others": 0, "total": 11 },
-      "grade_5": { "girls": 7, "boys": 0, "others": 0, "total": 14 },
-      "grade_6": { "girls": 12, "boys": 6, "others": 0, "total": 18 },
-      "grade_7": { "girls": 15, "boys": 10, "others": 0, "total": 0 },
-      "grade_8": { "girls": 15, "boys": 10, "others": 0, "total": 0 },
-      "grade_9": { "girls": 25, "boys": 12, "others": 0, "total": 18 },
-      "grade_10": { "girls": 30, "boys": 20, "others": 0, "total": 16 },
-      "grade_11": { "girls": 36, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 23, "boys": 0, "others": 0, "total": 56 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 151,
+        "boys": 166,
+        "others": 0,
+        "total": 317
+      },
+      "grade_1": {
+        "girls": 25,
+        "boys": 37,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 5,
+        "boys": 6,
+        "others": 0,
+        "total": 12
+      },
+      "grade_3": {
+        "girls": 6,
+        "boys": 8,
+        "others": 0,
+        "total": 11
+      },
+      "grade_4": {
+        "girls": 6,
+        "boys": 8,
+        "others": 0,
+        "total": 11
+      },
+      "grade_5": {
+        "girls": 7,
+        "boys": 0,
+        "others": 0,
+        "total": 14
+      },
+      "grade_6": {
+        "girls": 12,
+        "boys": 6,
+        "others": 0,
+        "total": 18
+      },
+      "grade_7": {
+        "girls": 15,
+        "boys": 10,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 15,
+        "boys": 10,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 25,
+        "boys": 12,
+        "others": 0,
+        "total": 18
+      },
+      "grade_10": {
+        "girls": 30,
+        "boys": 20,
+        "others": 0,
+        "total": 16
+      },
+      "grade_11": {
+        "girls": 36,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 23,
+        "boys": 0,
+        "others": 0,
+        "total": 56
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -550,7 +1600,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
     "institution_name": "Gyan Jyoti Pra V Manpur",
     "school_code": "560090007",
@@ -567,21 +1617,96 @@
       "grades_11_to_12": true
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 5, "boys": 6, "others": 0, "total": 11 },
-      "grade_1": { "girls": 3, "boys": 2, "others": 0, "total": 0 },
-      "grade_2": { "girls": 16, "boys": 8, "others": 0, "total": 15 },
-      "grade_3": { "girls": 17, "boys": 10, "others": 0, "total": 18 },
-      "grade_4": { "girls": 17, "boys": 8, "others": 0, "total": 18 },
-      "grade_5": { "girls": 18, "boys": 19, "others": 0, "total": 18 },
-      "grade_6": { "girls": 66, "boys": 57, "others": 0, "total": 123 },
-      "grade_7": { "girls": 67, "boys": 47, "others": 0, "total": 0 },
-      "grade_8": { "girls": 36, "boys": 23, "others": 0, "total": 0 },
-      "grade_9": { "girls": 114, "boys": 102, "others": 0, "total": 115 },
-      "grade_10": { "girls": 217, "boys": 103, "others": 0, "total": 82 },
-      "grade_11": { "girls": 132, "boys": 9, "others": 0, "total": 7 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 5,
+        "boys": 6,
+        "others": 0,
+        "total": 11
+      },
+      "grade_1": {
+        "girls": 3,
+        "boys": 2,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 16,
+        "boys": 8,
+        "others": 0,
+        "total": 15
+      },
+      "grade_3": {
+        "girls": 17,
+        "boys": 10,
+        "others": 0,
+        "total": 18
+      },
+      "grade_4": {
+        "girls": 17,
+        "boys": 8,
+        "others": 0,
+        "total": 18
+      },
+      "grade_5": {
+        "girls": 18,
+        "boys": 19,
+        "others": 0,
+        "total": 18
+      },
+      "grade_6": {
+        "girls": 66,
+        "boys": 57,
+        "others": 0,
+        "total": 123
+      },
+      "grade_7": {
+        "girls": 67,
+        "boys": 47,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 36,
+        "boys": 23,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 114,
+        "boys": 102,
+        "others": 0,
+        "total": 115
+      },
+      "grade_10": {
+        "girls": 217,
+        "boys": 103,
+        "others": 0,
+        "total": 82
+      },
+      "grade_11": {
+        "girls": 132,
+        "boys": 9,
+        "others": 0,
+        "total": 7
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -589,7 +1714,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 7,
     "institution_name": "Jana Mukhi Secondary School",
     "school_code": "560110007",
@@ -606,21 +1731,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 11, "boys": 7, "others": 0, "total": 18 },
-      "grade_1": { "girls": 6, "boys": 10, "others": 0, "total": 0 },
-      "grade_2": { "girls": 33, "boys": 17, "others": 0, "total": 22 },
-      "grade_3": { "girls": 28, "boys": 24, "others": 0, "total": 7 },
-      "grade_4": { "girls": 30, "boys": 28, "others": 0, "total": 27 },
-      "grade_5": { "girls": 36, "boys": 9, "others": 0, "total": 62 },
-      "grade_6": { "girls": 30, "boys": 29, "others": 0, "total": 59 },
-      "grade_7": { "girls": 36, "boys": 23, "others": 0, "total": 0 },
-      "grade_8": { "girls": 29, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 59, "boys": 59, "others": 0, "total": 44 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 70, "boys": 28, "others": 0, "total": 16 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 11,
+        "boys": 7,
+        "others": 0,
+        "total": 18
+      },
+      "grade_1": {
+        "girls": 6,
+        "boys": 10,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 33,
+        "boys": 17,
+        "others": 0,
+        "total": 22
+      },
+      "grade_3": {
+        "girls": 28,
+        "boys": 24,
+        "others": 0,
+        "total": 7
+      },
+      "grade_4": {
+        "girls": 30,
+        "boys": 28,
+        "others": 0,
+        "total": 27
+      },
+      "grade_5": {
+        "girls": 36,
+        "boys": 9,
+        "others": 0,
+        "total": 62
+      },
+      "grade_6": {
+        "girls": 30,
+        "boys": 29,
+        "others": 0,
+        "total": 59
+      },
+      "grade_7": {
+        "girls": 36,
+        "boys": 23,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 29,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 59,
+        "boys": 59,
+        "others": 0,
+        "total": 44
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 70,
+        "boys": 28,
+        "others": 0,
+        "total": 16
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -628,9 +1828,9 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 1,
-    "institution_name": "Janata Ma V buddhashanti",
+    "institution_name": "Janata Ma V duduwa",
     "school_code": "560090012",
     "hseb_code": "56017",
     "contact_number": null,
@@ -645,21 +1845,96 @@
       "grades_11_to_12": true
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 17, "boys": 24, "others": 0, "total": 41 },
-      "grade_1": { "girls": 14, "boys": 19, "others": 0, "total": 0 },
-      "grade_2": { "girls": 28, "boys": 1, "others": 0, "total": 5 },
-      "grade_3": { "girls": 8, "boys": 1, "others": 0, "total": 3 },
-      "grade_4": { "girls": 52, "boys": 33, "others": 0, "total": 46 },
-      "grade_5": { "girls": 58, "boys": 41, "others": 0, "total": 99 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 11, "boys": 4, "others": 0, "total": 0 },
-      "grade_9": { "girls": 15, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 19, "boys": 0, "others": 0, "total": 41 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 17,
+        "boys": 24,
+        "others": 0,
+        "total": 41
+      },
+      "grade_1": {
+        "girls": 14,
+        "boys": 19,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 28,
+        "boys": 1,
+        "others": 0,
+        "total": 5
+      },
+      "grade_3": {
+        "girls": 8,
+        "boys": 1,
+        "others": 0,
+        "total": 3
+      },
+      "grade_4": {
+        "girls": 52,
+        "boys": 33,
+        "others": 0,
+        "total": 46
+      },
+      "grade_5": {
+        "girls": 58,
+        "boys": 41,
+        "others": 0,
+        "total": 99
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 11,
+        "boys": 4,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 15,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 19,
+        "boys": 0,
+        "others": 0,
+        "total": 41
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -667,7 +1942,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 1,
     "institution_name": "Janata Ma v Kalakate",
     "school_code": "560110015",
@@ -684,21 +1959,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 12, "boys": 20, "others": 0, "total": 32 },
-      "grade_1": { "girls": 15, "boys": 13, "others": 0, "total": 0 },
-      "grade_2": { "girls": 29, "boys": 21, "others": 0, "total": 21 },
-      "grade_3": { "girls": 18, "boys": 17, "others": 0, "total": 14 },
-      "grade_4": { "girls": 33, "boys": 46, "others": 0, "total": 79 },
-      "grade_5": { "girls": 33, "boys": 30, "others": 0, "total": 63 },
-      "grade_6": { "girls": 12, "boys": 9, "others": 0, "total": 21 },
-      "grade_7": { "girls": 11, "boys": 18, "others": 0, "total": 0 },
-      "grade_8": { "girls": 32, "boys": 14, "others": 0, "total": 46 },
-      "grade_9": { "girls": 26, "boys": 30, "others": 0, "total": 21 },
-      "grade_10": { "girls": 51, "boys": 44, "others": 0, "total": 23 },
-      "grade_11": { "girls": 67, "boys": 8, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 12,
+        "boys": 20,
+        "others": 0,
+        "total": 32
+      },
+      "grade_1": {
+        "girls": 15,
+        "boys": 13,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 29,
+        "boys": 21,
+        "others": 0,
+        "total": 21
+      },
+      "grade_3": {
+        "girls": 18,
+        "boys": 17,
+        "others": 0,
+        "total": 14
+      },
+      "grade_4": {
+        "girls": 33,
+        "boys": 46,
+        "others": 0,
+        "total": 79
+      },
+      "grade_5": {
+        "girls": 33,
+        "boys": 30,
+        "others": 0,
+        "total": 63
+      },
+      "grade_6": {
+        "girls": 12,
+        "boys": 9,
+        "others": 0,
+        "total": 21
+      },
+      "grade_7": {
+        "girls": 11,
+        "boys": 18,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 32,
+        "boys": 14,
+        "others": 0,
+        "total": 46
+      },
+      "grade_9": {
+        "girls": 26,
+        "boys": 30,
+        "others": 0,
+        "total": 21
+      },
+      "grade_10": {
+        "girls": 51,
+        "boys": 44,
+        "others": 0,
+        "total": 23
+      },
+      "grade_11": {
+        "girls": 67,
+        "boys": 8,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -706,7 +2056,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 4,
     "institution_name": "Kalika Pra V Parseni",
     "school_code": "560100002",
@@ -723,21 +2073,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 4, "boys": 5, "others": 0, "total": 9 },
-      "grade_1": { "girls": 9, "boys": 6, "others": 0, "total": 0 },
-      "grade_2": { "girls": 18, "boys": 7, "others": 0, "total": 13 },
-      "grade_3": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 4, "boys": 0, "others": 0, "total": 11 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 4,
+        "boys": 5,
+        "others": 0,
+        "total": 9
+      },
+      "grade_1": {
+        "girls": 9,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 18,
+        "boys": 7,
+        "others": 0,
+        "total": 13
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 4,
+        "boys": 0,
+        "others": 0,
+        "total": 11
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -745,9 +2170,9 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
-    "institution_name": "Koseli EBS buddhashanti",
+    "institution_name": "Koseli EBS duduwa",
     "school_code": "560110016",
     "hseb_code": null,
     "contact_number": "9847862803",
@@ -762,21 +2187,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 54, "boys": 61, "others": 0, "total": 115 },
-      "grade_1": { "girls": 12, "boys": 17, "others": 0, "total": 0 },
-      "grade_2": { "girls": 28, "boys": 28, "others": 0, "total": 0 },
-      "grade_3": { "girls": 29, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 10, "boys": 5, "others": 0, "total": 0 },
-      "grade_5": { "girls": 22, "boys": 24, "others": 0, "total": 46 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 54,
+        "boys": 61,
+        "others": 0,
+        "total": 115
+      },
+      "grade_1": {
+        "girls": 12,
+        "boys": 17,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 28,
+        "boys": 28,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 29,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 10,
+        "boys": 5,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 22,
+        "boys": 24,
+        "others": 0,
+        "total": 46
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -784,7 +2284,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 5,
     "institution_name": "Ma V Chainpur",
     "school_code": "560100004",
@@ -801,21 +2301,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 7, "boys": 8, "others": 0, "total": 15 },
-      "grade_1": { "girls": 29, "boys": 41, "others": 0, "total": 0 },
-      "grade_2": { "girls": 12, "boys": 7, "others": 0, "total": 2 },
-      "grade_3": { "girls": 4, "boys": 4, "others": 0, "total": 0 },
-      "grade_4": { "girls": 8, "boys": 10, "others": 0, "total": 0 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_6": { "girls": 6, "boys": 5, "others": 0, "total": 11 },
-      "grade_7": { "girls": 5, "boys": 1, "others": 0, "total": 0 },
-      "grade_8": { "girls": 5, "boys": 15, "others": 0, "total": 20 },
-      "grade_9": { "girls": 9, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 7,
+        "boys": 8,
+        "others": 0,
+        "total": 15
+      },
+      "grade_1": {
+        "girls": 29,
+        "boys": 41,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 12,
+        "boys": 7,
+        "others": 0,
+        "total": 2
+      },
+      "grade_3": {
+        "girls": 4,
+        "boys": 4,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 8,
+        "boys": 10,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_6": {
+        "girls": 6,
+        "boys": 5,
+        "others": 0,
+        "total": 11
+      },
+      "grade_7": {
+        "girls": 5,
+        "boys": 1,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 5,
+        "boys": 15,
+        "others": 0,
+        "total": 20
+      },
+      "grade_9": {
+        "girls": 9,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -823,7 +2398,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 4,
     "institution_name": "Madarasa Ahilesunnat Phaijane Raja Praseni",
     "school_code": "560100003",
@@ -840,21 +2415,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_1": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_2": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_3": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_1": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -862,9 +2512,9 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
-    "institution_name": "Madarasa Darusalam Alsalpha Pra Vi buddhashanti",
+    "institution_name": "Madarasa Darusalam Alsalpha Pra Vi duduwa",
     "school_code": "560180003",
     "hseb_code": null,
     "contact_number": "9812823131",
@@ -879,21 +2529,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 4, "boys": 16, "others": 0, "total": 20 },
-      "grade_1": { "girls": 18, "boys": 11, "others": 0, "total": 0 },
-      "grade_2": { "girls": 9, "boys": 7, "others": 0, "total": 0 },
-      "grade_3": { "girls": 6, "boys": 10, "others": 0, "total": 8 },
-      "grade_4": { "girls": 5, "boys": 7, "others": 0, "total": 10 },
-      "grade_5": { "girls": 3, "boys": 0, "others": 0, "total": 13 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 6, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 4,
+        "boys": 16,
+        "others": 0,
+        "total": 20
+      },
+      "grade_1": {
+        "girls": 18,
+        "boys": 11,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 9,
+        "boys": 7,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 6,
+        "boys": 10,
+        "others": 0,
+        "total": 8
+      },
+      "grade_4": {
+        "girls": 5,
+        "boys": 7,
+        "others": 0,
+        "total": 10
+      },
+      "grade_5": {
+        "girls": 3,
+        "boys": 0,
+        "others": 0,
+        "total": 13
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 6,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -901,7 +2626,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 8,
     "institution_name": "Madarasa Islamiya Mohammdiya Alsalpha Koilabas",
     "school_code": "560160004",
@@ -918,21 +2643,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 9, "boys": 7, "others": 0, "total": 16 },
-      "grade_1": { "girls": 8, "boys": 4, "others": 0, "total": 0 },
-      "grade_2": { "girls": 6, "boys": 4, "others": 0, "total": 0 },
-      "grade_3": { "girls": 4, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 9,
+        "boys": 7,
+        "others": 0,
+        "total": 16
+      },
+      "grade_1": {
+        "girls": 8,
+        "boys": 4,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 6,
+        "boys": 4,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 4,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -940,7 +2740,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
     "institution_name": "Madarasa Jiyaul Tauhid Rampur",
     "school_code": "560090001",
@@ -957,21 +2757,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_1": { "girls": 0, "boys": 6, "others": 0, "total": 0 },
-      "grade_2": { "girls": 9, "boys": 4, "others": 0, "total": 18 },
-      "grade_3": { "girls": 37, "boys": 10, "others": 0, "total": 25 },
-      "grade_4": { "girls": 12, "boys": 25, "others": 0, "total": 37 },
-      "grade_5": { "girls": 16, "boys": 0, "others": 0, "total": 23 },
-      "grade_6": { "girls": 5, "boys": 15, "others": 0, "total": 20 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_1": {
+        "girls": 0,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 9,
+        "boys": 4,
+        "others": 0,
+        "total": 18
+      },
+      "grade_3": {
+        "girls": 37,
+        "boys": 10,
+        "others": 0,
+        "total": 25
+      },
+      "grade_4": {
+        "girls": 12,
+        "boys": 25,
+        "others": 0,
+        "total": 37
+      },
+      "grade_5": {
+        "girls": 16,
+        "boys": 0,
+        "others": 0,
+        "total": 23
+      },
+      "grade_6": {
+        "girls": 5,
+        "boys": 15,
+        "others": 0,
+        "total": 20
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -979,7 +2854,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 4,
     "institution_name": "Madarasa Pra Vi Khadgapur",
     "school_code": "560100006",
@@ -996,21 +2871,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 3, "boys": 4, "others": 0, "total": 7 },
-      "grade_1": { "girls": 5, "boys": 4, "others": 0, "total": 0 },
-      "grade_2": { "girls": 37, "boys": 10, "others": 0, "total": 25 },
-      "grade_3": { "girls": 19, "boys": 12, "others": 0, "total": 9 },
-      "grade_4": { "girls": 16, "boys": 9, "others": 0, "total": 15 },
-      "grade_5": { "girls": 4, "boys": 0, "others": 0, "total": 15 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 3,
+        "boys": 4,
+        "others": 0,
+        "total": 7
+      },
+      "grade_1": {
+        "girls": 5,
+        "boys": 4,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 37,
+        "boys": 10,
+        "others": 0,
+        "total": 25
+      },
+      "grade_3": {
+        "girls": 19,
+        "boys": 12,
+        "others": 0,
+        "total": 9
+      },
+      "grade_4": {
+        "girls": 16,
+        "boys": 9,
+        "others": 0,
+        "total": 15
+      },
+      "grade_5": {
+        "girls": 4,
+        "boys": 0,
+        "others": 0,
+        "total": 15
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1018,7 +2968,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 8,
     "institution_name": "Mahendra Basic School, Koilabas",
     "school_code": "560180008",
@@ -1035,21 +2985,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 36, "boys": 35, "others": 1, "total": 71 },
-      "grade_1": { "girls": 13, "boys": 6, "others": 0, "total": 0 },
-      "grade_2": { "girls": 143, "boys": 10, "others": 0, "total": 22 },
-      "grade_3": { "girls": 58, "boys": 5, "others": 0, "total": 7 },
-      "grade_4": { "girls": 37, "boys": 17, "others": 0, "total": 18 },
-      "grade_5": { "girls": 9, "boys": 16, "others": 0, "total": 19 },
-      "grade_6": { "girls": 5, "boys": 12, "others": 0, "total": 17 },
-      "grade_7": { "girls": 6, "boys": 8, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 14, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 36,
+        "boys": 35,
+        "others": 1,
+        "total": 71
+      },
+      "grade_1": {
+        "girls": 13,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 143,
+        "boys": 10,
+        "others": 0,
+        "total": 22
+      },
+      "grade_3": {
+        "girls": 58,
+        "boys": 5,
+        "others": 0,
+        "total": 7
+      },
+      "grade_4": {
+        "girls": 37,
+        "boys": 17,
+        "others": 0,
+        "total": 18
+      },
+      "grade_5": {
+        "girls": 9,
+        "boys": 16,
+        "others": 0,
+        "total": 19
+      },
+      "grade_6": {
+        "girls": 5,
+        "boys": 12,
+        "others": 0,
+        "total": 17
+      },
+      "grade_7": {
+        "girls": 6,
+        "boys": 8,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 14,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1057,7 +3082,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 8,
     "institution_name": "Moonmilan Ebs",
     "school_code": "560100003",
@@ -1074,21 +3099,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 1, "boys": 1, "others": 0, "total": 2 },
-      "grade_1": { "girls": 72, "boys": 71, "others": 0, "total": 0 },
-      "grade_2": { "girls": 63, "boys": 7, "others": 0, "total": 17 },
-      "grade_3": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 15, "boys": 0, "others": 0, "total": 33 },
-      "grade_6": { "girls": 11, "boys": 10, "others": 0, "total": 21 },
-      "grade_7": { "girls": 3, "boys": 7, "others": 0, "total": 0 },
-      "grade_8": { "girls": 12, "boys": 15, "others": 0, "total": 0 },
-      "grade_9": { "girls": 10, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 44, "boys": 26, "others": 0, "total": 70 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 1,
+        "boys": 1,
+        "others": 0,
+        "total": 2
+      },
+      "grade_1": {
+        "girls": 72,
+        "boys": 71,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 63,
+        "boys": 7,
+        "others": 0,
+        "total": 17
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 15,
+        "boys": 0,
+        "others": 0,
+        "total": 33
+      },
+      "grade_6": {
+        "girls": 11,
+        "boys": 10,
+        "others": 0,
+        "total": 21
+      },
+      "grade_7": {
+        "girls": 3,
+        "boys": 7,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 12,
+        "boys": 15,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 10,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 44,
+        "boys": 26,
+        "others": 0,
+        "total": 70
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1096,7 +3196,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 7,
     "institution_name": "Moonrise English Boarding School",
     "school_code": "560090019",
@@ -1113,21 +3213,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 7, "boys": 6, "others": 0, "total": 13 },
-      "grade_1": { "girls": 5, "boys": 4, "others": 0, "total": 0 },
-      "grade_2": { "girls": 21, "boys": 7, "others": 0, "total": 8 },
-      "grade_3": { "girls": 14, "boys": 11, "others": 0, "total": 5 },
-      "grade_4": { "girls": 15, "boys": 7, "others": 0, "total": 11 },
-      "grade_5": { "girls": 14, "boys": 0, "others": 0, "total": 21 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 27, "boys": 14, "others": 0, "total": 10 },
-      "grade_10": { "girls": 24, "boys": 15, "others": 0, "total": 8 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 7,
+        "boys": 6,
+        "others": 0,
+        "total": 13
+      },
+      "grade_1": {
+        "girls": 5,
+        "boys": 4,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 21,
+        "boys": 7,
+        "others": 0,
+        "total": 8
+      },
+      "grade_3": {
+        "girls": 14,
+        "boys": 11,
+        "others": 0,
+        "total": 5
+      },
+      "grade_4": {
+        "girls": 15,
+        "boys": 7,
+        "others": 0,
+        "total": 11
+      },
+      "grade_5": {
+        "girls": 14,
+        "boys": 0,
+        "others": 0,
+        "total": 21
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 27,
+        "boys": 14,
+        "others": 0,
+        "total": 10
+      },
+      "grade_10": {
+        "girls": 24,
+        "boys": 15,
+        "others": 0,
+        "total": 8
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1135,7 +3310,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Namuna Pra V Mahadewa",
     "school_code": "560110020",
@@ -1152,21 +3327,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 74, "boys": 84, "others": 0, "total": 158 },
-      "grade_1": { "girls": 25, "boys": 33, "others": 0, "total": 0 },
-      "grade_2": { "girls": 63, "boys": 7, "others": 0, "total": 17 },
-      "grade_3": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 36, "boys": 13, "others": 0, "total": 19 },
-      "grade_5": { "girls": 15, "boys": 33, "others": 0, "total": 27 },
-      "grade_6": { "girls": 12, "boys": 15, "others": 0, "total": 27 },
-      "grade_7": { "girls": 4, "boys": 9, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 74,
+        "boys": 84,
+        "others": 0,
+        "total": 158
+      },
+      "grade_1": {
+        "girls": 25,
+        "boys": 33,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 63,
+        "boys": 7,
+        "others": 0,
+        "total": 17
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 36,
+        "boys": 13,
+        "others": 0,
+        "total": 19
+      },
+      "grade_5": {
+        "girls": 15,
+        "boys": 33,
+        "others": 0,
+        "total": 27
+      },
+      "grade_6": {
+        "girls": 12,
+        "boys": 15,
+        "others": 0,
+        "total": 27
+      },
+      "grade_7": {
+        "girls": 4,
+        "boys": 9,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1174,7 +3424,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 3,
     "institution_name": "Nepal English Boarding School",
     "school_code": "560110003",
@@ -1191,21 +3441,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 26, "boys": 37, "others": 0, "total": 63 },
-      "grade_1": { "girls": 30, "boys": 33, "others": 0, "total": 0 },
-      "grade_2": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_3": { "girls": 41, "boys": 19, "others": 0, "total": 22 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_6": { "girls": 42, "boys": 36, "others": 0, "total": 78 },
-      "grade_7": { "girls": 64, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 110, "boys": 64, "others": 0, "total": 51 },
-      "grade_10": { "girls": 115, "boys": 70, "others": 0, "total": 59 },
-      "grade_11": { "girls": 129, "boys": 87, "others": 0, "total": 75 },
-      "grade_12": { "girls": 162, "boys": 121, "others": 0, "total": 101 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 26,
+        "boys": 37,
+        "others": 0,
+        "total": 63
+      },
+      "grade_1": {
+        "girls": 30,
+        "boys": 33,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 41,
+        "boys": 19,
+        "others": 0,
+        "total": 22
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_6": {
+        "girls": 42,
+        "boys": 36,
+        "others": 0,
+        "total": 78
+      },
+      "grade_7": {
+        "girls": 64,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 110,
+        "boys": 64,
+        "others": 0,
+        "total": 51
+      },
+      "grade_10": {
+        "girls": 115,
+        "boys": 70,
+        "others": 0,
+        "total": 59
+      },
+      "grade_11": {
+        "girls": 129,
+        "boys": 87,
+        "others": 0,
+        "total": 75
+      },
+      "grade_12": {
+        "girls": 162,
+        "boys": 121,
+        "others": 0,
+        "total": 101
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1213,7 +3538,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 3,
     "institution_name": "Pra V Khajrauta",
     "school_code": "560100005",
@@ -1230,21 +3555,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 2, "boys": 3, "others": 0, "total": 5 },
-      "grade_1": { "girls": 5, "boys": 0, "others": 0, "total": 0 },
-      "grade_2": { "girls": 14, "boys": 11, "others": 0, "total": 5 },
-      "grade_3": { "girls": 21, "boys": 7, "others": 0, "total": 8 },
-      "grade_4": { "girls": 15, "boys": 7, "others": 0, "total": 11 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 12 },
-      "grade_6": { "girls": 4, "boys": 4, "others": 0, "total": 8 },
-      "grade_7": { "girls": 0, "boys": 6, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 2, "others": 0, "total": 0 },
-      "grade_9": { "girls": 8, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 2,
+        "boys": 3,
+        "others": 0,
+        "total": 5
+      },
+      "grade_1": {
+        "girls": 5,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 14,
+        "boys": 11,
+        "others": 0,
+        "total": 5
+      },
+      "grade_3": {
+        "girls": 21,
+        "boys": 7,
+        "others": 0,
+        "total": 8
+      },
+      "grade_4": {
+        "girls": 15,
+        "boys": 7,
+        "others": 0,
+        "total": 11
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 12
+      },
+      "grade_6": {
+        "girls": 4,
+        "boys": 4,
+        "others": 0,
+        "total": 8
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 2,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 8,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1252,7 +3652,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 1,
     "institution_name": "Pratistha Academy",
     "school_code": "560110017",
@@ -1269,21 +3669,96 @@
       "grades_11_to_12": true
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 10, "boys": 16, "others": 0, "total": 26 },
-      "grade_1": { "girls": 15, "boys": 6, "others": 0, "total": 0 },
-      "grade_2": { "girls": 21, "boys": 11, "others": 0, "total": 8 },
-      "grade_3": { "girls": 12, "boys": 8, "others": 0, "total": 9 },
-      "grade_4": { "girls": 11, "boys": 10, "others": 0, "total": 3 },
-      "grade_5": { "girls": 21, "boys": 14, "others": 0, "total": 11 },
-      "grade_6": { "girls": 21, "boys": 16, "others": 0, "total": 37 },
-      "grade_7": { "girls": 20, "boys": 6, "others": 0, "total": 0 },
-      "grade_8": { "girls": 21, "boys": 21, "others": 0, "total": 0 },
-      "grade_9": { "girls": 26, "boys": 44, "others": 0, "total": 18 },
-      "grade_10": { "girls": 62, "boys": 25, "others": 0, "total": 21 },
-      "grade_11": { "girls": 46, "boys": 9, "others": 0, "total": 12 },
-      "grade_12": { "girls": 21, "boys": 23, "others": 0, "total": 17 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 10,
+        "boys": 16,
+        "others": 0,
+        "total": 26
+      },
+      "grade_1": {
+        "girls": 15,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 21,
+        "boys": 11,
+        "others": 0,
+        "total": 8
+      },
+      "grade_3": {
+        "girls": 12,
+        "boys": 8,
+        "others": 0,
+        "total": 9
+      },
+      "grade_4": {
+        "girls": 11,
+        "boys": 10,
+        "others": 0,
+        "total": 3
+      },
+      "grade_5": {
+        "girls": 21,
+        "boys": 14,
+        "others": 0,
+        "total": 11
+      },
+      "grade_6": {
+        "girls": 21,
+        "boys": 16,
+        "others": 0,
+        "total": 37
+      },
+      "grade_7": {
+        "girls": 20,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 21,
+        "boys": 21,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 26,
+        "boys": 44,
+        "others": 0,
+        "total": 18
+      },
+      "grade_10": {
+        "girls": 62,
+        "boys": 25,
+        "others": 0,
+        "total": 21
+      },
+      "grade_11": {
+        "girls": 46,
+        "boys": 9,
+        "others": 0,
+        "total": 12
+      },
+      "grade_12": {
+        "girls": 21,
+        "boys": 23,
+        "others": 0,
+        "total": 17
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1291,7 +3766,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 4,
     "institution_name": "Rapti Southern EBS Ramnagar",
     "school_code": "560110001",
@@ -1308,21 +3783,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 3, "boys": 7, "others": 0, "total": 10 },
-      "grade_1": { "girls": 8, "boys": 6, "others": 0, "total": 0 },
-      "grade_2": { "girls": 20, "boys": 11, "others": 0, "total": 9 },
-      "grade_3": { "girls": 10, "boys": 2, "others": 0, "total": 1 },
-      "grade_4": { "girls": 12, "boys": 8, "others": 0, "total": 9 },
-      "grade_5": { "girls": 5, "boys": 0, "others": 0, "total": 12 },
-      "grade_6": { "girls": 42, "boys": 45, "others": 0, "total": 87 },
-      "grade_7": { "girls": 41, "boys": 21, "others": 0, "total": 0 },
-      "grade_8": { "girls": 20, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 51, "boys": 28, "others": 0, "total": 36 },
-      "grade_10": { "girls": 64, "boys": 26, "others": 0, "total": 39 },
-      "grade_11": { "girls": 65, "boys": 16, "others": 0, "total": 16 },
-      "grade_12": { "girls": 40, "boys": 19, "others": 0, "total": 40 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 3,
+        "boys": 7,
+        "others": 0,
+        "total": 10
+      },
+      "grade_1": {
+        "girls": 8,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 20,
+        "boys": 11,
+        "others": 0,
+        "total": 9
+      },
+      "grade_3": {
+        "girls": 10,
+        "boys": 2,
+        "others": 0,
+        "total": 1
+      },
+      "grade_4": {
+        "girls": 12,
+        "boys": 8,
+        "others": 0,
+        "total": 9
+      },
+      "grade_5": {
+        "girls": 5,
+        "boys": 0,
+        "others": 0,
+        "total": 12
+      },
+      "grade_6": {
+        "girls": 42,
+        "boys": 45,
+        "others": 0,
+        "total": 87
+      },
+      "grade_7": {
+        "girls": 41,
+        "boys": 21,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 20,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 51,
+        "boys": 28,
+        "others": 0,
+        "total": 36
+      },
+      "grade_10": {
+        "girls": 64,
+        "boys": 26,
+        "others": 0,
+        "total": 39
+      },
+      "grade_11": {
+        "girls": 65,
+        "boys": 16,
+        "others": 0,
+        "total": 16
+      },
+      "grade_12": {
+        "girls": 40,
+        "boys": 19,
+        "others": 0,
+        "total": 40
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1330,7 +3880,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 3,
     "institution_name": "Ratna Pra V Ratanpur",
     "school_code": "560110010",
@@ -1347,21 +3897,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 12, "boys": 11, "others": 0, "total": 23 },
-      "grade_1": { "girls": 10, "boys": 10, "others": 0, "total": 0 },
-      "grade_2": { "girls": 10, "boys": 2, "others": 0, "total": 1 },
-      "grade_3": { "girls": 7, "boys": 5, "others": 0, "total": 2 },
-      "grade_4": { "girls": 13, "boys": 7, "others": 0, "total": 3 },
-      "grade_5": { "girls": 6, "boys": 10, "others": 0, "total": 10 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 12,
+        "boys": 11,
+        "others": 0,
+        "total": 23
+      },
+      "grade_1": {
+        "girls": 10,
+        "boys": 10,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 10,
+        "boys": 2,
+        "others": 0,
+        "total": 1
+      },
+      "grade_3": {
+        "girls": 7,
+        "boys": 5,
+        "others": 0,
+        "total": 2
+      },
+      "grade_4": {
+        "girls": 13,
+        "boys": 7,
+        "others": 0,
+        "total": 3
+      },
+      "grade_5": {
+        "girls": 6,
+        "boys": 10,
+        "others": 0,
+        "total": 10
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1369,7 +3994,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Ratri Pra V Pachahiya",
     "school_code": "560110006",
@@ -1386,21 +4011,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 21, "boys": 18, "others": 0, "total": 39 },
-      "grade_1": { "girls": 10, "boys": 5, "others": 0, "total": 0 },
-      "grade_2": { "girls": 7, "boys": 5, "others": 0, "total": 2 },
-      "grade_3": { "girls": 13, "boys": 13, "others": 0, "total": 9 },
-      "grade_4": { "girls": 3, "boys": 9, "others": 0, "total": 12 },
-      "grade_5": { "girls": 3, "boys": 0, "others": 0, "total": 4 },
-      "grade_6": { "girls": 34, "boys": 42, "others": 0, "total": 76 },
-      "grade_7": { "girls": 23, "boys": 28, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 21,
+        "boys": 18,
+        "others": 0,
+        "total": 39
+      },
+      "grade_1": {
+        "girls": 10,
+        "boys": 5,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 7,
+        "boys": 5,
+        "others": 0,
+        "total": 2
+      },
+      "grade_3": {
+        "girls": 13,
+        "boys": 13,
+        "others": 0,
+        "total": 9
+      },
+      "grade_4": {
+        "girls": 3,
+        "boys": 9,
+        "others": 0,
+        "total": 12
+      },
+      "grade_5": {
+        "girls": 3,
+        "boys": 0,
+        "others": 0,
+        "total": 4
+      },
+      "grade_6": {
+        "girls": 34,
+        "boys": 42,
+        "others": 0,
+        "total": 76
+      },
+      "grade_7": {
+        "girls": 23,
+        "boys": 28,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1408,7 +4108,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 7,
     "institution_name": "Saraswoti Adharbhut Vidyalaya Chandanpur",
     "school_code": "560090006",
@@ -1425,21 +4125,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 1, "boys": 3, "others": 0, "total": 4 },
-      "grade_1": { "girls": 5, "boys": 0, "others": 0, "total": 0 },
-      "grade_2": { "girls": 3, "boys": 2, "others": 0, "total": 0 },
-      "grade_3": { "girls": 3, "boys": 1, "others": 0, "total": 1 },
-      "grade_4": { "girls": 1, "boys": 2, "others": 0, "total": 1 },
-      "grade_5": { "girls": 15, "boys": 24, "others": 0, "total": 24 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 17, "boys": 12, "others": 0, "total": 29 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 1,
+        "boys": 3,
+        "others": 0,
+        "total": 4
+      },
+      "grade_1": {
+        "girls": 5,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 3,
+        "boys": 2,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 3,
+        "boys": 1,
+        "others": 0,
+        "total": 1
+      },
+      "grade_4": {
+        "girls": 1,
+        "boys": 2,
+        "others": 0,
+        "total": 1
+      },
+      "grade_5": {
+        "girls": 15,
+        "boys": 24,
+        "others": 0,
+        "total": 24
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 17,
+        "boys": 12,
+        "others": 0,
+        "total": 29
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1447,7 +4222,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 3,
     "institution_name": "Saraswoti Pra V Supaila",
     "school_code": "560110008",
@@ -1464,21 +4239,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 3, "boys": 13, "others": 0, "total": 16 },
-      "grade_1": { "girls": 4, "boys": 3, "others": 0, "total": 0 },
-      "grade_2": { "girls": 43, "boys": 19, "others": 0, "total": 21 },
-      "grade_3": { "girls": 28, "boys": 16, "others": 0, "total": 35 },
-      "grade_4": { "girls": 28, "boys": 11, "others": 0, "total": 24 },
-      "grade_5": { "girls": 2, "boys": 1, "others": 0, "total": 3 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 3,
+        "boys": 13,
+        "others": 0,
+        "total": 16
+      },
+      "grade_1": {
+        "girls": 4,
+        "boys": 3,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 43,
+        "boys": 19,
+        "others": 0,
+        "total": 21
+      },
+      "grade_3": {
+        "girls": 28,
+        "boys": 16,
+        "others": 0,
+        "total": 35
+      },
+      "grade_4": {
+        "girls": 28,
+        "boys": 11,
+        "others": 0,
+        "total": 24
+      },
+      "grade_5": {
+        "girls": 2,
+        "boys": 1,
+        "others": 0,
+        "total": 3
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1486,7 +4336,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 3,
     "institution_name": "Saraswoti Secondary School Vidyanagar",
     "school_code": "560110011",
@@ -1503,21 +4353,96 @@
       "grades_11_to_12": true
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 3, "boys": 9, "others": 0, "total": 12 },
-      "grade_1": { "girls": 4, "boys": 9, "others": 0, "total": 0 },
-      "grade_2": { "girls": 78, "boys": 29, "others": 0, "total": 35 },
-      "grade_3": { "girls": 3, "boys": 1, "others": 0, "total": 1 },
-      "grade_4": { "girls": 44, "boys": 27, "others": 0, "total": 45 },
-      "grade_5": { "girls": 19, "boys": 28, "others": 0, "total": 41 },
-      "grade_6": { "girls": 20, "boys": 21, "others": 0, "total": 41 },
-      "grade_7": { "girls": 21, "boys": 6, "others": 0, "total": 0 },
-      "grade_8": { "girls": 41, "boys": 21, "others": 0, "total": 0 },
-      "grade_9": { "girls": 62, "boys": 44, "others": 0, "total": 18 },
-      "grade_10": { "girls": 62, "boys": 25, "others": 0, "total": 21 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 3,
+        "boys": 9,
+        "others": 0,
+        "total": 12
+      },
+      "grade_1": {
+        "girls": 4,
+        "boys": 9,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 78,
+        "boys": 29,
+        "others": 0,
+        "total": 35
+      },
+      "grade_3": {
+        "girls": 3,
+        "boys": 1,
+        "others": 0,
+        "total": 1
+      },
+      "grade_4": {
+        "girls": 44,
+        "boys": 27,
+        "others": 0,
+        "total": 45
+      },
+      "grade_5": {
+        "girls": 19,
+        "boys": 28,
+        "others": 0,
+        "total": 41
+      },
+      "grade_6": {
+        "girls": 20,
+        "boys": 21,
+        "others": 0,
+        "total": 41
+      },
+      "grade_7": {
+        "girls": 21,
+        "boys": 6,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 41,
+        "boys": 21,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 62,
+        "boys": 44,
+        "others": 0,
+        "total": 18
+      },
+      "grade_10": {
+        "girls": 62,
+        "boys": 25,
+        "others": 0,
+        "total": 21
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1525,9 +4450,9 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
-    "institution_name": "Sarbodaya Adharbhut V buddhashanti",
+    "institution_name": "Sarbodaya Adharbhut V duduwa",
     "school_code": "560100003",
     "hseb_code": null,
     "contact_number": "9841649389",
@@ -1542,21 +4467,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 42, "boys": 46, "others": 0, "total": 88 },
-      "grade_1": { "girls": 20, "boys": 23, "others": 0, "total": 0 },
-      "grade_2": { "girls": 28, "boys": 14, "others": 0, "total": 23 },
-      "grade_3": { "girls": 27, "boys": 12, "others": 0, "total": 27 },
-      "grade_4": { "girls": 71, "boys": 31, "others": 0, "total": 46 },
-      "grade_5": { "girls": 22, "boys": 20, "others": 0, "total": 53 },
-      "grade_6": { "girls": 21, "boys": 35, "others": 0, "total": 66 },
-      "grade_7": { "girls": 42, "boys": 45, "others": 0, "total": 87 },
-      "grade_8": { "girls": 34, "boys": 42, "others": 0, "total": 76 },
-      "grade_9": { "girls": 51, "boys": 28, "others": 0, "total": 36 },
-      "grade_10": { "girls": 64, "boys": 26, "others": 0, "total": 39 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 42,
+        "boys": 46,
+        "others": 0,
+        "total": 88
+      },
+      "grade_1": {
+        "girls": 20,
+        "boys": 23,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 28,
+        "boys": 14,
+        "others": 0,
+        "total": 23
+      },
+      "grade_3": {
+        "girls": 27,
+        "boys": 12,
+        "others": 0,
+        "total": 27
+      },
+      "grade_4": {
+        "girls": 71,
+        "boys": 31,
+        "others": 0,
+        "total": 46
+      },
+      "grade_5": {
+        "girls": 22,
+        "boys": 20,
+        "others": 0,
+        "total": 53
+      },
+      "grade_6": {
+        "girls": 21,
+        "boys": 35,
+        "others": 0,
+        "total": 66
+      },
+      "grade_7": {
+        "girls": 42,
+        "boys": 45,
+        "others": 0,
+        "total": 87
+      },
+      "grade_8": {
+        "girls": 34,
+        "boys": 42,
+        "others": 0,
+        "total": 76
+      },
+      "grade_9": {
+        "girls": 51,
+        "boys": 28,
+        "others": 0,
+        "total": 36
+      },
+      "grade_10": {
+        "girls": 64,
+        "boys": 26,
+        "others": 0,
+        "total": 39
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1564,7 +4564,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 5,
     "institution_name": "Shree Balkalyan Basic School Balakhutti",
     "school_code": "560090009",
@@ -1581,21 +4581,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 87, "boys": 151, "others": 0, "total": 238 },
-      "grade_1": { "girls": 26, "boys": 52, "others": 0, "total": 0 },
-      "grade_2": { "girls": 3, "boys": 2, "others": 0, "total": 4 },
-      "grade_3": { "girls": 36, "boys": 36, "others": 0, "total": 78 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 47, "boys": 26, "others": 0, "total": 86 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 87,
+        "boys": 151,
+        "others": 0,
+        "total": 238
+      },
+      "grade_1": {
+        "girls": 26,
+        "boys": 52,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 3,
+        "boys": 2,
+        "others": 0,
+        "total": 4
+      },
+      "grade_3": {
+        "girls": 36,
+        "boys": 36,
+        "others": 0,
+        "total": 78
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 47,
+        "boys": 26,
+        "others": 0,
+        "total": 86
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1603,7 +4678,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 6,
     "institution_name": "Shree secondary school Pachahiya",
     "school_code": "560110006",
@@ -1620,21 +4695,96 @@
       "grades_11_to_12": true
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 3, "boys": 4, "others": 0, "total": 7 },
-      "grade_1": { "girls": 2, "boys": 3, "others": 0, "total": 0 },
-      "grade_2": { "girls": 36, "boys": 42, "others": 0, "total": 78 },
-      "grade_3": { "girls": 28, "boys": 9, "others": 0, "total": 12 },
-      "grade_4": { "girls": 3, "boys": 1, "others": 0, "total": 1 },
-      "grade_5": { "girls": 2, "boys": 3, "others": 0, "total": 3 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 3,
+        "boys": 4,
+        "others": 0,
+        "total": 7
+      },
+      "grade_1": {
+        "girls": 2,
+        "boys": 3,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 36,
+        "boys": 42,
+        "others": 0,
+        "total": 78
+      },
+      "grade_3": {
+        "girls": 28,
+        "boys": 9,
+        "others": 0,
+        "total": 12
+      },
+      "grade_4": {
+        "girls": 3,
+        "boys": 1,
+        "others": 0,
+        "total": 1
+      },
+      "grade_5": {
+        "girls": 2,
+        "boys": 3,
+        "others": 0,
+        "total": 3
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1642,7 +4792,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Shuvatara English Boarding School,",
     "school_code": "560110011",
@@ -1659,21 +4809,96 @@
       "grades_11_to_12": true
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 36, "boys": 42, "others": 0, "total": 78 },
-      "grade_1": { "girls": 14, "boys": 14, "others": 0, "total": 0 },
-      "grade_2": { "girls": 28, "boys": 9, "others": 0, "total": 14 },
-      "grade_3": { "girls": 27, "boys": 12, "others": 0, "total": 23 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 15, "boys": 0, "others": 0, "total": 24 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 36,
+        "boys": 42,
+        "others": 0,
+        "total": 78
+      },
+      "grade_1": {
+        "girls": 14,
+        "boys": 14,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 28,
+        "boys": 9,
+        "others": 0,
+        "total": 14
+      },
+      "grade_3": {
+        "girls": 27,
+        "boys": 12,
+        "others": 0,
+        "total": 23
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 15,
+        "boys": 0,
+        "others": 0,
+        "total": 24
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1681,7 +4906,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 2,
     "institution_name": "Udaya Basic School",
     "school_code": "560180002",
@@ -1698,21 +4923,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_1": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_2": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_3": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_1": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   },
   {
@@ -1720,7 +5020,7 @@
     "data_year": "2081",
     "province": "Lumbini Province",
     "district": "jhapa",
-    "local_level": "buddhashanti Rural Municipality",
+    "local_level": "duduwa Rural Municipality",
     "ward_number": 8,
     "institution_name": "Valley Public English School",
     "school_code": "560090021",
@@ -1737,21 +5037,96 @@
       "grades_11_to_12": false
     },
     "student_counts": {
-      "all": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ecd_ppc": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_1": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_2": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_3": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_4": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_5": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_6": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_7": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_8": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_9": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_10": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_11": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "grade_12": { "girls": 0, "boys": 0, "others": 0, "total": 0 },
-      "ukg": { "girls": 0, "boys": 0, "others": 0, "total": 0 }
+      "all": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ecd_ppc": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_1": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_2": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_3": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_4": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_5": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_6": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_7": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_8": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_9": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_10": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_11": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "grade_12": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      },
+      "ukg": {
+        "girls": 0,
+        "boys": 0,
+        "others": 0,
+        "total": 0
+      }
     }
   }
 ]

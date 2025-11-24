@@ -65,7 +65,7 @@ export default function WardWiseSchoolDropoutSEO({
 
         return {
           "@type": "Observation",
-          name: `School Dropout Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `School Dropout Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -73,7 +73,7 @@ export default function WardWiseSchoolDropoutSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(economicDropoutPercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${economicDropouts.toLocaleString()} students (${economicDropoutPercent}%) have dropped out of school due to economic-related reasons out of a total of ${totalWardDropouts.toLocaleString()} dropouts.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${economicDropouts.toLocaleString()} students (${economicDropoutPercent}%) have dropped out of school due to economic-related reasons out of a total of ${totalWardDropouts.toLocaleString()} dropouts.`,
         };
       })
       .filter(Boolean);
@@ -90,10 +90,10 @@ export default function WardWiseSchoolDropoutSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "School Dropout Causes in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of school dropout causes across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalDropouts.toLocaleString()} dropouts. ${dropoutGroupTotals.ECONOMIC.toLocaleString()} students (${dropoutGroupPercentages.ECONOMIC.toFixed(2)}%) have left school due to economic-related reasons. The highest economic-related dropout rate is in Ward ${highestEconomicDropoutWard?.wardNumber || ""} with ${highestEconomicDropoutWard?.percentage.toFixed(2) || ""}%.`,
+      name: "School Dropout Causes in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of school dropout causes across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalDropouts.toLocaleString()} dropouts. ${dropoutGroupTotals.ECONOMIC.toLocaleString()} students (${dropoutGroupPercentages.ECONOMIC.toFixed(2)}%) have left school due to economic-related reasons. The highest economic-related dropout rate is in Ward ${highestEconomicDropoutWard?.wardNumber || ""} with ${highestEconomicDropoutWard?.percentage.toFixed(2) || ""}%.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "School dropout",
         "Employment-related dropouts",
@@ -107,16 +107,16 @@ export default function WardWiseSchoolDropoutSEO({
         "Dropout distribution",
         "Education index",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/education/ward-wise-school-dropout",
+      url: "https://digital.duduwamun.gov.np/profile/education/ward-wise-school-dropout",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -179,10 +179,10 @@ export default function WardWiseSchoolDropoutSEO({
         name: "Municipality Education Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

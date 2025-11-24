@@ -209,13 +209,13 @@
 
 १८ व्यक्ति(18 people)
 
-खजुरा गाउँपालिकाको धार्मिक विविधता विश्लेषणReligious Diversity Analysis of Khajura
-खजुरा गाउँपालिकाको प्रमुख धर्मMain Religion in Khajura Rural Municipality
+खजुरा गाउँपालिकाको धार्मिक विविधता विश्लेषणReligious Diversity Analysis of duduwa
+खजुरा गाउँपालिकाको प्रमुख धर्मMain Religion in duduwa Rural Municipality
 हिन्दू
 
-कुल जनसंख्याको ७२.६२% व्यक्ति72.62% of total population in Khajura Rural Municipality
+कुल जनसंख्याको ७२.६२% व्यक्ति72.62% of total population in duduwa Rural Municipality
 
-खजुरा गाउँपालिकाको प्रमुख-दोस्रो धर्म अनुपातPrimary to Secondary Religion Ratio in Khajura
+खजुरा गाउँपालिकाको प्रमुख-दोस्रो धर्म अनुपातPrimary to Secondary Religion Ratio in duduwa
 ३.१७
 
 हरेक ३.१७ हिन्दू अवलम्बनकर्ताका लागि १ इस्लाम अवलम्बनकर्ता
@@ -427,8 +427,8 @@
 
 ५५ घरधुरी(55 households)
 
-पानी शुद्धिकरण विस्तृत विश्लेषणDetailed Water Purification Analysis of Khajura
-पानी उपचार दरWater Treatment Rate in Khajura Rural Municipality
+पानी शुद्धिकरण विस्तृत विश्लेषणDetailed Water Purification Analysis of duduwa
+पानी उपचार दरWater Treatment Rate in duduwa Rural Municipality
 १४.४८%
 
 २,२४९ घरधुरीले पानी शुद्धिकरण गर्छन्2,249 households treat their water
@@ -438,7 +438,7 @@
 
 अशुद्ध पानी पिउँदा झाडापखाला, हैजा, टाइफाइड जस्ता जलजन्य रोगहरू लाग्ने जोखिम बढ्छ, जसले विशेष गरी बालबालिकाहरूमा गम्भीर स्वास्थ्य समस्याहरू निम्त्याउन सक्छ।
 
-उच्च पानी उपचार दर भएको वडाWard with Highest Water Treatment Rate in Khajura
+उच्च पानी उपचार दर भएको वडाWard with Highest Water Treatment Rate in duduwa
 वडा ८
 
 पानी उपचार दर: २१.९६%21.96% water treatment rate

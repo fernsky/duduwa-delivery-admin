@@ -36,7 +36,7 @@ export default function LoanUsageSEO({
     // Convert loan use stats to structured data format
     const loanUseStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${LOAN_USE_NAMES_EN[item.loanUse] || item.loanUse} loans in Khajura Rural Municipality`,
+      name: `${LOAN_USE_NAMES_EN[item.loanUse] || item.loanUse} loans in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -44,16 +44,16 @@ export default function LoanUsageSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality have taken loans for ${LOAN_USE_NAMES_EN[item.loanUse] || item.loanUse} purposes (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households with loans)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality have taken loans for ${LOAN_USE_NAMES_EN[item.loanUse] || item.loanUse} purposes (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households with loans)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Loan Usage Patterns in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Loan usage purpose distribution data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households with loans.`,
+      name: "Loan Usage Patterns in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Loan usage purpose distribution data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households with loans.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Loan usage purposes",
         "Credit utilization",
@@ -63,16 +63,16 @@ export default function LoanUsageSEO({
         ...Object.values(LOAN_USE_NAMES_EN).map((name) => `${name} loans`),
         ...Object.values(loanUseLabels).map((name) => `${name} कर्जा`),
       ],
-      url: "https://buddhashanti-rm.gov.np/profile/economics/ward-households-loan-usage",
+      url: "https://duduwa-rm.gov.np/profile/economics/ward-households-loan-usage",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://buddhashanti-rm.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://duduwa-rm.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

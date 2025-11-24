@@ -39,7 +39,7 @@ export default function DisabilityCauseSEO({
     // Convert disability cause stats to structured data format
     const disabilityCauseStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${DISABILITY_CAUSE_NAMES_EN[item.disabilityCause] || item.disabilityCause} population in Khajura Rural Municipality`,
+      name: `${DISABILITY_CAUSE_NAMES_EN[item.disabilityCause] || item.disabilityCause} population in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -47,7 +47,7 @@ export default function DisabilityCauseSEO({
         unitText: "people",
       },
       measuredValue: item.population,
-      description: `${item.population} people in Khajura Rural Municipality have disabilities due to ${
+      description: `${item.population} people in duduwa Rural Municipality have disabilities due to ${
         DISABILITY_CAUSE_NAMES_EN[item.disabilityCause] || item.disabilityCause
       } (${((item.population / totalPopulationWithDisability) * 100).toFixed(2)}% of total disability population)`,
     }));
@@ -55,10 +55,10 @@ export default function DisabilityCauseSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Disability Cause Demographics of Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Disability cause distribution data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total population with disabilities of ${totalPopulationWithDisability.toLocaleString()} people. Main causes include ${topCausesDescription}.`,
+      name: "Disability Cause Demographics of duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Disability cause distribution data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total population with disabilities of ${totalPopulationWithDisability.toLocaleString()} people. Main causes include ${topCausesDescription}.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Disability cause demographics",
         "Disability statistics",
@@ -71,16 +71,16 @@ export default function DisabilityCauseSEO({
           (name) => `${name} अपाङ्गता`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-wise-disability-cause",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-wise-disability-cause",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

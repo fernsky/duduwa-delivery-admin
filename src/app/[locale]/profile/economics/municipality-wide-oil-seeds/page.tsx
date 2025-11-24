@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const oilSeedData =
       await api.profile.economics.municipalityWideOilSeeds.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalProduction = oilSeedData.reduce(
@@ -106,20 +106,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality oil seeds",
-      "Khajura oil seed production",
+      "duduwa Rural Municipality oil seeds",
+      "duduwa oil seed production",
       "Municipality-wide oil seed statistics",
-      "Mustard production in Khajura",
+      "Mustard production in duduwa",
       "Flax cultivation statistics",
       "Sunflower production data",
-      `Khajura oil seed sales ${totalSales.toFixed(2)} tonnes`,
-      `Khajura oil seed revenue ${(totalRevenue / 1000000).toFixed(2)} million rupees`,
+      `duduwa oil seed sales ${totalSales.toFixed(2)} tonnes`,
+      `duduwa oil seed revenue ${(totalRevenue / 1000000).toFixed(2)} million rupees`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको तेलहन बाली उत्पादन र बिक्री विश्लेषण। कुल ${localizeNumber(totalProduction.toFixed(2), "ne")} मेट्रिक टन तेलहन बाली उत्पादन मध्ये ${localizeNumber(mostProducedPercentage, "ne")}% (${localizeNumber(mostProducedAmount.toFixed(2), "ne")} टन) ${OIL_SEED_TYPES[mostProducedOilSeed] || mostProducedOilSeed} रहेको छ। पालिका स्तरीय तेलहन बालीको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Analysis of oil seed production and sales in Khajura Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of oil seed production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${OIL_SEED_TYPES_EN[mostProducedOilSeed] || mostProducedOilSeed}. Detailed analysis of municipality-wide oil seed patterns.`;
+    const descriptionEN = `Analysis of oil seed production and sales in duduwa Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of oil seed production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${OIL_SEED_TYPES_EN[mostProducedOilSeed] || mostProducedOilSeed}. Detailed analysis of municipality-wide oil seed patterns.`;
 
     return {
       title: `तेलहन बालीको प्रकार अनुसार उत्पादन र बिक्री | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -323,7 +323,7 @@ export default async function MunicipalityWideOilSeedsPage() {
               src="/images/oil-seeds.svg"
               width={1200}
               height={400}
-              alt="तेलहन बालीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Oil Seeds by Production and Sales - Khajura Rural Municipality)"
+              alt="तेलहन बालीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Oil Seeds by Production and Sales - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

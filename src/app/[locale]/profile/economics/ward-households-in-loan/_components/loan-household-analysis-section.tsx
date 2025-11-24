@@ -55,7 +55,7 @@ export default function LoanHouseholdAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-households-with-loans",
@@ -182,7 +182,7 @@ export default function LoanHouseholdAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           थप जानकारी
           <span className="sr-only">
-            Additional Information about Loan Distribution in Khajura
+            Additional Information about Loan Distribution in duduwa
           </span>
         </h3>
         <p>

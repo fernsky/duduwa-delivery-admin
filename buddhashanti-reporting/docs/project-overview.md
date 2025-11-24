@@ -1,10 +1,10 @@
-# buddhashanti Digital Profile Report System
+# duduwa Digital Profile Report System
 
 ## Project Overview & Architecture Design
 
 ### Project Vision
 
-A comprehensive digital profile report system for buddhashanti Municipality that generates beautiful, professional A4 PDF reports in Nepali language with interactive web documentation interface.
+A comprehensive digital profile report system for duduwa Municipality that generates beautiful, professional A4 PDF reports in Nepali language with interactive web documentation interface.
 
 ### Key Features
 

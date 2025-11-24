@@ -73,7 +73,7 @@ export default function VegetableFruitDiseaseAnalysisSection({
 
   // SEO attributes
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-vegetables-fruits": totalVegetableFruits.toString(),
     "data-most-affected-vegetable-fruit":
       mostAffectedVegetableFruit &&
@@ -122,7 +122,7 @@ export default function VegetableFruitDiseaseAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           तरकारी र फलफूल रोग र कीटको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Vegetable and Fruit Disease and Pest Analysis of Khajura
+            Detailed Vegetable and Fruit Disease and Pest Analysis of duduwa
           </span>
         </h3>
 
@@ -131,7 +131,7 @@ export default function VegetableFruitDiseaseAnalysisSection({
             <h4 className="font-medium mb-2">
               सबैभन्दा प्रभावित तरकारी/फलफूल
               <span className="sr-only">
-                Most Affected Vegetable/Fruit in Khajura
+                Most Affected Vegetable/Fruit in duduwa
               </span>
             </h4>
             {mostAffectedVegetableFruit && (

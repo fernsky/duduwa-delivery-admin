@@ -27,7 +27,7 @@ export default function ForeignEmploymentSEO({
     // Convert country stats to structured data format
     const countryStats = overallSummary.slice(0, 10).map((item) => ({
       "@type": "Observation",
-      name: `${COUNTRY_NAMES_EN[item.country] || item.country} workers from Khajura Rural Municipality`,
+      name: `${COUNTRY_NAMES_EN[item.country] || item.country} workers from duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -35,7 +35,7 @@ export default function ForeignEmploymentSEO({
         unitText: "people",
       },
       measuredValue: item.population,
-      description: `${item.population.toLocaleString()} people from Khajura Rural Municipality work in ${COUNTRY_NAMES_EN[item.country] || item.country} (${((item.population / totalPopulation) * 100).toFixed(2)}% of total migrant workers)`,
+      description: `${item.population.toLocaleString()} people from duduwa Rural Municipality work in ${COUNTRY_NAMES_EN[item.country] || item.country} (${((item.population / totalPopulation) * 100).toFixed(2)}% of total migrant workers)`,
     }));
 
     // Find most common destination country
@@ -73,10 +73,10 @@ export default function ForeignEmploymentSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Foreign Employment Destinations from Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Foreign employment statistics across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalPopulation.toLocaleString()} migrant workers. The most common destination is ${mostCommonCountryEN} with ${mostCommonCountry?.population.toLocaleString()} workers (${mostCommonCountryPercentage}%). Gulf countries account for ${gulfCountriesPercentage}% of all foreign employment. Estimated annual remittance is NPR ${remittanceCrores} crore.`,
+      name: "Foreign Employment Destinations from duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Foreign employment statistics across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalPopulation.toLocaleString()} migrant workers. The most common destination is ${mostCommonCountryEN} with ${mostCommonCountry?.population.toLocaleString()} workers (${mostCommonCountryPercentage}%). Gulf countries account for ${gulfCountriesPercentage}% of all foreign employment. Estimated annual remittance is NPR ${remittanceCrores} crore.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Foreign employment",
         "Migrant workers",
@@ -92,16 +92,16 @@ export default function ForeignEmploymentSEO({
           .slice(0, 10)
           .map((name) => `${name} मा कार्यरत डुडुवावासी`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-foreign-employment-countries",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-foreign-employment-countries",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

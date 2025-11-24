@@ -89,11 +89,11 @@ export default function DeathCauseCharts({
       >
         <meta
           itemProp="name"
-          content="Death Cause Distribution in Khajura Rural Municipality"
+          content="Death Cause Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Distribution of death causes in Khajura with a total of ${totalDeaths} deaths`}
+          content={`Distribution of death causes in duduwa with a total of ${totalDeaths} deaths`}
         />
 
         <div className="border-b px-4 py-3">
@@ -218,11 +218,11 @@ export default function DeathCauseCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Death Cause Distribution in Khajura Rural Municipality"
+          content="Ward-wise Death Cause Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Death cause distribution across wards in Khajura"
+          content="Death cause distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -253,11 +253,11 @@ export default function DeathCauseCharts({
       >
         <meta
           itemProp="name"
-          content="Detailed Death Cause Analysis by Ward in Khajura Rural Municipality"
+          content="Detailed Death Cause Analysis by Ward in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed death cause composition of each ward in Khajura"
+          content="Detailed death cause composition of each ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

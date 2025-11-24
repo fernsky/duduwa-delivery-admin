@@ -75,7 +75,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const cooperativesData =
       await api.profile.economics.cooperatives.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalCooperatives = cooperativesData.length;
@@ -133,20 +133,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality cooperatives",
-      "Khajura cooperative institutions",
+      "duduwa Rural Municipality cooperatives",
+      "duduwa cooperative institutions",
       "Municipality-wide cooperatives",
-      "Savings and credit cooperatives in Khajura",
-      `${COOPERATIVE_TYPES_EN[mostCommonCooperativeType] || "Cooperatives"} in Khajura`,
+      "Savings and credit cooperatives in duduwa",
+      `${COOPERATIVE_TYPES_EN[mostCommonCooperativeType] || "Cooperatives"} in duduwa`,
       `Ward ${wardWithMostCooperatives} cooperatives`,
-      `Khajura ${totalCooperatives} cooperative institutions`,
+      `duduwa ${totalCooperatives} cooperative institutions`,
       "Women's cooperatives",
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकामा संचालित ${localizeNumber(totalCooperatives.toString(), "ne")} सहकारी संस्थाहरूको विस्तृत विश्लेषण। सबैभन्दा बढी ${COOPERATIVE_TYPES[mostCommonCooperativeType] || ""} संस्थाहरू (${localizeNumber(mostCommonCooperativeTypePercentage.toFixed(1), "ne")}%) रहेका छन्। वडा नं ${localizeNumber(wardWithMostCooperatives.toString(), "ne")} मा सबैभन्दा बढी ${localizeNumber(wardMaxCount.toString(), "ne")} सहकारी संस्थाहरू क्रियाशील छन्। पालिका स्तरीय सहकारी संस्थाहरूको विस्तृत जानकारी।`;
 
-    const descriptionEN = `Detailed analysis of ${totalCooperatives} cooperative institutions operating in Khajura Rural Municipality. ${COOPERATIVE_TYPES_EN[mostCommonCooperativeType] || "Cooperatives"} are most common (${mostCommonCooperativeTypePercentage.toFixed(1)}%). Ward ${wardWithMostCooperatives} has the highest concentration with ${wardMaxCount} active cooperatives. Comprehensive information on municipality-wide cooperatives.`;
+    const descriptionEN = `Detailed analysis of ${totalCooperatives} cooperative institutions operating in duduwa Rural Municipality. ${COOPERATIVE_TYPES_EN[mostCommonCooperativeType] || "Cooperatives"} are most common (${mostCommonCooperativeTypePercentage.toFixed(1)}%). Ward ${wardWithMostCooperatives} has the highest concentration with ${wardMaxCount} active cooperatives. Comprehensive information on municipality-wide cooperatives.`;
 
     return {
       title: `सहकारी संस्थाहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -337,7 +337,7 @@ export default async function CooperativesPage() {
   const statistics = {
     totalCooperatives,
     totalWards: Object.keys(wardDistribution).length,
-    avgCooperativesPerWard: totalCooperatives / 9, // Khajura has 9 wards
+    avgCooperativesPerWard: totalCooperatives / 9, // duduwa has 9 wards
     mostPopularCooperativeType:
       cooperativeSummary.length > 0 ? cooperativeSummary[0].type : "",
     mostPopularCooperativeTypeName:
@@ -374,7 +374,7 @@ export default async function CooperativesPage() {
               src="/images/cooperatives.svg"
               width={1200}
               height={400}
-              alt="सहकारी संस्थाहरू - डुडुवा गाउँपालिका (Cooperative Institutions - Khajura Rural Municipality)"
+              alt="सहकारी संस्थाहरू - डुडुवा गाउँपालिका (Cooperative Institutions - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

@@ -83,21 +83,21 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality religious population",
-      "Khajura religious diversity",
-      `Khajura ${RELIGION_NAMES_EN[topReligions[0] as string]} population`,
+      "duduwa Rural Municipality religious population",
+      "duduwa religious diversity",
+      `duduwa ${RELIGION_NAMES_EN[topReligions[0] as string]} population`,
       ...topReligions.map(
-        (r) => `${RELIGION_NAMES_EN[r as string]} population in Khajura`,
+        (r) => `${RELIGION_NAMES_EN[r as string]} population in duduwa`,
       ),
       "Ward-wise religious demographics",
       "Religious diversity statistics",
-      "Religious census Khajura",
-      `Khajura total population ${totalPopulation}`,
+      "Religious census duduwa",
+      `duduwa total population ${totalPopulation}`,
     ];
 
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार धार्मिक जनसंख्या वितरण, प्रवृत्ति र विश्लेषण। कुल जनसंख्या ${localizeNumber(totalPopulation.toString(), "ne")} मध्ये ${RELIGION_NAMES_NP[topReligions[0] as string]} (${localizeNumber(religionCounts[topReligions[0]].toString(), "ne")}) सबैभन्दा ठूलो समूह हो, त्यसपछि ${RELIGION_NAMES_NP[topReligions[1] as string]} (${localizeNumber(religionCounts[topReligions[1]].toString(), "ne")}) र ${RELIGION_NAMES_NP[topReligions[2] as string]} (${localizeNumber(religionCounts[topReligions[2]].toString(), "ne")})। विभिन्न धर्मावलम्बीहरूको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise religious population distribution, trends and analysis for Khajura Rural Municipality. Out of a total population of ${totalPopulation}, ${RELIGION_NAMES_EN[topReligions[0] as string]} (${religionCounts[topReligions[0]]}) is the largest group, followed by ${RELIGION_NAMES_EN[topReligions[1] as string]} (${religionCounts[topReligions[1]]}) and ${RELIGION_NAMES_EN[topReligions[2] as string]} (${religionCounts[topReligions[2]]}). Detailed statistics and visualizations of various religious communities.`;
+    const descriptionEN = `Ward-wise religious population distribution, trends and analysis for duduwa Rural Municipality. Out of a total population of ${totalPopulation}, ${RELIGION_NAMES_EN[topReligions[0] as string]} (${religionCounts[topReligions[0]]}) is the largest group, followed by ${RELIGION_NAMES_EN[topReligions[1] as string]} (${religionCounts[topReligions[1]]}) and ${RELIGION_NAMES_EN[topReligions[2] as string]} (${religionCounts[topReligions[2]]}). Detailed statistics and visualizations of various religious communities.`;
 
     return {
       title: `डुडुवा गाउँपालिका | धर्म अनुसार जनसंख्या | डिजिटल प्रोफाइल`,
@@ -270,7 +270,7 @@ export default async function WardWiseReligionPopulationPage() {
               src="/images/religion-diversity.svg"
               width={1200}
               height={400}
-              alt="धार्मिक विविधता - डुडुवा गाउँपालिका (Religious Diversity - Khajura Rural Municipality)"
+              alt="धार्मिक विविधता - डुडुवा गाउँपालिका (Religious Diversity - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

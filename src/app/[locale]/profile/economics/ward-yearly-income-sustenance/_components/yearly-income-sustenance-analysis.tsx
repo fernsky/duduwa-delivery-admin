@@ -103,7 +103,7 @@ export default function YearlyIncomeSustenanceAnalysis({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-households",
@@ -219,7 +219,7 @@ export default function YearlyIncomeSustenanceAnalysis({
         <h3 className="text-xl font-medium mb-4">
           आयको पर्याप्तता स्थिति विश्लेषण
           <span className="sr-only">
-            Income Sufficiency Status Analysis of Khajura
+            Income Sufficiency Status Analysis of duduwa
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -259,7 +259,7 @@ export default function YearlyIncomeSustenanceAnalysis({
         <h3 className="text-xl font-medium mb-2">
           थप जानकारी
           <span className="sr-only">
-            Additional Information about Income Sufficiency in Khajura
+            Additional Information about Income Sufficiency in duduwa
           </span>
         </h3>
         <p>

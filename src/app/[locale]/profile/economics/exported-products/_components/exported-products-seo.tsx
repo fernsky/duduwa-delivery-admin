@@ -28,7 +28,7 @@ export default function ExportedProductsSEO({
     // Convert category stats to structured data format
     const categoryStats = categoryDistribution.map((item) => ({
       "@type": "Observation",
-      name: `${CATEGORY_NAMES_EN[item.name] || item.name} exports from Khajura Rural Municipality`,
+      name: `${CATEGORY_NAMES_EN[item.name] || item.name} exports from duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -38,16 +38,16 @@ export default function ExportedProductsSEO({
       measuredValue: item.value,
       description: `${item.value.toLocaleString()} products in ${
         CATEGORY_NAMES_EN[item.name] || item.name
-      } category are exported from Khajura Rural Municipality (${item.percentage}% of total exports)`,
+      } category are exported from duduwa Rural Municipality (${item.percentage}% of total exports)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Exported Products Catalog of Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Comprehensive catalog of ${totalProducts.toLocaleString()} products exported from Khajura Rural Municipality, categorized by type and market potential.`,
+      name: "Exported Products Catalog of duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Comprehensive catalog of ${totalProducts.toLocaleString()} products exported from duduwa Rural Municipality, categorized by type and market potential.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Export catalog",
         "Economic profile",
@@ -56,16 +56,16 @@ export default function ExportedProductsSEO({
         ...Object.values(CATEGORY_NAMES_EN).map((name) => `${name} exports`),
         ...categoryDistribution.map((cat) => `${cat.name} निर्यातित वस्तु`),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/exported-products",
+      url: "https://digital.duduwamun.gov.np/profile/economics/exported-products",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

@@ -110,7 +110,7 @@ export default function WardWiseSEO({
       )} घरधुरी रहेका छन्।`,
       keywords: [
         "डुडुवा गाउँपालिका",
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "वडागत जनसांख्यिकी",
         "डुडुवा वडा जनसंख्या",
         "नेपाल जनगणना",
@@ -119,16 +119,16 @@ export default function WardWiseSEO({
         "डुडुवा घरधुरी तथ्याङ्क",
         "बाँके जिल्ला जनसंख्या",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-wise-summary",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-wise-summary",
       creator: {
         "@type": "Organization",
         name: "डुडुवा गाउँपालिका",
-        url: "https://digital.buddhashantimun.gov.np",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

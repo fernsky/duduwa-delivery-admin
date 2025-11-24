@@ -69,7 +69,7 @@ export default function FinancialAccountsSEO({
 
         return {
           "@type": "Observation",
-          name: `Financial Account Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Financial Account Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -77,7 +77,7 @@ export default function FinancialAccountsSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(bankAccountPercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${bankAccount.toLocaleString()} households (${bankAccountPercent}%) have bank accounts out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${bankAccount.toLocaleString()} households (${bankAccountPercent}%) have bank accounts out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
         };
       })
       .filter(Boolean);
@@ -97,10 +97,10 @@ export default function FinancialAccountsSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Financial Account Distribution in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of financial accounts across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${bankTotal.toLocaleString()} households (${bankPercentage.toFixed(2)}%) have bank accounts, while ${noAccountTotal.toLocaleString()} households (${noAccountPercentage.toFixed(2)}%) have no financial accounts. The best financial inclusion is in Ward ${bestInclusionWard?.wardNumber || ""} with ${bestInclusionWard?.accountPercent.toFixed(2) || ""}% of households having financial accounts.`,
+      name: "Financial Account Distribution in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of financial accounts across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${bankTotal.toLocaleString()} households (${bankPercentage.toFixed(2)}%) have bank accounts, while ${noAccountTotal.toLocaleString()} households (${noAccountPercentage.toFixed(2)}%) have no financial accounts. The best financial inclusion is in Ward ${bestInclusionWard?.wardNumber || ""} with ${bestInclusionWard?.accountPercent.toFixed(2) || ""}% of households having financial accounts.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Financial accounts",
         "Bank accounts",
@@ -113,16 +113,16 @@ export default function FinancialAccountsSEO({
         "Financial services",
         "Financial inclusion index",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-financial-accounts",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-financial-accounts",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -193,10 +193,10 @@ export default function FinancialAccountsSEO({
         name: "Municipality Financial Accounts Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

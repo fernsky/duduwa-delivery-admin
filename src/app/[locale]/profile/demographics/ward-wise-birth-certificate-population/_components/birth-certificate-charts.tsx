@@ -138,11 +138,11 @@ export default function BirthCertificateCharts({
       >
         <meta
           itemProp="name"
-          content="Birth Certificate Status for Children Under 5 Years in Khajura Rural Municipality"
+          content="Birth Certificate Status for Children Under 5 Years in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Birth certificate distribution of children under 5 years in Khajura showing both with and without certificates`}
+          content={`Birth certificate distribution of children under 5 years in duduwa showing both with and without certificates`}
         />
 
         <div className="border-b px-4 py-3">
@@ -244,11 +244,11 @@ export default function BirthCertificateCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Birth Certificate Distribution in Khajura Rural Municipality"
+          content="Ward-wise Birth Certificate Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Birth certificate distribution across wards in Khajura showing both with and without certificates"
+          content="Birth certificate distribution across wards in duduwa showing both with and without certificates"
         />
 
         <div className="border-b px-4 py-3">
@@ -295,11 +295,11 @@ export default function BirthCertificateCharts({
       >
         <meta
           itemProp="name"
-          content="Birth Certificate Coverage by Ward in Khajura Rural Municipality"
+          content="Birth Certificate Coverage by Ward in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Ward-wise coverage rates of birth certificates for children under 5 years in Khajura"
+          content="Ward-wise coverage rates of birth certificates for children under 5 years in duduwa"
         />
 
         <div className="border-b px-4 py-3">

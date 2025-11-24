@@ -136,7 +136,7 @@ export default function SafeMotherhoodIndicatorsCharts({
       >
         <meta
           itemProp="name"
-          content="Safe Motherhood Trends in Khajura Rural Municipality"
+          content="Safe Motherhood Trends in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -171,7 +171,7 @@ export default function SafeMotherhoodIndicatorsCharts({
       >
         <meta
           itemProp="name"
-          content={`Antenatal Care Indicators in Khajura for ${latestYear}`}
+          content={`Antenatal Care Indicators in duduwa for ${latestYear}`}
         />
         <meta
           itemProp="description"
@@ -238,7 +238,7 @@ export default function SafeMotherhoodIndicatorsCharts({
       >
         <meta
           itemProp="name"
-          content={`Delivery Services in Khajura for ${latestYear}`}
+          content={`Delivery Services in duduwa for ${latestYear}`}
         />
         <meta
           itemProp="description"
@@ -309,7 +309,7 @@ export default function SafeMotherhoodIndicatorsCharts({
         >
           <meta
             itemProp="name"
-            content="Postnatal Care Indicators in Khajura"
+            content="Postnatal Care Indicators in duduwa"
           />
 
           <div className="border-b px-4 py-3">
@@ -340,7 +340,7 @@ export default function SafeMotherhoodIndicatorsCharts({
         >
           <meta
             itemProp="name"
-            content="Newborn Health Indicators in Khajura"
+            content="Newborn Health Indicators in duduwa"
           />
 
           <div className="border-b px-4 py-3">

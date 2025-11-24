@@ -114,7 +114,7 @@ class GenerateFullReportPDFView(PDFGeneratorMixin, TemplateView):
 
         # Municipality name - make dynamic
         municipality_name = "डुडुवा गाउँपालिका"
-        municipality_name_english = "buddhashanti Rural Municipality"
+        municipality_name_english = "duduwa Rural Municipality"
 
         # Get publication settings (optional)
         publication_settings = (
@@ -169,7 +169,7 @@ class GenerateFullReportPDFView(PDFGeneratorMixin, TemplateView):
         }
 
         filename = (
-            f"buddhashanti_digital_profile_report_{timezone.now().strftime('%Y%m%d')}.pdf"
+            f"duduwa_digital_profile_report_{timezone.now().strftime('%Y%m%d')}.pdf"
         )
         return self.generate_pdf_with_weasyprint(
             "reports/pdf_full_report.html", context, filename
@@ -185,7 +185,7 @@ class GenerateCategoryPDFView(PDFGeneratorMixin, TemplateView):
 
         # Municipality name - make dynamic
         municipality_name = "डुडुवा गाउँपालिका"
-        municipality_name_english = "buddhashantiRural Municipality"
+        municipality_name_english = "duduwaRural Municipality"
 
         publication_settings = self.get_publication_settings()
         sections = category.sections.filter(is_published=True).prefetch_related(
@@ -208,7 +208,7 @@ class GenerateCategoryPDFView(PDFGeneratorMixin, TemplateView):
         }
 
         filename = (
-            f"buddhashanti_{category.slug}_report_{timezone.now().strftime('%Y%m%d')}.pdf"
+            f"duduwa_{category.slug}_report_{timezone.now().strftime('%Y%m%d')}.pdf"
         )
         return self.generate_pdf_with_weasyprint(
             "reports/pdf_category.html", context, filename
@@ -229,7 +229,7 @@ class GenerateSectionPDFView(PDFGeneratorMixin, TemplateView):
 
         # Municipality name - make dynamic
         municipality_name = "डुडुवा गाउँपालिका"
-        municipality_name_english = "buddhashantiRural Municipality"
+        municipality_name_english = "duduwaRural Municipality"
 
         publication_settings = self.get_publication_settings()
 
@@ -242,7 +242,7 @@ class GenerateSectionPDFView(PDFGeneratorMixin, TemplateView):
             "generated_date": timezone.now(),
         }
 
-        filename = f"buddhashanti_{section.category.slug}_{section.slug}_{timezone.now().strftime('%Y%m%d')}.pdf"
+        filename = f"duduwa_{section.category.slug}_{section.slug}_{timezone.now().strftime('%Y%m%d')}.pdf"
         return self.generate_pdf_with_weasyprint(
             "reports/pdf_section.html", context, filename
         )

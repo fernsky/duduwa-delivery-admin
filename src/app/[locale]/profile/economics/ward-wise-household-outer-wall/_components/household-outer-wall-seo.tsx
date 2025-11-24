@@ -25,7 +25,7 @@ export default function HouseholdOuterWallSEO({
     // Convert wall type stats to structured data format
     const wallTypeStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${WALL_TYPE_NAMES_EN[item.wallType] || item.wallType} in Khajura Rural Municipality`,
+      name: `${WALL_TYPE_NAMES_EN[item.wallType] || item.wallType} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -33,7 +33,7 @@ export default function HouseholdOuterWallSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality have ${WALL_TYPE_NAMES_EN[item.wallType] || item.wallType} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality have ${WALL_TYPE_NAMES_EN[item.wallType] || item.wallType} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     // Find most common wall type
@@ -62,10 +62,10 @@ export default function HouseholdOuterWallSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "House Outer Wall Types in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `House outer wall data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common type is ${mostCommonTypeEN} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%). High quality walls account for ${highQualityPercentage}% of all households.`,
+      name: "House Outer Wall Types in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `House outer wall data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common type is ${mostCommonTypeEN} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%). High quality walls account for ${highQualityPercentage}% of all households.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "House outer wall",
         "Wall distribution",
@@ -81,16 +81,16 @@ export default function HouseholdOuterWallSEO({
           (name) => `${name} घरधुरी तथ्याङ्क`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-household-outer-wall",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-household-outer-wall",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

@@ -107,7 +107,7 @@ END
 $$;
 
 -- Add comments for documentation
-COMMENT ON TABLE acme_ward_wise_time_to_financial_organization IS 'Stores ward-wise data on time taken to reach financial organizations for Khajura Rural Municipality';
+COMMENT ON TABLE acme_ward_wise_time_to_financial_organization IS 'Stores ward-wise data on time taken to reach financial organizations for duduwa Rural Municipality';
 COMMENT ON COLUMN acme_ward_wise_time_to_financial_organization.ward_number IS 'Ward number (1-8)';
 COMMENT ON COLUMN acme_ward_wise_time_to_financial_organization.time_to_financial_organization_type IS 'Type of time category to reach financial organization';
 COMMENT ON COLUMN acme_ward_wise_time_to_financial_organization.households IS 'Number of households in this ward with this time category';

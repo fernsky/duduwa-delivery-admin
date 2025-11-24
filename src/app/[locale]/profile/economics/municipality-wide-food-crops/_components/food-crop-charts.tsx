@@ -148,7 +148,7 @@ export default function FoodCropCharts({
       >
         <meta
           itemProp="name"
-          content="Food Crop Types in Khajura Rural Municipality"
+          content="Food Crop Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -333,11 +333,11 @@ export default function FoodCropCharts({
       >
         <meta
           itemProp="name"
-          content="Food Crop Production vs Sales Distribution in Khajura Rural Municipality"
+          content="Food Crop Production vs Sales Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of production and sales of food crops in Khajura"
+          content="Distribution of production and sales of food crops in duduwa"
         />
 
         <div className="border-b px-4 py-3">

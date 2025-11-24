@@ -68,7 +68,7 @@ export default function WardWiseEducationalLevelSEO({
 
         return {
           "@type": "Observation",
-          name: `Educational Level Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Educational Level Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -76,7 +76,7 @@ export default function WardWiseEducationalLevelSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(higherEducationPercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${higherEducation.toLocaleString()} people (${higherEducationPercent}%) have attained higher education out of a total of ${totalWardPopulation.toLocaleString()} people.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${higherEducation.toLocaleString()} people (${higherEducationPercent}%) have attained higher education out of a total of ${totalWardPopulation.toLocaleString()} people.`,
         };
       })
       .filter(Boolean);
@@ -94,10 +94,10 @@ export default function WardWiseEducationalLevelSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Educational Level Distribution in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of educational levels across ${wardNumbers.length} wards of Khajura Rural Municipality with a total population of ${totalPopulation.toLocaleString()}. ${educationGroupTotals.HIGHER_EDUCATION.toLocaleString()} people (${educationGroupPercentages.HIGHER_EDUCATION.toFixed(2)}%) have attained higher education. The highest educational level is in Ward ${bestEducatedWard?.wardNumber || ""} with ${bestEducatedWard?.percentage.toFixed(2) || ""}% of people having higher education.`,
+      name: "Educational Level Distribution in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of educational levels across ${wardNumbers.length} wards of duduwa Rural Municipality with a total population of ${totalPopulation.toLocaleString()}. ${educationGroupTotals.HIGHER_EDUCATION.toLocaleString()} people (${educationGroupPercentages.HIGHER_EDUCATION.toFixed(2)}%) have attained higher education. The highest educational level is in Ward ${bestEducatedWard?.wardNumber || ""} with ${bestEducatedWard?.percentage.toFixed(2) || ""}% of people having higher education.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Educational level",
         "Higher education rate",
@@ -112,16 +112,16 @@ export default function WardWiseEducationalLevelSEO({
         "Educational distribution",
         "Education index",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/education/ward-wise-educational-level",
+      url: "https://digital.duduwamun.gov.np/profile/education/ward-wise-educational-level",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -192,10 +192,10 @@ export default function WardWiseEducationalLevelSEO({
         name: "Municipality Education Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

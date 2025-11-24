@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 // Base URL from environment or default
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://digital.buddhashantimun.gov.np';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://digital.duduwamun.gov.np';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,10 +9,10 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
       // Uncomment if you want to disallow specific paths
-       disallow: ['/api/', '/admin/'],
+      disallow: ['/api/', '/admin/'],
     },
     sitemap: [
-      `${baseUrl}/sitemap.xml`, 
+      `${baseUrl}/sitemap.xml`,
       `${baseUrl}/sitemap-index.xml`
     ],
     host: baseUrl,

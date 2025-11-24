@@ -39,7 +39,7 @@ export default function WaterPurificationSEO({
     // Create English descriptions for SEO
     const purificationTypeStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${item.waterPurificationName} water purification method in Khajura Rural Municipality`,
+      name: `${item.waterPurificationName} water purification method in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -47,7 +47,7 @@ export default function WaterPurificationSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality use ${item.waterPurificationName} method for water purification (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality use ${item.waterPurificationName} method for water purification (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     // Find most common purification method
@@ -74,10 +74,10 @@ export default function WaterPurificationSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Water Purification Methods in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of water purification methods across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${treatingPercentage}% of households treat their water before drinking. The most common method is ${mostCommonTypeName} with ${mostCommonMethod?.households.toLocaleString()} households (${mostCommonTypePercentage}%).`,
+      name: "Water Purification Methods in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of water purification methods across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${treatingPercentage}% of households treat their water before drinking. The most common method is ${mostCommonTypeName} with ${mostCommonMethod?.households.toLocaleString()} households (${mostCommonTypePercentage}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Water purification",
         "Safe drinking water",
@@ -90,16 +90,16 @@ export default function WaterPurificationSEO({
         "Piyush usage",
         "Water safety measures",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/water-and-sanitation/ward-wise-water-purification",
+      url: "https://digital.duduwamun.gov.np/profile/water-and-sanitation/ward-wise-water-purification",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -148,8 +148,8 @@ export default function WaterPurificationSEO({
       isAccessibleForFree: true,
       isPartOf: {
         "@type": "WebSite",
-        name: "Khajura Rural Municipality Digital Profile",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality Digital Profile",
+        url: "https://digital.duduwamun.gov.np",
       },
     };
   };

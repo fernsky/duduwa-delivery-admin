@@ -115,7 +115,7 @@ export default function EconomicallyActiveAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-population",
@@ -243,7 +243,7 @@ export default function EconomicallyActiveAnalysisSection({
       <div className="bg-muted/50 p-4 rounded-lg mt-8">
         <h3 className="text-xl font-medium mb-4">
           आर्थिक सक्रियता विश्लेषण
-          <span className="sr-only">Economic Activity Analysis of Khajura</span>
+          <span className="sr-only">Economic Activity Analysis of duduwa</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-card p-4 rounded border">
@@ -286,7 +286,7 @@ export default function EconomicallyActiveAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           आर्थिक नीतिगत सिफारिसहरू
           <span className="sr-only">
-            Economic Policy Recommendations for Khajura
+            Economic Policy Recommendations for duduwa
           </span>
         </h3>
         <ul className="list-disc pl-5 space-y-2 mt-3">
@@ -321,7 +321,7 @@ export default function EconomicallyActiveAnalysisSection({
           थप जानकारी
           <span className="sr-only">
             Additional Information about Economically Active Population in
-            Khajura
+            duduwa
           </span>
         </h3>
         <p>

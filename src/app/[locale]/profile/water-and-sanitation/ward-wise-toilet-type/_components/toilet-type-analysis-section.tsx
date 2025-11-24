@@ -67,7 +67,7 @@ export default function ToiletTypeAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-sanitation-percentage": sanitationPercentage,
     "data-no-toilet-percentage": noToiletPercentage,
@@ -146,7 +146,7 @@ export default function ToiletTypeAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           शौचालय प्रकारहरू विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Toilet Types Analysis of Khajura
+            Detailed Toilet Types Analysis of duduwa
           </span>
         </h3>
 
@@ -159,7 +159,7 @@ export default function ToiletTypeAnalysisSection({
             <h4 className="font-medium mb-2">
               शौचालय उपलब्धता दर
               <span className="sr-only">
-                Toilet Availability Rate in Khajura Rural Municipality
+                Toilet Availability Rate in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">
@@ -210,7 +210,7 @@ export default function ToiletTypeAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च शौचालय उपलब्धता भएको वडा
               <span className="sr-only">
-                Ward with Highest Sanitation Rate in Khajura
+                Ward with Highest Sanitation Rate in duduwa
               </span>
             </h4>
             {highestSanitationWard && (

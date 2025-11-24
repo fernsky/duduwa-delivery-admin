@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const ageData =
       await api.profile.demographics.wardAgeWisePopulation.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalPopulation = ageData.reduce(
@@ -78,21 +78,21 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality age distribution",
-      "Khajura age demographics",
-      `Khajura children population ${childrenPct}%`,
-      `Khajura youth population ${youthPct}%`,
+      "duduwa Rural Municipality age distribution",
+      "duduwa age demographics",
+      `duduwa children population ${childrenPct}%`,
+      `duduwa youth population ${youthPct}%`,
       "Ward-wise age demographics",
       "Population pyramid",
       "Demographic dividend",
       "Dependency ratio",
-      `Khajura total population ${totalPopulation}`,
+      `duduwa total population ${totalPopulation}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार उमेर समूहको जनसंख्या वितरण, प्रवृत्ति र विश्लेषण। कुल जनसंख्या ${localizeNumber(totalPopulation.toString(), "ne")} मध्ये बाल जनसंख्या ${localizeNumber(childrenPct, "ne")}%, युवा जनसंख्या ${localizeNumber(youthPct, "ne")}% रहेको छ। उमेर समूह अनुसार विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise age group population distribution, trends and analysis for Khajura Rural Municipality. Out of a total population of ${totalPopulation}, children make up ${childrenPct}% and youth make up ${youthPct}%. Detailed statistics and visualizations of various age groups.`;
+    const descriptionEN = `Ward-wise age group population distribution, trends and analysis for duduwa Rural Municipality. Out of a total population of ${totalPopulation}, children make up ${childrenPct}% and youth make up ${youthPct}%. Detailed statistics and visualizations of various age groups.`;
 
     return {
       title: `उमेर अनुसार जनसंख्या | डुडुवा गाउँपालिका | डिजिटल प्रोफाइल`,

@@ -95,7 +95,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const remittanceData =
       await api.profile.economics.wardWiseRemittance.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalSendingPopulation = remittanceData.reduce(
@@ -158,8 +158,8 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality remittance",
-      "Ward-wise remittance in Khajura",
+      "duduwa Rural Municipality remittance",
+      "Ward-wise remittance in duduwa",
       "Remittance from foreign employment",
       `Annual remittance NPR ${estimatedRemittanceCrores} crore`,
       "Remittance distribution",
@@ -170,7 +170,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार रेमिट्यान्स वितरणको विश्लेषण। कुल ${localizeNumber(totalSendingPopulation.toString(), "ne")} जनाले वैदेशिक रोजगारीबाट रेमिट्यान्स पठाउँछन्, जसमध्ये ${localizeNumber(mostCommonPercentage, "ne")}% ले ${mostCommonAmountGroupLabel} पठाउँछन्। वार्षिक अनुमानित रेमिट्यान्स रकम रु. ${localizeNumber(estimatedRemittanceCrores, "ne")} करोड रहेको छ।`;
 
-    const descriptionEN = `Analysis of ward-wise remittance distribution in Khajura Rural Municipality. Out of a total of ${totalSendingPopulation} individuals sending remittances from foreign employment, ${mostCommonPercentage}% send in the range of ${mostCommonAmountGroupLabel}. The estimated annual remittance amounts to NPR ${estimatedRemittanceCrores} crore.`;
+    const descriptionEN = `Analysis of ward-wise remittance distribution in duduwa Rural Municipality. Out of a total of ${totalSendingPopulation} individuals sending remittances from foreign employment, ${mostCommonPercentage}% send in the range of ${mostCommonAmountGroupLabel}. The estimated annual remittance amounts to NPR ${estimatedRemittanceCrores} crore.`;
 
     return {
       title: `वडा अनुसार रेमिट्यान्स वितरण | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -638,7 +638,7 @@ export default async function WardWiseRemittancePage() {
               src="/images/remittance.svg"
               width={1200}
               height={400}
-              alt="वडा अनुसार रेमिट्यान्स वितरण - डुडुवा गाउँपालिका (Ward-wise Remittance Distribution - Khajura Rural Municipality)"
+              alt="वडा अनुसार रेमिट्यान्स वितरण - डुडुवा गाउँपालिका (Ward-wise Remittance Distribution - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

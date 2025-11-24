@@ -7,7 +7,7 @@ import sys
 import django
 
 # Setup Django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "buddhashanti_report.settings.development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "duduwa_report.settings.development")
 django.setup()
 
 from apps.economics.processors.remittance_expenses import RemittanceExpensesProcessor

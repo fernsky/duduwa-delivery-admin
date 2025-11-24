@@ -18,11 +18,11 @@ export const householdStatusEnum = pgEnum("household_status_enum", [
 ]);
 
 // Main household table
-export const households = pgTable("acme_buddhashanti_households", {
+export const households = pgTable("acme_duduwa_households", {
   // Primary identification
   id: text("id").primaryKey().notNull(),
   profileId: text("profile_id"),
-  
+
   // Location information
   province: text("province"),
   district: text("district"),
@@ -34,14 +34,14 @@ export const households = pgTable("acme_buddhashanti_households", {
   householdLocation: text("household_location").array(),
   locality: text("locality"),
   developmentOrganization: text("development_organization"),
-  
+
   // Family information
   familyHeadName: text("family_head_name"),
   familyHeadPhoneNo: text("family_head_phone_no"),
   totalMembers: integer("total_members"),
   areMembersElsewhere: text("are_members_elsewhere"),
   totalElsewhereMembers: integer("total_elsewhere_members"),
-  
+
   // House details
   houseOwnership: text("house_ownership"),
   houseOwnershipOther: text("house_ownership_other"),
@@ -55,11 +55,11 @@ export const households = pgTable("acme_buddhashanti_households", {
   houseRoofOther: text("house_roof_other"),
   houseFloor: text("house_floor"),
   houseFloorOther: text("house_floor_other"),
-  
+
   // Missing house_floors and room_count in the provided schema
   // houseFloors: integer("house_floors"),
   // roomCount: integer("room_count"),
-  
+
   // Safety information
   isHousePassed: text("is_house_passed"),
   isMapArchived: text("is_map_archived"),
@@ -68,7 +68,7 @@ export const households = pgTable("acme_buddhashanti_households", {
   // disasterRiskStatus: text("disaster_risk_status"),
   naturalDisasters: text("natural_disasters").array(),
   isSafe: text("is_safe"),
-  
+
   // Water, sanitation and energy
   waterSource: text("water_source"),
   // Note: this is not an array in the provided schema
@@ -77,14 +77,14 @@ export const households = pgTable("acme_buddhashanti_households", {
   solidWasteManagement: text("solid_waste_management"),
   primaryCookingFuel: text("primary_cooking_fuel"),
   primaryEnergySource: text("primary_energy_source"),
-  
+
   // Accessibility
   roadStatus: text("road_status"),
   timeToPublicBus: text("time_to_public_bus"),
   timeToMarket: text("time_to_market"),
   distanceToActiveRoad: text("distance_to_active_road"),
   facilities: text("facilities").array(),
-  
+
   // Economic details
   hasPropertiesElsewhere: text("has_properties_elsewhere"),
   hasFemaleNamedProperties: text("has_female_named_properties"),
@@ -92,18 +92,18 @@ export const households = pgTable("acme_buddhashanti_households", {
   loanUses: text("loan_uses").array(),
   timeToBank: text("time_to_bank"),
   financialAccounts: text("financial_accounts").array(),
-  
+
   // New field from provided schema
   incomeSources: text("income_sources").array(),
-  
+
   // Health
   haveHealthInsurance: text("have_health_insurance"),
   consultingHealthOrganization: text("consulting_health_organization"),
   timeToHealthOrganization: text("time_to_health_organization"),
-  
+
   // Municipal & Suggestions
   municipalSuggestions: text("municipal_suggestions").array(),
-  
+
   // Agriculture & Livestock
   haveAgriculturalLand: text("have_agricultural_land"),
   agriculturalLands: text("agricultural_lands").array(),
@@ -118,7 +118,7 @@ export const households = pgTable("acme_buddhashanti_households", {
   areInvolvedInHusbandry: text("are_involved_in_husbandry"),
   animals: text("animals").array(),
   animalProducts: text("animal_products").array(),
-  
+
   // Aquaculture & Apiary
   haveAquaculture: text("have_aquaculture"),
   pondNumber: integer("pond_number"),
@@ -131,16 +131,16 @@ export const households = pgTable("acme_buddhashanti_households", {
   honeyProduction: real("honey_production"),
   honeySales: real("honey_sales"),
   honeyRevenue: real("honey_revenue"),
-  
+
   // Agricultural operations
   hasAgriculturalInsurance: text("has_agricultural_insurance"),
   monthsInvolvedInAgriculture: text("months_involved_in_agriculture"),
   agriculturalMachines: text("agricultural_machines").array(),
-  
+
   // Remittance fields moved per schema order
   haveRemittance: text("have_remittance"),
   remittanceExpenses: text("remittance_expenses").array(),
-  
+
   // Migration details
   birthPlace: text("birth_place"),
   birthProvince: text("birth_province"),
@@ -151,25 +151,25 @@ export const households = pgTable("acme_buddhashanti_households", {
   priorDistrict: text("prior_district"),
   priorCountry: text("prior_country"),
   residenceReason: text("residence_reason"),
-  
+
   // Business
   hasBusiness: text("has_business"),
-  
+
   // System fields
   deviceId: text("device_id"),
   geom: postgis("geom"),
   name: text("name"),
-  
+
   // Status field - not in the provided schema, consider removing if not in actual DB
   // status: householdStatusEnum("status").default("pending"),
 });
 
 // Staging table for data validation - Update to match the same schema as households
-export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", {
+export const stagingHouseholds = pgTable("staging_acme_duduwa_household", {
   // Copy the same structure as the main households table
   id: text("id").primaryKey().notNull(),
   profileId: text("profile_id"),
-  
+
   // Location information
   province: text("province"),
   district: text("district"),
@@ -181,14 +181,14 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
   householdLocation: text("household_location").array(),
   locality: text("locality"),
   developmentOrganization: text("development_organization"),
-  
+
   // Family information
   familyHeadName: text("family_head_name"),
   familyHeadPhoneNo: text("family_head_phone_no"),
   totalMembers: integer("total_members"),
   areMembersElsewhere: text("are_members_elsewhere"),
   totalElsewhereMembers: integer("total_elsewhere_members"),
-  
+
   // House details
   houseOwnership: text("house_ownership"),
   houseOwnershipOther: text("house_ownership_other"),
@@ -202,13 +202,13 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
   houseRoofOther: text("house_roof_other"),
   houseFloor: text("house_floor"),
   houseFloorOther: text("house_floor_other"),
-  
+
   // Safety information
   isHousePassed: text("is_house_passed"),
   isMapArchived: text("is_map_archived"),
   naturalDisasters: text("natural_disasters").array(),
   isSafe: text("is_safe"),
-  
+
   // Water, sanitation and energy
   waterSource: text("water_source"),
   waterPurificationMethods: text("water_purification_methods"),
@@ -216,14 +216,14 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
   solidWasteManagement: text("solid_waste_management"),
   primaryCookingFuel: text("primary_cooking_fuel"),
   primaryEnergySource: text("primary_energy_source"),
-  
+
   // Accessibility
   roadStatus: text("road_status"),
   timeToPublicBus: text("time_to_public_bus"),
   timeToMarket: text("time_to_market"),
   distanceToActiveRoad: text("distance_to_active_road"),
   facilities: text("facilities").array(),
-  
+
   // Economic details
   hasPropertiesElsewhere: text("has_properties_elsewhere"),
   hasFemaleNamedProperties: text("has_female_named_properties"),
@@ -232,15 +232,15 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
   timeToBank: text("time_to_bank"),
   financialAccounts: text("financial_accounts").array(),
   incomeSources: text("income_sources").array(),
-  
+
   // Health
   haveHealthInsurance: text("have_health_insurance"),
   consultingHealthOrganization: text("consulting_health_organization"),
   timeToHealthOrganization: text("time_to_health_organization"),
-  
+
   // Municipal & Suggestions
   municipalSuggestions: text("municipal_suggestions").array(),
-  
+
   // Agriculture & Livestock
   haveAgriculturalLand: text("have_agricultural_land"),
   agriculturalLands: text("agricultural_lands").array(),
@@ -255,7 +255,7 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
   areInvolvedInHusbandry: text("are_involved_in_husbandry"),
   animals: text("animals").array(),
   animalProducts: text("animal_products").array(),
-  
+
   // Aquaculture & Apiary
   haveAquaculture: text("have_aquaculture"),
   pondNumber: integer("pond_number"),
@@ -266,16 +266,16 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
   honeyProduction: real("honey_production"),
   honeySales: real("honey_sales"),
   honeyRevenue: real("honey_revenue"),
-  
+
   // Agricultural operations
   hasAgriculturalInsurance: text("has_agricultural_insurance"),
   monthsInvolvedInAgriculture: text("months_involved_in_agriculture"),
   agriculturalMachines: text("agricultural_machines").array(),
-  
+
   // Remittance
   haveRemittance: text("have_remittance"),
   remittanceExpenses: text("remittance_expenses").array(),
-  
+
   // Migration details
   birthPlace: text("birth_place"),
   birthProvince: text("birth_province"),
@@ -286,10 +286,10 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
   priorDistrict: text("prior_district"),
   priorCountry: text("prior_country"),
   residenceReason: text("residence_reason"),
-  
+
   // Business
   hasBusiness: text("has_business"),
-  
+
   // System fields
   deviceId: text("device_id"),
   geom: postgis("geom"),
@@ -297,7 +297,7 @@ export const stagingHouseholds = pgTable("staging_acme_buddhashanti_household", 
 });
 
 // Edit requests for households
-export const householdEditRequests = pgTable("acme_buddhashanti_household_edit_requests", {
+export const householdEditRequests = pgTable("acme_duduwa_household_edit_requests", {
   id: varchar("id", { length: 48 }).primaryKey(),
   householdId: varchar("household_id", { length: 48 }).references(() => households.id),
   message: text("message").notNull(),

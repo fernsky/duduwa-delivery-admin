@@ -81,11 +81,11 @@ export default function SkillsCharts({
       >
         <meta
           itemProp="name"
-          content="Skills Distribution in Khajura Rural Municipality"
+          content="Skills Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Distribution of skills in Khajura with a total of ${totalPopulation} skilled population`}
+          content={`Distribution of skills in duduwa with a total of ${totalPopulation} skilled population`}
         />
 
         <div className="border-b px-4 py-3">
@@ -221,11 +221,11 @@ export default function SkillsCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Skills Distribution in Khajura Rural Municipality"
+          content="Ward-wise Skills Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Skills distribution across wards in Khajura"
+          content="Skills distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -256,11 +256,11 @@ export default function SkillsCharts({
       >
         <meta
           itemProp="name"
-          content="Detailed Skills Analysis by Ward in Khajura Rural Municipality"
+          content="Detailed Skills Analysis by Ward in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed skills composition of each ward in Khajura"
+          content="Detailed skills composition of each ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

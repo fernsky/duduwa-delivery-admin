@@ -22,7 +22,7 @@ export const getHouseholdLocationProcedure = protectedProcedure
     try {
       // Format the household ID correctly for the database
       const formattedId = formatDbUuid(input.id);
-      
+
       // Query to get household location
       const query = sql`
         SELECT 
@@ -32,12 +32,12 @@ export const getHouseholdLocationProcedure = protectedProcedure
           district,
           ward_no,
           family_head_name
-        FROM acme_buddhashanti_households
+        FROM acme_duduwa_households
         WHERE id = ${formattedId}
       `;
-      
+
       const result = await ctx.db.execute(query);
-      
+
       if (!result || result.length === 0) {
         throw new TRPCError({
           code: "NOT_FOUND",
@@ -46,7 +46,7 @@ export const getHouseholdLocationProcedure = protectedProcedure
       }
 
       const household = result[0];
-      
+
       // Parse the location data
       const parseLocationArray = (field: any): string[] => {
         if (!field) return [];
@@ -62,7 +62,7 @@ export const getHouseholdLocationProcedure = protectedProcedure
       };
 
       const location = parseLocationArray(household.household_location);
-      
+
       // Extract latitude and longitude if available
       let latitude: number | null = null;
       let longitude: number | null = null;
@@ -72,7 +72,7 @@ export const getHouseholdLocationProcedure = protectedProcedure
       if (location.length >= 2) {
         const possibleLat = parseFloat(location[0]);
         const possibleLng = parseFloat(location[1]);
-        
+
         if (!isNaN(possibleLat) && !isNaN(possibleLng)) {
           latitude = possibleLat;
           longitude = possibleLng;
@@ -116,7 +116,7 @@ export const getHouseholdsLocationsProcedure = protectedProcedure
   .query(async ({ ctx, input }) => {
     try {
       const { limit, offset, wardNo } = input;
-      
+
       // Build the query base
       let query = sql`
         SELECT 
@@ -127,20 +127,20 @@ export const getHouseholdsLocationsProcedure = protectedProcedure
           province,
           district,
           locality
-        FROM acme_buddhashanti_households
+        FROM acme_duduwa_households
         WHERE household_location IS NOT NULL
       `;
-      
+
       // Add filter by ward if specified
       if (wardNo !== undefined) {
         query = sql`${query} AND ward_no = ${wardNo}`;
       }
-      
+
       // Add pagination
       query = sql`${query} LIMIT ${limit} OFFSET ${offset}`;
-      
+
       const results = await ctx.db.execute(query);
-      
+
       // Transform results
       const households = results.map(row => {
         // Parse the location data
@@ -158,7 +158,7 @@ export const getHouseholdsLocationsProcedure = protectedProcedure
         };
 
         const location = parseLocationArray(row.household_location);
-        
+
         // Extract latitude and longitude if available
         let latitude: number | null = null;
         let longitude: number | null = null;
@@ -166,7 +166,7 @@ export const getHouseholdsLocationsProcedure = protectedProcedure
         if (location.length >= 2) {
           const possibleLat = parseFloat(location[0]);
           const possibleLng = parseFloat(location[1]);
-          
+
           if (!isNaN(possibleLat) && !isNaN(possibleLng)) {
             latitude = possibleLat;
             longitude = possibleLng;
@@ -187,21 +187,21 @@ export const getHouseholdsLocationsProcedure = protectedProcedure
           }
         };
       });
-      
+
       // Count query for total households with locations
       let countQuery = sql`
         SELECT COUNT(*) as total
-        FROM acme_buddhashanti_households 
+        FROM acme_duduwa_households 
         WHERE household_location IS NOT NULL
       `;
-      
+
       if (wardNo !== undefined) {
         countQuery = sql`${countQuery} AND ward_no = ${wardNo}`;
       }
-      
+
       const countResult = await ctx.db.execute(countQuery);
       const total = parseInt(countResult[0]?.total?.toString() || "0", 10);
-      
+
       return {
         households,
         meta: {

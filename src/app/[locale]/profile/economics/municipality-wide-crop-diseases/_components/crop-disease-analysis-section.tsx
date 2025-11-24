@@ -72,7 +72,7 @@ export default function CropDiseaseAnalysisSection({
 
   // SEO attributes
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-crops": totalCrops.toString(),
     "data-most-affected-crop":
       mostAffectedCrop &&
@@ -121,7 +121,7 @@ export default function CropDiseaseAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           बाली रोग र कीटको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Crop Disease and Pest Analysis of Khajura
+            Detailed Crop Disease and Pest Analysis of duduwa
           </span>
         </h3>
 
@@ -129,7 +129,7 @@ export default function CropDiseaseAnalysisSection({
           <div className="bg-card p-4 rounded border">
             <h4 className="font-medium mb-2">
               सबैभन्दा प्रभावित बाली
-              <span className="sr-only">Most Affected Crop in Khajura</span>
+              <span className="sr-only">Most Affected Crop in duduwa</span>
             </h4>
             {mostAffectedCrop && (
               <div className="flex items-center gap-3">

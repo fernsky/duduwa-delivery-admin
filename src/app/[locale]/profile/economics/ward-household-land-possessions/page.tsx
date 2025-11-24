@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const landPossessionData =
       await api.profile.economics.wardWiseHouseholdLandPossessions.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalHouseholdsWithLand = landPossessionData.reduce(
@@ -49,20 +49,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality land ownership",
-      "Khajura landowner households",
-      "Khajura economic condition",
-      `Khajura ward ${wardsWithHighestLandPossession[0]?.wardNumber || ""} land ownership`,
+      "duduwa Rural Municipality land ownership",
+      "duduwa landowner households",
+      "duduwa economic condition",
+      `duduwa ward ${wardsWithHighestLandPossession[0]?.wardNumber || ""} land ownership`,
       "Ward-wise land possession",
       "Rural municipality land statistics",
-      "Economic survey Khajura",
-      `Khajura total households with land ${totalHouseholdsWithLand}`,
+      "Economic survey duduwa",
+      `duduwa total households with land ${totalHouseholdsWithLand}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार जग्गा भएका घरपरिवारहरूको वितरण, प्रवृत्ति र विश्लेषण। कुल ${totalHouseholdsWithLand} घरपरिवारसँग आफ्नो जग्गा रहेको छ। सबैभन्दा बढी जग्गाधनी परिवार भएका वडाहरूमा वडा ${wardsWithHighestLandPossession[0]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[0]?.households || 0} घरपरिवार), वडा ${wardsWithHighestLandPossession[1]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[1]?.households || 0} घरपरिवार) र वडा ${wardsWithHighestLandPossession[2]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[2]?.households || 0} घरपरिवार) पर्दछन्। विस्तृत तथ्याङ्क र विजुअलाइजेसन यहाँ पेश गरिएको छ。`;
 
-    const descriptionEN = `Ward-wise distribution, trends and analysis of land-owning households in Khajura Rural Municipality. A total of ${totalHouseholdsWithLand} households own land. The wards with the highest number of landowner households are Ward ${wardsWithHighestLandPossession[0]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[0]?.households || 0} households), Ward ${wardsWithHighestLandPossession[1]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[1]?.households || 0} households), and Ward ${wardsWithHighestLandPossession[2]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[2]?.households || 0} households). Detailed statistics and visualizations presented here.`;
+    const descriptionEN = `Ward-wise distribution, trends and analysis of land-owning households in duduwa Rural Municipality. A total of ${totalHouseholdsWithLand} households own land. The wards with the highest number of landowner households are Ward ${wardsWithHighestLandPossession[0]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[0]?.households || 0} households), Ward ${wardsWithHighestLandPossession[1]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[1]?.households || 0} households), and Ward ${wardsWithHighestLandPossession[2]?.wardNumber || "N/A"} (${wardsWithHighestLandPossession[2]?.households || 0} households). Detailed statistics and visualizations presented here.`;
 
     return {
       title: `घरपरिवारको जग्गा स्वामित्व | ${municipalityName} पालिका प्रोफाइल`,
@@ -205,7 +205,7 @@ export default async function WardHouseholdLandPossessionsPage() {
                   src="/images/land-ownership.svg"
                   width={1200}
                   height={400}
-                  alt="घरपरिवारको जग्गा स्वामित्व - डुडुवा गाउँपालिका (Household Land Ownership - Khajura Rural Municipality)"
+                  alt="घरपरिवारको जग्गा स्वामित्व - डुडुवा गाउँपालिका (Household Land Ownership - duduwa Rural Municipality)"
                   className="w-full h-[250px] object-cover rounded-sm"
                   priority
                 />

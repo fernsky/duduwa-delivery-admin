@@ -45,7 +45,7 @@ export default function WardWiseHealthInsuredHouseholdsAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-insured-rate": insuredPercentage.toFixed(2),
     "data-best-ward": bestInsuranceWard?.wardNumber.toString() || "",
@@ -120,7 +120,7 @@ export default function WardWiseHealthInsuredHouseholdsAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           स्वास्थ्य बीमाको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Health Insurance Analysis of Khajura
+            Detailed Health Insurance Analysis of duduwa
           </span>
         </h3>
 
@@ -134,7 +134,7 @@ export default function WardWiseHealthInsuredHouseholdsAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च स्वास्थ्य बीमा दर भएको वडा
               <span className="sr-only">
-                Ward with Highest Health Insurance Rate in Khajura Rural
+                Ward with Highest Health Insurance Rate in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -200,7 +200,7 @@ export default function WardWiseHealthInsuredHouseholdsAnalysisSection({
             <h4 className="font-medium mb-2">
               न्यून स्वास्थ्य बीमा दर भएको वडा
               <span className="sr-only">
-                Ward with Lowest Health Insurance Rate in Khajura
+                Ward with Lowest Health Insurance Rate in duduwa
               </span>
             </h4>
             {worstInsuranceWard && (

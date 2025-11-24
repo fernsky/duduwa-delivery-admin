@@ -195,9 +195,9 @@ django-selenium>=0.9.8
 
 ```json
 {
-  "name": "buddhashanti-report-frontend",
+  "name": "duduwa-report-frontend",
   "version": "1.0.0",
-  "description": "Frontend assets for buddhashanti Report System",
+  "description": "Frontend assets for duduwa Report System",
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development --watch",
@@ -252,12 +252,12 @@ Fallbacks:
 
 ```sql
 -- Create database
-CREATE DATABASE buddhashanti_report;
-CREATE USER buddhashanti_user WITH PASSWORD 'your_secure_password';
-GRANT ALL PRIVILEGES ON DATABASE buddhashanti_report TO buddhashanti_user;
+CREATE DATABASE duduwa_report;
+CREATE USER duduwa_user WITH PASSWORD 'your_secure_password';
+GRANT ALL PRIVILEGES ON DATABASE duduwa_report TO duduwa_user;
 
 -- Extensions
-\c buddhashanti_report
+\c duduwa_report
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS "pg_trgm";  -- For text search
 ```
@@ -269,8 +269,8 @@ CREATE EXTENSION IF NOT EXISTS "pg_trgm";  -- For text search
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DB_NAME', default='buddhashanti_report'),
-        'USER': env('DB_USER', default='buddhashanti_user'),
+        'NAME': env('DB_NAME', default='duduwa_report'),
+        'USER': env('DB_USER', default='duduwa_user'),
         'PASSWORD': env('DB_PASSWORD'),
         'HOST': env('DB_HOST', default='localhost'),
         'PORT': env('DB_PORT', default='5432'),
@@ -292,8 +292,8 @@ DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
 
 # Database
-DB_NAME=buddhashanti_report
-DB_USER=buddhashanti_user
+DB_NAME=duduwa_report
+DB_USER=duduwa_user
 DB_PASSWORD=your_secure_password
 DB_HOST=localhost
 DB_PORT=5432
@@ -337,7 +337,7 @@ SENTRY_DSN=your-sentry-dsn-here
 ```python
 #!/usr/bin/env python3
 """
-buddhashanti Report System Setup Script
+duduwa Report System Setup Script
 """
 import os
 import subprocess
@@ -416,7 +416,7 @@ def load_sample_data():
 
 def main():
     """Main setup function"""
-    print("buddhashanti Report System Setup")
+    print("duduwa Report System Setup")
     print("=" * 30)
 
     setup_virtual_environment()
@@ -436,7 +436,7 @@ if __name__ == "__main__":
 
 ```powershell
 # Windows Installation Script
-Write-Host "buddhashanti Report System - Windows Setup" -ForegroundColor Green
+Write-Host "duduwa Report System - Windows Setup" -ForegroundColor Green
 
 # Check Python version
 $pythonVersion = python --version 2>&1
@@ -483,7 +483,7 @@ Write-Host "3. Run: python manage.py runserver" -ForegroundColor White
 #!/bin/bash
 # Linux/macOS Installation Script
 
-echo "buddhashanti Report System - Linux/macOS Setup"
+echo "duduwa Report System - Linux/macOS Setup"
 echo "=========================================="
 
 # Check Python version
@@ -567,7 +567,7 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8000
 
 # Run server
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "buddhashanti_report.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "duduwa_report.wsgi:application"]
 ```
 
 ### docker-compose.yml
@@ -581,8 +581,8 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
-      POSTGRES_DB: buddhashanti_report
-      POSTGRES_USER: buddhashanti_user
+      POSTGRES_DB: duduwa_report
+      POSTGRES_USER: duduwa_user
       POSTGRES_PASSWORD: your_secure_password
 
   redis:
@@ -606,4 +606,4 @@ volumes:
   postgres_data:
 ```
 
-This comprehensive requirements specification provides everything needed to set up and run the buddhashanti Digital Profile Report system across different environments and platforms.
+This comprehensive requirements specification provides everything needed to set up and run the duduwa Digital Profile Report system across different environments and platforms.

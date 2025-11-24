@@ -63,7 +63,7 @@ export default function WaterPurificationAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-treating-percentage": treatingPercentage,
     "data-no-treatment-percentage": noTreatmentPercentage,
@@ -141,7 +141,7 @@ export default function WaterPurificationAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           पानी शुद्धिकरण विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Water Purification Analysis of Khajura
+            Detailed Water Purification Analysis of duduwa
           </span>
         </h3>
 
@@ -154,7 +154,7 @@ export default function WaterPurificationAnalysisSection({
             <h4 className="font-medium mb-2">
               पानी उपचार दर
               <span className="sr-only">
-                Water Treatment Rate in Khajura Rural Municipality
+                Water Treatment Rate in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">
@@ -206,7 +206,7 @@ export default function WaterPurificationAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च पानी उपचार दर भएको वडा
               <span className="sr-only">
-                Ward with Highest Water Treatment Rate in Khajura
+                Ward with Highest Water Treatment Rate in duduwa
               </span>
             </h4>
             {highestTreatmentWard && (

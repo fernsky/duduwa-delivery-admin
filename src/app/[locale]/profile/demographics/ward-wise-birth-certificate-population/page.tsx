@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const birthCertificateData =
       await api.profile.demographics.wardWiseBirthCertificatePopulation.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Try to get summary data
     let totalWithCertificate = 0;
@@ -91,19 +91,19 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality birth registration",
+      "duduwa Rural Municipality birth registration",
       "Children under five birth certificate",
       "Ward-wise birth registration data",
       "Birth certificate analysis",
-      "Birth certificate holders in Khajura",
-      `Khajura birth registration status: with certificate ${totalWithCertificate}, without certificate ${totalWithoutCertificate}`,
-      `Khajura total children under five years: ${totalPopulation}`,
+      "Birth certificate holders in duduwa",
+      `duduwa birth registration status: with certificate ${totalWithCertificate}, without certificate ${totalWithoutCertificate}`,
+      `duduwa total children under five years: ${totalPopulation}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार पाँच वर्षमुनिका बालबालिकाहरूको जन्मदर्ता प्रमाणपत्र वितरण र विश्लेषण। कुल ${localizeNumber(totalPopulation.toString(), "ne")} बालबालिकामध्ये ${localizeNumber(totalWithCertificate.toString(), "ne")} जनासँग जन्मदर्ता प्रमाणपत्र छ भने ${localizeNumber(totalWithoutCertificate.toString(), "ne")} जनासँग छैन।`;
 
-    const descriptionEN = `Ward-wise distribution and analysis of birth certificate holders among children under five in Khajura Rural Municipality. Out of ${totalPopulation} total children, ${totalWithCertificate} have birth certificates and ${totalWithoutCertificate} do not have birth certificates.`;
+    const descriptionEN = `Ward-wise distribution and analysis of birth certificate holders among children under five in duduwa Rural Municipality. Out of ${totalPopulation} total children, ${totalWithCertificate} have birth certificates and ${totalWithoutCertificate} do not have birth certificates.`;
 
     return {
       title: `पाँच वर्षमुनिका बालबालिका जन्मदर्ता | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -301,7 +301,7 @@ export default async function WardWiseBirthCertificatePopulationPage() {
               src="/images/birth-certificate.svg"
               width={1200}
               height={400}
-              alt="पाँच वर्षमुनिका बालबालिका जन्मदर्ता - डुडुवा गाउँपालिका (Birth Certificates for Children Under Five - Khajura Rural Municipality)"
+              alt="पाँच वर्षमुनिका बालबालिका जन्मदर्ता - डुडुवा गाउँपालिका (Birth Certificates for Children Under Five - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

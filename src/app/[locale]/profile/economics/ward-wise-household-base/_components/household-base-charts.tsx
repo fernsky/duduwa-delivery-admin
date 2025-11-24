@@ -59,11 +59,11 @@ export default function HouseholdBaseCharts({
       >
         <meta
           itemProp="name"
-          content="House Foundation Types in Khajura Rural Municipality"
+          content="House Foundation Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`House foundation distribution of Khajura with a total of ${totalHouseholds} households`}
+          content={`House foundation distribution of duduwa with a total of ${totalHouseholds} households`}
         />
 
         <div className="border-b px-4 py-3">
@@ -185,11 +185,11 @@ export default function HouseholdBaseCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise House Foundation in Khajura Rural Municipality"
+          content="Ward-wise House Foundation in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="House foundation distribution across wards in Khajura"
+          content="House foundation distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -220,11 +220,11 @@ export default function HouseholdBaseCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise House Foundation Analysis in Khajura Rural Municipality"
+          content="Ward-wise House Foundation Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Most common house foundation types by ward in Khajura"
+          content="Most common house foundation types by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

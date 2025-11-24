@@ -49,7 +49,7 @@ export default function AgricultureHouseholdsSEO({
 
         return {
           "@type": "Observation",
-          name: `Agriculture Households in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Agriculture Households in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -57,7 +57,7 @@ export default function AgricultureHouseholdsSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(involvedPercentage),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${wardData.involvedInAgriculture.toLocaleString()} households (${involvedPercentage}%) are involved in agriculture or animal husbandry out of a total of ${total.toLocaleString()} households.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${wardData.involvedInAgriculture.toLocaleString()} households (${involvedPercentage}%) are involved in agriculture or animal husbandry out of a total of ${total.toLocaleString()} households.`,
         };
       })
       .filter(Boolean);
@@ -65,10 +65,10 @@ export default function AgricultureHouseholdsSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Agricultural Households Distribution in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Distribution of households involved in agriculture or animal husbandry across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${totalInvolved.toLocaleString()} households (${involvedPercentage.toFixed(2)}%) are involved in agriculture or animal husbandry. The highest agricultural involvement is in Ward ${highestInvolvementWard?.wardNumber || ""} with ${highestInvolvementWard?.involvedPercentage.toFixed(2) || ""}% involvement rate.`,
+      name: "Agricultural Households Distribution in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Distribution of households involved in agriculture or animal husbandry across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${totalInvolved.toLocaleString()} households (${involvedPercentage.toFixed(2)}%) are involved in agriculture or animal husbandry. The highest agricultural involvement is in Ward ${highestInvolvementWard?.wardNumber || ""} with ${highestInvolvementWard?.involvedPercentage.toFixed(2) || ""}% involvement rate.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Agricultural households",
         "Farming families",
@@ -78,19 +78,19 @@ export default function AgricultureHouseholdsSEO({
         "Rural economy statistics",
         "Agricultural involvement",
         "Non-agricultural households",
-        "Khajura farming statistics",
+        "duduwa farming statistics",
         "Ward-wise farming distribution",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-households-in-agriculture",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-households-in-agriculture",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

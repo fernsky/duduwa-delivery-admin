@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const exportedProductsData =
       await api.profile.economics.exportedProducts.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalProducts = exportedProductsData.length;
@@ -42,20 +42,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality exported products",
-      "Khajura exported goods",
-      "Exported items Khajura",
-      "Khajura export catalog",
-      "Economic profile Khajura",
+      "duduwa Rural Municipality exported products",
+      "duduwa exported goods",
+      "Exported items duduwa",
+      "duduwa export catalog",
+      "Economic profile duduwa",
       "Exported goods analysis",
       "Exported products trends",
-      `Khajura ${totalProducts} exported products`,
+      `duduwa ${totalProducts} exported products`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको निर्यातित उत्पादनहरूको विस्तृत सूची, प्रवृत्ति र विश्लेषण। कुल ${totalProducts} निर्यातित उत्पादनहरू पालिकाबाट निर्यात गरिएका छन्। यी निर्यातित वस्तुहरूको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Detailed catalog, trends and analysis of exported products from Khajura Rural Municipality. A total of ${totalProducts} exported products are registered from the municipality. Detailed statistics and visualizations of various exported goods.`;
+    const descriptionEN = `Detailed catalog, trends and analysis of exported products from duduwa Rural Municipality. A total of ${totalProducts} exported products are registered from the municipality. Detailed statistics and visualizations of various exported goods.`;
 
     return {
       title: `निर्यातित उत्पादनहरू | ${municipalityName} पालिका प्रोफाइल`,
@@ -195,7 +195,7 @@ export default async function ExportedProductsPage() {
               src="/images/exported-products.svg"
               width={1200}
               height={400}
-              alt="निर्यातित उत्पादनहरू - डुडुवा गाउँपालिका (Exported Products - Khajura Rural Municipality)"
+              alt="निर्यातित उत्पादनहरू - डुडुवा गाउँपालिका (Exported Products - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

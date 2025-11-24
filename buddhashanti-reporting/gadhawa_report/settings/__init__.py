@@ -1,5 +1,5 @@
 """
-Settings package for buddhashanti Report System
+Settings package for duduwa Report System
 """
 
 from .development import *  # noqa

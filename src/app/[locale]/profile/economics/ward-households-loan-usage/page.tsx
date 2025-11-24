@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const loanUsageData =
       await api.profile.economics.wardWiseHouseholdsLoanUse.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalHouseholds = loanUsageData.reduce(
@@ -64,20 +64,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality loan usage",
-      "Khajura credit purposes",
-      `Khajura ${loanUseLabels[topLoanUses[0]]} loans`,
-      ...topLoanUses.map((r) => `${loanUseLabels[r]} purpose loans in Khajura`),
+      "duduwa Rural Municipality loan usage",
+      "duduwa credit purposes",
+      `duduwa ${loanUseLabels[topLoanUses[0]]} loans`,
+      ...topLoanUses.map((r) => `${loanUseLabels[r]} purpose loans in duduwa`),
       "Ward-wise loan usage",
       "Credit purpose statistics",
-      "Loan utilization survey Khajura",
-      `Khajura total households with loans ${totalHouseholds}`,
+      "Loan utilization survey duduwa",
+      `duduwa total households with loans ${totalHouseholds}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकामा वडा अनुसार कर्जाको उपयोग प्रयोजन वितरण, प्रवृत्ति र विश्लेषण। कुल घरपरिवार संख्या ${totalHouseholds} मध्ये ${loanUseLabels[topLoanUses[0]]} (${loanUseCounts[topLoanUses[0]]}) सबैभन्दा ठूलो समूह हो, त्यसपछि ${loanUseLabels[topLoanUses[1]]} (${loanUseCounts[topLoanUses[1]]}) र ${loanUseLabels[topLoanUses[2]]} (${loanUseCounts[topLoanUses[2]]})। विभिन्न ऋण उपयोग प्रयोजनको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise loan usage distribution, trends and analysis for Khajura Rural Municipality. Out of a total of ${totalHouseholds} households, ${loanUseLabels[topLoanUses[0]]} (${loanUseCounts[topLoanUses[0]]}) is the largest category, followed by ${loanUseLabels[topLoanUses[1]]} (${loanUseCounts[topLoanUses[1]]}) and ${loanUseLabels[topLoanUses[2]]} (${loanUseCounts[topLoanUses[2]]})। Detailed statistics and visualizations of various loan usage purposes.`;
+    const descriptionEN = `Ward-wise loan usage distribution, trends and analysis for duduwa Rural Municipality. Out of a total of ${totalHouseholds} households, ${loanUseLabels[topLoanUses[0]]} (${loanUseCounts[topLoanUses[0]]}) is the largest category, followed by ${loanUseLabels[topLoanUses[1]]} (${loanUseCounts[topLoanUses[1]]}) and ${loanUseLabels[topLoanUses[2]]} (${loanUseCounts[topLoanUses[2]]})। Detailed statistics and visualizations of various loan usage purposes.`;
 
     return {
       title: `कर्जाको उपयोग प्रयोजन | ${municipalityName} पालिका प्रोफाइल`,
@@ -243,7 +243,7 @@ export default async function WardHouseholdsLoanUsagePage() {
               src="/images/loan-usage.svg"
               width={1200}
               height={400}
-              alt="कर्जाको उपयोग प्रयोजन - डुडुवा गाउँपालिका (Loan Usage Purposes - Khajura Rural Municipality)"
+              alt="कर्जाको उपयोग प्रयोजन - डुडुवा गाउँपालिका (Loan Usage Purposes - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

@@ -51,7 +51,7 @@ export default function IrrigationSourceAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-coverage": totalCoverage.toString(),
     "data-most-common-source":
       overallSummary.length > 0
@@ -108,7 +108,7 @@ export default function IrrigationSourceAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           सिंचाई स्रोतको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Irrigation Source Analysis of Khajura
+            Detailed Irrigation Source Analysis of duduwa
           </span>
         </h3>
 
@@ -127,7 +127,7 @@ export default function IrrigationSourceAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख सिंचाई स्रोत
               <span className="sr-only">
-                Main Irrigation Source in Khajura Rural Municipality
+                Main Irrigation Source in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">

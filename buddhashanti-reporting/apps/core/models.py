@@ -1,5 +1,5 @@
 """
-Base models for buddhashanti Report System.
+Base models for duduwa Report System.
 
 This module contains abstract base models that provide common functionality
 for other models in the system.
@@ -58,7 +58,7 @@ class WardModel(BaseModel):
         verbose_name=_("वडा नं"),  # Ward Number
         help_text=_(
             "डुडुवा गाउँपालिकाको वडा नम्बर (१-८)"
-        ),  # Ward number of buddhashantiRural Municipality (1-8)
+        ),  # Ward number of duduwaRural Municipality (1-8)
     )
 
     class Meta:

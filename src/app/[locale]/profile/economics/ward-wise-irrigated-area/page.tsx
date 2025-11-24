@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const summaryData =
       await api.profile.economics.wardWiseIrrigatedArea.summary.query();
 
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Calculate total areas
     const totalIrrigatedArea = summaryData?.total_irrigated_area
@@ -69,10 +69,10 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality ward-wise irrigated area",
+      "duduwa Rural Municipality ward-wise irrigated area",
       "Ward-wise irrigated and unirrigated area statistics",
       "Irrigation coverage by ward",
-      `Khajura irrigated area ${totalIrrigatedArea.toFixed(2)} hectares`,
+      `duduwa irrigated area ${totalIrrigatedArea.toFixed(2)} hectares`,
       "Agricultural irrigation statistics",
       "Irrigation analysis by ward",
     ];
@@ -80,7 +80,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकामा वडा अनुसार सिंचित र असिंचित क्षेत्रफलको विवरण र विश्लेषण। कुल ${localizeNumber(totalArea.toFixed(2), "ne")} हेक्टर क्षेत्रफल मध्ये ${localizeNumber(irrigatedPercentage, "ne")}% (${localizeNumber(totalIrrigatedArea.toFixed(2), "ne")}) हेक्टर क्षेत्रफल सिंचित र ${localizeNumber((100 - parseFloat(irrigatedPercentage)).toFixed(2), "ne")}% क्षेत्रफल असिंचित रहेको छ। वडा नं. ${localizeNumber(String(highestIrrigatedWard?.wardNumber || ""), "ne")} मा सबैभन्दा बढी सिंचित क्षेत्र रहेको छ।`;
 
-    const descriptionEN = `Details and analysis of irrigated and unirrigated area by ward in Khajura Rural Municipality. Out of a total of ${totalArea.toFixed(2)} hectares, ${irrigatedPercentage}% (${totalIrrigatedArea.toFixed(2)}) hectares are irrigated and ${(100 - parseFloat(irrigatedPercentage)).toFixed(2)}% area is unirrigated. Ward No. ${highestIrrigatedWard?.wardNumber || ""} has the highest irrigated area.`;
+    const descriptionEN = `Details and analysis of irrigated and unirrigated area by ward in duduwa Rural Municipality. Out of a total of ${totalArea.toFixed(2)} hectares, ${irrigatedPercentage}% (${totalIrrigatedArea.toFixed(2)}) hectares are irrigated and ${(100 - parseFloat(irrigatedPercentage)).toFixed(2)}% area is unirrigated. Ward No. ${highestIrrigatedWard?.wardNumber || ""} has the highest irrigated area.`;
 
     return {
       title: `वडा अनुसार सिंचित र असिंचित क्षेत्रफल | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -219,7 +219,7 @@ export default async function WardWiseIrrigatedAreaPage() {
               src="/images/irrigation.svg"
               width={1200}
               height={400}
-              alt="वडा अनुसार सिंचित र असिंचित क्षेत्रफल - डुडुवा गाउँपालिका (Ward-wise Irrigated and Unirrigated Area - Khajura Rural Municipality)"
+              alt="वडा अनुसार सिंचित र असिंचित क्षेत्रफल - डुडुवा गाउँपालिका (Ward-wise Irrigated and Unirrigated Area - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

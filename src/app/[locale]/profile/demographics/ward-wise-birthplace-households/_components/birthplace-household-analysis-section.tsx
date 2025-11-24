@@ -76,7 +76,7 @@ export default function BirthplaceHouseholdAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-households",
@@ -179,7 +179,7 @@ export default function BirthplaceHouseholdAnalysisSection({
         <h3 className="text-xl font-medium mb-4">
           घरपरिवारको जन्मस्थान विश्लेषण
           <span className="sr-only">
-            Household Birthplace Analysis of Khajura
+            Household Birthplace Analysis of duduwa
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -198,7 +198,7 @@ export default function BirthplaceHouseholdAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख जन्मस्थान
               <span className="sr-only">
-                Most Common Birthplace in Khajura Rural Municipality
+                Most Common Birthplace in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -245,7 +245,7 @@ export default function BirthplaceHouseholdAnalysisSection({
             <h4 className="font-medium mb-2">
               स्थानीय जन्मस्थान भएका घरपरिवार
               <span className="sr-only">
-                Households with Local Birthplace in Khajura
+                Households with Local Birthplace in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">

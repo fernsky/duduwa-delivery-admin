@@ -89,7 +89,7 @@ export default function WardWiseDemographicsAnalysis({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-population",
@@ -148,7 +148,7 @@ export default function WardWiseDemographicsAnalysis({
           <CardContent className="p-4 flex flex-col items-center">
             <div className="text-xs uppercase text-muted-foreground mb-1">
               वडा संख्या
-              <span className="sr-only">Ward Count of Khajura</span>
+              <span className="sr-only">Ward Count of duduwa</span>
             </div>
             <div className="text-2xl font-bold text-primary">
               {localizeNumber(wardData.length, "ne")}
@@ -156,7 +156,7 @@ export default function WardWiseDemographicsAnalysis({
             <div className="text-sm text-muted-foreground mt-1">
               डुडुवा गाउँपालिकामा रहेका वडाहरूको कुल संख्या
               <span className="sr-only">
-                Total number of wards in Khajura Rural Municipality
+                Total number of wards in duduwa Rural Municipality
               </span>
             </div>
           </CardContent>
@@ -166,7 +166,7 @@ export default function WardWiseDemographicsAnalysis({
           <CardContent className="p-4 flex flex-col items-center">
             <div className="text-xs uppercase text-muted-foreground mb-1">
               औसत जनसंख्या
-              <span className="sr-only">Average Population in Khajura</span>
+              <span className="sr-only">Average Population in duduwa</span>
             </div>
             <div className="text-2xl font-bold text-green-500">
               {localizeNumber(
@@ -179,7 +179,7 @@ export default function WardWiseDemographicsAnalysis({
             <div className="text-sm text-muted-foreground mt-1">
               डुडुवा गाउँपालिकामा प्रति वडाको औसत जनसंख्या
               <span className="sr-only">
-                Average population per ward in Khajura
+                Average population per ward in duduwa
               </span>
             </div>
           </CardContent>
@@ -189,7 +189,7 @@ export default function WardWiseDemographicsAnalysis({
           <CardContent className="p-4 flex flex-col items-center">
             <div className="text-xs uppercase text-muted-foreground mb-1">
               औसत घरधुरी
-              <span className="sr-only">Average Households in Khajura</span>
+              <span className="sr-only">Average Households in duduwa</span>
             </div>
             <div className="text-2xl font-bold text-blue-500">
               {localizeNumber(
@@ -202,7 +202,7 @@ export default function WardWiseDemographicsAnalysis({
             <div className="text-sm text-muted-foreground mt-1">
               डुडुवा गाउँपालिकामा प्रति वडामा रहेको औसत घरधुरी संख्या
               <span className="sr-only">
-                Average number of households per ward in Khajura
+                Average number of households per ward in duduwa
               </span>
             </div>
           </CardContent>
@@ -212,7 +212,7 @@ export default function WardWiseDemographicsAnalysis({
           <CardContent className="p-4 flex flex-col items-center">
             <div className="text-xs uppercase text-muted-foreground mb-1">
               वितरण विविधता
-              <span className="sr-only">Distribution Diversity in Khajura</span>
+              <span className="sr-only">Distribution Diversity in duduwa</span>
             </div>
             <div className="text-2xl font-bold text-orange-500">
               {localizeNumber(
@@ -224,7 +224,7 @@ export default function WardWiseDemographicsAnalysis({
             <div className="text-sm text-muted-foreground mt-1">
               डुडुवा गाउँपालिकाको वडागत जनसंख्या वितरणको विविधता सूचक
               <span className="sr-only">
-                Ward population distribution diversity index in Khajura
+                Ward population distribution diversity index in duduwa
               </span>
             </div>
           </CardContent>
@@ -235,7 +235,7 @@ export default function WardWiseDemographicsAnalysis({
         <h3 className="text-xl font-medium mb-4">
           डुडुवा गाउँपालिकाको वडागत अधिकतम र न्यूनतम सूचकहरू
           <span className="sr-only">
-            Ward-wise Maximum and Minimum Indicators in Khajura
+            Ward-wise Maximum and Minimum Indicators in duduwa
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -407,7 +407,7 @@ export default function WardWiseDemographicsAnalysis({
       <div className="bg-muted/50 p-4 rounded-lg mt-6">
         <h3 className="text-xl font-medium mb-2">
           डुडुवा गाउँपालिकाको वडागत विश्लेषण
-          <span className="sr-only">Ward-wise Analysis of Khajura</span>
+          <span className="sr-only">Ward-wise Analysis of duduwa</span>
         </h3>
         <div className="prose prose-slate dark:prose-invert max-w-none">
           <p>
@@ -511,7 +511,7 @@ export default function WardWiseDemographicsAnalysis({
       <div className="bg-muted/50 p-4 rounded-lg mt-6">
         <h3 className="text-xl font-medium mb-2">
           डुडुवा गाउँपालिकाको नीतिगत सुझाव
-          <span className="sr-only">Policy Recommendations for Khajura</span>
+          <span className="sr-only">Policy Recommendations for duduwa</span>
         </h3>
         <div className="prose prose-slate dark:prose-invert max-w-none">
           <p>

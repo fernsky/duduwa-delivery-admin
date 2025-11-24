@@ -1,11 +1,11 @@
 import { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 import { api } from "@/trpc/server";
-import {navItems} from "@/constants/nav-items"
+import { navItems } from "@/constants/nav-items"
 
 // Base URL from environment or default
 const baseUrl =
-  process.env.NEXT_PUBLIC_BASE_URL || "https://digital.buddhashantimun.gov.np";
+  process.env.NEXT_PUBLIC_BASE_URL || "https://digital.duduwamun.gov.np";
 
 // Recursively extract all routes from navItems
 function extractRoutesFromNavItems(items: typeof navItems): string[] {

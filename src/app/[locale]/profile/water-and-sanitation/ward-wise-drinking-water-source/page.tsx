@@ -52,7 +52,7 @@ export async function generateMetadata(): Promise<Metadata> {
   try {
     const wardWiseDrinkingWaterSourceData =
       await api.profile.waterAndSanitation.wardWiseDrinkingWaterSource.getAll.query();
-    const municipalityName = "बुद्धशान्ति गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "बुद्धशान्ति गाउँपालिका"; // duduwa Rural Municipality
 
     // Group by ward number
     const wardGroups = wardWiseDrinkingWaterSourceData.reduce(
@@ -97,7 +97,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality drinking water sources",
+      "duduwa Rural Municipality drinking water sources",
       "Ward-wise drinking water sources",
       "Piped water usage",
       `Piped water usage ${pipedWaterPercentage}%`,
@@ -107,7 +107,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create description
     const descriptionNP = `बुद्धशान्ति गाउँपालिकामा खानेपानीका स्रोतहरूको वडागत विश्लेषण। कुल ${localizeNumber(totalHouseholds.toLocaleString(), "ne")} घरधुरी मध्ये ${localizeNumber(pipedWaterPercentage, "ne")}% (${localizeNumber(pipedWaterHouseholds.toLocaleString(), "ne")}) घरधुरीले पाइपको पानी प्रयोग गर्दछन्।`;
 
-    const descriptionEN = `Ward-wise analysis of drinking water sources in Khajura Rural Municipality. Out of a total of ${totalHouseholds.toLocaleString()} households, ${pipedWaterPercentage}% (${pipedWaterHouseholds.toLocaleString()}) households use piped water.`;
+    const descriptionEN = `Ward-wise analysis of drinking water sources in duduwa Rural Municipality. Out of a total of ${totalHouseholds.toLocaleString()} households, ${pipedWaterPercentage}% (${pipedWaterHouseholds.toLocaleString()}) households use piped water.`;
 
     return {
       title: `खानेपानीका स्रोतहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -336,7 +336,7 @@ export default async function WardWiseDrinkingWaterSourcePage() {
               src="/images/drinking-water-source.svg"
               width={1200}
               height={400}
-              alt="खानेपानीका स्रोतहरू - बुद्धशान्ति गाउँपालिका (Drinking Water Sources - Khajura Rural Municipality)"
+              alt="खानेपानीका स्रोतहरू - बुद्धशान्ति गाउँपालिका (Drinking Water Sources - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

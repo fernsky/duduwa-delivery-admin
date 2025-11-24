@@ -115,7 +115,7 @@ export default function HouseholdChoresAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-population",
@@ -239,7 +239,7 @@ export default function HouseholdChoresAnalysisSection({
       <div className="bg-muted/50 p-4 rounded-lg mt-8">
         <h3 className="text-xl font-medium mb-4">
           घरायसी कामकाज विश्लेषण
-          <span className="sr-only">Household Chores Analysis of Khajura</span>
+          <span className="sr-only">Household Chores Analysis of duduwa</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-card p-4 rounded border">
@@ -280,7 +280,7 @@ export default function HouseholdChoresAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           समग्र प्रभाव र सिफारिसहरू
           <span className="sr-only">
-            Overall Impact and Recommendations for Khajura
+            Overall Impact and Recommendations for duduwa
           </span>
         </h3>
         <p className="mb-3">
@@ -321,7 +321,7 @@ export default function HouseholdChoresAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           थप जानकारी
           <span className="sr-only">
-            Additional Information about Household Chores in Khajura
+            Additional Information about Household Chores in duduwa
           </span>
         </h3>
         <p>

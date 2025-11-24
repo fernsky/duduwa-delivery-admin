@@ -1,5 +1,5 @@
 """
-Core API views for buddhashanti Report System.
+Core API views for duduwa Report System.
 """
 
 from rest_framework import status
@@ -25,7 +25,7 @@ class HealthCheckView(APIView):
                 "status": "healthy",
                 "timestamp": timezone.now(),
                 "municipality": "डुडुवा गाउँपालिका",
-                "municipality_english": "buddhashantiRural Municipality",
+                "municipality_english": "duduwaRural Municipality",
                 "system": "Digital Profile Report System",
                 "version": "1.0.0",
             }
@@ -49,7 +49,7 @@ class SystemInfoView(APIView):
                 "language_code": settings.LANGUAGE_CODE,
                 "municipality": {
                     "name_nepali": "डुडुवा गाउँपालिका",
-                    "name_english": "buddhashantiRural Municipality",
+                    "name_english": "duduwaRural Municipality",
                     "district": "कपिलवस्तु",
                     "district_english": "Kapilvastu",
                     "province": "लुम्बिनी प्रदेश",
@@ -73,19 +73,19 @@ class MunicipalityInfoView(APIView):
             {
                 "municipality": {
                     "name_nepali": "डुडुवा गाउँपालिका",
-                    "name_english": "buddhashantiRural Municipality",
+                    "name_english": "duduwaRural Municipality",
                     "district_nepali": "कपिलवस्तु",
                     "district_english": "Kapilvastu",
                     "province_nepali": "लुम्बिनी प्रदेश",
                     "province_english": "Lumbini Province",
                     "total_wards": 8,
                     "established_date": "2017-05-10",  # BS: 2074/01/27
-                    "website": "https://buddhashantimun.gov.np",
+                    "website": "https://duduwamun.gov.np",
                     "contact": {
                         "phone": "+977-76-550123",
-                        "email": "info@buddhashantimun.gov.np",
+                        "email": "info@duduwamun.gov.np",
                         "address_nepali": "डुडुवा गाउँपालिका, कपिलवस्तु",
-                        "address_english": "buddhashantiRural Municipality, Kapilvastu",
+                        "address_english": "duduwaRural Municipality, Kapilvastu",
                     },
                     "coordinates": {"latitude": 27.5833, "longitude": 82.9167},
                 }

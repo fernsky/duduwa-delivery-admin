@@ -63,7 +63,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const foodCropData =
       await api.profile.economics.municipalityWideFoodCrops.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalProduction = foodCropData.reduce(
@@ -114,20 +114,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality food crops",
-      "Khajura food crop production",
+      "duduwa Rural Municipality food crops",
+      "duduwa food crop production",
       "Municipality-wide food crop statistics",
-      "Paddy production in Khajura",
+      "Paddy production in duduwa",
       "Corn cultivation statistics",
       "Wheat production data",
-      `Khajura food crop sales ${totalSales.toFixed(2)} tonnes`,
-      `Khajura agriculture revenue ${(totalRevenue / 1000000).toFixed(2)} million rupees`,
+      `duduwa food crop sales ${totalSales.toFixed(2)} tonnes`,
+      `duduwa agriculture revenue ${(totalRevenue / 1000000).toFixed(2)} million rupees`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको खाद्यान्न बाली उत्पादन र बिक्री विश्लेषण। कुल ${localizeNumber(totalProduction.toFixed(2), "ne")} मेट्रिक टन खाद्यान्न उत्पादन मध्ये ${localizeNumber(mostProducedPercentage, "ne")}% (${localizeNumber(mostProducedAmount.toFixed(2), "ne")} टन) ${FOOD_CROP_TYPES[mostProducedCrop] || mostProducedCrop} रहेको छ। पालिका स्तरीय खाद्यान्न बालीको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Analysis of food crop production and sales in Khajura Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of food crop production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${FOOD_CROP_TYPES_EN[mostProducedCrop] || mostProducedCrop}. Detailed analysis of municipality-wide food crop patterns.`;
+    const descriptionEN = `Analysis of food crop production and sales in duduwa Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of food crop production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${FOOD_CROP_TYPES_EN[mostProducedCrop] || mostProducedCrop}. Detailed analysis of municipality-wide food crop patterns.`;
 
     return {
       title: `खाद्यान्न बालीको प्रकार अनुसार उत्पादन र बिक्री | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -332,7 +332,7 @@ export default async function MunicipalityWideFoodCropsPage() {
               src="/images/food-crops.svg"
               width={1200}
               height={400}
-              alt="खाद्यान्न बालीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Food Crops by Production and Sales - Khajura Rural Municipality)"
+              alt="खाद्यान्न बालीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Food Crops by Production and Sales - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

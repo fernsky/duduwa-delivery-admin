@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const casteData =
       await api.profile.demographics.wardWiseCastePopulation.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalPopulation = casteData.reduce(
@@ -129,20 +129,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality caste population",
-      "Khajura caste diversity",
-      `Khajura ${CASTE_NAMES_EN[topCastes[0]]} population`,
-      ...topCastes.map((c) => `${CASTE_NAMES_EN[c]} population in Khajura`),
+      "duduwa Rural Municipality caste population",
+      "duduwa caste diversity",
+      `duduwa ${CASTE_NAMES_EN[topCastes[0]]} population`,
+      ...topCastes.map((c) => `${CASTE_NAMES_EN[c]} population in duduwa`),
       "Ward-wise caste demographics",
       "Caste diversity statistics",
-      "Caste census Khajura",
-      `Khajura total population ${totalPopulation}`,
+      "Caste census duduwa",
+      `duduwa total population ${totalPopulation}`,
     ];
 
     // Create detailed description with actual data using localized numbers
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार जातिगत जनसंख्या वितरण, प्रवृत्ति र विश्लेषण। कुल जनसंख्या ${localizeNumber(totalPopulation.toString(), "ne")} मध्ये ${CASTE_NAMES_NP[topCastes[0]]} (${localizeNumber(casteCounts[topCastes[0]].toString(), "ne")}) सबैभन्दा ठूलो जातिगत समूह हो, त्यसपछि ${CASTE_NAMES_NP[topCastes[1]]} (${localizeNumber(casteCounts[topCastes[1]].toString(), "ne")}) र ${CASTE_NAMES_NP[topCastes[2]]} (${localizeNumber(casteCounts[topCastes[2]].toString(), "ne")})। विभिन्न जातिहरूको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise caste population distribution, trends and analysis for Khajura Rural Municipality. Out of a total population of ${totalPopulation}, ${CASTE_NAMES_EN[topCastes[0]]} (${casteCounts[topCastes[0]]}) is the largest caste group, followed by ${CASTE_NAMES_EN[topCastes[1]]} (${casteCounts[topCastes[1]]}) and ${CASTE_NAMES_EN[topCastes[2]]} (${casteCounts[topCastes[2]]})। Detailed statistics and visualizations of various castes.`;
+    const descriptionEN = `Ward-wise caste population distribution, trends and analysis for duduwa Rural Municipality. Out of a total population of ${totalPopulation}, ${CASTE_NAMES_EN[topCastes[0]]} (${casteCounts[topCastes[0]]}) is the largest caste group, followed by ${CASTE_NAMES_EN[topCastes[1]]} (${casteCounts[topCastes[1]]}) and ${CASTE_NAMES_EN[topCastes[2]]} (${casteCounts[topCastes[2]]})। Detailed statistics and visualizations of various castes.`;
 
     return {
       title: "डुडुवा गाउँपालिका | जाति अनुसार जनसंख्या | डिजिटल प्रोफाइल",
@@ -336,7 +336,7 @@ export default async function WardWiseCastePopulationPage() {
               src="/images/caste-diversity.svg"
               width={1200}
               height={400}
-              alt="जातिगत विविधता - डुडुवा गाउँपालिका (Caste Diversity - Khajura Rural Municipality)"
+              alt="जातिगत विविधता - डुडुवा गाउँपालिका (Caste Diversity - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

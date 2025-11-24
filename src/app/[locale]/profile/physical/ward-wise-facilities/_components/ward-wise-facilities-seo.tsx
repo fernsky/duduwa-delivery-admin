@@ -85,7 +85,7 @@ export default function WardWiseFacilitiesSEO({
 
         return {
           "@type": "Observation",
-          name: `Household Facilities Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Household Facilities Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -93,7 +93,7 @@ export default function WardWiseFacilitiesSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(internetPercentage),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${internetItem?.households || 0} households (${internetPercentage}%) have internet access out of approximately ${totalWardHouseholds} households.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${internetItem?.households || 0} households (${internetPercentage}%) have internet access out of approximately ${totalWardHouseholds} households.`,
         };
       })
       .filter(Boolean);
@@ -111,10 +111,10 @@ export default function WardWiseFacilitiesSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Household Facilities Usage in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Analysis of household facilities usage across ${wardNumbers.length} wards of Khajura Rural Municipality with approximately ${approximateUniqueHouseholds.toLocaleString()} households. ${facilityTypeTotals.MOBILE_PHONE?.toLocaleString() || 0} households (${mobilePercentage}%) have mobile phones, ${facilityTypeTotals.INTERNET?.toLocaleString() || 0} households (${internetPercentage}%) have internet access. The best digital access is in Ward ${bestDigitalWard?.wardNumber || ""} with ${bestDigitalWard?.score.toFixed(2) || ""}% digital access score.`,
+      name: "Household Facilities Usage in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Analysis of household facilities usage across ${wardNumbers.length} wards of duduwa Rural Municipality with approximately ${approximateUniqueHouseholds.toLocaleString()} households. ${facilityTypeTotals.MOBILE_PHONE?.toLocaleString() || 0} households (${mobilePercentage}%) have mobile phones, ${facilityTypeTotals.INTERNET?.toLocaleString() || 0} households (${internetPercentage}%) have internet access. The best digital access is in Ward ${bestDigitalWard?.wardNumber || ""} with ${bestDigitalWard?.score.toFixed(2) || ""}% digital access score.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Household facilities",
         "Mobile phone access",
@@ -127,16 +127,16 @@ export default function WardWiseFacilitiesSEO({
         "Rural development",
         "Domestic appliances",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/physical/ward-wise-facilities",
+      url: "https://digital.duduwamun.gov.np/profile/physical/ward-wise-facilities",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -207,10 +207,10 @@ export default function WardWiseFacilitiesSEO({
         name: "Municipality Household Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

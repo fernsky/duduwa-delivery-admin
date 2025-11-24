@@ -99,7 +99,7 @@ export default function RemittanceAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-sending-population": totalSendingPopulation.toString(),
     "data-most-common-amount":
       overallSummary.sort(
@@ -184,7 +184,7 @@ export default function RemittanceAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           विस्तृत वडागत विश्लेषण
           <span className="sr-only">
-            Detailed Ward-wise Remittance Analysis of Khajura
+            Detailed Ward-wise Remittance Analysis of duduwa
           </span>
         </h3>
 
@@ -200,7 +200,7 @@ export default function RemittanceAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च रेमिट्यान्स वितरण
               <span className="sr-only">
-                High Remittance Distribution in Khajura Rural Municipality
+                High Remittance Distribution in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-sm mb-3">

@@ -70,15 +70,15 @@ export default function BirthCertificateSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Birth Certificate Status for Children Under 5 Years in Khajura Rural Municipality",
-      description: `Ward-wise distribution of birth certificate status for children under 5 years in Khajura Rural Municipality. Total children: ${totalPopulation}, with certificates: ${totalWithCertificate}, without certificates: ${totalWithoutCertificate}`,
-      url: "https://buddhashanti.gov.np/profile/demographics/ward-wise-birth-certificate-population",
+      name: "Birth Certificate Status for Children Under 5 Years in duduwa Rural Municipality",
+      description: `Ward-wise distribution of birth certificate status for children under 5 years in duduwa Rural Municipality. Total children: ${totalPopulation}, with certificates: ${totalWithCertificate}, without certificates: ${totalWithoutCertificate}`,
+      url: "https://duduwa.gov.np/profile/demographics/ward-wise-birth-certificate-population",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality",
+        name: "duduwa Rural Municipality",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Khajura",
+          addressLocality: "duduwa",
           addressRegion: "Lumbini Province",
           addressCountry: "NP",
         },
@@ -93,7 +93,7 @@ export default function BirthCertificateSEO({
         "birth certificate",
         "children under 5",
         "ward-wise data",
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "demographics",
         "birth registration",
       ],
@@ -102,7 +102,7 @@ export default function BirthCertificateSEO({
           "@type": "DataDownload",
           encodingFormat: "application/json",
           contentUrl:
-            "https://buddhashanti.gov.np/api/profile/demographics/ward-wise-birth-certificate-population",
+            "https://duduwa.gov.np/api/profile/demographics/ward-wise-birth-certificate-population",
         },
       ],
       hasPart: wardSummaries.map((ward) => ({
@@ -115,12 +115,12 @@ export default function BirthCertificateSEO({
         ],
         spatialCoverage: {
           "@type": "Place",
-          name: `Ward ${ward.wardNumber}, Khajura Rural Municipality`,
+          name: `Ward ${ward.wardNumber}, duduwa Rural Municipality`,
         },
       })),
       mainEntity: {
         "@type": "StatisticalPopulation",
-        name: "Children Under 5 Years in Khajura Rural Municipality",
+        name: "Children Under 5 Years in duduwa Rural Municipality",
         populationType: "Children under 5 years",
         numConstraints: totalPopulation,
         additionalProperty: [

@@ -56,7 +56,7 @@ export default function VegetableAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-production": totalProduction.toString(),
     "data-most-common-vegetable":
       overallSummary.length > 0
@@ -106,7 +106,7 @@ export default function VegetableAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           तरकारी बालीको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Vegetable Analysis of Khajura
+            Detailed Vegetable Analysis of duduwa
           </span>
         </h3>
 
@@ -126,7 +126,7 @@ export default function VegetableAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख तरकारी बाली
               <span className="sr-only">
-                Main Vegetable in Khajura Rural Municipality
+                Main Vegetable in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">

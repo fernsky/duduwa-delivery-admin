@@ -61,7 +61,7 @@ export default function WardWiseDrinkingWaterSourceCharts({
       >
         <meta
           itemProp="name"
-          content="Drinking Water Source Distribution in Khajura Rural Municipality"
+          content="Drinking Water Source Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -177,11 +177,11 @@ export default function WardWiseDrinkingWaterSourceCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Drinking Water Sources in Khajura Rural Municipality"
+          content="Ward-wise Drinking Water Sources in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of drinking water sources across wards in Khajura"
+          content="Distribution of drinking water sources across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -211,11 +211,11 @@ export default function WardWiseDrinkingWaterSourceCharts({
       >
         <meta
           itemProp="name"
-          content="Piped Water Access Comparison Across Wards in Khajura Rural Municipality"
+          content="Piped Water Access Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of piped water access rates across wards in Khajura"
+          content="Comparison of piped water access rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -247,11 +247,11 @@ export default function WardWiseDrinkingWaterSourceCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Drinking Water Source Analysis in Khajura Rural Municipality"
+          content="Ward-wise Drinking Water Source Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of drinking water sources by ward in Khajura"
+          content="Detailed analysis of drinking water sources by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

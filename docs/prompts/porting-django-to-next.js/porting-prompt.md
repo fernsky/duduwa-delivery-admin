@@ -1,6 +1,6 @@
 I would like you to port a Django project to Next.js in the following way:
 
-- I have folder called @/buddhashanti-reporting which contains the Django project.
+- I have folder called @/duduwa-reporting which contains the Django project.
 - Inside the apps folder, I have the following core modules:
     demographics
     economics

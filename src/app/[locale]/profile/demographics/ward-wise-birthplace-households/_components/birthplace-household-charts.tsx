@@ -63,11 +63,11 @@ export default function BirthplaceHouseholdCharts({
       >
         <meta
           itemProp="name"
-          content="Household Birthplaces in Khajura Rural Municipality"
+          content="Household Birthplaces in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Household birthplace distribution of Khajura with a total of ${totalHouseholds} households`}
+          content={`Household birthplace distribution of duduwa with a total of ${totalHouseholds} households`}
         />
 
         <div className="border-b px-4 py-3">
@@ -189,11 +189,11 @@ export default function BirthplaceHouseholdCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Household Birthplaces in Khajura Rural Municipality"
+          content="Ward-wise Household Birthplaces in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Household birthplace distribution across wards in Khajura"
+          content="Household birthplace distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -224,11 +224,11 @@ export default function BirthplaceHouseholdCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Birthplace Analysis in Khajura Rural Municipality"
+          content="Ward-wise Birthplace Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Most common household birthplaces by ward in Khajura"
+          content="Most common household birthplaces by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

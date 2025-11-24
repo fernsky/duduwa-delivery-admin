@@ -1,7 +1,7 @@
 #!/bin/bash
-# Development server startup script for buddhashanti Report System
+# Development server startup script for duduwa Report System
 
-echo "Starting buddhashanti Digital Profile Report System..."
+echo "Starting duduwa Digital Profile Report System..."
 echo
 
 # Activate virtual environment

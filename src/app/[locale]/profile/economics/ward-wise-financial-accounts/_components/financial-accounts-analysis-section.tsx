@@ -80,7 +80,7 @@ export default function FinancialAccountsAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-bank-account-percentage": bankPercentage.toFixed(2),
     "data-no-account-percentage": noAccountPercentage.toFixed(2),
@@ -208,7 +208,7 @@ export default function FinancialAccountsAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           वित्तीय समावेशीकरण विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Financial Inclusion Analysis of Khajura
+            Detailed Financial Inclusion Analysis of duduwa
           </span>
         </h3>
 
@@ -222,7 +222,7 @@ export default function FinancialAccountsAnalysisSection({
             <h4 className="font-medium mb-2">
               सर्वोत्तम वित्तीय समावेशीकरण भएको वडा
               <span className="sr-only">
-                Ward with Best Financial Inclusion in Khajura Rural Municipality
+                Ward with Best Financial Inclusion in duduwa Rural Municipality
               </span>
             </h4>
             {bestInclusionWard && (
@@ -348,7 +348,7 @@ export default function FinancialAccountsAnalysisSection({
             <h4 className="font-medium mb-2">
               न्यून वित्तीय समावेशीकरण भएको वडा
               <span className="sr-only">
-                Ward with Poor Financial Inclusion in Khajura
+                Ward with Poor Financial Inclusion in duduwa
               </span>
             </h4>
             {worstInclusionWard && (

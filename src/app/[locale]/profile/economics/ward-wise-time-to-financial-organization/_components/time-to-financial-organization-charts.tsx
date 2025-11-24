@@ -73,7 +73,7 @@ export default function TimeToFinancialOrganizationCharts({
       >
         <meta
           itemProp="name"
-          content="Time to Financial Organizations Distribution in Khajura Rural Municipality"
+          content="Time to Financial Organizations Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -284,11 +284,11 @@ export default function TimeToFinancialOrganizationCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Time to Financial Organizations in Khajura Rural Municipality"
+          content="Ward-wise Time to Financial Organizations in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Time to reach financial organizations across wards in Khajura"
+          content="Time to reach financial organizations across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -318,11 +318,11 @@ export default function TimeToFinancialOrganizationCharts({
       >
         <meta
           itemProp="name"
-          content="Financial Access Rate Comparison Across Wards in Khajura Rural Municipality"
+          content="Financial Access Rate Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of financial access rates across wards in Khajura"
+          content="Comparison of financial access rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -352,11 +352,11 @@ export default function TimeToFinancialOrganizationCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Financial Access Analysis in Khajura Rural Municipality"
+          content="Ward-wise Financial Access Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of time to reach financial organizations by ward in Khajura"
+          content="Detailed analysis of time to reach financial organizations by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

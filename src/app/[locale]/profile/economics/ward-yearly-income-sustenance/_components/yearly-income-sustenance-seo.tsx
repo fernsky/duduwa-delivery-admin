@@ -31,7 +31,7 @@ export default function YearlyIncomeSustenanceSEO({
     // Convert income sustenance stats to structured data format
     const incomeSustenanceStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${MONTHS_SUSTAINED_NAMES_EN[item.monthsSustained] || item.monthsSustained} income sufficiency in Khajura Rural Municipality`,
+      name: `${MONTHS_SUSTAINED_NAMES_EN[item.monthsSustained] || item.monthsSustained} income sufficiency in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -39,16 +39,16 @@ export default function YearlyIncomeSustenanceSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality have income that is sufficient for ${MONTHS_SUSTAINED_NAMES_EN[item.monthsSustained] || item.monthsSustained} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality have income that is sufficient for ${MONTHS_SUSTAINED_NAMES_EN[item.monthsSustained] || item.monthsSustained} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Yearly Income Sustenance in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Yearly income sufficiency distribution data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households.`,
+      name: "Yearly Income Sustenance in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Yearly income sufficiency distribution data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Yearly income sustenance",
         "Income sufficiency",
@@ -60,16 +60,16 @@ export default function YearlyIncomeSustenanceSEO({
         "आय पर्याप्तता",
         "खाद्य सुरक्षा",
       ],
-      url: "https://buddhashanti-rm.gov.np/profile/economics/ward-yearly-income-sustenance",
+      url: "https://duduwa-rm.gov.np/profile/economics/ward-yearly-income-sustenance",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://buddhashanti-rm.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://duduwa-rm.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

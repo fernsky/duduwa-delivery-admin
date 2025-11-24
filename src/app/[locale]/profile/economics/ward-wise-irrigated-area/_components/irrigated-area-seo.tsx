@@ -33,7 +33,7 @@ export default function IrrigatedAreaSEO({
     // Convert ward-wise irrigated area stats to structured data format
     const wardIrrigatedStats = wardData.map((ward) => ({
       "@type": "Observation",
-      name: `Ward ${ward.wardNumber} Irrigated Area in Khajura Rural Municipality`,
+      name: `Ward ${ward.wardNumber} Irrigated Area in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -77,10 +77,10 @@ export default function IrrigatedAreaSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Ward-wise Irrigated Area in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Ward-wise irrigated and unirrigated area statistics of Khajura Rural Municipality with a total area of ${totalArea.toFixed(2)} hectares. ${irrigatedPercentage}% (${totalIrrigatedArea.toFixed(2)} hectares) of the total area is irrigated. Ward ${mostIrrigatedWard?.wardNumber || ""} has the highest irrigated area with ${mostIrrigatedWard?.irrigatedArea.toFixed(2) || "0"} hectares. Ward ${highestIrrigationCoverageWard?.wardNumber || ""} has the highest irrigation coverage percentage (${highestCoveragePercentage}%) and Ward ${lowestIrrigationCoverageWard?.wardNumber || ""} has the lowest (${lowestCoveragePercentage}%).`,
+      name: "Ward-wise Irrigated Area in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Ward-wise irrigated and unirrigated area statistics of duduwa Rural Municipality with a total area of ${totalArea.toFixed(2)} hectares. ${irrigatedPercentage}% (${totalIrrigatedArea.toFixed(2)} hectares) of the total area is irrigated. Ward ${mostIrrigatedWard?.wardNumber || ""} has the highest irrigated area with ${mostIrrigatedWard?.irrigatedArea.toFixed(2) || "0"} hectares. Ward ${highestIrrigationCoverageWard?.wardNumber || ""} has the highest irrigation coverage percentage (${highestCoveragePercentage}%) and Ward ${lowestIrrigationCoverageWard?.wardNumber || ""} has the lowest (${lowestCoveragePercentage}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Ward-wise irrigated area",
         "Irrigation coverage by ward",
@@ -90,16 +90,16 @@ export default function IrrigatedAreaSEO({
         "वडा अनुसार सिंचित क्षेत्रफल",
         "सिंचित र असिंचित क्षेत्रफल",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-irrigated-area",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-irrigated-area",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

@@ -75,11 +75,11 @@ export default function ToiletTypeCharts({
       >
         <meta
           itemProp="name"
-          content="Toilet Types in Khajura Rural Municipality"
+          content="Toilet Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Toilet type distribution of Khajura with a total of ${totalHouseholds} households`}
+          content={`Toilet type distribution of duduwa with a total of ${totalHouseholds} households`}
         />
 
         <div className="border-b px-4 py-3">
@@ -201,11 +201,11 @@ export default function ToiletTypeCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Toilet Types in Khajura Rural Municipality"
+          content="Ward-wise Toilet Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Toilet types distribution across wards in Khajura"
+          content="Toilet types distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -236,11 +236,11 @@ export default function ToiletTypeCharts({
       >
         <meta
           itemProp="name"
-          content="Sanitation Rate Comparison Across Wards in Khajura Rural Municipality"
+          content="Sanitation Rate Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of sanitation rates across wards in Khajura"
+          content="Comparison of sanitation rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -272,11 +272,11 @@ export default function ToiletTypeCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Toilet Type Analysis in Khajura Rural Municipality"
+          content="Ward-wise Toilet Type Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Most common toilet types by ward in Khajura"
+          content="Most common toilet types by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

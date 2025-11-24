@@ -1,8 +1,8 @@
 # डुडुवा गाउँपालिका डिजिटल प्रोफाइल प्रतिवेदन प्रणाली
 
-# buddhashanti Rural Municipality Digital Profile Report System
+# duduwa Rural Municipality Digital Profile Report System
 
-A comprehensive Django-based system for creating and managing digital profile reports for buddhashanti Rural Municipality (डुडुवा गाउँपालिका), jhapa District, Lumbini Province, Nepal.
+A comprehensive Django-based system for creating and managing digital profile reports for duduwa Rural Municipality (डुडुवा गाउँपालिका), jhapa District, Lumbini Province, Nepal.
 
 ## 🌟 Features
 
@@ -47,7 +47,7 @@ Based on provided SQL schemas, will implement models for:
 
 ```bash
 git clone <repository-url>
-cd buddhashanti-report
+cd duduwa-report
 ```
 
 2. **Set up virtual environment**
@@ -118,7 +118,7 @@ The system supports the following user roles:
 ## 🏗️ Project Structure
 
 ```
-buddhashanti-report/
+duduwa-report/
 ├── apps/                      # Django applications
 │   ├── core/                  # Core utilities and base models
 │   ├── users/                 # User management and authentication
@@ -130,7 +130,7 @@ buddhashanti-report/
 │   ├── governance/            # Governance and administrative data
 │   └── reports/               # Report generation
 ├── docs/                      # Project documentation
-├── buddhashanti_report/            # Django project settings
+├── duduwa_report/            # Django project settings
 ├── templates/                 # HTML templates
 ├── static/                    # Static files (CSS, JS, images)
 ├── media/                     # User uploads
@@ -142,8 +142,8 @@ buddhashanti-report/
 
 ### Settings
 
-- **Development**: `buddhashanti_report.settings.development`
-- **Production**: `buddhashanti_report.settings.production`
+- **Development**: `duduwa_report.settings.development`
+- **Production**: `duduwa_report.settings.production`
 
 ### Database
 
@@ -212,16 +212,16 @@ Will implement comprehensive models based on Nepal's rural municipality data sta
 
 ## 📄 License
 
-This project is developed for buddhashanti Rural Municipality and follows appropriate licensing for government software projects.
+This project is developed for duduwa Rural Municipality and follows appropriate licensing for government software projects.
 
 ## 📞 Support
 
 For technical support or questions about the system:
 
-- Email: tech@buddhashanti.gov.np
+- Email: tech@duduwa.gov.np
 - Phone: +977-XX-XXXXXX
 
 ---
 
 **विकसित**: डुडुवा गाउँपालिकाको लागि डिजिटल प्रोफाइल प्रतिवेदन प्रणाली  
-**Developed**: Digital Profile Report System for buddhashanti Rural Municipality
+**Developed**: Digital Profile Report System for duduwa Rural Municipality

@@ -10,10 +10,10 @@ const API_URLS = {
   test: getRequiredEnvVar("NEXT_PUBLIC_API_URL") || "http://localhost:8080/api",
   staging:
     getRequiredEnvVar("NEXT_PUBLIC_API_URL") ||
-    "https://staging-api.digital.buddhashantimun.gov.np/api",
+    "https://staging-api.digital.duduwamun.gov.np/api",
   production:
     getRequiredEnvVar("NEXT_PUBLIC_API_URL") ||
-    "https://api.digital.buddhashantimun.gov.np/api",
+    "https://api.digital.duduwamun.gov.np/api",
 };
 
 // Determine current environment

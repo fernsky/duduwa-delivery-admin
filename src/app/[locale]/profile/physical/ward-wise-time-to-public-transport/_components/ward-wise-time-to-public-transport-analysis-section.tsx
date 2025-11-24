@@ -65,7 +65,7 @@ export default function WardWiseTimeToPublicTransportAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-quick-access-rate": quickAccessPercentage,
     "data-best-access-ward": bestAccessWard?.wardNumber.toString() || "",
@@ -123,7 +123,7 @@ export default function WardWiseTimeToPublicTransportAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           सार्वजनिक यातायात पहुँचको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Public Transport Access Analysis of Khajura
+            Detailed Public Transport Access Analysis of duduwa
           </span>
         </h3>
 
@@ -137,7 +137,7 @@ export default function WardWiseTimeToPublicTransportAnalysisSection({
             <h4 className="font-medium mb-2">
               उत्तम यातायात पहुँच भएको वडा
               <span className="sr-only">
-                Ward with Best Public Transport Access in Khajura Rural
+                Ward with Best Public Transport Access in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -199,7 +199,7 @@ export default function WardWiseTimeToPublicTransportAnalysisSection({
             <h4 className="font-medium mb-2">
               कमजोर यातायात पहुँच भएको वडा
               <span className="sr-only">
-                Ward with Poor Public Transport Access in Khajura
+                Ward with Poor Public Transport Access in duduwa
               </span>
             </h4>
             {worstAccessWard && (

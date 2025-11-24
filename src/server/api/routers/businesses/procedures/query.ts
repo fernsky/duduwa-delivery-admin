@@ -37,7 +37,7 @@ export const getAll = protectedProcedure
         is_business_registered,
         business_investment,
         status
-      FROM acme_buddhashanti_business
+      FROM acme_duduwa_business
       WHERE 1=1
     `;
 
@@ -59,15 +59,15 @@ export const getAll = protectedProcedure
       if (filters.wardNo !== undefined) {
         query = sql`${query} AND ward_no = ${filters.wardNo}`;
       }
-      
+
       if (filters.businessDistrict) {
         query = sql`${query} AND business_district = ${filters.businessDistrict}`;
       }
-      
+
       if (filters.businessProvince) {
         query = sql`${query} AND business_province = ${filters.businessProvince}`;
       }
-      
+
       if (filters.status && filters.status !== "all") {
         query = sql`${query} AND status = ${filters.status}`;
       }
@@ -75,23 +75,23 @@ export const getAll = protectedProcedure
 
     // Add sorting
     if (sortBy === "businessName") {
-      query = sortOrder === "asc" 
+      query = sortOrder === "asc"
         ? sql`${query} ORDER BY business_name ASC NULLS LAST`
         : sql`${query} ORDER BY business_name DESC NULLS LAST`;
     } else if (sortBy === "ward_no") {
-      query = sortOrder === "asc" 
+      query = sortOrder === "asc"
         ? sql`${query} ORDER BY ward_no ASC NULLS LAST`
         : sql`${query} ORDER BY ward_no DESC NULLS LAST`;
     } else if (sortBy === "business_district") {
-      query = sortOrder === "asc" 
+      query = sortOrder === "asc"
         ? sql`${query} ORDER BY business_district ASC NULLS LAST`
         : sql`${query} ORDER BY business_district DESC NULLS LAST`;
     } else if (sortBy === "operator_name") {
-      query = sortOrder === "asc" 
+      query = sortOrder === "asc"
         ? sql`${query} ORDER BY operator_name ASC NULLS LAST`
         : sql`${query} ORDER BY operator_name DESC NULLS LAST`;
     } else if (sortBy === "status") {
-      query = sortOrder === "asc" 
+      query = sortOrder === "asc"
         ? sql`${query} ORDER BY status ASC NULLS LAST`
         : sql`${query} ORDER BY status DESC NULLS LAST`;
     } else {
@@ -105,7 +105,7 @@ export const getAll = protectedProcedure
     try {
       // Execute the query
       const result = await ctx.db.execute(query);
-      
+
       // Transform the raw DB result to ensure proper field names
       const businessList = result.map(row => ({
         id: row.id,
@@ -123,10 +123,10 @@ export const getAll = protectedProcedure
       // Build count query with the same filters
       let countQuery = sql`
         SELECT COUNT(*) as total 
-        FROM acme_buddhashanti_business
+        FROM acme_duduwa_business
         WHERE 1=1
       `;
-      
+
       // Apply the same filters to the count query
       if (search && search.length > 2) {
         const searchTerm = `%${search}%`;
@@ -139,25 +139,25 @@ export const getAll = protectedProcedure
           )
         `;
       }
-      
+
       if (filters) {
         if (filters.wardNo !== undefined) {
           countQuery = sql`${countQuery} AND ward_no = ${filters.wardNo}`;
         }
-        
+
         if (filters.businessDistrict) {
           countQuery = sql`${countQuery} AND business_district = ${filters.businessDistrict}`;
         }
-        
+
         if (filters.businessProvince) {
           countQuery = sql`${countQuery} AND business_province = ${filters.businessProvince}`;
         }
-        
+
         if (filters.status && filters.status !== "all") {
           countQuery = sql`${countQuery} AND status = ${filters.status}`;
         }
       }
-      
+
       const countResult = await ctx.db.execute(countQuery);
       const total = parseInt(countResult[0]?.total?.toString() || "0", 10);
 
@@ -185,22 +185,22 @@ export const getById = protectedProcedure
   .query(async ({ ctx, input }) => {
     try {
 
-      const finalId=`uuid:${input.id}`;
+      const finalId = `uuid:${input.id}`;
 
       console.log(finalId);
 
       // Try to fetch with the formatted ID
       let query = sql`
-        SELECT * FROM acme_buddhashanti_business
+        SELECT * FROM acme_duduwa_business
         WHERE id = ${finalId}
       `;
-      
+
       let result = await ctx.db.execute(query);
 
       // If not found, try with just the normalized ID
       if (!result || result.length === 0) {
         query = sql`
-          SELECT * FROM acme_buddhashanti_business
+          SELECT * FROM acme_duduwa_business
           WHERE id = ${finalId}
         `;
         result = await ctx.db.execute(query);
@@ -215,7 +215,7 @@ export const getById = protectedProcedure
       }
 
       const businessData = result[0];
-      
+
       // Helper functions to parse fields
       const parseArrayField = (field: any): string[] => {
         if (!field) return [];
@@ -238,17 +238,17 @@ export const getById = protectedProcedure
           return null;
         }
       };
-      
+
       // Process location data for map display
       let latitude = null;
       let longitude = null;
-      
+
       // Try to extract lat/long from businessLocation array or from geom field
       const locationArray = parseArrayField(businessData.business_location);
       if (locationArray.length >= 2) {
         const possibleLat = parseFloat(locationArray[0]);
         const possibleLng = parseFloat(locationArray[1]);
-        
+
         if (!isNaN(possibleLat) && !isNaN(possibleLng)) {
           latitude = possibleLat;
           longitude = possibleLng;
@@ -267,7 +267,7 @@ export const getById = protectedProcedure
           console.error("Error parsing geom:", e);
         }
       }
-      
+
       // Transform the business data to a consistent format
       const formattedBusiness = {
         // Primary identification
@@ -275,7 +275,7 @@ export const getById = protectedProcedure
         wardNo: typeof businessData.ward_no === 'number' ? businessData.ward_no : null,
         tenantId: businessData.tenant_id || "",
         deviceId: businessData.device_id || "",
-        
+
         // Location and basic information
         businessLocation: parseArrayField(businessData.business_location),
         dateOfInterview: parseDate(businessData.date_of_interview),
@@ -284,20 +284,20 @@ export const getById = protectedProcedure
         businessDistrict: businessData.business_district || "",
         businessLocalLevel: businessData.business_local_level || "",
         businessLocality: businessData.business_locality || "",
-        
+
         // Operator details
         operatorName: businessData.operator_name || "",
         operatorPhone: businessData.operator_phone || "",
         operatorAge: typeof businessData.operator_age === 'number' ? businessData.operator_age : null,
         operatorGender: businessData.operator_gender || "",
         operatorEducationalLevel: businessData.operator_educational_level || "",
-        
+
         // Business classification
         businessNature: businessData.business_nature || "",
         businessNatureOther: businessData.business_nature_other || "",
         businessType: businessData.business_type || "",
         businessTypeOther: businessData.business_type_other || "",
-        
+
         // Registration and legal information
         isBusinessRegistered: businessData.is_business_registered || "",
         registeredBodies: parseArrayField(businessData.registered_bodies),
@@ -306,19 +306,19 @@ export const getById = protectedProcedure
         statutoryStatusOther: businessData.statutory_status_other || "",
         hasPanNumber: businessData.has_pan_number || "",
         panNumber: typeof businessData.pan_number === 'number' ? businessData.pan_number : null,
-        
+
         // Ownership and property information
         businessOwnershipStatus: businessData.business_ownership_status || "",
         businessOwnershipStatusOther: businessData.business_ownership_status_other || "",
         businessLocationOwnership: businessData.business_location_ownership || "",
         businessLocationOwnershipOther: businessData.business_location_ownership_other || "",
-        
+
         // Hotel-specific information
         hotelAccomodationType: businessData.hotel_accomodation_type || "",
         hotelRoomNumbers: typeof businessData.hotel_room_numbers === 'number' ? businessData.hotel_room_numbers : null,
         hotelBedNumbers: typeof businessData.hotel_bed_numbers === 'number' ? businessData.hotel_bed_numbers : null,
         hotelRoomTypes: parseArrayField(businessData.hotel_room_types),
-        
+
         // Agricultural business details
         agriculturalBusinesses: parseArrayField(businessData.agricultural_businesses),
         businessFoodCrops: parseArrayField(businessData.business_food_crops),
@@ -330,12 +330,12 @@ export const getById = protectedProcedure
         businessCashCrops: parseArrayField(businessData.business_cash_crops),
         businessAnimals: parseArrayField(businessData.business_animals),
         businessAnimalProducts: parseArrayField(businessData.business_animal_products),
-        
+
         // Financial information
         businessInvestment: typeof businessData.business_investment === 'number' ? businessData.business_investment : null,
         businessProfit: typeof businessData.business_profit === 'number' ? businessData.business_profit : null,
         businessPastYearInvestment: typeof businessData.business_past_year_investment === 'number' ? businessData.business_past_year_investment : null,
-        
+
         // Partner information
         hasBusinessPartners: businessData.has_business_partners || "",
         totalPartners: typeof businessData.total_partners === 'number' ? businessData.total_partners : null,
@@ -344,13 +344,13 @@ export const getById = protectedProcedure
         hasForeignPartners: businessData.has_foreign_partners || "",
         foreignMalePartners: typeof businessData.foreign_male_partners === 'number' ? businessData.foreign_male_partners : null,
         foreignFemalePartners: typeof businessData.foreign_female_partners === 'number' ? businessData.foreign_female_partners : null,
-        
+
         // Family involvement
         hasInvolvedFamily: businessData.has_involved_family || "",
         totalInvolvedFamily: typeof businessData.total_involved_family === 'number' ? businessData.total_involved_family : null,
         maleInvolvedFamily: typeof businessData.male_involved_family === 'number' ? businessData.male_involved_family : null,
         femaleInvolvedFamily: typeof businessData.female_involved_family === 'number' ? businessData.female_involved_family : null,
-        
+
         // Permanent employee information
         hasPermanentEmployees: businessData.has_permanent_employees || "",
         totalPermanentEmployees: typeof businessData.total_permanent_employees === 'number' ? businessData.total_permanent_employees : null,
@@ -360,7 +360,7 @@ export const getById = protectedProcedure
         foreignMalePermanentEmployees: typeof businessData.foreign_male_permanent_employees === 'number' ? businessData.foreign_male_permanent_employees : null,
         foreignFemalePermanentEmployees: typeof businessData.foreign_female_permanent_employees === 'number' ? businessData.foreign_female_permanent_employees : null,
         foreignPermanentEmployeeCountries: parseArrayField(businessData.foreign_permanent_employee_countries),
-        
+
         // Temporary employee information
         hasTemporaryEmployees: businessData.has_temporary_employees || "",
         totalTemporaryEmployees: typeof businessData.total_temporary_employees === 'number' ? businessData.total_temporary_employees : null,
@@ -370,14 +370,14 @@ export const getById = protectedProcedure
         foreignMaleTemporaryEmployees: typeof businessData.foreign_male_temporary_employees === 'number' ? businessData.foreign_male_temporary_employees : null,
         foreignFemaleTemporaryEmployees: typeof businessData.foreign_female_temporary_employees === 'number' ? businessData.foreign_female_temporary_employees : null,
         foreignTemporaryEmployeeCountries: parseArrayField(businessData.foreign_temporary_employee_countries),
-        
+
         // Location data for mapping
         gps: {
           latitude,
           longitude
         },
         name: businessData.name || "",
-        
+
         // Status
         status: businessData.status || "pending",
       };

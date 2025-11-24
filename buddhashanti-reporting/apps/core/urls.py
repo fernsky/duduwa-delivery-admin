@@ -1,5 +1,5 @@
 """
-Core API URLs for buddhashanti Report System.
+Core API URLs for duduwa Report System.
 """
 
 from django.urls import path

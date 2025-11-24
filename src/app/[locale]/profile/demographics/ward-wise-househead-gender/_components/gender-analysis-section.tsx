@@ -90,7 +90,7 @@ export default function GenderAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / बुद्धशान्ति गाउँपालिका",
+        "duduwa Rural Municipality / बुद्धशान्ति गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-househeads",
@@ -200,7 +200,7 @@ export default function GenderAnalysisSection({
         <h3 className="text-xl font-medium mb-4">
           <strong>बुद्धशान्ति गाउँपालिका</strong>को घरमूली लिङ्ग विश्लेषण
           <span className="sr-only">
-            Household Head Gender Analysis of Khajura
+            Household Head Gender Analysis of duduwa
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -212,7 +212,7 @@ export default function GenderAnalysisSection({
             <h4 className="font-medium mb-2">
               पुरुष-महिला घरमूली अनुपात
               <span className="sr-only">
-                Male-Female Household Head Ratio in Khajura
+                Male-Female Household Head Ratio in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -223,7 +223,7 @@ export default function GenderAnalysisSection({
               महिला घरमूली
               <span className="sr-only">
                 For every {maleFemaleRatio} male household heads, there is 1
-                female household head in Khajura Rural Municipality
+                female household head in duduwa Rural Municipality
               </span>
             </p>
           </div>
@@ -239,7 +239,7 @@ export default function GenderAnalysisSection({
             <h4 className="font-medium mb-2">
               महिला घरमूली प्रतिनिधित्व
               <span className="sr-only">
-                Female Household Head Representation in Khajura
+                Female Household Head Representation in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -255,7 +255,7 @@ export default function GenderAnalysisSection({
               %) भएको वडा
               <span className="sr-only">
                 Ward with highest female household head percentage (
-                {highestFemaleWard.femalePercentage.toFixed(2)}%) in Khajura
+                {highestFemaleWard.femalePercentage.toFixed(2)}%) in duduwa
                 Rural Municipality
               </span>
             </p>
@@ -267,7 +267,7 @@ export default function GenderAnalysisSection({
         <h3 className="text-xl font-medium mb-2">
           <strong>बुद्धशान्ति गाउँपालिका</strong>को वडागत घरमूली लिङ्ग विविधता
           <span className="sr-only">
-            Ward-wise Household Head Gender Diversity in Khajura
+            Ward-wise Household Head Gender Diversity in duduwa
           </span>
         </h3>
         <div className="prose prose-slate dark:prose-invert max-w-none">
@@ -371,7 +371,7 @@ export default function GenderAnalysisSection({
       <div className="bg-muted/50 p-4 rounded-lg mt-6">
         <h3 className="text-xl font-medium mb-2">
           नीतिगत सुझाव
-          <span className="sr-only">Policy Recommendations for Khajura</span>
+          <span className="sr-only">Policy Recommendations for duduwa</span>
         </h3>
         <div className="prose prose-slate dark:prose-invert max-w-none">
           <p>

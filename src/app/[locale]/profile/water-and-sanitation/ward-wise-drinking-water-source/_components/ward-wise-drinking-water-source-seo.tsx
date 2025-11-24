@@ -65,7 +65,7 @@ export default function WardWiseDrinkingWaterSourceSEO({
 
         return {
           "@type": "Observation",
-          name: `Drinking Water Source Statistics in Ward ${wardNumber} of Khajura Rural Municipality`,
+          name: `Drinking Water Source Statistics in Ward ${wardNumber} of duduwa Rural Municipality`,
           observationDate: new Date().toISOString().split("T")[0],
           measuredProperty: {
             "@type": "PropertyValue",
@@ -73,7 +73,7 @@ export default function WardWiseDrinkingWaterSourceSEO({
             unitText: "percentage",
           },
           measuredValue: parseFloat(pipedWaterPercent),
-          description: `In Ward ${wardNumber} of Khajura Rural Municipality, ${pipedWaterHouseholds.toLocaleString()} households (${pipedWaterPercent}%) have access to piped water out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
+          description: `In Ward ${wardNumber} of duduwa Rural Municipality, ${pipedWaterHouseholds.toLocaleString()} households (${pipedWaterPercent}%) have access to piped water out of a total of ${totalWardHouseholds.toLocaleString()} households.`,
         };
       })
       .filter(Boolean);
@@ -88,10 +88,10 @@ export default function WardWiseDrinkingWaterSourceSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Drinking Water Sources in Khajura Rural Municipality (बुद्धशान्ति गाउँपालिका)",
-      description: `Analysis of drinking water sources across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${waterSourceGroupTotals.PIPED_WATER.toLocaleString()} households (${waterSourceGroupPercentages.PIPED_WATER.toFixed(2)}%) have access to piped water. The highest piped water access rate is in Ward ${highestPipedWaterWard?.wardNumber || ""} with ${highestPipedWaterWard?.percentage.toFixed(2) || ""}%.`,
+      name: "Drinking Water Sources in duduwa Rural Municipality (बुद्धशान्ति गाउँपालिका)",
+      description: `Analysis of drinking water sources across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${waterSourceGroupTotals.PIPED_WATER.toLocaleString()} households (${waterSourceGroupPercentages.PIPED_WATER.toFixed(2)}%) have access to piped water. The highest piped water access rate is in Ward ${highestPipedWaterWard?.wardNumber || ""} with ${highestPipedWaterWard?.percentage.toFixed(2) || ""}%.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "बुद्धशान्ति गाउँपालिका",
         "Drinking water sources",
         "Piped water access",
@@ -104,16 +104,16 @@ export default function WardWiseDrinkingWaterSourceSEO({
         "Safe drinking water",
         "Water source availability",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/water-and-sanitation/ward-wise-drinking-water-source",
+      url: "https://digital.duduwamun.gov.np/profile/water-and-sanitation/ward-wise-drinking-water-source",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -176,10 +176,10 @@ export default function WardWiseDrinkingWaterSourceSEO({
         name: "Municipality Water Sources Survey",
         provider: {
           "@type": "GovernmentOrganization",
-          name: "Khajura Rural Municipality",
+          name: "duduwa Rural Municipality",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Khajura",
+            addressLocality: "duduwa",
             addressRegion: "Banke",
             addressCountry: "Nepal",
           },

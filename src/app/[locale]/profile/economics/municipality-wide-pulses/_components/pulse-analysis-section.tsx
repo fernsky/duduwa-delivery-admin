@@ -52,7 +52,7 @@ export default function PulseAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-production": totalProduction.toString(),
     "data-most-common-pulse":
       overallSummary.length > 0
@@ -101,7 +101,7 @@ export default function PulseAnalysisSection({
       <div className="bg-muted/50 p-6 rounded-lg mt-8 border">
         <h3 className="text-xl font-medium mb-6">
           दालबालीको विस्तृत विश्लेषण
-          <span className="sr-only">Detailed Pulse Analysis of Khajura</span>
+          <span className="sr-only">Detailed Pulse Analysis of duduwa</span>
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -120,7 +120,7 @@ export default function PulseAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख दालबाली
               <span className="sr-only">
-                Main Pulse in Khajura Rural Municipality
+                Main Pulse in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">

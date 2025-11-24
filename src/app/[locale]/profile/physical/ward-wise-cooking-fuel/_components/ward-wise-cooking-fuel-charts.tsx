@@ -97,7 +97,7 @@ export default function WardWiseCookingFuelCharts({
       >
         <meta
           itemProp="name"
-          content="Cooking Fuel Distribution in Khajura Rural Municipality"
+          content="Cooking Fuel Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -213,11 +213,11 @@ export default function WardWiseCookingFuelCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Cooking Fuel Usage in Khajura Rural Municipality"
+          content="Ward-wise Cooking Fuel Usage in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of cooking fuel types across wards in Khajura"
+          content="Distribution of cooking fuel types across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -247,11 +247,11 @@ export default function WardWiseCookingFuelCharts({
       >
         <meta
           itemProp="name"
-          content="Clean Cooking Fuel Usage Comparison Across Wards in Khajura Rural Municipality"
+          content="Clean Cooking Fuel Usage Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of clean cooking fuel usage across wards in Khajura"
+          content="Comparison of clean cooking fuel usage across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -284,11 +284,11 @@ export default function WardWiseCookingFuelCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Cooking Fuel Analysis in Khajura Rural Municipality"
+          content="Ward-wise Cooking Fuel Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of cooking fuel usage by ward in Khajura"
+          content="Detailed analysis of cooking fuel usage by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

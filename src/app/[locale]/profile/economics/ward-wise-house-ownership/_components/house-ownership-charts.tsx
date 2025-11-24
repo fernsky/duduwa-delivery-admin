@@ -65,11 +65,11 @@ export default function HouseOwnershipCharts({
       >
         <meta
           itemProp="name"
-          content="House Ownership Types in Khajura Rural Municipality"
+          content="House Ownership Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`House ownership distribution of Khajura with a total of ${totalHouseholds} households`}
+          content={`House ownership distribution of duduwa with a total of ${totalHouseholds} households`}
         />
 
         <div className="border-b px-4 py-3">
@@ -191,11 +191,11 @@ export default function HouseOwnershipCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise House Ownership in Khajura Rural Municipality"
+          content="Ward-wise House Ownership in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="House ownership distribution across wards in Khajura"
+          content="House ownership distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -226,11 +226,11 @@ export default function HouseOwnershipCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise House Ownership Analysis in Khajura Rural Municipality"
+          content="Ward-wise House Ownership Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Most common house ownership types by ward in Khajura"
+          content="Most common house ownership types by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

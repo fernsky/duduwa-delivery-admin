@@ -30,7 +30,7 @@ export default function GenderSEO({
     // Convert gender stats to structured data format
     const genderStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${GENDER_NAMES_EN[item.gender] || item.gender} household heads in Khajura Rural Municipality`,
+      name: `${GENDER_NAMES_EN[item.gender] || item.gender} household heads in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -44,10 +44,10 @@ export default function GenderSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Household Head Gender Distribution in Khajura Rural Municipality (बुद्धशान्ति गाउँपालिका)",
-      description: `Ward-wise gender distribution of household heads across ${localizeNumber(wardNumbers.length.toString(), "ne")} wards of Khajura Rural Municipality with a total of ${localizeNumber(totalPopulation.toLocaleString(), "ne")} household heads.`,
+      name: "Household Head Gender Distribution in duduwa Rural Municipality (बुद्धशान्ति गाउँपालिका)",
+      description: `Ward-wise gender distribution of household heads across ${localizeNumber(wardNumbers.length.toString(), "ne")} wards of duduwa Rural Municipality with a total of ${localizeNumber(totalPopulation.toLocaleString(), "ne")} household heads.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "बुद्धशान्ति गाउँपालिका",
         "Household head gender",
         "Ward-wise househead data",
@@ -56,16 +56,16 @@ export default function GenderSEO({
         "Female household heads",
         "Male household heads",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-wise-househead-gender",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-wise-househead-gender",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

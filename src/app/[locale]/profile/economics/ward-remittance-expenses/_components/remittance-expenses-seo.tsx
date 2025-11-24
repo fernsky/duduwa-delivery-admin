@@ -24,7 +24,7 @@ export default function RemittanceExpensesSEO({
     // Convert remittance expense stats to structured data format
     const expenseStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${EXPENSE_NAMES_EN[item.expense] || item.expense} in Khajura Rural Municipality`,
+      name: `${EXPENSE_NAMES_EN[item.expense] || item.expense} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -32,16 +32,16 @@ export default function RemittanceExpensesSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality spend their remittance on ${EXPENSE_NAMES_EN[item.expense] || item.expense} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households receiving remittances)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality spend their remittance on ${EXPENSE_NAMES_EN[item.expense] || item.expense} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households receiving remittances)`,
     }));
 
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Remittance Expense Patterns of Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Remittance expense distribution data across ${wardNumbers.length} wards of Khajura Rural Municipality with ${totalHouseholds.toLocaleString()} households receiving remittances.`,
+      name: "Remittance Expense Patterns of duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Remittance expense distribution data across ${wardNumbers.length} wards of duduwa Rural Municipality with ${totalHouseholds.toLocaleString()} households receiving remittances.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Remittance expenses",
         "Remittance utilization",
@@ -53,16 +53,16 @@ export default function RemittanceExpensesSEO({
           (name) => `${name} विप्रेषण खर्च`,
         ),
       ],
-      url: "https://buddhashanti-rm.gov.np/profile/economics/ward-remittance-expenses",
+      url: "https://duduwa-rm.gov.np/profile/economics/ward-remittance-expenses",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://buddhashanti-rm.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://duduwa-rm.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

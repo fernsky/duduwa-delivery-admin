@@ -25,7 +25,7 @@ export default function HouseholdBaseSEO({
     // Convert base type stats to structured data format
     const baseTypeStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${BASE_TYPE_NAMES_EN[item.baseType] || item.baseType} in Khajura Rural Municipality`,
+      name: `${BASE_TYPE_NAMES_EN[item.baseType] || item.baseType} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -33,7 +33,7 @@ export default function HouseholdBaseSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality have ${BASE_TYPE_NAMES_EN[item.baseType] || item.baseType} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality have ${BASE_TYPE_NAMES_EN[item.baseType] || item.baseType} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     // Find most common base type
@@ -49,10 +49,10 @@ export default function HouseholdBaseSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "House Foundation Types in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `House foundation data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common type is ${mostCommonTypeEN} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%).`,
+      name: "House Foundation Types in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `House foundation data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. The most common type is ${mostCommonTypeEN} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "House foundation",
         "Foundation distribution",
@@ -66,16 +66,16 @@ export default function HouseholdBaseSEO({
           (name) => `${name} घरधुरी तथ्याङ्क`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-household-base",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-household-base",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

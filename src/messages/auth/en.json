@@ -1,8 +1,8 @@
 {
   "login": {
     "meta": {
-      "title": "Log in to Khajura Rural Municipality",
-      "description": "Access the Khajura Rural Municipality Digital Profile System. Log in securely to manage profile data and administrative tasks."
+      "title": "Log in to duduwa Rural Municipality",
+      "description": "Access the duduwa Rural Municipality Digital Profile System. Log in securely to manage profile data and administrative tasks."
     },
     "welcome": {
       "badge": "Welcome back",
@@ -17,7 +17,7 @@
       ]
     },
     "form": {
-      "branding": "Khajura Rural Municipality",
+      "branding": "duduwa Rural Municipality",
       "title": "Log in to your account to access the dashboard",
       "username": {
         "label": "Username",
@@ -40,8 +40,8 @@
   },
   "signup": {
     "meta": {
-      "title": "Sign up - Khajura Rural Municipality",
-      "description": "Create an account for the Khajura Rural Municipality Digital Profile System. Register to start managing digital profiles and data."
+      "title": "Sign up - duduwa Rural Municipality",
+      "description": "Create an account for the duduwa Rural Municipality Digital Profile System. Register to start managing digital profiles and data."
     },
     "welcome": {
       "badge": "Get Started Today",
@@ -56,7 +56,7 @@
       ]
     },
     "form": {
-      "branding": "Khajura Rural Municipality",
+      "branding": "duduwa Rural Municipality",
       "title": "Fill in your details to create your account",
       "name": {
         "label": "Full Name",

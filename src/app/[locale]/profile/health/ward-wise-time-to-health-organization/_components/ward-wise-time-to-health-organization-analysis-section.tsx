@@ -65,7 +65,7 @@ export default function WardWiseTimeToHealthOrganizationAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-quick-access-rate": quickAccessPercentage,
     "data-best-access-ward": bestAccessWard?.wardNumber.toString() || "",
@@ -123,7 +123,7 @@ export default function WardWiseTimeToHealthOrganizationAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           स्वास्थ्य संस्था पहुँचको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Health Organization Access Analysis of Khajura
+            Detailed Health Organization Access Analysis of duduwa
           </span>
         </h3>
 
@@ -137,7 +137,7 @@ export default function WardWiseTimeToHealthOrganizationAnalysisSection({
             <h4 className="font-medium mb-2">
               उत्तम स्वास्थ्य पहुँच भएको वडा
               <span className="sr-only">
-                Ward with Best Health Facility Access in Khajura Rural
+                Ward with Best Health Facility Access in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -198,7 +198,7 @@ export default function WardWiseTimeToHealthOrganizationAnalysisSection({
             <h4 className="font-medium mb-2">
               कमजोर स्वास्थ्य पहुँच भएको वडा
               <span className="sr-only">
-                Ward with Poor Health Facility Access in Khajura
+                Ward with Poor Health Facility Access in duduwa
               </span>
             </h4>
             {worstAccessWard && (

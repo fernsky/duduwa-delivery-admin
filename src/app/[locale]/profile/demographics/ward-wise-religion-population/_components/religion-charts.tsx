@@ -62,11 +62,11 @@ export default function ReligionCharts({
       >
         <meta
           itemProp="name"
-          content="Religion Distribution in Khajura Rural Municipality"
+          content="Religion Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Religious composition of Khajura with a total population of ${totalPopulation}`}
+          content={`Religious composition of duduwa with a total population of ${totalPopulation}`}
         />
 
         <div className="border-b px-4 py-3">
@@ -204,11 +204,11 @@ export default function ReligionCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Religion Distribution in Khajura Rural Municipality"
+          content="Ward-wise Religion Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Religion distribution across wards in Khajura"
+          content="Religion distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -239,11 +239,11 @@ export default function ReligionCharts({
       >
         <meta
           itemProp="name"
-          content="Detailed Religious Analysis by Ward in Khajura Rural Municipality"
+          content="Detailed Religious Analysis by Ward in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed religious composition of each ward in Khajura"
+          content="Detailed religious composition of each ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

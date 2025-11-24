@@ -80,11 +80,11 @@ export default function HouseholdOuterWallCharts({
       >
         <meta
           itemProp="name"
-          content="House Outer Wall Types in Khajura Rural Municipality"
+          content="House Outer Wall Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`House outer wall distribution of Khajura with a total of ${totalHouseholds} households`}
+          content={`House outer wall distribution of duduwa with a total of ${totalHouseholds} households`}
         />
 
         <div className="border-b px-4 py-3">
@@ -205,11 +205,11 @@ export default function HouseholdOuterWallCharts({
       >
         <meta
           itemProp="name"
-          content="Outer Wall Quality Analysis in Khajura Rural Municipality"
+          content="Outer Wall Quality Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Quality analysis of house outer walls in Khajura Rural Municipality"
+          content="Quality analysis of house outer walls in duduwa Rural Municipality"
         />
 
         <div className="border-b px-4 py-3">
@@ -331,11 +331,11 @@ export default function HouseholdOuterWallCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise House Outer Wall in Khajura Rural Municipality"
+          content="Ward-wise House Outer Wall in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="House outer wall distribution across wards in Khajura"
+          content="House outer wall distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -366,11 +366,11 @@ export default function HouseholdOuterWallCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise House Outer Wall Analysis in Khajura Rural Municipality"
+          content="Ward-wise House Outer Wall Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Most common house outer wall types by ward in Khajura"
+          content="Most common house outer wall types by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

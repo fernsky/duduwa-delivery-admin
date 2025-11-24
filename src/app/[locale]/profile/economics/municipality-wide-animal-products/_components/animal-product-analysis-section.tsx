@@ -56,7 +56,7 @@ export default function AnimalProductAnalysisSection({
 
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-production": totalProduction.toString(),
     "data-most-common-product":
       overallSummary.length > 0
@@ -112,7 +112,7 @@ export default function AnimalProductAnalysisSection({
         <h3 className="text-xl font-medium mb-6">
           पशुपन्छीजन्य वस्तुको विस्तृत विश्लेषण
           <span className="sr-only">
-            Detailed Animal Product Analysis of Khajura
+            Detailed Animal Product Analysis of duduwa
           </span>
         </h3>
 
@@ -132,7 +132,7 @@ export default function AnimalProductAnalysisSection({
             <h4 className="font-medium mb-2">
               प्रमुख पशुपन्छीजन्य वस्तु
               <span className="sr-only">
-                Main Animal Product in Khajura Rural Municipality
+                Main Animal Product in duduwa Rural Municipality
               </span>
             </h4>
             <div className="flex items-center gap-3">

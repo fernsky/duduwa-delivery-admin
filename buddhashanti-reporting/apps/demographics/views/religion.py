@@ -1,5 +1,5 @@
 """
-Religion Demographics Views for buddhashanti Rural Municipality
+Religion Demographics Views for duduwa Rural Municipality
 
 This module provides views for religion-based population analysis including:
 - Ward-wise religion distribution

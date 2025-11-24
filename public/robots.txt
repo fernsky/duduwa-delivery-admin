@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://digital.buddhashantimun.gov.np
+Host: https://digital.duduwamun.gov.np
 
 # Sitemaps
-Sitemap: https://digital.buddhashantimun.gov.np/sitemap.xml
-Sitemap: https://digital.buddhashantimun.gov.np/sitemap-index.xml
+Sitemap: https://digital.duduwamun.gov.np/sitemap.xml
+Sitemap: https://digital.duduwamun.gov.np/sitemap-index.xml

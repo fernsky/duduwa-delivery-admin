@@ -8,11 +8,11 @@ import django
 
 # Add the project root to Python path
 sys.path.append(
-    "/Users/trilochan/Desktop/final-delivery/digital-profile/buddhashanti/buddhashanti-report"
+    "/Users/trilochan/Desktop/final-delivery/digital-profile/duduwa/duduwa-report"
 )
 
 # Configure Django settings
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "buddhashanti_report.settings.development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "duduwa_report.settings.development")
 django.setup()
 
 from apps.social.processors.educational_institution import (

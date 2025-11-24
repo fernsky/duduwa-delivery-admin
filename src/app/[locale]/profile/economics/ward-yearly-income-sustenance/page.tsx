@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const incomeSustenanceData =
       await api.profile.economics.wardWiseAnnualIncomeSustenance.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalHouseholds = incomeSustenanceData.reduce(
@@ -86,23 +86,23 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality annual income sufficiency",
+      "duduwa Rural Municipality annual income sufficiency",
       "Yearly income sustenance",
-      `Khajura ${monthsSustainedLabels[sortedMonthsSustained[0] as keyof typeof monthsSustainedLabels]}`,
+      `duduwa ${monthsSustainedLabels[sortedMonthsSustained[0] as keyof typeof monthsSustainedLabels]}`,
       ...sortedMonthsSustained.map(
         (r) =>
-          `${monthsSustainedLabels[r as keyof typeof monthsSustainedLabels]} households in Khajura`,
+          `${monthsSustainedLabels[r as keyof typeof monthsSustainedLabels]} households in duduwa`,
       ),
       "Ward-wise income sustenance",
       "Economic self-reliance statistics",
-      "Income sufficiency survey Khajura",
-      `Khajura total households ${totalHouseholds}`,
+      "Income sufficiency survey duduwa",
+      `duduwa total households ${totalHouseholds}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकामा वडा अनुसार वार्षिक आयको पर्याप्तता वितरण, प्रवृत्ति र विश्लेषण। कुल घरपरिवार संख्या ${totalHouseholds} मध्ये ${MONTHS_SUSTAINED_NAMES[sortedMonthsSustained[0]]} (${monthsSustainedCounts[sortedMonthsSustained[0]]}) सबैभन्दा ठूलो समूह हो, त्यसपछि ${MONTHS_SUSTAINED_NAMES[sortedMonthsSustained[1]]} (${monthsSustainedCounts[sortedMonthsSustained[1]]})। वार्षिक आयको पर्याप्तताको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Ward-wise yearly income sustenance distribution, trends and analysis for Khajura Rural Municipality. Out of a total of ${totalHouseholds} households, ${monthsSustainedLabels[sortedMonthsSustained[0] as keyof typeof monthsSustainedLabels]} (${monthsSustainedCounts[sortedMonthsSustained[0]]}) is the largest group, followed by ${monthsSustainedLabels[sortedMonthsSustained[1] as keyof typeof monthsSustainedLabels]} (${monthsSustainedCounts[sortedMonthsSustained[1]]})। Detailed statistics and visualizations of yearly income sufficiency.`;
+    const descriptionEN = `Ward-wise yearly income sustenance distribution, trends and analysis for duduwa Rural Municipality. Out of a total of ${totalHouseholds} households, ${monthsSustainedLabels[sortedMonthsSustained[0] as keyof typeof monthsSustainedLabels]} (${monthsSustainedCounts[sortedMonthsSustained[0]]}) is the largest group, followed by ${monthsSustainedLabels[sortedMonthsSustained[1] as keyof typeof monthsSustainedLabels]} (${monthsSustainedCounts[sortedMonthsSustained[1]]})। Detailed statistics and visualizations of yearly income sufficiency.`;
 
     return {
       title: `वार्षिक आयको पर्याप्तता | ${municipalityName} पालिका प्रोफाइल`,
@@ -274,7 +274,7 @@ export default async function WardYearlyIncomeSustenancePage() {
                   src="/images/income-sustenance.svg"
                   width={1200}
                   height={400}
-                  alt="वार्षिक आयको पर्याप्तता - डुडुवा गाउँपालिका (Yearly Income Sustenance - Khajura Rural Municipality)"
+                  alt="वार्षिक आयको पर्याप्तता - डुडुवा गाउँपालिका (Yearly Income Sustenance - duduwa Rural Municipality)"
                   className="w-full h-[250px] object-cover rounded-sm"
                   priority
                 />

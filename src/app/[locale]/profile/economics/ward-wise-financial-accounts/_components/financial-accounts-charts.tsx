@@ -78,7 +78,7 @@ export default function FinancialAccountsCharts({
       >
         <meta
           itemProp="name"
-          content="Financial Account Distribution in Khajura Rural Municipality"
+          content="Financial Account Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -322,11 +322,11 @@ export default function FinancialAccountsCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Financial Accounts in Khajura Rural Municipality"
+          content="Ward-wise Financial Accounts in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of financial accounts across wards in Khajura"
+          content="Distribution of financial accounts across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -356,11 +356,11 @@ export default function FinancialAccountsCharts({
       >
         <meta
           itemProp="name"
-          content="Financial Inclusion Rate Comparison Across Wards in Khajura Rural Municipality"
+          content="Financial Inclusion Rate Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of financial inclusion rates across wards in Khajura"
+          content="Comparison of financial inclusion rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -390,11 +390,11 @@ export default function FinancialAccountsCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Financial Accounts Analysis in Khajura Rural Municipality"
+          content="Ward-wise Financial Accounts Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of financial accounts by ward in Khajura"
+          content="Detailed analysis of financial accounts by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

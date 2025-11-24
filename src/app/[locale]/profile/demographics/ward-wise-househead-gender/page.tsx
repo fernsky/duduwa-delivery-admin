@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const genderData =
       await api.profile.demographics.wardWiseHouseHeadGender.getAll.query();
-    const municipalityName = "बुद्धशान्ति गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "बुद्धशान्ति गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalPopulation = genderData.reduce(

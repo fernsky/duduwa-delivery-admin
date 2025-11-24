@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({
   // Extract data with proper fallbacks
   const totalArea = demographicData?.totalLandArea || "N/A";
 
-  // Get ward count data for Khajura Rural Municipality
+  // Get ward count data for duduwa Rural Municipality
   const wardCount = 8;
 
   // Calculate stats to display
@@ -67,11 +67,11 @@ const Hero: React.FC<HeroProps> = ({
             "@type": "GovernmentOrganization",
             name: municipalityName,
             alternateName: municipalityNameEn,
-            url: `https://${lng === "en" ? "en." : ""}digital.buddhashantimun.gov.np`,
-            logo: "https://digital.buddhashantimun.gov.np/logo.png",
+            url: `https://${lng === "en" ? "en." : ""}digital.duduwamun.gov.np`,
+            logo: "https://digital.duduwamun.gov.np/logo.png",
             areaServed: {
               "@type": "AdministrativeArea",
-              name: "Khajura",
+              name: "duduwa",
               containedIn: "Banke District, Nepal",
               description: seoDescription,
               additionalProperty: [
@@ -103,7 +103,7 @@ const Hero: React.FC<HeroProps> = ({
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/duduwa-bg.jpg"
-            alt="buddhashanti Municipality Background"
+            alt="duduwa Municipality Background"
             fill
             priority={true}
             className="object-cover"

@@ -36,7 +36,7 @@ export default function AgricultureHouseholdsAnalysisSection({
 }: AgricultureHouseholdsAnalysisSectionProps) {
   // SEO attributes to include directly in JSX
   const seoAttributes = {
-    "data-municipality": "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+    "data-municipality": "duduwa Rural Municipality / डुडुवा गाउँपालिका",
     "data-total-households": totalHouseholds.toString(),
     "data-involved-households": totalInvolved.toString(),
     "data-involvement-rate": involvedPercentage.toFixed(2),
@@ -113,7 +113,7 @@ export default function AgricultureHouseholdsAnalysisSection({
         <h3 className="text-xl font-medium mb-4">
           कृषि आबद्धता विश्लेषण
           <span className="sr-only">
-            Agricultural Involvement Analysis of Khajura
+            Agricultural Involvement Analysis of duduwa
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -128,7 +128,7 @@ export default function AgricultureHouseholdsAnalysisSection({
             <h4 className="font-medium mb-2">
               उच्च कृषि आबद्धता भएको वडा
               <span className="sr-only">
-                Ward with Highest Agricultural Involvement in Khajura Rural
+                Ward with Highest Agricultural Involvement in duduwa Rural
                 Municipality
               </span>
             </h4>
@@ -173,7 +173,7 @@ export default function AgricultureHouseholdsAnalysisSection({
             <h4 className="font-medium mb-2">
               न्यून कृषि आबद्धता भएको वडा
               <span className="sr-only">
-                Ward with Lowest Agricultural Involvement in Khajura
+                Ward with Lowest Agricultural Involvement in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">

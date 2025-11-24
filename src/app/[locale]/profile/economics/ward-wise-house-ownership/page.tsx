@@ -43,7 +43,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const ownershipData =
       await api.profile.economics.wardWiseHouseOwnership.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalHouseholds = ownershipData.reduce(
@@ -86,19 +86,19 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality house ownership",
-      "Khajura house ownership distribution",
+      "duduwa Rural Municipality house ownership",
+      "duduwa house ownership distribution",
       "Ward-wise house ownership",
       "House ownership details",
-      "Private house ownership in Khajura",
+      "Private house ownership in duduwa",
       "Rented households count",
-      `Khajura household ownership count ${totalHouseholds}`,
+      `duduwa household ownership count ${totalHouseholds}`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको वडा अनुसार घर स्वामित्वको वितरण र विश्लेषण। कुल घरधुरी संख्या ${localizeNumber(totalHouseholds.toString(), "ne")} मध्ये ${localizeNumber(mostCommonPercentage, "ne")}% (${localizeNumber(mostCommonCount.toString(), "ne")}) ${OWNERSHIP_TYPE_NAMES[mostCommonType] || mostCommonType} स्वामित्वमा रहेका छन्। विभिन्न वडाहरूमा घर स्वामित्वको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Ward-wise distribution and analysis of house ownership in Khajura Rural Municipality. Out of a total of ${totalHouseholds} households, ${mostCommonPercentage}% (${mostCommonCount}) are under ${OWNERSHIP_TYPE_NAMES_EN[mostCommonType] || mostCommonType}. Detailed analysis of house ownership across various wards.`;
+    const descriptionEN = `Ward-wise distribution and analysis of house ownership in duduwa Rural Municipality. Out of a total of ${totalHouseholds} households, ${mostCommonPercentage}% (${mostCommonCount}) are under ${OWNERSHIP_TYPE_NAMES_EN[mostCommonType] || mostCommonType}. Detailed analysis of house ownership across various wards.`;
 
     return {
       title: `घर स्वामित्वको वितरण | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -281,7 +281,7 @@ export default async function WardWiseHouseOwnershipPage() {
               src="/images/house-ownership.svg"
               width={1200}
               height={400}
-              alt="घर स्वामित्वको वितरण - डुडुवा गाउँपालिका (House Ownership Distribution - Khajura Rural Municipality)"
+              alt="घर स्वामित्वको वितरण - डुडुवा गाउँपालिका (House Ownership Distribution - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

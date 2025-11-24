@@ -99,7 +99,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const farmersGroupData =
       await api.profile.economics.municipalityWideCommercialAgriculturalAnimalHusbandryFarmersGroup.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalGroups = farmersGroupData.length;
@@ -157,20 +157,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality farmers groups",
-      "Khajura commercial agriculture",
+      "duduwa Rural Municipality farmers groups",
+      "duduwa commercial agriculture",
       "Municipality-wide agricultural groups",
-      "Commercial animal husbandry in Khajura",
-      `${BUSINESS_TYPES_EN[mostCommonBusinessType] || "Commercial agriculture"} in Khajura`,
+      "Commercial animal husbandry in duduwa",
+      `${BUSINESS_TYPES_EN[mostCommonBusinessType] || "Commercial agriculture"} in duduwa`,
       `Ward ${wardWithMostGroups} farming groups`,
-      `Khajura ${totalGroups} agricultural groups`,
+      `duduwa ${totalGroups} agricultural groups`,
       "Commercial animal husbandry groups",
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकामा संचालित ${localizeNumber(totalGroups.toString(), "ne")} व्यावसायिक कृषि तथा पशुपालन समूहहरूको विस्तृत विश्लेषण। सबैभन्दा बढी ${BUSINESS_TYPES[mostCommonBusinessType] || ""} व्यवसाय गर्ने समूहहरू (${localizeNumber(mostCommonBusinessTypePercentage.toFixed(1), "ne")}%) रहेका छन्। वडा नं ${localizeNumber(wardWithMostGroups.toString(), "ne")} मा सबैभन्दा बढी ${localizeNumber(wardMaxCount.toString(), "ne")} समूहहरू क्रियाशील छन्। पालिका स्तरीय कृषि तथा पशुपालन समूहहरूको विस्तृत जानकारी।`;
 
-    const descriptionEN = `Detailed analysis of ${totalGroups} commercial agricultural and animal husbandry farmers groups operating in Khajura Rural Municipality. ${BUSINESS_TYPES_EN[mostCommonBusinessType] || "Agricultural business"} groups are most common (${mostCommonBusinessTypePercentage.toFixed(1)}%). Ward ${wardWithMostGroups} has the highest concentration with ${wardMaxCount} active groups. Comprehensive information on municipality-wide agricultural and livestock groups.`;
+    const descriptionEN = `Detailed analysis of ${totalGroups} commercial agricultural and animal husbandry farmers groups operating in duduwa Rural Municipality. ${BUSINESS_TYPES_EN[mostCommonBusinessType] || "Agricultural business"} groups are most common (${mostCommonBusinessTypePercentage.toFixed(1)}%). Ward ${wardWithMostGroups} has the highest concentration with ${wardMaxCount} active groups. Comprehensive information on municipality-wide agricultural and livestock groups.`;
 
     return {
       title: `व्यावसायिक कृषि तथा पशुपालन समूहहरू | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -351,7 +351,7 @@ export default async function CommercialAgriculturalAnimalHusbandryFarmersGroupP
   const statistics = {
     totalGroups,
     totalWards: Object.keys(wardDistribution).length,
-    avgGroupsPerWard: totalGroups / 9, // Khajura has 9 wards
+    avgGroupsPerWard: totalGroups / 9, // duduwa has 9 wards
     mostPopularBusinessType:
       businessSummary.length > 0 ? businessSummary[0].type : "",
     mostPopularBusinessTypeName:
@@ -381,7 +381,7 @@ export default async function CommercialAgriculturalAnimalHusbandryFarmersGroupP
               src="/images/farmers.svg"
               width={1200}
               height={400}
-              alt="व्यावसायिक कृषि तथा पशुपालन समूहहरू - डुडुवा गाउँपालिका (Commercial Agricultural and Animal Husbandry Farmers Groups - Khajura Rural Municipality)"
+              alt="व्यावसायिक कृषि तथा पशुपालन समूहहरू - डुडुवा गाउँपालिका (Commercial Agricultural and Animal Husbandry Farmers Groups - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

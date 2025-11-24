@@ -73,11 +73,11 @@ export default function LandOwnershipCharts({
       >
         <meta
           itemProp="name"
-          content="Land Ownership Types in Khajura Rural Municipality"
+          content="Land Ownership Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Land ownership types of Khajura with a total of ${totalHouseholds} households`}
+          content={`Land ownership types of duduwa with a total of ${totalHouseholds} households`}
         />
 
         <div className="border-b px-4 py-3">
@@ -208,11 +208,11 @@ export default function LandOwnershipCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Land Ownership in Khajura Rural Municipality"
+          content="Ward-wise Land Ownership in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Land ownership distribution across wards in Khajura"
+          content="Land ownership distribution across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -244,11 +244,11 @@ export default function LandOwnershipCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Land Ownership Analysis in Khajura Rural Municipality"
+          content="Ward-wise Land Ownership Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Land ownership patterns by ward in Khajura"
+          content="Land ownership patterns by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

@@ -125,11 +125,11 @@ export default function HouseheadGenderCharts({
       >
         <meta
           itemProp="name"
-          content="Household Head Gender Distribution in Khajura Rural Municipality"
+          content="Household Head Gender Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Gender distribution of household heads in Khajura with a total of ${totalPopulation} household heads`}
+          content={`Gender distribution of household heads in duduwa with a total of ${totalPopulation} household heads`}
         />
 
         <div className="border-b px-4 py-3">
@@ -319,11 +319,11 @@ export default function HouseheadGenderCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Household Head Gender Distribution in Khajura Rural Municipality"
+          content="Ward-wise Household Head Gender Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Gender distribution of household heads across wards in Khajura"
+          content="Gender distribution of household heads across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">

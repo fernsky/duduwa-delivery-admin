@@ -51,7 +51,7 @@ export async function generateMetadata(props: {
 
     const baseUrl =
       process.env.NEXT_PUBLIC_BASE_URL ||
-      "https://digital.buddhashantimun.gov.np";
+      "https://digital.duduwamun.gov.np";
 
     const appUrl = process.env.APP_URL
       ? `${process.env.APP_URL}`
@@ -67,7 +67,7 @@ export async function generateMetadata(props: {
       },
       description: t("description"),
       keywords: [
-        "buddhashanti",
+        "duduwa",
         "Digital Profile",
         "Nepal",
         "Government",
@@ -214,7 +214,7 @@ export default async function RootLayout(props: {
     >
       <head>
         {/* Government required meta tags */}
-        <meta name="gov:portal" content="buddhashanti Digital Profile" />
+        <meta name="gov:portal" content="duduwa Digital Profile" />
         <meta
           name="gov:department"
           content="Digital Profile Information System"

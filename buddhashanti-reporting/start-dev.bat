@@ -1,7 +1,7 @@
 @echo off
-REM Development server startup script for buddhashanti Report System
+REM Development server startup script for duduwa Report System
 
-echo Starting buddhashanti Digital Profile Report System...
+echo Starting duduwa Digital Profile Report System...
 echo.
 
 REM Activate virtual environment

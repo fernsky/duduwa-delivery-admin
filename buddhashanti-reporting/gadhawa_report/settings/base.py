@@ -1,5 +1,5 @@
 """
-Base settings for buddhashanti Report System.
+Base settings for duduwa Report System.
 
 This file contains settings common to all environments.
 """
@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config(
-    "SECRET_KEY", default="django-insecure-buddhashanti-dev-key-change-in-production"
+    "SECRET_KEY", default="django-insecure-duduwa-dev-key-change-in-production"
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -66,7 +66,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "buddhashanti_report.urls"
+ROOT_URLCONF = "duduwa_report.urls"
 
 TEMPLATES = [
     {
@@ -84,7 +84,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "buddhashanti_report.wsgi.application"
+WSGI_APPLICATION = "duduwa_report.wsgi.application"
 
 # Database
 DATABASES = {
@@ -170,8 +170,8 @@ SIMPLE_JWT = {
 
 # API Documentation
 SPECTACULAR_SETTINGS = {
-    "TITLE": "buddhashanti Digital Profile Report API",
-    "DESCRIPTION": "API for managing and generating digital profile reports for buddhashanti Rural Municipality",
+    "TITLE": "duduwa Digital Profile Report API",
+    "DESCRIPTION": "API for managing and generating digital profile reports for duduwa Rural Municipality",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
     "COMPONENT_SPLIT_REQUEST": True,
@@ -211,7 +211,7 @@ LOGGING = {
         "file": {
             "level": "INFO",
             "class": "logging.FileHandler",
-            "filename": BASE_DIR / "logs" / "buddhashanti_report.log",
+            "filename": BASE_DIR / "logs" / "duduwa_report.log",
             "formatter": "verbose",
         },
         "console": {
@@ -230,7 +230,7 @@ LOGGING = {
             "level": "INFO",
             "propagate": False,
         },
-        "buddhashanti_report": {
+        "duduwa_report": {
             "handlers": ["console", "file"],
             "level": "DEBUG",
             "propagate": False,

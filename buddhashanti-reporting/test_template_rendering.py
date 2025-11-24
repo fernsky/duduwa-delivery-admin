@@ -9,11 +9,11 @@ import django
 
 # Add the project directory to the path
 sys.path.append(
-    "/Users/trilochan/Desktop/final-delivery/digital-profile/buddhashanti/buddhashanti-report"
+    "/Users/trilochan/Desktop/final-delivery/digital-profile/duduwa/duduwa-report"
 )
 
 # Set up Django environment
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "buddhashanti_report.settings.development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "duduwa_report.settings.development")
 django.setup()
 
 from django.template.loader import render_to_string

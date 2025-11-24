@@ -171,7 +171,7 @@ export default function RemittanceCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Remittance Distribution in Khajura Rural Municipality"
+          content="Ward-wise Remittance Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"

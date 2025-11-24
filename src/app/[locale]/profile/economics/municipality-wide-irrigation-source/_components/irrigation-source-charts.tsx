@@ -148,11 +148,11 @@ export default function IrrigationSourceCharts({
       >
         <meta
           itemProp="name"
-          content="Irrigation Source Types in Khajura Rural Municipality"
+          content="Irrigation Source Types in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Irrigation source types of Khajura with a total coverage of ${totalCoverage.toFixed(
+          content={`Irrigation source types of duduwa with a total coverage of ${totalCoverage.toFixed(
             2,
           )} hectares`}
         />
@@ -319,11 +319,11 @@ export default function IrrigationSourceCharts({
       >
         <meta
           itemProp="name"
-          content="Irrigation Source Distribution in Khajura Rural Municipality"
+          content="Irrigation Source Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of traditional, modern and natural irrigation sources in Khajura"
+          content="Distribution of traditional, modern and natural irrigation sources in duduwa"
         />
 
         <div className="border-b px-4 py-3">

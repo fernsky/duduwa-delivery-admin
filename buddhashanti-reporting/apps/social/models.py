@@ -1,5 +1,5 @@
 """
-Social models for buddhashanti Rural Municipality Digital Profile
+Social models for duduwa Rural Municipality Digital Profile
 
 This module contains models for Chapter 5 (सामाजिक अवस्था) including:
 - 5.1 शैक्षिक तथा मानव संशाधन विकास (Education and Human Resource Development)

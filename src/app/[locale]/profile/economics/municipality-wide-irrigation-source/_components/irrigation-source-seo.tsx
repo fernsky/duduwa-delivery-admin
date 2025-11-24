@@ -25,7 +25,7 @@ export default function IrrigationSourceSEO({
     // Convert irrigation source stats to structured data format
     const irrigationSourceStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${IRRIGATION_SOURCE_TYPES_EN[item.type] || item.type} in Khajura Rural Municipality`,
+      name: `${IRRIGATION_SOURCE_TYPES_EN[item.type] || item.type} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -33,7 +33,7 @@ export default function IrrigationSourceSEO({
         unitText: "hectares",
       },
       measuredValue: item.coverage,
-      description: `${item.coverage.toFixed(2)} hectares in Khajura Rural Municipality are irrigated through ${IRRIGATION_SOURCE_TYPES_EN[item.type] || item.type} (${((item.coverage / totalCoverage) * 100).toFixed(2)}% of total irrigated area)`,
+      description: `${item.coverage.toFixed(2)} hectares in duduwa Rural Municipality are irrigated through ${IRRIGATION_SOURCE_TYPES_EN[item.type] || item.type} (${((item.coverage / totalCoverage) * 100).toFixed(2)}% of total irrigated area)`,
     }));
 
     // Find most common irrigation source
@@ -60,10 +60,10 @@ export default function IrrigationSourceSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Irrigation Source Types in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Irrigation source statistics of Khajura Rural Municipality with a total irrigation coverage of ${totalCoverage.toFixed(2)} hectares. The most common irrigation source is ${mostCommonSourceEN} with ${mostCommonSource?.coverage.toFixed(2)} hectares (${mostCommonSourcePercentage}%). Traditional irrigation methods account for ${traditionalSourcePercentage}% of all irrigated area. Irrigation sustainability score is ${sustainabilityScore}%.`,
+      name: "Irrigation Source Types in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Irrigation source statistics of duduwa Rural Municipality with a total irrigation coverage of ${totalCoverage.toFixed(2)} hectares. The most common irrigation source is ${mostCommonSourceEN} with ${mostCommonSource?.coverage.toFixed(2)} hectares (${mostCommonSourcePercentage}%). Traditional irrigation methods account for ${traditionalSourcePercentage}% of all irrigated area. Irrigation sustainability score is ${sustainabilityScore}%.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Irrigation sources",
         "Irrigation source types",
@@ -78,16 +78,16 @@ export default function IrrigationSourceSEO({
           (name) => `${name} सिंचाई क्षेत्रफल`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/municipality-wide-irrigation-source",
+      url: "https://digital.duduwamun.gov.np/profile/economics/municipality-wide-irrigation-source",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

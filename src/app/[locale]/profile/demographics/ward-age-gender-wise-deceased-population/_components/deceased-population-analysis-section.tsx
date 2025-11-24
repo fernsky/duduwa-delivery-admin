@@ -72,7 +72,7 @@ export default function DeceasedPopulationAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / डुडुवा गाउँपालिका",
+        "duduwa Rural Municipality / डुडुवा गाउँपालिका",
       );
       document.body.setAttribute(
         "data-total-deceased-population",
@@ -223,7 +223,7 @@ export default function DeceasedPopulationAnalysisSection({
       <div className="bg-muted/50 p-4 rounded-lg mt-8">
         <h3 className="text-xl font-medium mb-4">
           मृत्युदर विश्लेषण
-          <span className="sr-only">Mortality Analysis of Khajura</span>
+          <span className="sr-only">Mortality Analysis of duduwa</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div
@@ -242,7 +242,7 @@ export default function DeceasedPopulationAnalysisSection({
             <h4 className="font-medium mb-2">
               सबैभन्दा बढी मृत्यु भएको उमेर समूह
               <span className="sr-only">
-                Most Affected Age Group in Khajura Rural Municipality
+                Most Affected Age Group in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -285,7 +285,7 @@ export default function DeceasedPopulationAnalysisSection({
             <h4 className="font-medium mb-2">
               सबैभन्दा बढी मृत्यु भएको वडा
               <span className="sr-only">
-                Ward with Highest Mortality in Khajura
+                Ward with Highest Mortality in duduwa
               </span>
             </h4>
             <p className="text-3xl font-bold">

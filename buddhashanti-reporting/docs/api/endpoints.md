@@ -2,13 +2,13 @@
 
 ## Overview
 
-The buddhashanti Digital Profile Report API provides comprehensive access to municipality data, report generation, and administrative functions. The API follows RESTful principles and returns JSON responses.
+The duduwa Digital Profile Report API provides comprehensive access to municipality data, report generation, and administrative functions. The API follows RESTful principles and returns JSON responses.
 
 ## Base URL
 
 ```
 Development: http://localhost:8000/api/v1/
-Production: https://buddhashanti-report.gov.np/api/v1/
+Production: https://duduwa-report.gov.np/api/v1/
 ```
 
 ## Authentication

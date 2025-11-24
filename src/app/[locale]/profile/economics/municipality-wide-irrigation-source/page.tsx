@@ -62,7 +62,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const irrigationSourceData =
       await api.profile.economics.municipalityWideIrrigationSource.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalCoverage = irrigationSourceData.reduce(
@@ -113,20 +113,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality irrigation sources",
-      "Khajura irrigation source types",
+      "duduwa Rural Municipality irrigation sources",
+      "duduwa irrigation source types",
       "Municipality-wide irrigation sources",
       "Lake or reservoir irrigation",
-      "Irrigation canal statistics Khajura",
+      "Irrigation canal statistics duduwa",
       "Rainwater collection irrigation",
       "Electric lift irrigation",
-      `Khajura irrigation coverage ${totalCoverage.toFixed(2)} hectares`,
+      `duduwa irrigation coverage ${totalCoverage.toFixed(2)} hectares`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको सिंचाई स्रोतको वितरण र विश्लेषण। कुल ${localizeNumber(totalCoverage.toFixed(2), "ne")} हेक्टर क्षेत्रफल मध्ये ${localizeNumber(mostCommonPercentage, "ne")}% (${localizeNumber(mostCommonCoverage.toFixed(2), "ne")}) हेक्टर क्षेत्रफल ${IRRIGATION_SOURCE_TYPES[mostCommonType] || mostCommonType} मार्फत सिंचाई हुने गर्दछ। पालिका स्तरीय सिंचाई स्रोतको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Distribution and analysis of irrigation sources in Khajura Rural Municipality. Out of a total of ${totalCoverage.toFixed(2)} hectares coverage, ${mostCommonPercentage}% (${mostCommonCoverage.toFixed(2)}) hectares are irrigated through ${IRRIGATION_SOURCE_TYPES_EN[mostCommonType] || mostCommonType}. Detailed analysis of municipality-wide irrigation source patterns.`;
+    const descriptionEN = `Distribution and analysis of irrigation sources in duduwa Rural Municipality. Out of a total of ${totalCoverage.toFixed(2)} hectares coverage, ${mostCommonPercentage}% (${mostCommonCoverage.toFixed(2)}) hectares are irrigated through ${IRRIGATION_SOURCE_TYPES_EN[mostCommonType] || mostCommonType}. Detailed analysis of municipality-wide irrigation source patterns.`;
 
     return {
       title: `सिंचाई स्रोतको प्रकार अनुसार क्षेत्रफल | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -329,7 +329,7 @@ export default async function MunicipalityWideIrrigationSourcePage() {
               src="/images/irrigation-sources.svg"
               width={1200}
               height={400}
-              alt="सिंचाई स्रोतको प्रकार अनुसार क्षेत्रफल - डुडुवा गाउँपालिका (Irrigation Sources by Coverage Area - Khajura Rural Municipality)"
+              alt="सिंचाई स्रोतको प्रकार अनुसार क्षेत्रफल - डुडुवा गाउँपालिका (Irrigation Sources by Coverage Area - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

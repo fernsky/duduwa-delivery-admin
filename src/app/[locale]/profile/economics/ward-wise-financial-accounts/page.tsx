@@ -52,7 +52,7 @@ export async function generateMetadata(): Promise<Metadata> {
   try {
     const wardWiseFinancialAccountsData =
       await api.profile.economics.wardWiseFinancialAccounts.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Group by ward number
     const wardGroups = wardWiseFinancialAccountsData.reduce(
@@ -142,7 +142,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality financial access",
+      "duduwa Rural Municipality financial access",
       "Distribution of financial accounts",
       "Ward-wise financial access",
       "Access to banks",
@@ -154,7 +154,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create description
     const descriptionNP = `डुडुवा गाउँपालिकामा वित्तीय खाताहरूको वितरणको विश्लेषण। कुल ${localizeNumber(totalHouseholds.toLocaleString(), "ne")} घरधुरी मध्ये ${localizeNumber(bankPercentage, "ne")}% (${localizeNumber(bankTotal.toLocaleString(), "ne")}) घरधुरीले बैंकमा पहुँच राख्छन्। वडा ${localizeNumber(bestAccessWard, "ne")} मा सबैभन्दा राम्रो पहुँच छ, जहाँ ${localizeNumber(bestAccessPercentage.toFixed(2), "ne")}% घरधुरीले १५ मिनेट भित्र वित्तीय संस्था पुग्न सक्छन्।`;
 
-    const descriptionEN = `Analysis of the distribution of financial accounts in Khajura Rural Municipality. Out of a total of ${totalHouseholds.toLocaleString()} households, ${bankPercentage}% (${bankTotal.toLocaleString()}) households have access to a bank. Ward ${bestAccessWard} has the best access, where ${bestAccessPercentage.toFixed(2)}% of households can reach a financial institution within 15 minutes.`;
+    const descriptionEN = `Analysis of the distribution of financial accounts in duduwa Rural Municipality. Out of a total of ${totalHouseholds.toLocaleString()} households, ${bankPercentage}% (${bankTotal.toLocaleString()}) households have access to a bank. Ward ${bestAccessWard} has the best access, where ${bestAccessPercentage.toFixed(2)}% of households can reach a financial institution within 15 minutes.`;
 
     return {
       title: `वित्तीय खाताको वितरण | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -436,7 +436,7 @@ export default async function WardWiseFinancialAccountsPage() {
               src="/images/financial-access.svg"
               width={1200}
               height={400}
-              alt="वित्तीय खाताको वितरण - डुडुवा गाउँपालिका (Distribution of Financial Accounts - Khajura Rural Municipality)"
+              alt="वित्तीय खाताको वितरण - डुडुवा गाउँपालिका (Distribution of Financial Accounts - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

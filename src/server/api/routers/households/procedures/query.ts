@@ -1,10 +1,10 @@
 import { z } from "zod";
 import { randomUUID } from "crypto";
 import { protectedProcedure } from "@/server/api/trpc";
-import { 
+import {
   householdQuerySchema,
-  householdStatusSchema, 
-  updateHouseholdSchema 
+  householdStatusSchema,
+  updateHouseholdSchema
 } from "../households.schema";
 import { householdEditRequests, households } from "@/server/db/schema/households/households";
 import { eq } from "drizzle-orm";
@@ -41,8 +41,8 @@ export const getHouseholdsProcedure = protectedProcedure
           locality,
           house_symbol_no,
           date_of_interview
-        FROM acme_buddhashanti_households
-        WHERE profile_id = 'buddhashanti'
+        FROM acme_duduwa_households
+        WHERE profile_id = 'duduwa'
       `;
 
       if (input.search) {
@@ -61,11 +61,11 @@ export const getHouseholdsProcedure = protectedProcedure
         if (filters.wardNo !== undefined) {
           query = sql`${query} AND ward_no = ${filters.wardNo}`;
         }
-        
+
         if (filters.province) {
           query = sql`${query} AND province = ${filters.province}`;
         }
-        
+
         if (filters.district) {
           query = sql`${query} AND district = ${filters.district}`;
         }
@@ -84,15 +84,15 @@ export const getHouseholdsProcedure = protectedProcedure
       }
 
       if (sortBy === "family_head_name") {
-        query = sortOrder === "asc" 
+        query = sortOrder === "asc"
           ? sql`${query} ORDER BY regexp_replace(family_head_name, '[0-9]', '', 'g') ASC NULLS LAST`
           : sql`${query} ORDER BY regexp_replace(family_head_name, '[0-9]', '', 'g') DESC NULLS LAST`;
       } else if (sortBy === "ward_no") {
-        query = sortOrder === "asc" 
+        query = sortOrder === "asc"
           ? sql`${query} ORDER BY ward_no ASC NULLS LAST`
           : sql`${query} ORDER BY ward_no DESC NULLS LAST`;
       } else if (sortBy === "date_of_interview") {
-        query = sortOrder === "asc" 
+        query = sortOrder === "asc"
           ? sql`${query} ORDER BY date_of_interview ASC NULLS LAST`
           : sql`${query} ORDER BY date_of_interview DESC NULLS LAST`;
       } else {
@@ -102,7 +102,7 @@ export const getHouseholdsProcedure = protectedProcedure
       query = sql`${query} LIMIT ${limit} OFFSET ${offset}`;
 
       const result = await ctx.db.execute(query);
-      
+
       const households = result.map(row => ({
         id: row.id,
         familyHeadName: row.family_head_name || "",
@@ -116,10 +116,10 @@ export const getHouseholdsProcedure = protectedProcedure
 
       let countQuery = sql`
         SELECT COUNT(*) as total 
-        FROM acme_buddhashanti_households
-        WHERE profile_id = 'buddhashanti'
+        FROM acme_duduwa_households
+        WHERE profile_id = 'duduwa'
       `;
-      
+
       if (input.search) {
         const searchTerm = `%${input.search}%`;
         countQuery = sql`
@@ -131,16 +131,16 @@ export const getHouseholdsProcedure = protectedProcedure
           )
         `;
       }
-      
+
       if (filters) {
         if (filters.wardNo !== undefined) {
           countQuery = sql`${countQuery} AND ward_no = ${filters.wardNo}`;
         }
-        
+
         if (filters.province) {
           countQuery = sql`${countQuery} AND province = ${filters.province}`;
         }
-        
+
         if (filters.district) {
           countQuery = sql`${countQuery} AND district = ${filters.district}`;
         }
@@ -157,7 +157,7 @@ export const getHouseholdsProcedure = protectedProcedure
           countQuery = sql`${countQuery} AND time_to_public_bus = ${filters.timeToPublicBus}`;
         }
       }
-      
+
       const countResult = await ctx.db.execute(countQuery);
       const total = parseInt(countResult[0]?.total?.toString() || "0", 10);
 
@@ -189,17 +189,17 @@ export const getHouseholdByIdProcedure = protectedProcedure
     try {
       const normalizedId = normalizeUuid(input.id);
       const formattedId = formatDbUuid(normalizedId);
-      
+
       let query = sql`
-        SELECT * FROM acme_buddhashanti_households
+        SELECT * FROM acme_duduwa_households
         WHERE id = ${formattedId}
       `;
-      
+
       let result = await ctx.db.execute(query);
 
       if (!result || result.length === 0) {
         query = sql`
-          SELECT * FROM acme_buddhashanti_households
+          SELECT * FROM acme_duduwa_households
           WHERE id = ${normalizedId}
         `;
         result = await ctx.db.execute(query);
@@ -213,7 +213,7 @@ export const getHouseholdByIdProcedure = protectedProcedure
       }
 
       const household = result[0];
-      
+
       const parseArrayField = (field: any): string[] => {
         if (!field) return [];
         if (Array.isArray(field)) return field;
@@ -349,29 +349,29 @@ export const requestHouseholdEditProcedure = protectedProcedure
   .mutation(async ({ ctx, input }) => {
     try {
       const formattedHouseholdId = formatDbUuid(input.householdId);
-      
+
       const existingHousehold = await ctx.db.select()
         .from(households)
         .where(eq(households.id, formattedHouseholdId))
         .limit(1)
         .then(results => results[0]);
-      
+
       if (!existingHousehold) {
         throw new TRPCError({
           code: "NOT_FOUND",
           message: "Household not found"
         });
       }
-      
+
       const editRequestId = randomUUID();
-      
+
       await ctx.db.insert(householdEditRequests).values({
         id: formatDbUuid(editRequestId),
         householdId: formattedHouseholdId,
         message: input.message || "Edit requested",
         requestedAt: new Date()
       });
-      
+
       return {
         success: true,
         message: "Edit request submitted successfully",
@@ -379,11 +379,11 @@ export const requestHouseholdEditProcedure = protectedProcedure
       };
     } catch (error) {
       console.error("Error requesting household edit:", error);
-      
+
       if (error instanceof TRPCError) {
         throw error;
       }
-      
+
       throw new TRPCError({
         code: "INTERNAL_SERVER_ERROR",
         message: "Failed to request household edit",
@@ -402,7 +402,7 @@ export const editHouseholdProcedure = protectedProcedure
   .mutation(async ({ ctx, input }) => {
     try {
       const formattedHouseholdId = formatDbUuid(input.householdId);
-      const formattedEditRequestId = input.editRequestId 
+      const formattedEditRequestId = input.editRequestId
         ? formatDbUuid(input.editRequestId)
         : undefined;
 
@@ -413,29 +413,29 @@ export const editHouseholdProcedure = protectedProcedure
         .where(eq(households.id, formattedHouseholdId))
         .limit(1)
         .then(results => results[0]);
-      
+
       if (!existingHousehold) {
         throw new TRPCError({
           code: "NOT_FOUND",
           message: "Household not found"
         });
       }
-      
+
       await ctx.db.update(households)
         .set(updateData)
         .where(eq(households.id, formattedHouseholdId));
-      
+
       if (formattedEditRequestId) {
         await ctx.db.delete(householdEditRequests)
           .where(eq(householdEditRequests.id, formattedEditRequestId));
       }
-      
+
       const updatedHousehold = await ctx.db.select()
         .from(households)
         .where(eq(households.id, formattedHouseholdId))
         .limit(1)
         .then(results => results[0]);
-      
+
       return {
         success: true,
         message: "Household updated successfully",
@@ -443,11 +443,11 @@ export const editHouseholdProcedure = protectedProcedure
       };
     } catch (error) {
       console.error("Error updating household:", error);
-      
+
       if (error instanceof TRPCError) {
         throw error;
       }
-      
+
       throw new TRPCError({
         code: "INTERNAL_SERVER_ERROR",
         message: "Failed to update household",
@@ -465,7 +465,7 @@ export const getHouseholdEditRequestsProcedure = protectedProcedure
   .query(async ({ ctx, input }) => {
     try {
       const { limit, offset } = input;
-      
+
       const query = sql`
         SELECT 
           e.id, 
@@ -475,22 +475,22 @@ export const getHouseholdEditRequestsProcedure = protectedProcedure
           h.family_head_name,
           h.ward_no,
           h.locality
-        FROM acme_buddhashanti_household_edit_requests e
-        JOIN acme_buddhashanti_households h ON h.id = e.household_id
+        FROM acme_duduwa_household_edit_requests e
+        JOIN acme_duduwa_households h ON h.id = e.household_id
         ORDER BY e.requested_at DESC
         LIMIT ${limit} OFFSET ${offset}
       `;
-      
+
       const editRequests = await ctx.db.execute(query);
-      
+
       const countQuery = sql`
         SELECT COUNT(*) as total 
-        FROM acme_buddhashanti_household_edit_requests
+        FROM acme_duduwa_household_edit_requests
       `;
-      
+
       const countResult = await ctx.db.execute(countQuery);
       const total = parseInt(countResult[0]?.total?.toString() || "0", 10);
-      
+
       const mappedRequests = editRequests.map(req => ({
         id: req.id,
         householdId: req.household_id,
@@ -500,7 +500,7 @@ export const getHouseholdEditRequestsProcedure = protectedProcedure
         wardNo: typeof req.ward_no === 'number' ? req.ward_no : null,
         locality: req.locality || ""
       }));
-      
+
       return {
         editRequests: mappedRequests,
         meta: {

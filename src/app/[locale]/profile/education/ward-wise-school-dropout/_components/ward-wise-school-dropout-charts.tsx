@@ -61,7 +61,7 @@ export default function WardWiseSchoolDropoutCharts({
       >
         <meta
           itemProp="name"
-          content="School Dropout Causes Distribution in Khajura Rural Municipality"
+          content="School Dropout Causes Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -177,11 +177,11 @@ export default function WardWiseSchoolDropoutCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise School Dropout Causes in Khajura Rural Municipality"
+          content="Ward-wise School Dropout Causes in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of school dropout causes across wards in Khajura"
+          content="Distribution of school dropout causes across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -211,11 +211,11 @@ export default function WardWiseSchoolDropoutCharts({
       >
         <meta
           itemProp="name"
-          content="Economic-Related Dropout Comparison Across Wards in Khajura Rural Municipality"
+          content="Economic-Related Dropout Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of economic-related dropout rates across wards in Khajura"
+          content="Comparison of economic-related dropout rates across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -247,11 +247,11 @@ export default function WardWiseSchoolDropoutCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise School Dropout Analysis in Khajura Rural Municipality"
+          content="Ward-wise School Dropout Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of school dropout causes by ward in Khajura"
+          content="Detailed analysis of school dropout causes by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

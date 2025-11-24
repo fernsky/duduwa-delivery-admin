@@ -205,7 +205,7 @@ class PublicationSettings(models.Model):
 
     municipality_name = models.CharField(max_length=200, default="डुडुवा गाउँपालिका")
     municipality_name_english = models.CharField(
-        max_length=200, default="buddhashanti Rural Municipality"
+        max_length=200, default="duduwa Rural Municipality"
     )
     report_title = models.CharField(max_length=300, default="डिजिटल प्रोफाइल प्रतिवेदन")
     report_title_english = models.CharField(

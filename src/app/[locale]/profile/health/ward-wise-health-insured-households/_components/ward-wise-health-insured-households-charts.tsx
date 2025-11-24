@@ -57,7 +57,7 @@ export default function WardWiseHealthInsuredHouseholdsCharts({
       >
         <meta
           itemProp="name"
-          content="Health Insurance Distribution in Khajura Rural Municipality"
+          content="Health Insurance Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -172,11 +172,11 @@ export default function WardWiseHealthInsuredHouseholdsCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Health Insurance Status in Khajura Rural Municipality"
+          content="Ward-wise Health Insurance Status in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of health insured households across wards in Khajura"
+          content="Distribution of health insured households across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -205,11 +205,11 @@ export default function WardWiseHealthInsuredHouseholdsCharts({
       >
         <meta
           itemProp="name"
-          content="Health Insurance Coverage Comparison Across Wards in Khajura Rural Municipality"
+          content="Health Insurance Coverage Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of health insurance coverage across wards in Khajura"
+          content="Comparison of health insurance coverage across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -240,11 +240,11 @@ export default function WardWiseHealthInsuredHouseholdsCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Health Insurance Analysis in Khajura Rural Municipality"
+          content="Ward-wise Health Insurance Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of health insurance coverage by ward in Khajura"
+          content="Detailed analysis of health insurance coverage by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

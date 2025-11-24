@@ -67,11 +67,11 @@ export default function DeceasedPopulationCharts({
       >
         <meta
           itemProp="name"
-          content="Gender-wise Deceased Population in Khajura Rural Municipality"
+          content="Gender-wise Deceased Population in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content={`Gender-wise distribution of deceased population in Khajura with a total of ${totalDeceasedPopulation}`}
+          content={`Gender-wise distribution of deceased population in duduwa with a total of ${totalDeceasedPopulation}`}
         />
 
         <div className="border-b px-4 py-3">
@@ -195,11 +195,11 @@ export default function DeceasedPopulationCharts({
       >
         <meta
           itemProp="name"
-          content="Age Group-wise Deceased Population in Khajura Rural Municipality"
+          content="Age Group-wise Deceased Population in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of deceased population by age groups in Khajura"
+          content="Distribution of deceased population by age groups in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -307,11 +307,11 @@ export default function DeceasedPopulationCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Deceased Population in Khajura Rural Municipality"
+          content="Ward-wise Deceased Population in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of deceased population across wards in Khajura"
+          content="Distribution of deceased population across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -418,11 +418,11 @@ export default function DeceasedPopulationCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Age-Gender Mortality Analysis in Khajura Rural Municipality"
+          content="Ward-wise Age-Gender Mortality Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed age and gender mortality distribution by ward in Khajura"
+          content="Detailed age and gender mortality distribution by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

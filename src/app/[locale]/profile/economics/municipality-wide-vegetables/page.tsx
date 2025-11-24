@@ -103,7 +103,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const vegetableData =
       await api.profile.economics.municipalityWideVegetables.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalProduction = vegetableData.reduce(
@@ -157,20 +157,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality vegetables",
-      "Khajura vegetable production",
+      "duduwa Rural Municipality vegetables",
+      "duduwa vegetable production",
       "Municipality-wide vegetable statistics",
-      "Potato production in Khajura",
+      "Potato production in duduwa",
       "Tomato cultivation statistics",
       "Cauliflower production data",
-      `Khajura vegetable sales ${totalSales.toFixed(2)} tonnes`,
-      `Khajura vegetable revenue ${(totalRevenue / 1000).toFixed(2)} thousand rupees`,
+      `duduwa vegetable sales ${totalSales.toFixed(2)} tonnes`,
+      `duduwa vegetable revenue ${(totalRevenue / 1000).toFixed(2)} thousand rupees`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको तरकारी उत्पादन र बिक्री विश्लेषण। कुल ${localizeNumber(totalProduction.toFixed(2), "ne")} मेट्रिक टन तरकारी उत्पादन मध्ये ${localizeNumber(mostProducedPercentage, "ne")}% (${localizeNumber(mostProducedAmount.toFixed(2), "ne")} टन) ${VEGETABLE_TYPES[mostProducedVegetable] || mostProducedVegetable} रहेको छ। पालिका स्तरीय तरकारी उत्पादन र बिक्रीको विस्तृत विश्लेषण।`;
 
-    const descriptionEN = `Analysis of vegetable production and sales in Khajura Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of vegetable production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${VEGETABLE_TYPES_EN[mostProducedVegetable] || mostProducedVegetable}. Detailed analysis of municipality-wide vegetable patterns.`;
+    const descriptionEN = `Analysis of vegetable production and sales in duduwa Rural Municipality. Out of total ${totalProduction.toFixed(2)} metric tonnes of vegetable production, ${mostProducedPercentage}% (${mostProducedAmount.toFixed(2)} tonnes) is ${VEGETABLE_TYPES_EN[mostProducedVegetable] || mostProducedVegetable}. Detailed analysis of municipality-wide vegetable patterns.`;
 
     return {
       title: `तरकारीको प्रकार अनुसार उत्पादन र बिक्री | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -377,7 +377,7 @@ export default async function MunicipalityWideVegetablesPage() {
               src="/images/vegetables.svg"
               width={1200}
               height={400}
-              alt="तरकारीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Vegetables by Production and Sales - Khajura Rural Municipality)"
+              alt="तरकारीको प्रकार अनुसार उत्पादन र बिक्री - डुडुवा गाउँपालिका (Vegetables by Production and Sales - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

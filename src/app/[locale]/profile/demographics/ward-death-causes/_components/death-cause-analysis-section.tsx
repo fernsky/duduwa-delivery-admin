@@ -111,7 +111,7 @@ export default function DeathCauseAnalysisSection({
     if (document && document.body) {
       document.body.setAttribute(
         "data-municipality",
-        "Khajura Rural Municipality / बुद्धशान्ति गाउँपालिका",
+        "duduwa Rural Municipality / बुद्धशान्ति गाउँपालिका",
       );
       document.body.setAttribute("data-total-deaths", totalDeaths.toString());
 
@@ -222,7 +222,7 @@ export default function DeathCauseAnalysisSection({
       <div className="bg-muted/50 p-4 rounded-lg mt-8">
         <h3 className="text-xl font-medium mb-4">
           मृत्युका कारणहरूको विश्लेषण
-          <span className="sr-only">Death Cause Analysis of Khajura</span>
+          <span className="sr-only">Death Cause Analysis of duduwa</span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div
@@ -233,7 +233,7 @@ export default function DeathCauseAnalysisSection({
             <h4 className="font-medium mb-2">
               दीर्घ रोगहरू
               <span className="sr-only">
-                Chronic Diseases in Khajura Rural Municipality
+                Chronic Diseases in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -256,7 +256,7 @@ export default function DeathCauseAnalysisSection({
             <h4 className="font-medium mb-2">
               संक्रामक रोगहरू
               <span className="sr-only">
-                Infectious Diseases in Khajura Rural Municipality
+                Infectious Diseases in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">
@@ -280,7 +280,7 @@ export default function DeathCauseAnalysisSection({
             <h4 className="font-medium mb-2">
               दुर्घटना/आत्महत्या
               <span className="sr-only">
-                Accidents/Suicide in Khajura Rural Municipality
+                Accidents/Suicide in duduwa Rural Municipality
               </span>
             </h4>
             <p className="text-3xl font-bold">

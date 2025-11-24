@@ -42,7 +42,7 @@ export default function RemittanceSEO({
     // Convert remittance stats to structured data format
     const remittanceStats = overallSummary.slice(0, 10).map((item) => ({
       "@type": "Observation",
-      name: `${item.amountGroupLabel} remittance from Khajura Rural Municipality`,
+      name: `${item.amountGroupLabel} remittance from duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -50,7 +50,7 @@ export default function RemittanceSEO({
         unitText: "people",
       },
       measuredValue: item.sendingPopulation,
-      description: `${item.sendingPopulation.toLocaleString()} people from Khajura Rural Municipality send remittance in the range of ${item.amountGroupLabel} (${((item.sendingPopulation / totalSendingPopulation) * 100).toFixed(2)}% of total remittance senders)`,
+      description: `${item.sendingPopulation.toLocaleString()} people from duduwa Rural Municipality send remittance in the range of ${item.amountGroupLabel} (${((item.sendingPopulation / totalSendingPopulation) * 100).toFixed(2)}% of total remittance senders)`,
     }));
 
     // Find most common remittance amount group
@@ -81,10 +81,10 @@ export default function RemittanceSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Ward-wise Remittance Distribution from Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Remittance statistics across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalSendingPopulation.toLocaleString()} people sending remittances. The most common amount range is ${mostCommonGroup?.amountGroupLabel} with ${mostCommonGroup?.sendingPopulation.toLocaleString()} senders (${mostCommonGroupPercentage}%). High remittance senders (above Rs. 300,000) account for ${highRemittancePercentage}% of all remittance senders. The estimated annual remittance is NPR ${estimatedAnnualRemittanceCrores} crore with an average of NPR ${averageRemittance.toLocaleString()} per person.`,
+      name: "Ward-wise Remittance Distribution from duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Remittance statistics across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalSendingPopulation.toLocaleString()} people sending remittances. The most common amount range is ${mostCommonGroup?.amountGroupLabel} with ${mostCommonGroup?.sendingPopulation.toLocaleString()} senders (${mostCommonGroupPercentage}%). High remittance senders (above Rs. 300,000) account for ${highRemittancePercentage}% of all remittance senders. The estimated annual remittance is NPR ${estimatedAnnualRemittanceCrores} crore with an average of NPR ${averageRemittance.toLocaleString()} per person.`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Remittance distribution",
         "Ward-wise remittance",
@@ -96,16 +96,16 @@ export default function RemittanceSEO({
         "Remittance utilization",
         "Economic development through remittance",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/economics/ward-wise-remittance",
+      url: "https://digital.duduwamun.gov.np/profile/economics/ward-wise-remittance",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

@@ -3,8 +3,8 @@ import { z } from "zod";
 export const householdSchema = z.object({
   // Basic Information
   id: z.string().optional(),
-  tenant_id: z.string().default("buddhashanti"),
-  
+  tenant_id: z.string().default("duduwa"),
+
   // Location Information
   province: z.string().optional(),
   district: z.string().optional(),
@@ -15,14 +15,14 @@ export const householdSchema = z.object({
   household_location: z.array(z.number()).optional(),
   locality: z.string().optional(),
   development_organization: z.string().optional(),
-  
+
   // Family Information
   family_head_name: z.string().min(1, "परिवार मूलीको नाम आवश्यक छ"),
   family_head_phone_no: z.string().optional(),
   total_members: z.number().int().min(1, "परिवार सदस्य संख्या आवश्यक छ").optional(),
   are_members_elsewhere: z.string().optional(),
   total_elsewhere_members: z.number().int().optional(),
-  
+
   // House Details
   house_ownership: z.enum(['own', 'rent', 'relative', 'other']).optional(),
   house_ownership_other: z.string().optional(),
@@ -40,11 +40,11 @@ export const householdSchema = z.object({
   disaster_risk_status: z.enum(['safe', 'flood_risk', 'landslide_risk', 'fire_risk', 'other']).optional(), // Added this missing field
   house_floors: z.number().int().optional(), // Added this missing field
   room_count: z.number().int().optional(), // Added this missing field
-  
+
   // Safety and Facilities
   natural_disasters: z.array(z.string()).optional(),
   is_safe: z.string().optional(),
-  
+
   // Water, Sanitation and Energy
   water_source: z.string().optional(),
   water_purification_methods: z.array(z.string()).optional(),
@@ -53,13 +53,13 @@ export const householdSchema = z.object({
   primary_cooking_fuel: z.string().optional(),
   primary_energy_source: z.string().optional(),
   facilities: z.array(z.string()).optional(),
-  
+
   // Accessibility
   road_status: z.string().optional(),
   time_to_public_bus: z.string().optional(),
   time_to_market: z.string().optional(),
   distance_to_active_road: z.string().optional(),
-  
+
   // Economic Details
   has_properties_elsewhere: z.string().optional(),
   has_female_named_properties: z.string().optional(),
@@ -70,15 +70,15 @@ export const householdSchema = z.object({
   income_sources: z.array(z.string()).optional(),
   have_remittance: z.string().optional(),
   remittance_expenses: z.array(z.string()).optional(),
-  
+
   // Health
   have_health_insurance: z.string().optional(),
   consulting_health_organization: z.string().optional(),
   time_to_health_organization: z.string().optional(),
-  
+
   // Municipal & Suggestions
   municipal_suggestions: z.array(z.string()).optional(),
-  
+
   // Agriculture & Livestock
   have_agricultural_land: z.string().optional(),
   agricultural_lands: z.array(z.string()).optional(),
@@ -93,7 +93,7 @@ export const householdSchema = z.object({
   are_involved_in_husbandry: z.string().optional(),
   animals: z.array(z.string()).optional(),
   animal_products: z.array(z.string()).optional(),
-  
+
   // Aquaculture & Apiary
   have_aquaculture: z.string().optional(),
   pond_number: z.number().int().optional(),
@@ -104,12 +104,12 @@ export const householdSchema = z.object({
   honey_production: z.number().optional(),
   honey_sales: z.number().optional(),
   honey_revenue: z.number().optional(),
-  
+
   // Agricultural Operations
   has_agricultural_insurance: z.string().optional(),
   months_involved_in_agriculture: z.string().optional(),
   agricultural_machines: z.array(z.string()).optional(),
-  
+
   // Migration Details
   birth_place: z.string().optional(),
   birth_province: z.string().optional(),
@@ -120,10 +120,10 @@ export const householdSchema = z.object({
   prior_district: z.string().optional(),
   prior_country: z.string().optional(),
   residence_reason: z.string().optional(),
-  
+
   // Business
   has_business: z.string().optional(),
-  
+
   // Survey Details
   date_of_interview: z.date().optional(),
   device_id: z.string().optional(),

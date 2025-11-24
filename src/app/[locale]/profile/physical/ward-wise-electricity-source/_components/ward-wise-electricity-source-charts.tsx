@@ -97,7 +97,7 @@ export default function WardWiseElectricitySourceCharts({
       >
         <meta
           itemProp="name"
-          content="Electricity Source Distribution in Khajura Rural Municipality"
+          content="Electricity Source Distribution in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
@@ -213,11 +213,11 @@ export default function WardWiseElectricitySourceCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Electricity Source Usage in Khajura Rural Municipality"
+          content="Ward-wise Electricity Source Usage in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Distribution of electricity source types across wards in Khajura"
+          content="Distribution of electricity source types across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -247,11 +247,11 @@ export default function WardWiseElectricitySourceCharts({
       >
         <meta
           itemProp="name"
-          content="Modern Electricity Source Usage Comparison Across Wards in Khajura Rural Municipality"
+          content="Modern Electricity Source Usage Comparison Across Wards in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Comparison of modern electricity source usage across wards in Khajura"
+          content="Comparison of modern electricity source usage across wards in duduwa"
         />
 
         <div className="border-b px-4 py-3">
@@ -284,11 +284,11 @@ export default function WardWiseElectricitySourceCharts({
       >
         <meta
           itemProp="name"
-          content="Ward-wise Electricity Source Analysis in Khajura Rural Municipality"
+          content="Ward-wise Electricity Source Analysis in duduwa Rural Municipality"
         />
         <meta
           itemProp="description"
-          content="Detailed analysis of electricity source usage by ward in Khajura"
+          content="Detailed analysis of electricity source usage by ward in duduwa"
         />
 
         <div className="border-b px-4 py-3">

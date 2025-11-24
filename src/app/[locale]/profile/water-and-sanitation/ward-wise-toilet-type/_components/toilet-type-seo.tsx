@@ -41,7 +41,7 @@ export default function ToiletTypeSEO({
     // Create English descriptions for SEO
     const toiletTypeStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${item.toiletTypeName} toilet facilities in Khajura Rural Municipality`,
+      name: `${item.toiletTypeName} toilet facilities in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -49,7 +49,7 @@ export default function ToiletTypeSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality use ${item.toiletTypeName} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality use ${item.toiletTypeName} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total households)`,
     }));
 
     // Find most common toilet type
@@ -75,10 +75,10 @@ export default function ToiletTypeSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Toilet Types in Khajura Rural Municipality (बुद्धशान्ति गाउँपालिका)",
-      description: `Analysis of toilet types across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${sanitizedPercentage}% of households have proper toilet facilities. The most common toilet type is ${mostCommonTypeName} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%).`,
+      name: "Toilet Types in duduwa Rural Municipality (बुद्धशान्ति गाउँपालिका)",
+      description: `Analysis of toilet types across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} households. ${sanitizedPercentage}% of households have proper toilet facilities. The most common toilet type is ${mostCommonTypeName} with ${mostCommonType?.households.toLocaleString()} households (${mostCommonTypePercentage}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "बुद्धशान्ति गाउँपालिका",
         "Toilet types",
         "Sanitation facilities",
@@ -91,16 +91,16 @@ export default function ToiletTypeSEO({
         "No toilet households",
         "Sanitation improvement",
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/water-and-sanitation/ward-wise-toilet-type",
+      url: "https://digital.duduwamun.gov.np/profile/water-and-sanitation/ward-wise-toilet-type",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",
@@ -149,8 +149,8 @@ export default function ToiletTypeSEO({
       isAccessibleForFree: true,
       isPartOf: {
         "@type": "WebSite",
-        name: "Khajura Rural Municipality Digital Profile",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality Digital Profile",
+        url: "https://digital.duduwamun.gov.np",
       },
     };
   };

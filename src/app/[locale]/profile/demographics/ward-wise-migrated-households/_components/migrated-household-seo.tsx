@@ -25,7 +25,7 @@ export default function MigratedHouseholdSEO({
     // Convert migration stats to structured data format
     const migrationStats = overallSummary.map((item) => ({
       "@type": "Observation",
-      name: `${MIGRATED_FROM_NAMES_EN[item.migratedFrom] || item.migratedFrom} in Khajura Rural Municipality`,
+      name: `${MIGRATED_FROM_NAMES_EN[item.migratedFrom] || item.migratedFrom} in duduwa Rural Municipality`,
       observationDate: new Date().toISOString().split("T")[0],
       measuredProperty: {
         "@type": "PropertyValue",
@@ -33,7 +33,7 @@ export default function MigratedHouseholdSEO({
         unitText: "households",
       },
       measuredValue: item.households,
-      description: `${item.households.toLocaleString()} households in Khajura Rural Municipality are from ${MIGRATED_FROM_NAMES_EN[item.migratedFrom] || item.migratedFrom} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total migrated households)`,
+      description: `${item.households.toLocaleString()} households in duduwa Rural Municipality are from ${MIGRATED_FROM_NAMES_EN[item.migratedFrom] || item.migratedFrom} (${((item.households / totalHouseholds) * 100).toFixed(2)}% of total migrated households)`,
     }));
 
     // Find most common migration origin
@@ -53,10 +53,10 @@ export default function MigratedHouseholdSEO({
     return {
       "@context": "https://schema.org",
       "@type": "Dataset",
-      name: "Migrated Households in Khajura Rural Municipality (डुडुवा गाउँपालिका)",
-      description: `Migrated household data across ${wardNumbers.length} wards of Khajura Rural Municipality with a total of ${totalHouseholds.toLocaleString()} migrated households. The most common origin is ${mostCommonMigratedFromEN} with ${mostCommonMigratedFrom?.households.toLocaleString()} households (${mostCommonMigratedFromPercentage}%).`,
+      name: "Migrated Households in duduwa Rural Municipality (डुडुवा गाउँपालिका)",
+      description: `Migrated household data across ${wardNumbers.length} wards of duduwa Rural Municipality with a total of ${totalHouseholds.toLocaleString()} migrated households. The most common origin is ${mostCommonMigratedFromEN} with ${mostCommonMigratedFrom?.households.toLocaleString()} households (${mostCommonMigratedFromPercentage}%).`,
       keywords: [
-        "Khajura Rural Municipality",
+        "duduwa Rural Municipality",
         "डुडुवा गाउँपालिका",
         "Migrated households",
         "Migration distribution",
@@ -70,16 +70,16 @@ export default function MigratedHouseholdSEO({
           (name) => `${name} घरपरिवार तथ्याङ्क`,
         ),
       ],
-      url: "https://digital.buddhashantimun.gov.np/profile/demographics/ward-wise-migrated-households",
+      url: "https://digital.duduwamun.gov.np/profile/demographics/ward-wise-migrated-households",
       creator: {
         "@type": "Organization",
-        name: "Khajura Rural Municipality",
-        url: "https://digital.buddhashantimun.gov.np",
+        name: "duduwa Rural Municipality",
+        url: "https://digital.duduwamun.gov.np",
       },
       temporalCoverage: "2021/2023",
       spatialCoverage: {
         "@type": "Place",
-        name: "Khajura Rural Municipality, Banke, Nepal",
+        name: "duduwa Rural Municipality, Banke, Nepal",
         geo: {
           "@type": "GeoCoordinates",
           latitude: "28.1356",

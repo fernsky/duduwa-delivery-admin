@@ -9,11 +9,11 @@ import sys
 
 # Add project path
 sys.path.append(
-    "/Users/trilochan/Desktop/final-delivery/digital-profile/buddhashanti/buddhashanti-report"
+    "/Users/trilochan/Desktop/final-delivery/digital-profile/duduwa/duduwa-report"
 )
 
 # Setup Django
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "buddhashanti_report.settings.development")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "duduwa_report.settings.development")
 django.setup()
 
 from apps.social.processors.major_subject import MajorSubjectProcessor

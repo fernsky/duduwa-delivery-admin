@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Fetch data for SEO using tRPC
     const importedProductsData =
       await api.profile.economics.importedProducts.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Process data for SEO
     const totalProducts = importedProductsData.length;
@@ -42,20 +42,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality imported products",
-      "Khajura imported goods",
-      "Imported items Khajura",
-      "Khajura import catalog",
-      "Economic profile Khajura",
+      "duduwa Rural Municipality imported products",
+      "duduwa imported goods",
+      "Imported items duduwa",
+      "duduwa import catalog",
+      "Economic profile duduwa",
       "Imported goods analysis",
       "Imported products trends",
-      `Khajura ${totalProducts} imported products`,
+      `duduwa ${totalProducts} imported products`,
     ];
 
     // Create detailed description with actual data
     const descriptionNP = `डुडुवा गाउँपालिकाको आयातित उत्पादनहरूको विस्तृत सूची, प्रवृत्ति र विश्लेषण। कुल ${totalProducts} आयातित उत्पादनहरू पालिकामा दर्ता गरिएका छन्। यी आयातित वस्तुहरूको विस्तृत तथ्याङ्क र विजुअलाइजेसन।`;
 
-    const descriptionEN = `Detailed catalog, trends and analysis of imported products for Khajura Rural Municipality. A total of ${totalProducts} imported products are registered in the municipality. Detailed statistics and visualizations of various imported goods.`;
+    const descriptionEN = `Detailed catalog, trends and analysis of imported products for duduwa Rural Municipality. A total of ${totalProducts} imported products are registered in the municipality. Detailed statistics and visualizations of various imported goods.`;
 
     return {
       title: `आयातित उत्पादनहरू | ${municipalityName} पालिका प्रोफाइल`,
@@ -191,7 +191,7 @@ export default async function ImportedProductsPage() {
               src="/images/imported-products.svg"
               width={1200}
               height={400}
-              alt="आयातित उत्पादनहरू - डुडुवा गाउँपालिका (Imported Products - Khajura Rural Municipality)"
+              alt="आयातित उत्पादनहरू - डुडुवा गाउँपालिका (Imported Products - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />

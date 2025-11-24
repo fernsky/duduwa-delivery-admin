@@ -49,8 +49,8 @@ export default function HomePageSEO({
     name: municipalityName,
     alternateName: municipalityNameEn,
     description: `${municipalityName} (${municipalityNameEn}) ${districtName} जिल्लामा अवस्थित एक स्थानीय सरकार हो। यहाँ ${totalPopulation.toLocaleString()} जनसंख्या र ${totalHouseholds.toLocaleString()} घरधुरी छन्।`,
-    url: "https://digital.buddhashantimun.gov.np",
-    logo: "https://digital.buddhashantimun.gov.np/images/municipality-logo.png",
+    url: "https://digital.duduwamun.gov.np",
+    logo: "https://digital.duduwamun.gov.np/images/municipality-logo.png",
     address: {
       "@type": "PostalAddress",
       addressLocality: "डुडुवा",
@@ -61,12 +61,12 @@ export default function HomePageSEO({
       "@type": "ContactPoint",
       telephone: "+977-000000000",
       contactType: "customer service",
-      email: "info@digital.buddhashantimun.gov.np",
+      email: "info@digital.duduwamun.gov.np",
     },
     sameAs: [
-      "https://www.facebook.com/buddhashantiruralmun/",
-      "https://twitter.com/buddhashantirural",
-      "https://www.youtube.com/channel/buddhashantiruralmun",
+      "https://www.facebook.com/duduwaruralmun/",
+      "https://twitter.com/duduwarural",
+      "https://www.youtube.com/channel/duduwaruralmun",
     ],
     areaServed: {
       "@type": "AdministrativeArea",
@@ -88,10 +88,10 @@ export default function HomePageSEO({
     "@type": "Dataset",
     name: `${municipalityName} जनसांख्यिकीय तथ्याङ्क`,
     description: `${municipalityName}को प्रमुख जनसांख्यिकीय तथ्याङ्क, जनगणना अनुसार`,
-    url: "https://digital.buddhashantimun.gov.np/profile/demographics",
+    url: "https://digital.duduwamun.gov.np/profile/demographics",
     keywords: [
       "डुडुवा गाउँपालिका जनसंख्या",
-      "Khajura Rural Municipality demographics",
+      "duduwa Rural Municipality demographics",
       "डुडुवा जनगणना",
       "बाँके जनसंख्या",
       "नेपालको जनसंख्या",
@@ -99,7 +99,7 @@ export default function HomePageSEO({
     creator: {
       "@type": "Organization",
       name: municipalityName,
-      url: "https://digital.buddhashantimun.gov.np",
+      url: "https://digital.duduwamun.gov.np",
     },
     includedInDataCatalog: {
       "@type": "DataCatalog",
@@ -108,7 +108,7 @@ export default function HomePageSEO({
     distribution: {
       "@type": "DataDownload",
       contentUrl:
-        "https://digital.buddhashantimun.gov.np/data/demographics.csv",
+        "https://digital.duduwamun.gov.np/data/demographics.csv",
       encodingFormat: "CSV",
     },
     temporalCoverage: "2021/2023",
@@ -192,7 +192,7 @@ export default function HomePageSEO({
     name: municipalityName,
     alternateName: municipalityNameEn,
     description: `${municipalityName} (${municipalityNameEn}) ${districtName} जिल्लामा अवस्थित एक स्थानीय तह हो।`,
-    hasMap: "https://digital.buddhashantimun.gov.np/map",
+    hasMap: "https://digital.duduwamun.gov.np/map",
     geo: {
       "@type": "GeoCoordinates",
       latitude: "28.1356",
@@ -208,7 +208,7 @@ export default function HomePageSEO({
       },
     },
     photo:
-      "https://digital.buddhashantimun.gov.np/images/municipality-photo.jpg",
+      "https://digital.duduwamun.gov.np/images/municipality-photo.jpg",
   };
 
   // Create WebSite structured data
@@ -217,11 +217,11 @@ export default function HomePageSEO({
     "@type": "WebSite",
     name: `${municipalityName} अधिकारिक वेबसाइट`,
     alternateName: `${municipalityNameEn} Official Website`,
-    url: "https://digital.buddhashantimun.gov.np",
+    url: "https://digital.duduwamun.gov.np",
     potentialAction: {
       "@type": "SearchAction",
       target:
-        "https://digital.buddhashantimun.gov.np/search?q={search_term_string}",
+        "https://digital.duduwamun.gov.np/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
     inLanguage: ["ne-NP", "en-US"],
@@ -236,7 +236,7 @@ export default function HomePageSEO({
         "@type": "ListItem",
         position: 1,
         name: "मुख्य पृष्ठ",
-        item: "https://digital.buddhashantimun.gov.np",
+        item: "https://digital.duduwamun.gov.np",
       },
     ],
   };

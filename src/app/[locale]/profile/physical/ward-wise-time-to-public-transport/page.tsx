@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
   try {
     const timeToPublicTransportData =
       await api.profile.physical.wardWiseTimeToPublicTransport.getAll.query();
-    const municipalityName = "डुडुवा गाउँपालिका"; // Khajura Rural Municipality
+    const municipalityName = "डुडुवा गाउँपालिका"; // duduwa Rural Municipality
 
     // Group by ward number
     const wardGroups = timeToPublicTransportData.reduce(
@@ -99,7 +99,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ];
 
     const keywordsEN = [
-      "Khajura Rural Municipality public transport access",
+      "duduwa Rural Municipality public transport access",
       "Public transport facility access",
       "Ward-wise public transport distance",
       "Time to reach public transportation",
@@ -110,7 +110,7 @@ export async function generateMetadata(): Promise<Metadata> {
     // Create description
     const descriptionNP = `डुडुवा गाउँपालिकामा सार्वजनिक यातायातसम्म पुग्ने समय सम्बन्धी विश्लेषण। कुल ${localizeNumber(totalHouseholds.toLocaleString(), "ne")} घरधुरी मध्ये ${localizeNumber(under15MinPercentage, "ne")}% (${localizeNumber(under15MinHouseholds.toLocaleString(), "ne")}) घरधुरीले १५ मिनेटभित्र सार्वजनिक यातायात पुग्न सक्छन्।`;
 
-    const descriptionEN = `Analysis of time taken to reach public transportation in Khajura Rural Municipality. Out of a total of ${totalHouseholds.toLocaleString()} households, ${under15MinPercentage}% (${under15MinHouseholds.toLocaleString()}) can reach public transport within 15 minutes.`;
+    const descriptionEN = `Analysis of time taken to reach public transportation in duduwa Rural Municipality. Out of a total of ${totalHouseholds.toLocaleString()} households, ${under15MinPercentage}% (${under15MinHouseholds.toLocaleString()}) can reach public transport within 15 minutes.`;
 
     return {
       title: `सार्वजनिक यातायात पुग्न लाग्ने समय | ${municipalityName} डिजिटल प्रोफाइल`,
@@ -326,7 +326,7 @@ export default async function WardWiseTimeToPublicTransportPage() {
               src="/images/public-transport-access.svg"
               width={1200}
               height={400}
-              alt="सार्वजनिक यातायात पुग्न लाग्ने समय - डुडुवा गाउँपालिका (Time to Public Transport - Khajura Rural Municipality)"
+              alt="सार्वजनिक यातायात पुग्न लाग्ने समय - डुडुवा गाउँपालिका (Time to Public Transport - duduwa Rural Municipality)"
               className="w-full h-[250px] object-cover rounded-sm"
               priority
             />
