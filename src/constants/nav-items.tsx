@@ -60,10 +60,10 @@ export const navItems: NavItem[] = [
       //   title: "जन्म स्थानको आधारमा घरधुरी",
       //   href: "/profile/demographics/ward-wise-birthplace-households",
       // },
-      {
-        title: "बालबालिकाको जन्मदर्ताको आधारमा जनसंख्या",
-        href: "/profile/demographics/ward-wise-birth-certificate-population",
-      },
+      // {
+      //   title: "बालबालिकाको जन्मदर्ताको आधारमा जनसंख्या",
+      //   href: "/profile/demographics/ward-wise-birth-certificate-population",
+      // },
       {
         title: "विगत १२ महिनामा मृत्यु भएकाको विवरण",
         href: "/profile/demographics/ward-age-gender-wise-deceased-population",

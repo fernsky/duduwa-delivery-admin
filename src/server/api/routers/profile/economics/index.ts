@@ -33,7 +33,7 @@ import { municipalityWideAgricultureRelatedFarmersGroupRouter } from "./municipa
 import { wardWiseHouseholdsInAgricultureRouter } from "./ward-wise-households-in-agriculture.procedure";
 import { wardWiseTimeToFinancialOrganizationRouter } from "./ward-wise-time-to-financial-organization.procedure";
 import { wardWiseFinancialAccountsRouter } from "./ward-wise-financial-accounts.procedure";
-import {cooperativesRouter} from "./cooperatives.procedure";
+import { cooperativesRouter } from "./cooperatives.procedure";
 
 export const economicsRouter = createTRPCRouter({
   wardAgeGenderWiseEconomicallyActivePopulation:
